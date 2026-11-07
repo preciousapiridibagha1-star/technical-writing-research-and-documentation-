@@ -37,6 +37,7 @@ Both projects are self-directed. They represent my own exploration and strategic
 ### Fellowship alignment
 
 - **[Eight-Opportunity Evidence Map](fellowship-alignment/README.md)** — maps the same portfolio to all eight target opportunities and identifies the evidence still missing.
+- **[GovAI Applied Track 2027 Application Preparation](fellowship-alignment/govai-applied-track-2027-application-preparation.md)** — evidence-led application positioning, portfolio examples, gaps and submission checklist.
 
 ### Cloud infrastructure and open source
 
