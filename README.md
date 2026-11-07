@@ -22,20 +22,26 @@ Both projects are self-directed. They represent my own exploration and strategic
 ### Research
 
 - **[Research Portfolio](research/README.md)** — research scope and evidence standards.
-- **The Talent Paradox** — research into migration, digital work and global mobility, with a focus on Nigeria.
+- **The Talent Paradox** — planned research into migration, digital work and global mobility, with a focus on Nigeria; the original report still needs to be recovered and checked before this can be presented as a completed research sample.
+- **[AI Job-Search Platforms: 2026 Comparison](research/ai-job-search-platforms/ai-job-search-platforms-comparison-2026.md)** — updated comparison of four platforms, including current feature and pricing checks, limitations and a record of corrections.
 - **AI Job Search Platforms** — research into platforms and tools in this area.
 - **[Research Methodology](research/research-methodology/research-methodology.md)** — source selection, evidence checking, analytical approach and limitations.
 
 ### Technical writing and documentation
 
-- **[Technical Writing Samples](technical-guides/README.md)** — documentation standards and sample types.
+- **[Technical Writing Samples](technical-guides/README.md)** — documentation standards, a user-guide sample and a before-and-after documentation example.
 - **[How to Write a Useful Project README](technical-guides/README-guides/how-to-write-a-project-readme.md)** — a practical guide and editorial checklist.
 - **[AI-Assisted Task Approval FAQ](technical-guides/FAQs/ai-assisted-task-approval-concept-faq.md)** — an illustrative FAQ for a proposed system.
 - **[Documentation Review Checklist](technical-guides/documentation-examples/documentation-review-checklist.md)** — an editorial and technical review framework.
 
+### Fellowship alignment
+
+- **[Eight-Opportunity Evidence Map](fellowship-alignment/README.md)** — maps the same portfolio to all eight target opportunities and identifies the evidence still missing.
+
 ### Cloud infrastructure and open source
 
 - **[Cloud Infrastructure and Open Source](projects/cloud-infrastructure-and-open-source/README.md)** — project overviews and technical documentation.
+- **[n8n Technical Project Overview](projects/cloud-infrastructure-and-open-source/project-overviews/n8n-workflow-automation-overview.md)** — explains where workflow automation may fit in an AI system, without claiming a tested integration.
 - **[Cloud Infrastructure Fundamentals](projects/cloud-infrastructure-and-open-source/project-overviews/cloud-infrastructure-fundamentals.md)** — conceptual overview of compute, storage, networking, databases, identity, monitoring and shared responsibility.
 - **[Open-Source Contributions](contributions/open-source/README.md)** — contribution process and evidence standard. No external contribution is claimed unless a verifiable submission exists.
 
