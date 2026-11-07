@@ -47,7 +47,8 @@ A section is not complete simply because a folder or README exists. Completion r
 - [x] Research methodology and evidence standard.
 - [ ] Locate and review existing Talent Paradox research material.
 - [ ] Produce a complete, sourced Talent Paradox research brief.
-- [ ] Locate and review existing AI job-search platform research.
+- [x] Locate the existing June 2026 AI job-search platform comparison report.
+- [ ] Audit its claims, methodology, citations and platform status; correct or remove unsupported findings.
 - [ ] Produce a current, sourced AI job-search platform review.
 - [ ] Add source logs, dates, limitations and executive summaries.
 - [ ] Check every factual claim and reference.
