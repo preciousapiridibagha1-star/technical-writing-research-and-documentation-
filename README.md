@@ -8,6 +8,12 @@ I begin with the problem rather than assuming that AI is the answer. I examine t
 
 My contribution is strategic and documentary. I develop concepts, analyse requirements, map proposed architectures and workflows, consider risks and human oversight, and communicate technical ideas clearly. I do not claim to be a software engineer or to have independently coded, configured, integrated or deployed systems where that work has not been completed.
 
+## Current priority: community-centred mental-health data governance
+
+- **[Community Mental Health Data Governance Demonstrator](projects/community-mental-health-data-governance/README.md)** — a proposed, synthetic-data-only prototype exploring purpose-specific consent, data-access decisions and accountability records. It is a self-directed learning project inspired by research into the Mozilla 2027–28 SRHIN Embedded Fellowship challenge. It is not SRHIN-approved, and the application has not yet been built.
+
+The immediate goal is to turn this specification into a small, testable working prototype, then publish the implementation, tests, architecture, screenshots and known limitations. The project will not handle real health data or provide clinical advice.
+
 ## Master portfolio
 
 This is one portfolio of self-directed projects, research and technical writing. It is intended to demonstrate a connected set of capabilities rather than a collection of unrelated samples.
@@ -49,6 +55,14 @@ Both projects are self-directed. They represent my own exploration and strategic
 ## Demonstration media
 
 - [Portfolio Demonstration Video Briefs](media/portfolio-demonstration-video-briefs.md) — short, accuracy-controlled scripts for future Vantage Automata and Jarvis AI explainers. The videos and original diagrams are the final visual assets to add.
+
+## Current development priorities
+
+1. Build and test the community mental-health data-governance demonstrator using synthetic data only.
+2. Publish reproducible setup instructions, architecture and data-flow documentation.
+3. Add screenshots and a short demonstration only after the application works.
+4. Make genuine, scoped contributions to existing open-source projects and link to the public issues and pull requests.
+5. Keep conceptual work clearly separated from implemented and independently reviewed work.
 
 ## How I approach a project
 
