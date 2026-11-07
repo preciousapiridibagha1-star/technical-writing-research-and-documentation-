@@ -42,6 +42,8 @@ This is strategic and systems-design work. It is not a claim that the author ind
 - [Lead-Agent Coordination Workflow](system-workflows/lead-agent-coordination.md)
 - [Technology Evaluation Framework](technical-specifications/technology-evaluation.md)
 - [First MVP Definition](requirements/first-mvp-definition.md)
+- [First MVP Agent Specifications](agent-documentation/first-mvp-agent-specifications.md)
+- [First MVP Use-Case Decision Record](decision-records/first-mvp-use-case-decision.md)
 - [Proposed System Architecture](architecture/system-overview.md)
 
 The architecture diagrams will be added when the original image files are available and can be checked.
