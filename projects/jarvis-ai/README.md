@@ -2,11 +2,11 @@
 
 **Project status: Strategic concept and proposed architecture documented; implementation not verified.**
 
-Jarvis AI is a proposed AI-enabled business operating ecosystem. It explores how a business owner, organisation or individual building a venture could coordinate work through a lead AI agent and specialised agents for defined business functions.
+Jarvis AI is a self-directed concept for an AI-enabled business operating ecosystem. It explores how a business owner, organisation or individual building a venture could coordinate work through a lead AI agent and specialised agents for defined business functions.
 
 It is not designed only for CEOs or large companies. The system would need to be adapted to the size, operating model and actual needs of each business. A small e-commerce brand may need a focused customer-support workflow; a larger organisation may need several coordinated specialist functions.
 
-## Strategic principle
+## Strategic principle: problem before technology
 
 The project starts with the business problem, not with a tool. The first task is to understand what is going wrong, why it is happening, who is affected and what outcome needs to improve. Only then should possible AI tools, agent platforms and integrations be evaluated.
 
@@ -24,7 +24,6 @@ The broader ecosystem diagram and the simplified AI Business System MVP diagram 
 ## Strategic and systems-design contribution
 
 The project documents work in:
-
 - Business-problem framing and root-cause analysis.
 - Understanding users, customers and business requirements.
 - Identifying suitable and unsuitable AI use cases.
@@ -36,17 +35,18 @@ The project documents work in:
 
 This is strategic and systems-design work. It is not a claim that the author independently coded, configured, integrated or deployed the proposed platform.
 
-## Documentation
+## Project documentation
 
-- `strategic-contribution.md` — business application, strategic method, use cases, system model and evidence boundaries.
-- `architecture/` — the ecosystem and MVP diagrams, with explanations of components and boundaries.
-- `agent-documentation/` — each proposed agent's purpose, inputs, outputs, permissions and escalation rules.
-- `system-workflows/` — how work moves between the owner, lead agent and specialist agents.
-- `technical-specifications/` — proposed technologies, interfaces, data handling and implementation decisions.
+- [Strategic Contribution and Business Application](strategic-contribution.md)
+- [Proposed Agent Catalogue](agent-documentation/agent-catalogue.md)
+- [Lead-Agent Coordination Workflow](system-workflows/lead-agent-coordination.md)
+- [Technology Evaluation Framework](technical-specifications/technology-evaluation.md)
+
+The architecture diagrams and further component specifications will be added when the original diagram files are available and can be checked.
 
 ## Technology and evidence boundaries
 
-The architecture outline names Open WebUI, CrewAI, n8n, PostgreSQL and Ollama as proposed components. Their roles, compatibility, costs, data boundaries and operational suitability still require validation. A tool appearing in a diagram does not mean it has been configured or integrated.
+The architecture outline names Open WebUI, CrewAI, n8n, PostgreSQL and Ollama as proposed components. Their roles, compatibility, costs, data boundaries and operational suitability still require validation. A tool appearing in an architecture does not mean it has been configured or integrated.
 
 The diagrams and documents describe a proposal. They do not prove that agents, APIs, integrations or infrastructure are operational. Implementation and testing claims will only be added when supported by evidence.
 
