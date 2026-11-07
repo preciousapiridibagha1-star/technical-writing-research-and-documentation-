@@ -16,17 +16,15 @@ The written portfolio has been assembled as one connected body of self-directed 
 - [x] Cloud infrastructure fundamentals and sourced n8n overview, labelled as desk research rather than hands-on testing.
 - [x] Open-source contribution process and accurate statement that no external contribution is claimed.
 - [x] Eight-opportunity fellowship evidence map and GovAI UK Applied Track application-preparation document.
-- [x] Short Vantage Automata and Jarvis AI explainer-video briefs with timing, narration, visual direction and accuracy restrictions.
 - [x] Root and section navigation updated to connect the main portfolio materials.
 
-## Final visual assets — the only portfolio content hand-off remaining
+## Final visual assets
 
 - [ ] Upload the original Vantage Automata architecture diagram.
 - [ ] Upload the original Jarvis AI ecosystem architecture diagram.
 - [ ] Upload the original Jarvis AI Business MVP diagram.
-- [ ] Produce the two short explainer videos using the scripts in `media/portfolio-demonstration-video-briefs.md` and add them to the repository if desired.
 
-The diagrams should be uploaded as original files, not recreated from memory. The videos must label the projects as concepts with implementation and testing not yet verified. No historical prototype video is required for the portfolio.
+The diagrams should be uploaded as original files, not recreated from memory. Optional demonstration videos may be added later as supplementary visual material. They must label the projects as concepts with implementation and testing not yet verified. No historical prototype video is required for the portfolio.
 
 ## Outside the portfolio completion boundary
 
@@ -39,4 +37,4 @@ These are future project or application activities, not blockers to completing t
 
 ## Completion standard
 
-The written portfolio is considered complete when its content, project boundaries, research limitations, navigation and cross-references are coherent. Adding the original diagrams and optional demonstration videos will complete the visual presentation; it will not convert either proposed system into a working product.
+The written portfolio is considered complete when its content, project boundaries, research limitations, navigation and cross-references are coherent. Adding the original diagrams will complete the core visual presentation; it will not convert either proposed system into a working product. Optional videos can provide additional context but are not required portfolio documents.
