@@ -1,45 +1,47 @@
 # Precious Apiri Dibagha
-## Technical Writer & Researcher
+## AI Systems Strategist, Technical Researcher & Documentation Writer
 
-I write technical documentation and research that help people understand software, systems and complex topics.
+I focus on understanding problems, thinking through how AI-enabled systems could address them, and explaining those ideas clearly.
 
-My main focus is **AI systems and software documentation**. I am also developing work in technical research, cloud infrastructure, open source, digital labour and global mobility.
+My work brings together strategic thinking, product and customer understanding, AI system architecture, implementation planning, research and technical documentation. I am particularly interested in how businesses and communities can use AI in practical, responsible ways.
 
-This repository brings those areas together through practical project documentation, research reports, technical guides and learning records. I want the work here to be useful and clear, not just impressive-looking. Where something is still an idea or a work in progress, I will say so.
+I do not present myself as a software engineer or claim to have independently built systems when I have not. My contribution is in analysing the problem, identifying who the system is for, shaping the proposed solution, mapping how its parts should work together, setting priorities and documenting the plan so that technical teams and collaborators can evaluate and implement it.
 
 ## Portfolio
 
 ### Projects
 
-- **[Vantage Automata](projects/vantage-automata/README.md)** — a human-supervised AI task system. The current priority is to define and build a small, testable MVP.
-- **[Jarvis AI](projects/jarvis-ai/README.md)** — documentation for a broader multi-agent business system concept. The architecture and agent roles will be documented before any unverified implementation claims are made.
-- **[Cloud Infrastructure and Open Source](projects/cloud-infrastructure-and-open-source/README.md)** — project overviews and technical documentation based on the existing research and materials.
+- **[Vantage Automata](projects/vantage-automata/README.md)** — an AI task-system concept shaped around a clear business need, human oversight and a practical MVP plan.
+- **[Jarvis AI](projects/jarvis-ai/README.md)** — strategic and architectural documentation for a proposed multi-agent business system.
+- **[Cloud Infrastructure and Open Source](projects/cloud-infrastructure-and-open-source/README.md)** — research and documentation exploring cloud infrastructure, open-source systems and how technical projects are organised.
 
 ### Research
 
-- **The Talent Paradox** — research on migration, digital work and global mobility, with a focus on Nigeria. The report is being reviewed for evidence, sources and balance.
+- **The Talent Paradox** — research on migration, digital work and global mobility, with a focus on Nigeria.
 - **AI Job Search Platforms** — research into platforms and tools in this area.
-- **Research Methodology** — notes on source selection, checking, evidence and limitations.
+- **Research Methodology** — notes on source selection, evidence checking and limitations.
 
-### Technical guides and writing samples
+### Technical writing
 
-The repository also includes software documentation examples, FAQs, user guides, README guidance and documentation reviews. These samples will be revised to make their scope and factual basis clear.
+The repository also includes software overviews, FAQs, user-guide examples, README guidance and documentation reviews.
 
-## How I approach the work
+## How I contribute
 
-- Explain technical subjects in plain, direct language.
-- Check factual claims instead of relying on confident-sounding wording.
-- Make instructions practical and specific.
-- Record limitations and distinguish a proposal from something that has been built or tested.
-- Improve documents through review rather than describing every early draft as finished.
+- Understand the problem and the people or businesses affected by it.
+- Research the subject, users, market and existing approaches.
+- Develop a clear system concept and explain its architecture.
+- Break a broad idea into realistic stages and priorities.
+- Identify risks, dependencies, constraints and questions that need technical validation.
+- Prepare requirements, workflows, implementation plans and supporting documentation.
+- Work with developers and open-source contributors by giving them a clear explanation of the intended outcome.
 
-## Project status
+## Accuracy and project status
 
-Work in this repository may be labelled **concept**, **specified**, **in progress**, **prototyped**, **tested** or **deployed**. These labels describe the evidence available; they are not interchangeable.
+A concept, architecture or implementation plan is not the same as a working product. Each project is labelled according to the evidence available. Where code has not been built or tested, that will be stated clearly.
 
 ## About
 
 **Precious Apiri Dibagha**  
-Technical Writer & Researcher
+AI Systems Strategist | Technical Researcher | Documentation Writer
 
-The portfolio is being developed as a record of practical work, technical learning and research.
+This portfolio is a record of strategic project work, research, system thinking and technical communication.
