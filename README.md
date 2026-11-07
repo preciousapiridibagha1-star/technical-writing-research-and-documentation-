@@ -22,8 +22,7 @@ Both projects are self-directed. They represent my own exploration and strategic
 ### Research
 
 - **[Research Portfolio](research/README.md)** — research scope and evidence standards.
-- **The Talent Paradox** — planned research into migration, digital work and global mobility, with a focus on Nigeria; the original report still needs to be recovered and checked before this can be presented as a completed research sample.
-- **[AI Job-Search Platforms: 2026 Comparison](research/ai-job-search-platforms/ai-job-search-platforms-comparison-2026.md)** — updated comparison of four platforms, including current feature and pricing checks, limitations and a record of corrections.
+- **[AI Job-Search Platforms: Updated Comparison, November 2026](research/ai-job-search-platforms/updated-comparison-november-2026.md)** — updated comparison of four platforms, including current feature and pricing checks, limitations and a record of corrections.
 - **AI Job Search Platforms** — research into platforms and tools in this area.
 - **[Research Methodology](research/research-methodology/research-methodology.md)** — source selection, evidence checking, analytical approach and limitations.
 
@@ -45,6 +44,10 @@ Both projects are self-directed. They represent my own exploration and strategic
 - **[n8n Technical Project Overview](projects/cloud-infrastructure-and-open-source/project-overviews/n8n-workflow-automation-overview.md)** — explains where workflow automation may fit in an AI system, without claiming a tested integration.
 - **[Cloud Infrastructure Fundamentals](projects/cloud-infrastructure-and-open-source/project-overviews/cloud-infrastructure-fundamentals.md)** — conceptual overview of compute, storage, networking, databases, identity, monitoring and shared responsibility.
 - **[Open-Source Contributions](contributions/open-source/README.md)** — contribution process and evidence standard. No external contribution is claimed unless a verifiable submission exists.
+
+## Demonstration media
+
+- [Portfolio Demonstration Video Briefs](media/portfolio-demonstration-video-briefs.md) — short, accuracy-controlled scripts for future Vantage Automata and Jarvis AI explainers. The videos and original diagrams are the final visual assets to add.
 
 ## How I approach a project
 
