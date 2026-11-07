@@ -23,6 +23,7 @@ A section is not complete simply because a folder or README exists. Completion r
 - [x] Initial technical decision records.
 - [x] Proposed implementation plan.
 - [x] Test plan.
+- [x] Requirements-to-tests traceability matrix linking proposed requirements, workflow states, verification steps and evidence.
 - [ ] Inspect historical interface video and capture only verifiable visual evidence.
 - [ ] Add original architecture image after it is supplied and checked.
 - [ ] Decide whether to rebuild, collaborate on or commission a fresh prototype.
