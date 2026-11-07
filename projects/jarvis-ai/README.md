@@ -46,7 +46,7 @@ This is strategic and systems-design work. It is not a claim that the author ind
 - [First MVP Use-Case Decision Record](decision-records/first-mvp-use-case-decision.md)
 - [Proposed System Architecture](architecture/system-overview.md)
 
-The original ecosystem and AI Business MVP diagrams will be added as the final visual assets. Short explainer-video production briefs are in [Portfolio Demonstration Video Briefs](../../media/portfolio-demonstration-video-briefs.md).
+The original ecosystem and AI Business MVP diagrams will be added as the final visual assets for this project.
 
 ## Technology and evidence boundaries
 
