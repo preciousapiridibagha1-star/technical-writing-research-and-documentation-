@@ -1,11 +1,14 @@
 # Research Portfolio
 
-This section contains research projects and the methods used to produce them. Each research document should identify its question, scope, date, sources, method, findings, limitations and practical implications.
+This section contains research projects and the methods used to produce them. Each published research document identifies its question, scope, date, sources, method, findings, limitations and practical implications.
 
-## Research projects
+## Published research
 
-- **The Talent Paradox** — research into talent mobility, migration and digital work, with attention to Nigeria and the relationship between local opportunity and global labour markets.
-- **AI Job Search Platforms** — [Updated comparison, November 2026](ai-job-search-platforms/updated-comparison-november-2026.md). This replaces the earlier June 2026 comparison after checking pricing, country access, device support and unsupported reliability claims.
+- [AI Job-Search Platforms: Updated Comparison, November 2026](ai-job-search-platforms/updated-comparison-november-2026.md) — a source-checked desk-research comparison of Jobright, Sonara, LoopCV and Sorce. It records corrections to the earlier report and clearly identifies what has not been tested with live accounts, particularly access from Nigeria.
+
+## Research methodology
+
+- [Research Methodology](research-methodology/research-methodology.md) — source selection, evidence checking, analytical approach and limitations.
 
 ## Research standards
 
@@ -21,4 +24,4 @@ Research should:
 9. State what the research cannot establish.
 10. Update findings when the underlying information changes.
 
-The presence of a source in a bibliography does not automatically mean it supports every claim. Claims should be traceable to the relevant evidence.
+The presence of a source in a bibliography does not automatically mean it supports every claim. Claims should be traceable to the relevant evidence. Draft material that does not meet this standard is not presented as a completed research sample.
