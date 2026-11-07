@@ -16,18 +16,18 @@ Yes. Mozilla Foundation's official 2027 call for applications explicitly lists *
 
 This verifies that SRHIN is named by Mozilla as a host in this call. It does **not** mean SRHIN independently awards the fellowship, guarantees selection, or can collect an application fee. The application route is Mozilla's official Letter of Intent form linked from Mozilla's call page. Do not pay an intermediary or send money to anyone claiming to secure a place.
 
-## 2. Important distinction: Raising p(bloom) versus Embedded
+## 2. Important distinction: programme focus areas and fellowship tracks
 
-Mozilla describes **Raising p(bloom)** as one of the 2027 focus areas, centred on increasing the likelihood that AI produces broadly beneficial outcomes. However, the official Letter of Intent form presents the focus-area selection under **Track II: Independent Fellows**. Track I applicants instead select an Embedded host organisation and explain why that host is appropriate.
+Mozilla's 2027 call describes **Raising p(bloom)** as a programme focus area concerned with increasing the likelihood that AI produces broadly beneficial outcomes. The call separately describes the fellowship tracks: **Track I — Embedded Fellows** and **Track II — Independent Fellows**.
 
-Therefore, this application should not be framed as an Independent Fellowship proposal under the Raising p(bloom) label. The stronger and more accurate route is:
+Do not treat a focus area and a fellowship track as interchangeable categories. For this preparation, the application route under consideration is:
 
 - Apply to **Track I: Embedded Fellow**.
 - Select **Slum & Rural Health Initiative** as the host.
-- Develop a technically grounded, public-benefit project aligned with SRHIN's confirmed host brief.
-- Explain how the project could help AI produce better outcomes for people, without claiming that the project is formally classified by Mozilla as the Raising p(bloom) track.
+- Develop a technically grounded, public-benefit project that responds to the host-specific challenge in the official call.
+- Explain any relationship to Mozilla's broader focus areas accurately, without claiming that Raising p(bloom) is exclusive to one track.
 
-The thematic overlap is real; the track classification is different.
+The host-specific challenge and the current official application form should guide the proposal.
 
 ## 3. What SRHIN publicly works on
 
@@ -116,20 +116,27 @@ The applicant does **not** currently demonstrate:
 
 The application must not imply otherwise. Any health-related technical work must be co-designed with SRHIN and qualified practitioners, with appropriate consent, privacy, safeguarding and clinical oversight.
 
-## 8. A sensible project direction to investigate — not a claim about SRHIN's brief
+## 8. A sensible project direction to investigate — not approved by SRHIN
 
-A plausible direction for discussion with the host is a **community-centred assurance and feedback layer for AI-supported mental-health information or screening**.
+A plausible direction for discussion with the host is a **community-centred mental-health data governance toolkit or demonstrator**.
 
-Potential questions to investigate:
-- How can users understand what an AI-supported mental-health tool can and cannot do?
-- How can consent, data minimisation, privacy and withdrawal be made understandable?
-- How should a tool communicate uncertainty and avoid presenting screening as diagnosis?
-- How can culturally and linguistically appropriate content be reviewed by local experts and people with lived experience?
-- When should the system stop and refer a person to a qualified human?
-- How can errors, complaints, bias and user feedback be documented and acted upon?
-- What evidence would demonstrate that the tool improves access or user understanding without creating new risks?
+A third-party guide reproduces what it describes as the SRHIN host challenge: exploring community-owned tools for governance, consent, privacy and benefit-sharing, piloted with young people, people with lived experience and community health workers, with the longer-term aim of a mental-health data commons. The full official host-specific RFP text should be checked before treating this reproduction as definitive.
 
-This is only a research hypothesis. It must be changed if SRHIN's official host brief identifies a different problem. It is not appropriate to build a mental-health chatbot or screening model independently and then claim it is clinically safe.
+A small technical exploration could investigate:
+
+- Purpose-specific, plain-language consent records.
+- How participants can review or change permissions.
+- How access requests are checked against permitted purposes.
+- How decisions, access and permission changes are made transparent and auditable.
+- How community governance and benefit-sharing decisions might be represented without reducing them to a checkbox.
+- What requires human review, community authority, legal advice or specialist privacy expertise.
+
+**Proposed portfolio demonstrator:** a small application using synthetic data. A fictional participant grants or declines permission for a defined use; a fictional researcher requests access; the system checks the request against the permission; and the application records the decision for review.
+
+This would demonstrate a limited technical workflow, not a production data commons, a legal consent system or proof of community ownership. Software alone cannot establish legitimate community governance. The design would need participatory input and review by SRHIN, community members, people with lived experience, and relevant health, ethics and privacy specialists.
+
+This is a working hypothesis, not an SRHIN-approved project or confirmed fellowship deliverable. It must be revised if the official host brief or direct discussion with SRHIN establishes a different priority.
+
 
 ## 9. Portfolio evidence plan
 
@@ -237,11 +244,13 @@ There are still reasons to be cautious:
 
 The portfolio should demonstrate the ability to contribute to a technically grounded, responsible-AI project without pretending to be a clinician or production ML engineer. The highest-value next artefacts are:
 
-1. A source-linked SRHIN institutional due-diligence brief (this section).
-2. A project-specific technical proposal only after the official host brief is inspected.
-3. A responsible-AI requirements specification with explicit intended use, non-use, user groups, consent, data minimisation, language/accessibility, uncertainty, escalation and human oversight.
-4. A risk register with owners and residual-risk fields. Clinical and safeguarding risks must be reviewed by qualified professionals.
-5. A testable evaluation protocol and a small non-clinical demonstration using synthetic or public non-sensitive data.
-6. One real open-source contribution with a public issue/PR and actual review status.
+1. A source-linked SRHIN challenge and institutional research brief, with third-party reproductions clearly distinguished from the official RFP.
+2. A project-specific requirements specification for a community-centred data-governance demonstrator.
+3. A small working prototype using synthetic data only, with purpose-specific consent, access-request checks and an auditable decision history.
+4. A system architecture and data-flow diagram labelled according to what is proposed versus implemented.
+5. Automated tests and a concise test report showing actual results and known limitations.
+6. A privacy, security, misuse and safeguarding review proportionate to the prototype; specialist questions must remain explicitly unresolved until reviewed by qualified people.
+7. One genuine open-source contribution with a public issue/PR and actual review status.
+8. A community engagement and evaluation plan. Do not claim interviews, co-design or consent before they occur.
 
-Do not add invented testimonials, invented partnerships, simulated user research represented as real, fabricated GitHub contributions, or claims that proposed diagrams are deployed systems.
+The first prototype is a learning and evidence-building step. It must not use real patient data, make clinical claims or be presented as an SRHIN deployment.
