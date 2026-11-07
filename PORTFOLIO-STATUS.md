@@ -46,11 +46,13 @@ A section is not complete simply because a folder or README exists. Completion r
 - [x] Research portfolio index.
 - [x] Research methodology and evidence standard.
 - [ ] Locate and review existing Talent Paradox research material.
+- [ ] Recover the original Talent Paradox report from the user's files and review its full content; the current Library search did not return the report itself.
 - [ ] Produce a complete, sourced Talent Paradox research brief.
 - [x] Locate the existing June 2026 AI job-search platform comparison report.
-- [ ] Audit its claims, methodology, citations and platform status; correct or remove unsupported findings.
-- [ ] Produce a current, sourced AI job-search platform review.
-- [ ] Add source logs, dates, limitations and executive summaries.
+- [x] Audit its claims, methodology, citations and platform status; record unsupported findings and corrections.
+- [x] Produce an updated AI job-search platform comparison using official product, pricing, legal and app-store pages.
+- [x] Add access dates, sources, limitations and an executive summary to the updated platform comparison.
+- [ ] Complete a practical country-access check for Nigerian users; no live account tests are claimed.
 - [ ] Check every factual claim and reference.
 
 ## 5. Technical writing and documentation
@@ -58,25 +60,25 @@ A section is not complete simply because a folder or README exists. Completion r
 - [x] Project README writing guide.
 - [x] Illustrative FAQ sample.
 - [x] Documentation review checklist.
-- [ ] Add a complete user-guide sample for a clearly identified, accessible product or a verified project.
-- [ ] Add a before-and-after README/documentation improvement sample, with source and changes identified.
+- [x] Add an illustrative Vantage task-approval user-guide sample, clearly labelled as a proposed experience.
+- [x] Add a before-and-after documentation sample with its example source and limitations identified.
 - [ ] Final consistency and editorial review.
 
 ## 6. Cloud infrastructure and open source
 - [x] Section index.
 - [x] Cloud infrastructure fundamentals overview.
 - [x] Open-source contribution process and evidence standard.
-- [ ] Add a sourced technical project overview for a selected open-source/cloud project.
+- [x] Add a sourced n8n technical project overview, clearly labelled as desk research rather than a hands-on test.
 - [ ] Add a hands-on guide only after following and verifying the steps.
 - [ ] Identify a suitable documentation issue in an external project.
 - [ ] Submit a genuine contribution and record its actual status, if pursued.
 
 ## 7. Fellowship alignment and final presentation
-- [ ] Review the portfolio against all eight target opportunities in the master plan.
-- [ ] Map evidence to each opportunity's selection criteria without creating eight separate portfolios.
-- [ ] Identify missing evidence and prioritise the highest-value gaps.
-- [ ] Check current eligibility, deadlines and application requirements from official sources.
-- [ ] Prepare a concise portfolio summary and project descriptions.
+- [x] Review the portfolio against all eight target opportunities in the master plan.
+- [x] Map existing evidence and gaps to each opportunity in one shared evidence map.
+- [x] Identify missing evidence and prioritise the highest-value gaps.
+- [x] Check current programme information and deadlines against official sources on 7 November 2026; recheck before applying.
+- [x] Prepare a concise portfolio introduction and project descriptions.
 - [ ] Conduct a final quality, link and consistency audit.
 
 ## 8. Definition of complete
