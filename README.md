@@ -30,7 +30,8 @@ Both projects are self-directed. They represent my own exploration and strategic
 
 - **[Technical Writing Samples](technical-guides/README.md)** — documentation standards and sample types.
 - **[How to Write a Useful Project README](technical-guides/README-guides/how-to-write-a-project-readme.md)** — a practical guide and editorial checklist.
-- Further FAQ, user-guide and documentation-review samples will be added as standalone, clearly labelled examples.
+- **[AI-Assisted Task Approval FAQ](technical-guides/FAQs/ai-assisted-task-approval-concept-faq.md)** — an illustrative FAQ for a proposed system.
+- **[Documentation Review Checklist](technical-guides/documentation-examples/documentation-review-checklist.md)** — an editorial and technical review framework.
 
 ### Cloud infrastructure and open source
 
