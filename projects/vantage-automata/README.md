@@ -71,3 +71,8 @@ The proposed first version keeps a person involved before any action is taken. A
 The concept, initial problem analysis, requirements, architecture proposal, API contract, workflow, risk register, implementation plan and test plan are documented. Implementation, user validation and testing remain outstanding.
 
 The next evidence milestone is a fresh, inspectable implementation or a documented technical review. Any future claim that the system is implemented or tested must be supported by a working build and recorded results.
+
+
+## Verification planning
+
+- [Requirements-to-tests traceability matrix](testing/requirements-to-tests-traceability.md) — maps the proposed MVP controls to observable checks and evidence to retain. The checks are planned, not executed.
