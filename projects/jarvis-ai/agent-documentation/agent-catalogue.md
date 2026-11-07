@@ -1,86 +1,113 @@
-# Jarvis AI — Proposed Agent Catalogue
+# Jarvis AI — Agent Catalogue Based on the Supplied Architecture
 
-**Status:** Conceptual roles only. No agents are currently verified as configured or operational.
+**Status:** Proposed roles transcribed and organised from the user's Jarvis AI architecture outline and diagrams. No agents are verified as configured or operational.
 
 ## Purpose
 
-This catalogue defines possible responsibilities for agents in the proposed Jarvis AI ecosystem. An agent should exist only where a real business need justifies it. The catalogue is not a recommendation to deploy every role.
+This catalogue follows the roles identified in the existing Jarvis AI architecture baseline. It does not add new agent categories. The ecosystem diagram and AI Business System MVP diagram are related architecture views, and some labels differ between them.
 
-## 1. Owner / Human Decision-Maker
+## 1. Owner
 
-- **Purpose:** Set business direction and retain authority over consequential decisions.
-- **Inputs:** Business goals, priorities, constraints and reports.
-- **Outputs:** Approved objectives, decisions and delegated authority.
-- **Boundaries:** Does not delegate unrestricted financial, legal, employment or other consequential authority to an AI system.
+- **Role shown:** Supplies business goals and instructions, reviews results and retains final approval in the MVP view.
+- **Inputs:** Business objectives, priorities, constraints and instructions.
+- **Outputs:** Approved goals, clarifications and decisions.
+- **Boundary:** The owner retains authority over consequential decisions. The system must not infer approval from an instruction alone.
 
-## 2. Lead / Orchestrator Agent
+## 2. Jarvis CEO Agent / Lead Agent
 
-- **Purpose:** Interpret an approved goal, break it into bounded tasks, coordinate specialist work and present consolidated results.
-- **Inputs:** Owner-approved objectives, task context and specialist outputs.
-- **Outputs:** Task plans, assignments, consolidated reports and escalation requests.
-- **Boundaries:** Cannot expand its own permissions, approve high-impact actions or conceal uncertainty. It should request human direction when instructions conflict or scope is unclear.
+- **Role shown:** Receives the owner's instruction, interprets it, decomposes it into tasks, delegates to specialist agents, reviews outputs and reports results.
+- **Inputs:** Owner instruction, business context and defined operating constraints.
+- **Outputs:** Task plan, delegated assignments, reviewed results and owner-facing report.
+- **Boundary:** It coordinates work but does not create its own authority or bypass approval requirements. Ambiguity, conflicts and consequential actions must be escalated.
 
-## 3. Operations Agent
+## 3. Executive / Management agents
 
-- **Purpose:** Assist with defined operational workflows and identify incomplete or delayed tasks.
-- **Inputs:** Approved process documentation, task status and permitted operational data.
-- **Outputs:** Status summaries, exception reports and proposed next steps.
-- **Boundaries:** No changes to critical operational records without explicit authority and appropriate controls.
+### COO / Operations Agent
+- **Role shown:** Monitors workflows and automations, triggers or supervises tasks, and checks completion.
+- **Inputs:** Approved operational goals, workflow status and permitted business data.
+- **Outputs:** Task status, exception reports and operational recommendations.
+- **Open specification:** Define which workflows it may initiate, which are read-only and which require owner approval.
 
-## 4. Customer Support Agent
+### CFO / Finance Agent
+- **Role shown:** Tracks revenue, fees, commissions, expenses and profit.
+- **Inputs:** Authorised financial records and agreed calculation rules.
+- **Outputs:** Financial summaries, calculations and exception flags for review.
+- **Boundary:** The diagram's tracking role does not authorise transfers, payments, accounting sign-off or independent financial decisions. Data access and prohibited actions must be specified.
 
-- **Purpose:** Assist with routine customer enquiries using approved business information.
-- **Inputs:** Approved FAQs, product/service information and the customer's enquiry within permitted data boundaries.
-- **Outputs:** Draft or routine responses, information references and escalation recommendations.
-- **Boundaries:** Escalate complaints, sensitive cases, policy exceptions, low-confidence answers and requests requiring human judgement. Do not invent policy or promise unauthorised outcomes.
-
-## 5. Sales Support Agent
-
-- **Purpose:** Help organise incoming enquiries and prepare relevant product or service information.
-- **Inputs:** Approved product details, sales criteria and enquiry information.
-- **Outputs:** Enquiry summaries, qualification suggestions and draft follow-ups.
-- **Boundaries:** No misleading claims, unauthorised discounts, binding commitments or contact without applicable consent and business approval.
-
-## 6. Finance Support Agent
-
-- **Purpose:** Organise approved financial information and prepare summaries for review.
-- **Inputs:** Authorised records and defined reporting instructions.
-- **Outputs:** Draft summaries, categorisation suggestions and exception flags.
-- **Boundaries:** No independent payments, transfers, accounting sign-off or financial advice. Authorised humans retain control.
-
-## 7. Analytics Agent
-
-- **Purpose:** Summarise defined business metrics and identify patterns for investigation.
+### Analytics Agent
+- **Role shown:** Tracks revenue, traffic, sales, conversion and product performance.
 - **Inputs:** Approved datasets, metric definitions and reporting periods.
-- **Outputs:** Reports, charts or questions for further analysis.
-- **Boundaries:** Must identify missing data, avoid unsupported causal claims and distinguish observed patterns from interpretation.
+- **Outputs:** Performance summaries, trends and questions for investigation.
+- **Open specification:** Define authoritative data sources, metric calculations, refresh frequency and treatment of missing data.
 
-## 8. Research Agent
+### Customer / Customer Support Agent
+- **Role shown:** Handles FAQs, installation help, download issues and customer queries.
+- **Inputs:** Approved product/service knowledge and permitted customer enquiry information.
+- **Outputs:** Routine answers, support guidance and escalation requests.
+- **Boundary:** Define approved knowledge, privacy limits, confidence thresholds and human escalation for complaints, unusual cases or policy exceptions.
 
-- **Purpose:** Gather and organise information relevant to a defined business question.
-- **Inputs:** Research brief, source criteria and permitted sources.
-- **Outputs:** Source log, evidence summary, comparison and unresolved questions.
-- **Boundaries:** Must distinguish primary from secondary sources, record dates, flag uncertainty and never fabricate citations.
+### Sales Agent — Jarvis ecosystem diagram
+- **Role shown:** Supports the buyer journey, WhatsApp, deployment offer and custom-project conversion.
+- **Inputs:** Approved offer information, customer enquiry and agreed sales criteria.
+- **Outputs:** Buyer guidance, enquiry summaries and proposed next steps.
+- **Boundary:** Must not make unauthorised promises, discounts or binding commitments.
 
-## 9. E-commerce Operations Agent
+### Automation Agent — AI Business System MVP diagram
+- **Role shown:** Triggers next tasks and automations and keeps business processes running.
+- **Inputs:** Approved task plan, defined triggers and permitted workflow state.
+- **Outputs:** Workflow triggers, status updates and automation results.
+- **Open decision:** Do not assume this is identical to the Sales Agent. The architecture owner must decide whether these remain separate roles, are renamed, or are scoped differently in the MVP.
 
-- **Purpose:** Assist with bounded catalogue, product-information and order-enquiry tasks.
-- **Inputs:** Approved catalogue information, process rules and permitted order data.
-- **Outputs:** Draft product updates, enquiry summaries and workflow recommendations.
-- **Boundaries:** No unapproved price, stock, refund, order or customer-record changes.
+## 4. Business / Execution agents
 
-## Agent governance requirements
+### Product Agent
+- **Role shown:** Researches niches and creates or improves products, templates and assets.
+- **Example outputs shown:** Product assets, templates and packaged files.
+- **Open specification:** Define quality checks, intellectual-property review, source verification and approval before publication.
 
-Every agent specification should define:
-- Business purpose and owner.
-- Permitted tasks and prohibited tasks.
-- Approved knowledge and data sources.
-- Inputs and outputs.
-- Tools and access permissions.
+### Marketplace Agent
+- **Role shown:** Manages storefronts, uploads, pricing, descriptions and optimisation.
+- **Example outputs:** Published or updated marketplace listings.
+- **Boundary:** Live publishing, price changes and catalogue modifications require explicit permissions and appropriate approval.
+
+### Content Agent
+- **Role shown:** Creates traffic-oriented content ideas and social content.
+- **Example outputs:** Content calendar, captions and post ideas.
+- **Boundary:** Define brand rules, fact checking, platform requirements and human review before publication.
+
+### Video Agent
+- **Role shown:** Turns screenshots or recordings into promotional or showcase videos.
+- **Example output:** Ready-to-post video.
+- **Open specification:** Define asset rights, brand requirements, quality review and approval before publishing.
+
+### Affiliate Agent
+- **Role shown:** Finds or recruits promoters and tracks performance.
+- **Example outputs:** Affiliate database and performance information.
+- **Boundary:** Define permitted data, consent, outreach rules, tracking methods and approval of commercial terms.
+
+## 5. Shared requirements for every agent
+
+Before implementation, each role needs:
+- A named business owner.
+- A defined purpose and trigger.
+- Permitted and prohibited tasks.
+- Approved inputs and data sources.
+- Expected outputs and quality criteria.
+- Tool access and permissions.
 - Human approval and escalation conditions.
 - Error handling and logging.
-- Performance measures and review owner.
+- Performance measures and review process.
 
-## Architecture note
+## 6. Architecture discrepancies to resolve
 
-The roles above are a proposed catalogue. A practical MVP should select one business problem and only the minimum agent responsibilities required to address it. Multiple agents should not be introduced merely to make the architecture appear sophisticated.
+| Topic | Current evidence | Decision still required |
+|---|---|---|
+| Sales vs Automation | Sales appears in the broader Jarvis diagram; Automation appears in the MVP diagram. | Decide whether separate roles, a renamed role or a scoped split is intended. |
+| Customer naming | The diagrams use Customer Agent / Customer Support labels. | Select one canonical name and define the scope. |
+| Delegation | The Lead Agent delegates to executive and business agents. | Define exact hand-offs and whether specialist agents may delegate further. |
+| Autonomy | The diagrams include automation and execution concepts. | Define permission levels, approval thresholds and stop controls. |
+| Dashboard metrics | Illustrative business metrics appear in the diagrams. | Label sample figures as illustrative until connected to verified data. |
+
+## Evidence boundary
+
+This catalogue is a structured interpretation of the supplied architecture outline. It is not proof that any agent, tool or integration exists in a running system. The detailed permissions and behaviours remain to be specified and technically validated.
