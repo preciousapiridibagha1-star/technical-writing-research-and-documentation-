@@ -5,6 +5,7 @@ This section brings together cloud infrastructure research, open-source project 
 ## Project overviews
 
 - [Cloud Infrastructure Fundamentals](project-overviews/cloud-infrastructure-fundamentals.md) — a conceptual introduction to compute, storage, networking, databases, identity and access management, monitoring, security and cost considerations.
+- [n8n Technical Project Overview](project-overviews/n8n-workflow-automation-overview.md) — an overview of workflow automation, its possible role in AI systems and the controls that need to be considered.
 
 ## Technical documentation
 
