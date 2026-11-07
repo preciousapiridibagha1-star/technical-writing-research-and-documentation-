@@ -5,7 +5,7 @@ This section contains research projects and the methods used to produce them. Ea
 ## Research projects
 
 - **The Talent Paradox** — research into talent mobility, migration and digital work, with attention to Nigeria and the relationship between local opportunity and global labour markets.
-- **AI Job Search Platforms** — a review of platforms and tools that use AI in job discovery, matching or application support.
+- **AI Job Search Platforms** — [Updated comparison, November 2026](ai-job-search-platforms/updated-comparison-november-2026.md). This replaces the earlier June 2026 comparison after checking pricing, country access, device support and unsupported reliability claims.
 
 ## Research standards
 
