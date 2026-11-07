@@ -1,111 +1,96 @@
-# Portfolio Structure and Cleanup Plan
+# Portfolio Structure and Build Plan
 
 **Owner:** Precious Apiri Dibagha  
 **Working branch:** `portfolio/structure-and-cleanup`  
-**Status:** Proposed structure; existing work is being preserved while it is reviewed.
+**Status:** Active build; existing material is being reviewed and moved carefully.
 
 ## Portfolio positioning
 
 **Precious Apiri Dibagha — Technical Writer & Researcher**
 
 Primary focus: **AI systems and software documentation**  
-Additional areas: **technical research, open source, digital labour and global mobility**
+Additional focus: **technical research, cloud infrastructure, open source, digital labour and global mobility**
 
-This portfolio will bring together evidence of clear technical communication, careful research, practical system documentation and learning through real projects. It will distinguish completed work from concepts, work in progress and proposed contributions.
+The portfolio will show real examples of technical writing, research and system design. It will be honest about what is complete, in progress, conceptual, tested or deployed.
 
-## Proposed repository structure
+## Agreed repository structure
+
+This is the structure we will follow:
 
 ```text
 /
 ├── README.md
-├── PORTFOLIO_STRUCTURE.md
-├── technical-documentation/
-│   ├── cloud-ai-assistants/
-│   │   ├── README.md
-│   │   ├── product-overview.md
-│   │   ├── faq.md
-│   │   └── user-guide.md
-│   └── documentation-quality/
-│       └── documentation-review.md
-├── systems/
+├── projects/
 │   ├── vantage-automata/
 │   │   ├── README.md
-│   │   ├── requirements/
 │   │   ├── architecture/
+│   │   ├── requirements/
 │   │   ├── workflows/
 │   │   ├── implementation/
-│   │   └── testing/
-│   └── jarvis-ai/
+│   │   ├── testing/
+│   │   └── user-guide/
+│   ├── jarvis-ai/
+│   │   ├── README.md
+│   │   ├── architecture/
+│   │   ├── agent-documentation/
+│   │   ├── system-workflows/
+│   │   └── technical-specifications/
+│   └── cloud-infrastructure-and-open-source/
 │       ├── README.md
-│       ├── architecture/
-│       ├── agent-specifications/
-│       └── workflows/
+│       ├── project-overviews/
+│       └── technical-documentation/
 ├── research/
 │   ├── talent-paradox/
-│   │   ├── README.md
-│   │   └── report.md
-│   ├── cloud-ai-assistants/
-│   │   └── research-brief.md
-│   └── ai-job-search-platforms/
-│       └── README.md
-├── open-source/
-│   ├── contributions/
-│   └── documentation-reviews/
-└── learning/
-    └── technical-development/
+│   ├── ai-job-search-platforms/
+│   └── research-methodology/
+├── technical-guides/
+│   ├── README-guides/
+│   ├── FAQs/
+│   ├── user-guides/
+│   └── documentation-examples/
+├── contributions/
+│   └── open-source/
+└── learning-and-development/
+    └── technical-skills/
 ```
 
-## Why these sections exist
+Folders will be added when there is real content for them. Git does not track empty folders, so we will use short README or index files where a folder needs an explanation before its first full document is ready.
 
-- **Technical documentation:** groups the product overview, FAQ, user guide and documentation audit as one coherent sample set. The current samples describe a general cloud AI assistant rather than a named, verified product; that limitation will be made clear and the examples will be improved.
-- **Systems:** gives Vantage Automata and Jarvis AI separate project spaces. Vantage Automata remains the practical MVP priority in the governing Master Portfolio, Learning & Fellowship Plan. Jarvis AI is documented as a related system vision and MVP concept, not presented as a deployed product unless implementation evidence supports that claim.
-- **Research:** separates policy research from technical research. The Talent Paradox will receive a source and argument review before it is presented as a fellowship-quality policy paper.
-- **Open source:** records real contributions and reviews only. Planned contributions will not be described as completed.
-- **Learning:** records relevant technical learning and evidence of applied practice without turning the portfolio into a list of courses.
+## What belongs where
 
-## Existing files found at the repository root
+- **Vantage Automata:** the main practical MVP. Its documentation will cover requirements, architecture, workflow, implementation notes, tests and a user guide. The first demonstrable slice is: instruction → AI interpretation → proposed action → human approval or rejection → safe test action → result and audit log.
+- **Jarvis AI:** the broader multi-agent business-system concept. We will document the diagrams, agent roles, system workflows and technical specifications. We will not describe integrations or deployment as working until they have been implemented and tested.
+- **Cloud infrastructure and open source:** project overviews and technical material connected to the existing cloud infrastructure/open-source work.
+- **Research:** The Talent Paradox, the AI Job Search Platforms research and a transparent account of research methods and source checking.
+- **Technical guides:** the existing software overview, FAQ, user-guide and documentation examples. These are early samples and will be revised for accuracy, scope and usefulness.
+- **Contributions:** actual open-source contributions and documentation reviews. Planned contributions will not be presented as completed.
+- **Learning and development:** practical technical learning tied to work shown in the repository, not a padded list of courses.
 
-The current default branch contains:
+## Existing material to preserve and reorganise
 
-- `README.md`
-- `project-1-software-overview.md` — the actual GitHub path currently ends with a newline character.
-- `project-2-faq-document.md`
-- `project-3-user-guide.md` — the actual GitHub path currently ends with a newline character.
-- `project-4-research-brief.md` — the actual GitHub path currently ends with a newline character.
-- `project-5-documentation-review-report.md`
-- `the-talent-paradox-report.md` — the actual GitHub path currently ends with a newline character.
+The repository already contains a main README, four cloud-AI documentation samples, a documentation review report, The Talent Paradox report, and earlier cloud infrastructure/open-source research material. The current documentation samples are generic rather than documentation for a named, verified product. We will label that scope clearly unless we later choose and research a specific product.
 
-The newline characters in four filenames are accidental path issues and should be corrected during the migration. Their contents must be preserved.
+Some existing filenames contain accidental trailing newline characters. We will correct those paths while preserving the file contents and updating links.
 
-## Review findings to address
+## Build order
 
-1. The main README currently mixes the portfolio introduction with a long description of The Talent Paradox. It should become a concise landing page with clear links to projects and research.
-2. The current documentation samples are useful starting points, but they are generic and make broad technical claims. They need clearer scope, more precise explanations, sources where factual claims require them, and explicit limitations.
-3. The documentation review currently awards every item a Grade A and says the repository is fully verified. Those conclusions are not supported by the review evidence and must be replaced with specific, traceable findings.
-4. The Talent Paradox needs stronger sourcing, careful distinction between migration and remote digital work, and a more balanced policy analysis. Its current wording sometimes makes broad claims without evidence.
-5. The repository should clearly label each item as a completed sample, work in progress, concept, or planned contribution.
+1. Establish this agreed structure and replace the root README with a useful portfolio landing page.
+2. Create the Vantage Automata project home and define its first MVP slice.
+3. Create the Jarvis AI project home and record the current system concept without inventing implementation details.
+4. Move and improve the existing documentation samples and cloud/open-source material.
+5. Review and strengthen The Talent Paradox and the AI Job Search Platforms research.
+6. Add learning records and genuine open-source contributions as they happen.
+7. Review all links, claims and project-status labels before merging the working branch into `main`.
 
-## Migration principles
+## Quality rules
 
-- Preserve the existing files and their contents before changing paths.
-- Correct the four filenames that contain trailing newline characters.
-- Move documents into the structure above and update all internal links.
-- Do not create empty folders just to make the tree look complete; add project folders as their content is ready.
-- Do not claim that Vantage Automata or Jarvis AI is deployed, integrated or production-ready without evidence.
-- Do not claim an open-source contribution has been made until a real contribution is linked.
-- Keep this portfolio as one evidence base for the eight fellowships in the Master Portfolio, Learning & Fellowship Plan. Tailor application materials separately to each opportunity.
+- Use clear, natural language. Explain technical ideas fully without dressing them up in unnecessary jargon.
+- Separate facts, decisions, assumptions and recommendations.
+- Cite sources for external factual claims and record when important sources were checked.
+- Label work as **concept**, **specified**, **in progress**, **prototyped**, **tested** or **deployed**, as appropriate.
+- Do not claim that a workflow works until it has been run and tested.
+- Use mock data and safe test actions before connecting real accounts or taking consequential actions.
+- Do not claim an open-source contribution until there is a real contribution link.
+- Keep the work on this branch until it has been reviewed. The default branch remains untouched.
 
-## Immediate work sequence
-
-1. Finish the inventory and quality review of all existing repository files.
-2. Migrate and rename the existing files on this working branch, preserving their content.
-3. Rewrite the root README as the portfolio landing page and add project-level introductions.
-4. Improve the technical documentation samples and replace unsupported audit grades with a transparent review.
-5. Review and strengthen The Talent Paradox before featuring it prominently.
-6. Add Vantage Automata documentation in line with the Master Portfolio, Learning & Fellowship Plan, keeping the practical MVP as the priority.
-7. Document Jarvis AI separately and accurately as a system concept until implementation evidence exists.
-8. Review the branch changes before merging them into `main`.
-
-## Scope note
-
-This file is a working organisation plan, not a claim that all listed projects or folders already exist. The working branch keeps these initial changes separate from the current default branch while the repository is improved.
+This is the working structure and build plan, not a claim that every listed folder or project is already complete.
