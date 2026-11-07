@@ -45,10 +45,6 @@ Both projects are self-directed. They represent my own exploration and strategic
 - **[Cloud Infrastructure Fundamentals](projects/cloud-infrastructure-and-open-source/project-overviews/cloud-infrastructure-fundamentals.md)** — conceptual overview of compute, storage, networking, databases, identity, monitoring and shared responsibility.
 - **[Open-Source Contributions](contributions/open-source/README.md)** — contribution process and evidence standard. No external contribution is claimed unless a verifiable submission exists.
 
-## Demonstration media
-
-- [Portfolio Demonstration Video Briefs](media/portfolio-demonstration-video-briefs.md) — short, accuracy-controlled scripts for future Vantage Automata and Jarvis AI explainers. The videos and original diagrams are the final visual assets to add.
-
 ## How I approach a project
 
 1. Define the problem and identify the people affected.
