@@ -1,99 +1,92 @@
 # Vantage Automata — System Overview
 
-**Status:** Initial architecture proposal; not yet implemented or verified.
+**Status:** Proposed architecture; not implemented or technically verified.
 
-## 1. Overview
+## 1. What the system is intended to do
 
-The first version of Vantage Automata can be organised into five parts:
+Vantage Automata is designed as a human-supervised AI task system. A user gives an instruction, AI interprets it and prepares a proposed action, and the user decides whether that action should proceed.
 
-1. **User interface** — accepts the instruction and displays the AI proposal and final result.
-2. **Backend API** — receives requests, coordinates the workflow and controls which steps are allowed.
-3. **AI interpretation component** — turns the instruction into a structured proposal.
-4. **Approval and action control** — waits for the user's decision and permits only the approved safe test action.
-5. **Audit log** — records the request, proposal, decision and execution result.
+The architecture describes the intended responsibilities and information flow. It does not claim that the components have been connected or deployed.
 
-## 2. Proposed request flow
+## 2. Proposed system flow
 
 ```text
-User
-  |
-  v
-Frontend form
-  |
-  v
-Backend API
-  |
-  v
+User instruction
+      |
+      v
+User interface
+      |
+      v
+Application backend
+      |
+      v
 AI interpretation
-  |
-  v
-Response validation
-  |
-  v
-Proposal shown to user
-  |
-  +---- Reject ----> Record rejection ----> Stop
-  |
-  +---- Approve ---> Safe mock action
-                         |
-                         v
-                    Record result
-                         |
-                         v
-                    Show outcome
+      |
+      v
+Structured proposal and validation
+      |
+      v
+Human review
+   /       \
+Reject     Approve
+  |           |
+  v           v
+Record      Permission check
+decision        |
+  |             v
+Stop        Safe test action
+                |
+                v
+           Record outcome
 ```
 
-## 3. Component responsibilities
+## 3. Main architectural components
 
 ### User interface
 
-- Collect the user's instruction.
-- Show validation messages.
-- Display the AI's interpretation and proposed action.
-- Collect an explicit approval or rejection.
-- Display the final status.
+The interface would allow a person to submit an instruction, review what the AI understood, inspect the proposed action and make a decision.
 
-### Backend API
+### Application backend
 
-- Validate incoming requests.
-- Call the AI component or a clearly labelled mock.
-- Validate the returned structure.
-- Keep approval state under backend control.
-- Prevent the action adapter from running before approval.
-- Record workflow events.
+The backend would coordinate the workflow. It would validate input, communicate with the AI service, manage proposal status, enforce the approval requirement and record the outcome.
 
-### AI interpretation component
+### AI interpretation
 
-- Interpret the instruction.
-- Return a structured proposal.
-- Avoid claiming that an action has already happened.
-- Return an error or uncertain result when it cannot interpret the request safely.
+The AI component would turn the instruction into a structured proposal. It should not be treated as the authority that approves or executes an action.
 
-### Approval and action control
+### Human approval
 
-- Require an explicit decision.
-- Treat rejection as a terminal state for that proposal.
-- Allow only the defined mock action in the first version.
-- Prevent accidental duplicate execution.
+The user remains responsible for approving or rejecting the proposed action. A rejection should end that proposal's workflow.
 
-### Audit log
+### Action component
 
-At minimum, record a request identifier, instruction, proposal, decision, timestamp, action status and result. Avoid storing secrets or unnecessary personal information.
+The first prototype should use a mock action that does not change an external system. Any later real integration would require additional permissions, safeguards and testing.
 
-## 4. Important design boundary
+### Audit record
 
-The AI component proposes. The application controls approval and execution. The model response alone must never be treated as permission to perform an action.
+The system should record the instruction, proposal, decision, timestamps and result so that the workflow can be reviewed.
 
-## 5. Decisions still to make
+## 4. Key design principle
 
-- Whether the first implementation is backend/API-first or automation-platform-first.
-- Which language and framework will be used.
-- Which AI provider or mock response will be used initially.
-- Whether the first audit log is stored in a database or a simple development store.
-- How request identifiers and duplicate submissions will be handled.
+**AI recommends; the application enforces the rules; the human remains in control.**
 
-Choose one implementation route for the first MVP. Do not build two parallel versions before the first one works.
+This separation is central to the proposed design. A model response by itself must never count as permission to perform an action.
 
-## 6. Verification still required
+## 5. Questions for technical validation
 
-This diagram and description are a design proposal. They do not demonstrate a running application, a working AI connection, persistence or successful tests. Those claims can be updated only after implementation evidence is available.
+A developer or technical collaborator should validate:
+
+- The best framework and hosting approach for the first use case.
+- How proposal state and approval decisions should be stored.
+- How to validate AI output reliably.
+- How to prevent duplicate approvals and executions.
+- How errors, retries and timeouts should be handled.
+- What security controls are required before any external integration is considered.
+
+## 6. Evidence and limitations
+
+The previous Replit workspace and its downloaded source code are no longer available; the source export was corrupted and the project was deleted. A video of the earlier interface is available to the project owner and may help with visual reference.
+
+The video can support a description of the interface that was explored. It cannot verify backend behaviour, model integration, data storage, security or successful execution.
+
+This document is a strategic architecture proposal. It should be updated only when a new implementation has been built and its behaviour has been checked.
