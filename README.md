@@ -1,63 +1,70 @@
-# Technical Writing, Research, & Documentation Portfolio
+# Precious Apiri Dibagha
 
-## 🚀 Welcome
+## AI Systems Strategist | Technical Researcher | Technical Writing & Documentation
 
-Professional portfolio showcasing technical writing, rigorous research, and structured documentation briefs tailored for remote international opportunities (Outreachy & MPI).
+I am a self-directed researcher and systems thinker interested in how AI can be applied to real business and organisational problems. My work combines problem analysis, strategic technology evaluation, AI system concept development, architecture planning and technical communication.
 
----
+I begin with the problem rather than assuming that AI is the answer. I examine the people affected, the causes of the problem, the desired outcome and the constraints. Where AI may be appropriate, I explore suitable tools and system components, define how responsibilities could be organised, and document the proposed solution so that it can be assessed and, where appropriate, implemented by a technical team.
 
-## 📌 Core Skills & Professional Focus
+My contribution is strategic and documentary. I develop concepts, analyse requirements, map proposed architectures and workflows, consider risks and human oversight, and communicate technical ideas clearly. I do not claim to be a software engineer or to have independently coded, configured, integrated or deployed systems where that work has not been completed.
 
-* **Documentation Writing:** Explaining software tools, features, and workflows clearly in writing.
-* **README Writing & Optimization:** Creating clear documentation and structured layouts introducing software projects.
-* **FAQ Development:** Preparing comprehensive questions and answers that help users navigate products.
-* **User Guides:** Writing structured, step-by-step instructions for using software.
-* **Research Briefs:** Investigating subjects and presenting accurate, organized findings.
-* **Documentation Improvement:** Rewriting confusing instructions to make them clear and accessible.
+## Master portfolio
 
----
+This is one portfolio of self-directed projects, research and technical writing. It is intended to demonstrate a connected set of capabilities rather than a collection of unrelated samples.
 
-## 📂 Planned Portfolio Deliverables
+### Self-directed AI systems projects
 
-1. **Software Product Overview:** Demonstrates the ability to understand and explain technology.
-2. **Professional FAQ Document:** Highlights research and structured writing.
-3. **User Guide:** Demonstrates step-by-step technical communication.
-4. **Open-Source README Improvement:** Proves GitHub and Markdown proficiency.
-5. **Documentation Review Report:** Shows capability in identifying gaps and recommending improvements.
-6. **Open-Source Contribution:** Demonstrates the ability to work directly with a real project.
+- **[Vantage Automata](projects/vantage-automata/README.md)** — a human-supervised AI task-approval concept. The work covers problem analysis, MVP scope, requirements, proposed architecture, API contract, workflow, risk controls, implementation planning and test design. The earlier Replit workspace and source export are no longer available for verification; the current project is documented as a concept, not a working product.
+- **[Jarvis AI](projects/jarvis-ai/README.md)** — a broader proposed AI-enabled business operating ecosystem. The work explores business-problem diagnosis, agent responsibilities, lead-agent coordination, architecture, technology evaluation, human oversight and MVP prioritisation. Implementation is not verified.
 
----
+Both projects are self-directed. They represent my own exploration and strategic thinking; neither should be mistaken for a commissioned client delivery or a claim of independently implemented software.
 
-*Maintained by Precious Apiri Dibagha*
+### Research
 
----
+- **[Research Portfolio](research/README.md)** — research scope and evidence standards.
+- **[AI Job-Search Platforms: Updated Comparison, November 2026](research/ai-job-search-platforms/updated-comparison-november-2026.md)** — updated comparison of four platforms, including current feature and pricing checks, limitations and a record of corrections.
+- **AI Job Search Platforms** — research into platforms and tools in this area.
+- **[Research Methodology](research/research-methodology/research-methodology.md)** — source selection, evidence checking, analytical approach and limitations.
 
-# 🌍 The Talent Paradox: Global Mobility & Digital Labor
+### Technical writing and documentation
 
-**Author:** Precious Apiri Dibagha  
-**Target Focus:** Research Policy Fellowships (Migration Policy Institute & Outreachy)
+- **[Technical Writing Samples](technical-guides/README.md)** — documentation standards, a user-guide sample and a before-and-after documentation example.
+- **[How to Write a Useful Project README](technical-guides/README-guides/how-to-write-a-project-readme.md)** — a practical guide and editorial checklist.
+- **[AI-Assisted Task Approval FAQ](technical-guides/FAQs/ai-assisted-task-approval-concept-faq.md)** — an illustrative FAQ for a proposed system.
+- **[Documentation Review Checklist](technical-guides/documentation-examples/documentation-review-checklist.md)** — an editorial and technical review framework.
 
----
+### Fellowship alignment
 
-## 📄 About This Repository
+- **[Eight-Opportunity Evidence Map](fellowship-alignment/README.md)** — maps the same portfolio to all eight target opportunities and identifies the evidence still missing.
+- **[GovAI Applied Track 2027 Application Preparation](fellowship-alignment/govai-applied-track-2027-application-preparation.md)** — evidence-led application positioning, portfolio examples, gaps and submission checklist.
 
-This repository contains a rigorous policy research briefing exploring how developing economies—specifically Nigeria—navigate the dual-track reality of modern global mobility:
+### Cloud infrastructure and open source
 
-1. **The Physical Corridor:** Traditional migration, economic push factors, currency collapse, and the mechanics of diaspora remittances.
+- **[Cloud Infrastructure and Open Source](projects/cloud-infrastructure-and-open-source/README.md)** — project overviews and technical documentation.
+- **[n8n Technical Project Overview](projects/cloud-infrastructure-and-open-source/project-overviews/n8n-workflow-automation-overview.md)** — explains where workflow automation may fit in an AI system, without claiming a tested integration.
+- **[Cloud Infrastructure Fundamentals](projects/cloud-infrastructure-and-open-source/project-overviews/cloud-infrastructure-fundamentals.md)** — conceptual overview of compute, storage, networking, databases, identity, monitoring and shared responsibility.
+- **[Open-Source Contributions](contributions/open-source/README.md)** — contribution process and evidence standard. No external contribution is claimed unless a verifiable submission exists.
 
-2. **The Digital Corridor:** Borderless remote work, high-liquidity currency earnings, and digital career pathways that bypass physical visa friction.
+## Demonstration media
 
----
+- [Portfolio Demonstration Video Briefs](media/portfolio-demonstration-video-briefs.md) — short, accuracy-controlled scripts for future Vantage Automata and Jarvis AI explainers. The videos and original diagrams are the final visual assets to add.
 
-## 🔗 Read & Download
+## How I approach a project
 
-- **Read Online:** View the Full Markdown Report
-- **Download PDF:** Download the Formatted Policy Brief (PDF)
+1. Define the problem and identify the people affected.
+2. Research the context, existing approaches and relevant technologies.
+3. Separate the underlying causes from the visible symptoms.
+4. Assess whether AI is suitable and where human judgement must remain.
+5. Shape a proportionate system concept and explain its components.
+6. Define requirements, workflows, permissions, constraints and risks.
+7. Prioritise a realistic first stage and identify what needs technical validation.
+8. Document the proposal clearly enough for review and potential implementation.
 
-I will copy and paste the PDF text so why did you say download the PDF the PDF doesn't have link.
+## Evidence and project status
 
----
+I distinguish between research, proposals, plans, prototypes and verified implementations. A diagram is evidence of an architectural proposal; it is not proof of an integration. A test plan is not a test result. Where implementation or testing has not been verified, I state that explicitly and identify what evidence would be needed next.
 
-## 📄 Read the Report
+## About
 
-- **Read Online:** View the Full Markdown Report
+**Precious Apiri Dibagha**  
+AI Systems Strategist | Technical Researcher | Technical Writing & Documentation
