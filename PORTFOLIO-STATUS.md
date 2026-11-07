@@ -79,7 +79,9 @@ A section is not complete simply because a folder or README exists. Completion r
 - [x] Identify missing evidence and prioritise the highest-value gaps.
 - [x] Check current programme information and deadlines against official sources on 7 November 2026; recheck before applying.
 - [x] Prepare a concise portfolio introduction and project descriptions.
+- [x] Add a GovAI UK Summer Fellowship 2027 Applied Track application-preparation document, checked against the current official call on 7 November 2026.
 - [ ] Conduct a final quality, link and consistency audit.
+- [ ] Complete the final GovAI application review and submit the application before 22 November 2026 (submission remains the applicant's action).
 
 ## 8. Definition of complete
 The portfolio is ready for final presentation when:
