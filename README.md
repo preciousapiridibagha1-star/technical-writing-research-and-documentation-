@@ -1,63 +1,45 @@
-# Technical Writing, Research, & Documentation Portfolio
+# Precious Apiri Dibagha
+## Technical Writer & Researcher
 
-## 🚀 Welcome
+I write technical documentation and research that help people understand software, systems and complex topics.
 
-Professional portfolio showcasing technical writing, rigorous research, and structured documentation briefs tailored for remote international opportunities (Outreachy & MPI).
+My main focus is **AI systems and software documentation**. I am also developing work in technical research, cloud infrastructure, open source, digital labour and global mobility.
 
----
+This repository brings those areas together through practical project documentation, research reports, technical guides and learning records. I want the work here to be useful and clear, not just impressive-looking. Where something is still an idea or a work in progress, I will say so.
 
-## 📌 Core Skills & Professional Focus
+## Portfolio
 
-* **Documentation Writing:** Explaining software tools, features, and workflows clearly in writing.
-* **README Writing & Optimization:** Creating clear documentation and structured layouts introducing software projects.
-* **FAQ Development:** Preparing comprehensive questions and answers that help users navigate products.
-* **User Guides:** Writing structured, step-by-step instructions for using software.
-* **Research Briefs:** Investigating subjects and presenting accurate, organized findings.
-* **Documentation Improvement:** Rewriting confusing instructions to make them clear and accessible.
+### Projects
 
----
+- **[Vantage Automata](projects/vantage-automata/README.md)** — a human-supervised AI task system. The current priority is to define and build a small, testable MVP.
+- **[Jarvis AI](projects/jarvis-ai/README.md)** — documentation for a broader multi-agent business system concept. The architecture and agent roles will be documented before any unverified implementation claims are made.
+- **[Cloud Infrastructure and Open Source](projects/cloud-infrastructure-and-open-source/README.md)** — project overviews and technical documentation based on the existing research and materials.
 
-## 📂 Planned Portfolio Deliverables
+### Research
 
-1. **Software Product Overview:** Demonstrates the ability to understand and explain technology.
-2. **Professional FAQ Document:** Highlights research and structured writing.
-3. **User Guide:** Demonstrates step-by-step technical communication.
-4. **Open-Source README Improvement:** Proves GitHub and Markdown proficiency.
-5. **Documentation Review Report:** Shows capability in identifying gaps and recommending improvements.
-6. **Open-Source Contribution:** Demonstrates the ability to work directly with a real project.
+- **The Talent Paradox** — research on migration, digital work and global mobility, with a focus on Nigeria. The report is being reviewed for evidence, sources and balance.
+- **AI Job Search Platforms** — research into platforms and tools in this area.
+- **Research Methodology** — notes on source selection, checking, evidence and limitations.
 
----
+### Technical guides and writing samples
 
-*Maintained by Precious Apiri Dibagha*
+The repository also includes software documentation examples, FAQs, user guides, README guidance and documentation reviews. These samples will be revised to make their scope and factual basis clear.
 
----
+## How I approach the work
 
-# 🌍 The Talent Paradox: Global Mobility & Digital Labor
+- Explain technical subjects in plain, direct language.
+- Check factual claims instead of relying on confident-sounding wording.
+- Make instructions practical and specific.
+- Record limitations and distinguish a proposal from something that has been built or tested.
+- Improve documents through review rather than describing every early draft as finished.
 
-**Author:** Precious Apiri Dibagha  
-**Target Focus:** Research Policy Fellowships (Migration Policy Institute & Outreachy)
+## Project status
 
----
+Work in this repository may be labelled **concept**, **specified**, **in progress**, **prototyped**, **tested** or **deployed**. These labels describe the evidence available; they are not interchangeable.
 
-## 📄 About This Repository
+## About
 
-This repository contains a rigorous policy research briefing exploring how developing economies—specifically Nigeria—navigate the dual-track reality of modern global mobility:
+**Precious Apiri Dibagha**  
+Technical Writer & Researcher
 
-1. **The Physical Corridor:** Traditional migration, economic push factors, currency collapse, and the mechanics of diaspora remittances.
-
-2. **The Digital Corridor:** Borderless remote work, high-liquidity currency earnings, and digital career pathways that bypass physical visa friction.
-
----
-
-## 🔗 Read & Download
-
-- **Read Online:** View the Full Markdown Report
-- **Download PDF:** Download the Formatted Policy Brief (PDF)
-
-I will copy and paste the PDF text so why did you say download the PDF the PDF doesn't have link.
-
----
-
-## 📄 Read the Report
-
-- **Read Online:** View the Full Markdown Report
+The portfolio is being developed as a record of practical work, technical learning and research.
