@@ -1,98 +1,42 @@
-# Master Portfolio — Completion Tracker
+# Master Portfolio — Final Completion Record
 
-**Working branch:** portfolio/structure-and-cleanup
+**Working branch:** `portfolio/structure-and-cleanup`
 
-A section is not complete simply because a folder or README exists. Completion requires useful content, clear authorship, accurate status, working navigation and evidence appropriate to the claims being made.
+The written portfolio has been assembled as one connected body of self-directed systems design, research and technical documentation. Project status and evidence limits are stated plainly. This record distinguishes completed portfolio work from the final visual assets that must be supplied or produced.
 
-## 1. Core identity and navigation
-- [x] Professional positioning and portfolio introduction.
-- [x] One master portfolio structure.
-- [x] Clear distinction between self-directed projects and client work.
-- [x] Evidence and implementation-status standard.
-- [ ] Final editorial review across all sections.
-- [ ] Confirm all internal links and file names after content inventory.
+## Completed
 
-## 2. Vantage Automata — self-directed project
-- [x] Project overview and status statement.
-- [x] Problem and user analysis.
-- [x] MVP scope and acceptance criteria.
-- [x] Proposed system overview.
-- [x] Initial API contract.
-- [x] Approval workflow.
-- [x] Risk and control register.
-- [x] Initial technical decision records.
-- [x] Proposed implementation plan.
-- [x] Test plan.
-- [x] Requirements-to-tests traceability matrix linking proposed requirements, workflow states, verification steps and evidence.
-- [ ] Inspect historical interface video and capture only verifiable visual evidence.
-- [ ] Add original architecture image after it is supplied and checked.
-- [ ] Decide whether to rebuild, collaborate on or commission a fresh prototype.
-- [ ] If rebuilt: retain source, version history, test results and demonstration evidence.
-- [ ] Update documents to match any verified implementation.
+- [x] Professional portfolio introduction, positioning and navigation.
+- [x] Clear distinction between self-directed concepts, desk research, proposals and verified implementation.
+- [x] Vantage Automata: problem analysis, MVP scope, architecture, API proposal, workflow, risk controls, technical decisions, implementation plan, test plan and requirements-to-tests traceability.
+- [x] Vantage Automata: future rebuild direction documented as a developer collaboration; earlier exploratory prototype is not treated as a deliverable or evidence.
+- [x] Jarvis AI: system overview, strategic contribution, agent catalogue, lead-agent workflow, technology evaluation, first MVP definition, first-MVP agent specifications and use-case decision record.
+- [x] Research methodology and updated AI job-search platform comparison, with corrections, source notes and explicit limits on untested Nigeria account access.
+- [x] Technical writing samples: README guide, FAQ, user guide, documentation review checklist and before-and-after example.
+- [x] Cloud infrastructure fundamentals and sourced n8n overview, labelled as desk research rather than hands-on testing.
+- [x] Open-source contribution process and accurate statement that no external contribution is claimed.
+- [x] Eight-opportunity fellowship evidence map and GovAI UK Applied Track application-preparation document.
+- [x] Short Vantage Automata and Jarvis AI explainer-video briefs with timing, narration, visual direction and accuracy restrictions.
+- [x] Root and section navigation updated to connect the main portfolio materials.
 
-## 3. Jarvis AI — self-directed project
-- [x] Project overview and strategic contribution.
-- [x] Proposed agent catalogue.
-- [x] Lead-agent coordination workflow.
-- [x] Technology evaluation framework.
-- [x] Narrative system architecture.
-- [ ] Add original ecosystem architecture diagram after it is supplied and checked.
-- [ ] Add original AI Business MVP diagram after it is supplied and checked.
-- [ ] Resolve naming differences across original diagrams and written specifications.
-- [ ] Define one priority business use case and a bounded MVP.
-- [ ] Add detailed agent specifications for the selected MVP only.
-- [ ] Validate technology choices against current official documentation.
+## Final visual assets — the only portfolio content hand-off remaining
 
-## 4. Research
-- [x] Research portfolio index.
-- [x] Research methodology and evidence standard.
-- [ ] Locate and review existing Talent Paradox research material.
-- [ ] Recover the original Talent Paradox report from the user's files and review its full content; the current Library search did not return the report itself.
-- [ ] Produce a complete, sourced Talent Paradox research brief.
-- [x] Locate the existing June 2026 AI job-search platform comparison report.
-- [x] Audit its claims, methodology, citations and platform status; record unsupported findings and corrections.
-- [x] Produce an updated AI job-search platform comparison using official product, pricing, legal and app-store pages.
-- [x] Add access dates, sources, limitations and an executive summary to the updated platform comparison.
-- [ ] Complete a practical country-access check for Nigerian users; no live account tests are claimed.
-- [ ] Check every factual claim and reference.
+- [ ] Upload the original Vantage Automata architecture diagram.
+- [ ] Upload the original Jarvis AI ecosystem architecture diagram.
+- [ ] Upload the original Jarvis AI Business MVP diagram.
+- [ ] Produce the two short explainer videos using the scripts in `media/portfolio-demonstration-video-briefs.md` and add them to the repository if desired.
 
-## 5. Technical writing and documentation
-- [x] Technical writing section index.
-- [x] Project README writing guide.
-- [x] Illustrative FAQ sample.
-- [x] Documentation review checklist.
-- [x] Add an illustrative Vantage task-approval user-guide sample, clearly labelled as a proposed experience.
-- [x] Add a before-and-after documentation sample with its example source and limitations identified.
-- [ ] Final consistency and editorial review.
+The diagrams should be uploaded as original files, not recreated from memory. The videos must label the projects as concepts with implementation and testing not yet verified. No historical prototype video is required for the portfolio.
 
-## 6. Cloud infrastructure and open source
-- [x] Section index.
-- [x] Cloud infrastructure fundamentals overview.
-- [x] Open-source contribution process and evidence standard.
-- [x] Add a sourced n8n technical project overview, clearly labelled as desk research rather than a hands-on test.
-- [ ] Add a hands-on guide only after following and verifying the steps.
-- [ ] Identify a suitable documentation issue in an external project.
-- [ ] Submit a genuine contribution and record its actual status, if pursued.
+## Outside the portfolio completion boundary
 
-## 7. Fellowship alignment and final presentation
-- [x] Review the portfolio against all eight target opportunities in the master plan.
-- [x] Map existing evidence and gaps to each opportunity in one shared evidence map.
-- [x] Identify missing evidence and prioritise the highest-value gaps.
-- [x] Check current programme information and deadlines against official sources on 7 November 2026; recheck before applying.
-- [x] Prepare a concise portfolio introduction and project descriptions.
-- [x] Add a GovAI UK Summer Fellowship 2027 Applied Track application-preparation document, checked against the current official call on 7 November 2026.
-- [ ] Conduct a final quality, link and consistency audit.
-- [ ] Complete the final GovAI application review and submit the application before 22 November 2026 (submission remains the applicant's action).
+These are future project or application activities, not blockers to completing the written portfolio:
+- Rebuilding Vantage Automata with a developer and validating it with tests.
+- Validating Jarvis AI's proposed MVP with real businesses before development.
+- Practical live-account testing of job-search platforms from Nigeria.
+- Making an external open-source contribution.
+- Completing and submitting fellowship applications. Application submission remains the applicant's responsibility.
 
-## 8. Definition of complete
-The portfolio is ready for final presentation when:
-1. Every planned section contains substantive, relevant work or is deliberately excluded with a clear reason.
-2. Both self-directed projects have coherent, linked documentation and accurate status statements.
-3. Original diagrams and available evidence have been incorporated where relevant.
-4. Research briefs are complete, sourced and current enough for their stated purpose.
-5. Technical writing samples demonstrate more than templates alone.
-6. Any open-source or implementation claims are supported by public evidence.
-7. Navigation, terminology, dates and internal links have been checked.
-8. The portfolio aligns with the target fellowship criteria.
+## Completion standard
 
-This tracker is a working record, not a claim that all items are complete.
+The written portfolio is considered complete when its content, project boundaries, research limitations, navigation and cross-references are coherent. Adding the original diagrams and optional demonstration videos will complete the visual presentation; it will not convert either proposed system into a working product.
