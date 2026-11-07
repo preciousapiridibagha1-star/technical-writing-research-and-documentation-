@@ -172,3 +172,76 @@ Use AI as a research, editing and planning assistant. The applicant must persona
 6. SRHIN — CULTURAI / GENSCORE launch recap: https://srhin.org/culturai-2026-bringing-language-culture-and-artificial-intelligence-together-to-reimagine-mental-healthcare-in-nigeria/
 
 **Research conclusion:** SRHIN is a genuine, officially listed Mozilla Embedded host. The opportunity is not a scam on the evidence checked. However, the applicant should not assume remote eligibility, Nigeria's funding eligibility, or the exact host project brief until those points are confirmed through Mozilla's official channels.
+
+
+## 13. Expanded independent due diligence on SRHIN (7 November 2026)
+
+### Bottom-line identity assessment
+
+**Assessment: SRHIN is very likely a real, operating Nigerian health NGO with externally corroborated research and institutional collaborations.** This is materially stronger evidence than its own website or social-media presentation alone. It is not, however, a complete legal, financial, governance or employment-quality audit.
+
+Evidence beyond SRHIN's own promotional pages:
+
+1. **Mozilla Foundation's own 2027 call** names SRHIN as a Nigerian Embedded Fellowship host. This is direct confirmation of the host relationship for this call.
+2. **The Canada-Africa Mpox Partnership (CAMP)** has a separate consortium website describing SRHIN as one of the Nigerian research institutions. It names the Nigerian Institute of Medical Research, Institute of Human Virology Nigeria, University of Ilorin and University of Maryland partners, and identifies Canadian Institutes of Health Research (CIHR) and International Development Research Centre (IDRC) funding.
+3. **A peer-reviewed 2024 study** on the Brave Heart mental-health intervention is indexed by ScienceDirect/Elsevier. It reports a one-group pre/post study involving 100 young internally displaced people aged 13–24; 83 completed post-test assessment. The authors report a statistically significant reduction in depression scores. This is evidence of a real research programme, not proof that every SRHIN impact claim is independently validated or that the study design establishes causality.
+4. **A 2025 first-person profile hosted by Be in the KNOW** features Mary Akinwola, identified as SRHIN's Programme Manager, describing her transition into community health work. This is external, named-person corroboration of staff and programme activity.
+5. **A 2025 CAMP 1.0 project record** describes a mixed-methods community study across Bayelsa, Delta, Lagos and Rivers: 524 survey participants and 164 qualitative participants, with two peer-reviewed publications listed. The project record is on SRHIN's site; the consortium and journal records provide external cross-checks.
+6. **A public NIMR 2023 annual report** lists SRHIN among national collaborators. This is a government-institution source independent of SRHIN's own website.
+
+Sources:
+- CAMP consortium: https://campnigeria.org.ng/about-the-partners/
+- CAMP consortium and funders / partner details: https://srhin.org/our-project/camp-project/consortium/
+- CAMP 1.0 methods and publication references: https://srhin.org/our-project/camp-project/camp-1-0/
+- Peer-reviewed Brave Heart study: https://www.sciencedirect.com/science/article/pii/S2949916X24000069
+- External first-person staff profile: https://www.beintheknow.org/news-and-blogs/first-hand-community-health-workers-journey-slums-and-rural-nigeria
+- NIMR 2023 Annual Report: https://nimr.gov.ng/nimr/wp-content/uploads/2025/05/2023-NIMR-Annual-Report.pdf
+- SRHIN's public research hub: https://resources.srhin.org/
+
+### Testimonials and worker experience: what was and was not found
+
+I found a first-person volunteer interview published by SRHIN with Emmanuel Musa, who said he joined in September 2021, described leadership and capacity development positively, and named logistics as a challenge. This is useful but is an organisation-selected testimonial, not an independent review.
+
+I also found a public LinkedIn intern spotlight from SRHIN and a formal 2026 HEAL Summer Internship page describing a seven-week, in-person programme for 12 undergraduates across five units. These are organisation-published materials. I did **not** find a substantial body of independently verifiable Reddit, Facebook or other third-party first-person reviews specifically about working or interning at SRHIN. Absence of such reviews is not evidence of misconduct; it means workplace culture, supervision quality, payment practices and fellow experience remain insufficiently independently documented.
+
+Sources:
+- Volunteer interview: https://srhin.org/srhins-thursday-spotlight-emmanuel-musa/
+- LinkedIn intern spotlight: https://www.linkedin.com/posts/slum-and-rural-health-initiative-network_internspotlight-meetourinterns-srhin-activity-7482803889512230912-tTI7
+- HEAL Summer Internship programme: https://healfellowship.srhin.org/summer-internship/
+
+### Website presentation versus institutional substance
+
+The user's concern that the website looks unpolished is reasonable to investigate, but website design quality is a weak proxy for whether an NGO exists or delivers work. The stronger checks above show real external collaborations, a government-institution listing, peer-reviewed work and a named external staff profile.
+
+There are still reasons to be cautious:
+- Many large impact figures on SRHIN's website (for example, total people reached, number of deployed AI tools, fairness benchmark and publication counts) are organisation-reported. I have not independently audited their definitions, datasets or measurement methods.
+- The SRHIN website has changed its presentation and contains extensive claims. Treat its project descriptions as leads; prefer peer-reviewed papers, partner records and direct written answers when making consequential decisions.
+- A registered NGO can still have weak management, poor supervision or an unsuitable fellowship experience. External research credibility does not establish employment quality.
+
+### Due-diligence verdict
+
+| Question | Finding | Confidence |
+|---|---|---|
+| Is SRHIN a real organisation doing public-health work? | Strong external corroboration from research, consortium partners, NIMR report and named staff profile. | High |
+| Is SRHIN an official Mozilla 2027–28 Embedded host? | Explicitly listed on Mozilla Foundation's official call. | High |
+| Does SRHIN have relevant health-AI / mental-health work? | Public BraveHeart and GENSCORE materials; peer-reviewed Brave Heart intervention study. | High for programme/research activity; lower for specific AI system performance |
+| Are its headline impact metrics independently audited? | Not established in this review. | Low / unverified |
+| Are there reliable independent worker/fellow reviews? | Very limited; one organisation-published volunteer interview found, not independent. | Low |
+| Is the fellowship remote from Port Harcourt? | Mozilla says most hosts can accommodate remote Fellows; SRHIN-specific confirmation absent. | Unconfirmed |
+| Is the Nigerian applicant eligible to receive Mozilla funding? | Must be confirmed directly with Mozilla; host location alone is not enough. | Unconfirmed |
+| Is the host's exact fellowship project known? | The full host-specific RFP section still needs to be read and SRHIN should confirm its expectations. | Unconfirmed |
+
+**Decision:** Keep SRHIN as the preferred host and continue preparing for the official Mozilla Embedded Fellowship. Do not reject SRHIN merely because its website looks unpolished; the external evidence is substantial. Equally, do not treat the organisation as fully vetted. Before investing in a final project proposal or making any travel commitment, obtain written confirmation from Mozilla on Nigeria funding eligibility and from the host/Mozilla on remote working, host project scope, supervision, deliverables, time-zone expectations and any in-person requirements.
+
+## 14. Immediate portfolio priorities
+
+The portfolio should demonstrate the ability to contribute to a technically grounded, responsible-AI project without pretending to be a clinician or production ML engineer. The highest-value next artefacts are:
+
+1. A source-linked SRHIN institutional due-diligence brief (this section).
+2. A project-specific technical proposal only after the official host brief is inspected.
+3. A responsible-AI requirements specification with explicit intended use, non-use, user groups, consent, data minimisation, language/accessibility, uncertainty, escalation and human oversight.
+4. A risk register with owners and residual-risk fields. Clinical and safeguarding risks must be reviewed by qualified professionals.
+5. A testable evaluation protocol and a small non-clinical demonstration using synthetic or public non-sensitive data.
+6. One real open-source contribution with a public issue/PR and actual review status.
+
+Do not add invented testimonials, invented partnerships, simulated user research represented as real, fabricated GitHub contributions, or claims that proposed diagrams are deployed systems.
