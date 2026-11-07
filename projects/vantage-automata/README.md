@@ -73,7 +73,7 @@ The intended next step is a fresh, inspectable implementation with a developer. 
 5. Test cases, recorded results and fixes.
 6. A short demonstration of the verified workflow.
 
-The original Vantage Automata architecture diagram will be added to this repository when supplied. The diagram will be presented as a proposed architecture, not as proof of implementation.
+The original Vantage Automata architecture diagram will be added as a final visual asset. A short explainer-video production brief is in [Portfolio Demonstration Video Briefs](../../media/portfolio-demonstration-video-briefs.md). The diagram and video will present a proposed architecture, not proof of implementation.
 
 ## Safety and evidence boundaries
 
