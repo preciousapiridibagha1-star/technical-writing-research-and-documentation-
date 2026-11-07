@@ -1,31 +1,55 @@
 # Jarvis AI
 
-**Project status: System concept and architecture documentation**
+**Project status: Strategic concept and proposed architecture documented; implementation not verified.**
 
-Jarvis AI is a proposed multi-agent business system designed around a human owner. The concept uses a central lead agent to coordinate specialised agents for areas such as operations, finance, analytics, customer support and business activities.
+Jarvis AI is a proposed AI-enabled business operating ecosystem. It explores how a business owner, organisation or individual building a venture could coordinate work through a lead AI agent and specialised agents for defined business functions.
 
-The current diagrams describe a system vision. They do not, by themselves, prove that the agents, integrations or infrastructure have been implemented.
+It is not designed only for CEOs or large companies. The system would need to be adapted to the size, operating model and actual needs of each business. A small e-commerce brand may need a focused customer-support workflow; a larger organisation may need several coordinated specialist functions.
 
-## Current concept
+## Strategic principle
 
-At a high level, the system has:
+The project starts with the business problem, not with a tool. The first task is to understand what is going wrong, why it is happening, who is affected and what outcome needs to improve. Only then should possible AI tools, agent platforms and integrations be evaluated.
 
-1. **Human owner** — sets direction, reviews important decisions and retains final authority.
-2. **Lead or CEO agent** — receives instructions and coordinates work across the system.
-3. **Specialist agents** — handle defined areas of work, with responsibilities and boundaries to be documented.
-4. **Supporting infrastructure** — the proposed tools and services that may support agent coordination, data storage and model access.
+For example, slow customer-service responses may be caused by understaffing, fragmented enquiry channels, unclear processes or hard-to-find information. An AI support agent may help with some of these issues, but the right solution depends on the diagnosis. The agent would need approved knowledge, clear boundaries and a reliable route to human staff.
 
-The diagrams use some different labels for roles, including Sales and Automation, and Customer and Customer Support. These differences need to be resolved in the agent documentation rather than silently treated as identical roles.
+## Proposed system model
 
-## Documentation planned
+1. **Owner and lead agent** — the owner sets direction and retains authority; the lead agent interprets goals, coordinates specialist work, reviews outputs and reports back.
+2. **Executive or management agents** — proposed functions such as Operations, Finance, Analytics, Customer Support and Sales/Automation oversee defined business areas.
+3. **Business or execution agents** — proposed specialists perform bounded tasks across areas such as product research, marketplace work, content and other business activities.
+4. **Infrastructure layer** — proposed interface, orchestration, automation, data and model services.
 
+The broader ecosystem diagram and the simplified AI Business System MVP diagram are related views of the same direction. The MVP should validate one narrow workflow before attempting the wider ecosystem.
+
+## Strategic and systems-design contribution
+
+The project documents work in:
+
+- Business-problem framing and root-cause analysis.
+- Understanding users, customers and business requirements.
+- Identifying suitable and unsuitable AI use cases.
+- Designing the proposed system architecture and agent responsibilities.
+- Evaluating tools and explaining how components may fit together.
+- Defining human oversight, escalation, permissions and risk boundaries.
+- Prioritising an MVP and sequencing implementation.
+- Preparing requirements, workflows, technical specifications and developer hand-off documentation.
+
+This is strategic and systems-design work. It is not a claim that the author independently coded, configured, integrated or deployed the proposed platform.
+
+## Documentation
+
+- `strategic-contribution.md` — business application, strategic method, use cases, system model and evidence boundaries.
 - `architecture/` — the ecosystem and MVP diagrams, with explanations of components and boundaries.
-- `agent-documentation/` — each agent's purpose, inputs, outputs, permissions and escalation rules.
+- `agent-documentation/` — each proposed agent's purpose, inputs, outputs, permissions and escalation rules.
 - `system-workflows/` — how work moves between the owner, lead agent and specialist agents.
 - `technical-specifications/` — proposed technologies, interfaces, data handling and implementation decisions.
 
-## Important limitations
+## Technology and evidence boundaries
 
-Names of tools, platforms or services in a diagram are proposed components unless there is evidence that they have been configured and tested. No integration, deployment or production-readiness claim should be made on the basis of a diagram alone.
+The architecture outline names Open WebUI, CrewAI, n8n, PostgreSQL and Ollama as proposed components. Their roles, compatibility, costs, data boundaries and operational suitability still require validation. A tool appearing in a diagram does not mean it has been configured or integrated.
 
-Vantage Automata is the first practical MVP priority. Jarvis AI will be documented carefully while the implementation plan and evidence are developed.
+The diagrams and documents describe a proposal. They do not prove that agents, APIs, integrations or infrastructure are operational. Implementation and testing claims will only be added when supported by evidence.
+
+## Relationship to Vantage Automata
+
+Vantage Automata is a separate, bounded task-approval concept and remains the first practical MVP priority. Jarvis AI documents the broader business ecosystem vision; it should not be presented as an already implemented extension of Vantage Automata.
