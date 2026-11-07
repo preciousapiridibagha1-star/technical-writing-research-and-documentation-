@@ -41,8 +41,10 @@ This is strategic and systems-design work. It is not a claim that the author ind
 - [Proposed Agent Catalogue](agent-documentation/agent-catalogue.md)
 - [Lead-Agent Coordination Workflow](system-workflows/lead-agent-coordination.md)
 - [Technology Evaluation Framework](technical-specifications/technology-evaluation.md)
+- [First MVP Definition](requirements/first-mvp-definition.md)
+- [Proposed System Architecture](architecture/system-overview.md)
 
-The architecture diagrams and further component specifications will be added when the original diagram files are available and can be checked.
+The architecture diagrams will be added when the original image files are available and can be checked.
 
 ## Technology and evidence boundaries
 
