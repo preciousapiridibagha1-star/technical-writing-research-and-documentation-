@@ -1,41 +1,49 @@
 # Vantage Automata
 
-**Project status: Concept and architecture documented; earlier prototype is unavailable for verification.**
+**Project status: Self-directed system concept documented for a future rebuild with a developer. It is not a currently working or verified product.**
 
-Vantage Automata is a self-directed AI-assisted task-system concept. A person describes a task, AI interprets the instruction and proposes what should happen, and the person reviews the proposal before an action is allowed.
+Vantage Automata is a proposed AI-assisted task and action-approval system. It is intended to help individuals, businesses, companies and agencies turn plain-language instructions into structured action proposals while keeping the user in control of whether an action proceeds.
 
-The project is approached from a strategic and systems perspective. It focuses on problem analysis, user needs, MVP scope, system architecture, workflow, requirements, safety boundaries and technical hand-off. It is not presented as a completed software product.
+The project is being retained as a documented system design and future product direction. The intended next implementation route is to rebuild the prototype in collaboration with a developer. The earlier exploratory prototype is not being treated as a deliverable or as evidence of a functioning system.
 
-## Problem and intended value
+## The problem the concept explores
 
-An AI assistant may help interpret instructions and prepare digital actions, but allowing software to act without clear oversight can create mistakes and reduce trust. Vantage Automata explores a human-supervised approach: AI can recommend an action, while the person remains in control of whether it proceeds.
+AI tools can interpret instructions and prepare actions, but allowing a system to act without clear review can create mistakes, unwanted changes and loss of user trust. Vantage Automata explores a controlled alternative: the system prepares and explains a proposed action, and an authorised person decides whether it may proceed.
 
-The initial user and problem analysis is a project hypothesis. Formal user interviews and validation have not yet been completed.
+The intended users are not limited to one industry. Potential settings include individuals managing digital tasks, small and growing businesses, companies and agencies. The exact first customer group and use case must be selected and validated before development.
 
 ## Proposed first workflow
 
 1. A user enters a task or instruction.
-2. The backend validates the input.
-3. An AI or mock provider prepares a structured proposal.
-4. The backend validates the proposal.
-5. The user reviews the proposed action.
+2. The system validates the request and checks whether it is within the permitted scope.
+3. An AI component prepares a structured action proposal.
+4. The backend validates the proposal against the system's rules.
+5. The user sees the proposed action and relevant details.
 6. The user approves or rejects it.
-7. Rejection stops the workflow; approval permits one safe mock action.
-8. The system records and displays the outcome.
+7. Rejection stops the workflow. Approval permits only the specifically authorised, safe action.
+8. The system records the decision and outcome.
 
-This is the proposed workflow, not a description of a currently running application.
+This describes the proposed workflow, not a currently running application.
 
-## Strategic contribution
+## Intended product direction
 
-The work represented in this project includes:
-- Framing the problem and identifying an initial user.
-- Analysing user needs and design assumptions.
-- Defining a proportionate MVP and its exclusions.
-- Mapping system components and information flow.
-- Defining human approval and backend enforcement requirements.
-- Identifying risks, safeguards and open technical questions.
-- Preparing an API proposal, implementation plan and test design.
-- Communicating the concept for technical review and future implementation.
+The longer-term direction is to develop Vantage Automata into a dependable task-approval product that could be adapted to different customer and organisational workflows. It should not be marketed as a finished universal automation platform. Each use case would need defined permissions, integrations, data boundaries, safeguards and acceptance tests.
+
+The first rebuild should remain narrow and use mock data and mock actions. Real integrations and consequential actions should only be considered after the core approval flow has been implemented, reviewed and tested.
+
+## Strategic and systems-design work
+
+The portfolio documents:
+- Problem framing and initial user assumptions.
+- MVP scope and acceptance criteria.
+- Proposed system architecture and API contract.
+- Task proposal and human approval workflow.
+- Risk and control register.
+- Technical decision records.
+- Proposed implementation plan.
+- Test plan and requirements-to-tests traceability.
+
+These materials are intended to support a future developer collaboration and make the system's expected behaviour and boundaries understandable before implementation.
 
 ## Project documentation
 
@@ -53,26 +61,22 @@ The work represented in this project includes:
 ### Implementation and testing
 - [Proposed Implementation Plan](implementation/implementation-plan.md)
 - [MVP Test Plan](testing/test-plan.md)
+- [Requirements-to-Tests Traceability Matrix](testing/requirements-to-tests-traceability.md)
 
-## Project history and evidence limitations
+## Future rebuild approach
 
-An earlier version was explored in Replit, and a video showing parts of its interface, including the landing page and dashboard, remains available to the project owner. The Replit workspace and downloaded source code were later deleted after the code export became corrupted.
+The intended next step is a fresh, inspectable implementation with a developer. The collaboration should establish:
+1. The first customer group and one concrete task workflow.
+2. The agreed MVP requirements and exclusions.
+3. A simple architecture and documented technology choices.
+4. A working prototype using mock data and mock actions.
+5. Test cases, recorded results and fixes.
+6. A short demonstration of the verified workflow.
 
-The earlier source code cannot currently be inspected, run or verified. The video may be used as visual reference for the interface that was explored, but it cannot verify backend behaviour, AI integration, data storage, security or completed tests.
+The original Vantage Automata architecture diagram will be added to this repository when supplied. The diagram will be presented as a proposed architecture, not as proof of implementation.
 
-The current portfolio documents therefore describe the concept and proposed architecture. They do not claim that the earlier prototype is recoverable or that a working MVP exists.
+## Safety and evidence boundaries
 
-## Safety and scope
+Human approval is central to the design. The first build should not execute payments, send external messages or change customer records. Any later real integration would require explicit permissions, security and privacy review, and tests.
 
-The proposed first version keeps a person involved before any action is taken. A future prototype should begin with mock data and test actions, not real payments, external messages or changes to customer records. Any later real integration would require separate permissions, security review and testing.
-
-## Current status and next evidence
-
-The concept, initial problem analysis, requirements, architecture proposal, API contract, workflow, risk register, implementation plan and test plan are documented. Implementation, user validation and testing remain outstanding.
-
-The next evidence milestone is a fresh, inspectable implementation or a documented technical review. Any future claim that the system is implemented or tested must be supported by a working build and recorded results.
-
-
-## Verification planning
-
-- [Requirements-to-tests traceability matrix](testing/requirements-to-tests-traceability.md) — maps the proposed MVP controls to observable checks and evidence to retain. The checks are planned, not executed.
+No current working MVP, verified integration, user validation or executed test results are claimed. The earlier exploratory prototype is not required as evidence for this documented concept; the future rebuild will be assessed on its own source, tests and demonstration.
