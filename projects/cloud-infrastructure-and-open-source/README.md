@@ -1,12 +1,19 @@
 # Cloud Infrastructure and Open Source
 
-This project area brings together the existing cloud infrastructure and open-source research and documentation in the repository.
+This section brings together cloud infrastructure research, open-source project overviews and technical documentation.
 
-The material will be organised into two parts:
+## Project overviews
 
-- **Project overviews:** what a technology or project is for, who may use it, and the problem it is intended to address.
-- **Technical documentation:** practical explanations, configuration notes, documentation reviews and examples supported by sources or direct testing.
+- [Cloud Infrastructure Fundamentals](project-overviews/cloud-infrastructure-fundamentals.md) — a conceptual introduction to compute, storage, networking, databases, identity and access management, monitoring, security and cost considerations.
 
-Each document should identify whether it is a research overview, a hands-on guide, a review or a proposed contribution. Instructions will not be presented as tested unless they have actually been followed in a suitable environment.
+## Technical documentation
 
-Existing material will be inventoried and moved here without losing its content.
+Additional guides and project-specific reviews will be added when they can be supported by current official documentation or direct testing.
+
+## Open-source work
+
+The contribution record and process are maintained in [Open-Source Contributions](../../contributions/open-source/README.md). Contributions will be listed only when a real issue, submitted change or merged pull request can be verified.
+
+## Documentation standard
+
+Each item must state whether it is a research overview, a hands-on guide, a review or a proposed contribution. Instructions will not be presented as tested unless they have actually been followed in a suitable environment. Product capabilities, versions, commands and links should be checked against current official documentation before publication.
