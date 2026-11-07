@@ -1,49 +1,62 @@
 # Vantage Automata
 
-**Project status: Specification and MVP planning**
+**Project status: Concept and architecture documented; prototype not currently available.**
 
-Vantage Automata is a proposed AI-assisted task system. The idea is to let a person describe a task, have an AI model interpret the instruction and suggest an action, and then let the person review that suggestion before anything is carried out.
+Vantage Automata is an AI-assisted task-system concept. It is based on a simple idea: a person describes a task, AI interprets the instruction and proposes what should happen, and the person reviews the proposal before an action is allowed.
 
-The first version will be deliberately small. It is not intended to connect to every business tool or operate as an autonomous employee. The aim is to build and test one complete, understandable workflow.
+The project is approached from a strategic and systems perspective. The work focuses on the problem being addressed, the intended users, the workflow, the system structure, safety boundaries and a realistic first version. It is not presented as a completed software product.
 
-## The first MVP workflow
+## The problem and intended value
+
+Businesses use different tools and processes to handle routine tasks. An AI assistant could help interpret instructions and prepare actions, but allowing software to act without clear oversight can create mistakes and loss of trust.
+
+Vantage Automata explores a human-supervised approach: AI can recommend an action, while the person remains in control of whether it proceeds.
+
+## Intended first workflow
 
 1. A user enters a task or instruction.
-2. The backend receives the request.
-3. An AI model returns a structured interpretation and a proposed action.
-4. The system checks that the response follows the expected format.
-5. The user sees the proposal and can approve or reject it.
-6. Rejection stops the workflow. Approval allows only a safe test action to run.
-7. The system records the request, proposal, decision and result, then shows the outcome to the user.
+2. The system interprets the request.
+3. It presents a structured summary and proposed action.
+4. The user reviews the proposal.
+5. The user approves or rejects it.
+6. A future prototype would run only a safe test action after approval.
+7. The system would record the decision and outcome.
 
-## What the MVP needs to demonstrate
+This is the proposed workflow, not a description of a currently running application.
 
-- A simple frontend form communicating with a backend endpoint.
-- A real AI call or a clearly labelled mock response.
-- A defined JSON response structure.
-- Validation and useful error handling.
-- Human approval before execution.
-- A safe action adapter, initially using a mock action or test environment.
-- An audit log showing what happened.
-- Tests for a successful run, rejection, malformed AI output and failed action.
+## Strategic and architectural work
+
+The portfolio work for this project includes:
+
+- Defining the problem and intended user.
+- Considering the value to businesses and the people using the system.
+- Scoping a small first version rather than attempting a large autonomous platform.
+- Mapping the main system components and how information should move between them.
+- Defining the role of human approval.
+- Identifying risks, constraints and requirements.
+- Preparing an implementation route and test plan for a future technical build.
+
+## Project history and available evidence
+
+An earlier version was explored in Replit, and a video showing parts of its interface, including the landing page and dashboard, remains available to the project owner. The Replit workspace and downloaded source code were later deleted after the code export became corrupted.
+
+As a result, the earlier source code cannot currently be inspected, run or verified. The video may be used as visual reference for the interface that was explored, but it is not evidence of working backend functionality, AI integration or completed tests.
+
+The current portfolio documents therefore describe the concept and proposed architecture. They do not claim that the earlier prototype is recoverable or that a working MVP exists.
 
 ## Safety and scope
 
-The first version will use mock data and safe test actions. It will not send real messages, make payments or change important external records. Those capabilities would require separate permission checks, safeguards and testing.
+The proposed first version keeps a person involved before any action is taken. A future prototype should begin with mock data and test actions, not real payments, external messages or changes to customer records.
 
-A diagram or written workflow is not proof of a working implementation. Each feature will be labelled according to its actual status.
+## Documentation
 
-## Planned documentation
+- `requirements/` — intended users, needs, requirements and constraints.
+- `architecture/` — system structure, component roles and API proposal.
+- `workflows/` — proposed user and system workflows.
+- `implementation/` — recommended stages for a future build.
+- `testing/` — test cases that a future prototype should pass.
+- `user-guide/` — instructions to be written if a working prototype becomes available.
 
-- `requirements/` — user needs, functional requirements and constraints.
-- `architecture/` — system design and component responsibilities.
-- `workflows/` — step-by-step workflow descriptions and diagrams.
-- `implementation/` — setup and implementation notes as the build progresses.
-- `testing/` — test cases, results and known issues.
-- `user-guide/` — instructions for using the working MVP.
+## Current status
 
-## Current next step
-
-Define the MVP requirements and choose one implementation route before writing code. The first route should be either a backend/API-first build or an automation-platform-first build, not both at once.
-
-This project is being developed as a practical learning and portfolio project. Features will only be described as working after they have been implemented and tested.
+The strategic concept, initial requirements, architecture proposal, API contract and test plan are documented. Implementation and testing remain future work. The project should only be described as prototyped or tested if a new working version is built and the evidence is recorded.
