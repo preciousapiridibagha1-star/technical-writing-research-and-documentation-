@@ -1,57 +1,66 @@
 # 4. Internet Governance & Digital Policy
 
-## Policy brief: Meaningful access to digital work opportunities
+## Policy brief: Meaningful access to cross-border digital work in Nigeria
 
-**Status:** Policy-analysis framework and initial brief; jurisdiction-specific source verification is the next step.  
-**Focus:** How internet access, platform design and cross-border rules affect people's ability to participate in online work.
+**Status:** Nigeria-focused desk-research brief.  
+**Question:** What prevents a person in Nigeria from turning internet access into reliable participation in online work and cross-border digital markets?
 
-### The policy problem
+### Policy problem
 
-Being connected to the internet does not automatically mean a person can participate equally in the digital economy. A job seeker may have a device and connectivity but still face barriers such as high data costs, unreliable service, inaccessible platforms, payment restrictions, identity checks, location filters or unclear eligibility rules.
+Connectivity is necessary but not sufficient. A person may have network coverage and still be unable to compete for online work because data is unaffordable, service is unreliable, a device is unsuitable, skills are limited, a platform excludes their location, or payment and identity requirements are difficult to meet.
 
-These barriers can interact. A platform may be technically available in a country while key features, payment methods or listed jobs are not accessible to people living there.
+### What the Nigerian evidence says
 
-### Why this is an internet-governance issue
+The Nigerian Communications Commission's 2024 year-end performance report records broadband penetration of **44.43% in December 2024**, compared with 43.71% in December 2023. It also reports 2024 3G, 4G and 5G coverage figures of 89%, 84% and 13% respectively. These are national indicators and do not show whether an individual household can afford a suitable connection or use it effectively. [NCC, 2024 Year-End Performance Report](https://ncc.gov.ng/sites/default/files/2025-11/2024-Year-End-Performance-Report.pdf).
 
-Internet governance concerns the policies, standards, institutions and processes that shape how the internet is managed and used. Digital inclusion therefore involves more than network coverage. It also involves affordability, meaningful access, rights, security, interoperability, platform accountability and the ability to participate.
+Nigeria's National Broadband Plan 2020–2025 set targets including effective coverage for at least 90% of the population and specified urban/rural speed and affordability ambitions. The plan's target period has ended; targets should not be reported as achieved without current outcome data. [NCC, National Broadband Plan 2020–2025](https://ncc.gov.ng/media-center/public-notices/new-nigerian-national-broadband-plan-2020-2025).
+
+The National AI Strategy 2024 itself recognises limited broadband penetration and infrastructure constraints among the factors that must be considered in developing local AI capability. [Nigeria National AI Strategy 2024](https://ncair.nitda.gov.ng/wp-content/uploads/2024/08/National-AI-Strategy_01082024-copy.pdf).
+
+Cross-border payments are also part of digital participation. The Central Bank of Nigeria's Payments System Vision 2028, launched in June 2026, identifies interoperability, security, inclusion, innovation, trust and collaboration as guiding principles, including stronger cross-border integration. This is a policy direction, not proof that every Nigerian freelancer can receive payments from every platform or country. [CBN, Payments System Vision 2028](https://www.cbn.gov.ng/PaymentsSystem/PSV2028.html).
+
+### Challenge to the initial framing
+
+**Before:** “More people need internet access.”
+
+**Problem:** This collapses coverage, affordability, device access, service quality, skills, safety and payment access into one vague objective.
+
+**After:** “Measure the full path from connection to participation: network availability, service quality, recurring data cost, suitable device access, digital skills, platform eligibility, account verification, payment receipt and accessible complaint routes.”
+
+### Participation barriers and policy questions
+
+| Barrier | Evidence needed | Policy question |
+|---|---|---|
+| Coverage and reliability | NCC coverage and quality indicators, disaggregated geographically | Where are service gaps concentrated, and how are outages experienced? |
+| Affordability | Data cost relative to income and household expenditure | Can low-income users sustain the connection needed for work? |
+| Devices and skills | Household/device access and digital-skills data | Can users safely complete work tasks on available devices? |
+| Platform eligibility | Published country, identity and work-authorisation rules | Are location restrictions and eligibility criteria clear before users invest time? |
+| Cross-border payments | Supported-country lists, fees, settlement times and account requirements | Can workers receive, convert and withdraw earnings transparently? |
+| Trust and redress | Complaint routes, fraud reports and privacy practices | Can users challenge errors and obtain help? |
 
 ### Stakeholders
 
-- Individuals seeking education, work and public services online.
-- Internet service providers and mobile network operators.
-- Digital platforms and online marketplaces.
-- Governments and regulators.
-- Civil society and digital-rights organisations.
-- Employers and payment providers.
+NCC and communications providers shape connectivity; NITDA and relevant public institutions influence digital-economy and AI policy; NDPC oversees personal-data protection; CBN regulates relevant payment-system activity; platforms and payment providers set service eligibility and operational rules; civil society and users can surface lived barriers.
 
-### Policy questions
+### Practical policy options to assess
 
-1. How should governments and providers measure meaningful connectivity rather than simple network availability?
-2. What transparency should platforms provide about country eligibility, location restrictions and payment access?
-3. How can consumer protection and privacy safeguards apply to cross-border digital services?
-4. What public-interest measures can reduce affordability and accessibility barriers?
-5. How can policy consultation include people who face connectivity and participation barriers?
+1. Publish accessible, regularly updated indicators that distinguish coverage from affordability, quality and actual use.
+2. Require platforms to make country eligibility, verification requirements, payment methods, fees and withdrawal limits easy to find.
+3. Improve consumer education and redress for cross-border digital services and payment disputes.
+4. Include people outside major urban centres and people with disabilities in digital-policy consultation.
+5. Evaluate digital-skills programmes by demonstrated task capability and sustained participation, not attendance alone.
 
-### Before → after
+These are options for evaluation, not claims that a particular agency currently has or lacks a specific programme.
 
-**Before:** “More people need internet access.” This is important but too broad to guide a policy response.
+### Source register and limits
 
-**After:** “Measure whether people can afford reliable connectivity, use accessible devices and services, protect their data, make digital payments and participate in cross-border opportunities. Require clear platform information about eligibility and restrictions.” This turns a general aspiration into questions that can be measured and addressed.
+- NCC 2024 Year-End Performance Report — national telecommunications indicators; reporting period ends December 2024.
+- NCC National Broadband Plan 2020–2025 — policy targets, not current outcome measurements.
+- Nigeria National AI Strategy 2024 — national strategy context and acknowledged infrastructure constraints.
+- CBN Payments System Vision 2028 — payments policy direction published in 2026.
 
-### Possible policy responses to evaluate
-
-- Publish meaningful-connectivity indicators that include affordability, reliability, device access and skills.
-- Improve transparency about geographic eligibility and payment restrictions on digital platforms.
-- Support accessible digital-skills programmes and public-interest connectivity initiatives.
-- Strengthen privacy, cybersecurity and consumer-redress mechanisms.
-- Include affected communities in policy development and evaluation.
-
-These are options for analysis, not recommendations attributed to a government or regulator.
-
-### Evidence plan
-
-A finished policy brief should compare authoritative sources from relevant institutions, including national communications and data-protection regulators, internet-governance bodies and credible civil-society research. It should state the jurisdiction and period, distinguish binding rules from voluntary principles, and avoid treating Nigeria as representative of every country.
+This is desk research. It does not include original interviews, household surveys, platform account tests or payment-provider tests. National averages cannot describe every state, community or individual. The next research improvement is to add state-level NCC evidence, current affordability data and a small, documented comparison of platform eligibility/payment terms.
 
 ### What this demonstrates
 
-This workstream connects technology with institutions and lived participation barriers. It shows policy-question framing and stakeholder analysis. It remains an initial analytical brief until the source register and jurisdiction-specific evidence are completed.
+The brief narrows a broad digital-inclusion theme into a Nigeria-specific problem, uses national primary sources, distinguishes targets from outcomes and identifies evidence gaps rather than inventing conclusions.
