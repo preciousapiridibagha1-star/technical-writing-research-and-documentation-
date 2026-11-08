@@ -1,12 +1,14 @@
 # Precious Apiri Dibagha
 
-## AI Systems | Responsible Technology | Research | Technical Writing
+## Applied Technology Research & Documentation
 
 I am a self-directed researcher and systems thinker interested in how technology can address practical business and societal problems. My work brings together AI system design, responsible technology, research, internet governance, technical documentation and project planning.
 
 I start with the problem, the people affected and the evidence available. I then define a proportionate approach, document the decisions and limitations, and identify what would need to be built or tested next. I distinguish clearly between concepts, desk research, planned work and verified implementation.
 
 ## Master portfolio — six capability areas
+
+[Evidence Challenge & Improvement Record](master-portfolio/EVIDENCE-CHALLENGE-AND-IMPROVEMENT-RECORD.md) — external sources that challenge the current work, before-and-after improvements and the next evidence to produce.
 
 The [Master Portfolio Evidence Index](master-portfolio/README.md) brings the work together across six areas:
 
