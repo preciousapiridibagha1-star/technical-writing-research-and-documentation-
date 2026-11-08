@@ -45,6 +45,10 @@ The portfolio documents:
 
 These materials are intended to support a future developer collaboration and make the system's expected behaviour and boundaries understandable before implementation.
 
+## Working local proof of concept
+
+A narrow local demo now implements the first approval-flow slice using deterministic proposal generation and a mock reminder action. It records approval or rejection in a local audit file and includes five unit tests that passed locally. It does not call an AI model or external service and is not a deployed product. See the [prototype README](prototype/README.md), [source code](prototype/vantage_mvp.py) and [tests](prototype/test_vantage_mvp.py).
+
 ## Project documentation
 
 ### Problem and requirements
