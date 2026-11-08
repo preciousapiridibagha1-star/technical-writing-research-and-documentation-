@@ -2,60 +2,61 @@
 
 ## Case study: Governance of AI-assisted recruitment
 
-**Status:** Structured hypothetical case study; source-based legal and policy verification remains outstanding.  
-**Scenario:** An employer uses an AI system to extract information from CVs, rank applicants and support shortlisting.
+**Status:** Source-backed learning case study. It is not legal advice and does not assess a named employer or product.  
+**Scenario:** An employer uses software to extract CV information, rank applicants and support shortlisting.
 
 ### Governance question
 
-How should an organisation use AI in recruitment while protecting applicants, maintaining accountability and ensuring that automated recommendations receive appropriate scrutiny?
+What safeguards should an employer apply when AI-supported recruitment processes personal data and may influence decisions with significant effects on applicants?
 
-### People affected
+### Existing work and challenge
 
-Applicants are directly affected by screening and ranking. Recruiters use the recommendations. The employer chooses the criteria and remains responsible for its recruitment process. Vendors design or supply the system. Regulators and oversight teams may have relevant supervisory roles.
+The earlier draft identified discrimination, privacy, automation bias, weak explanations and unclear accountability. Its main weakness was that it relied on general principles and had not yet been anchored in Nigerian law. The revision below adds a Nigerian legal starting point and separates it from comparative international guidance.
 
-### Main risks
+### Nigerian legal baseline
 
-- **Discrimination:** Data, proxies or poorly designed criteria may disadvantage groups for reasons unrelated to the role.
-- **Privacy:** CVs and related personal data may be collected or retained beyond what is necessary.
-- **Automation bias:** Recruiters may accept a ranking without checking the underlying evidence.
-- **Weak explanations:** Applicants may not understand or be able to challenge an adverse outcome.
-- **Unclear accountability:** Employer and vendor responsibilities may be poorly allocated.
-- **Eligibility errors:** Nationality, location or work-authorisation rules may be applied inaccurately or without a role-related basis.
+The Nigeria Data Protection Act 2023, section 37, establishes a right not to be subject to a decision based solely on automated processing, including profiling, where it produces legal or similarly significant effects. The Act sets out exceptions, and where an exception applies, suitable safeguards must protect the data subject's rights and interests. These include the ability to obtain human intervention, express a point of view and contest the decision. The exact application depends on the facts, legal basis and relevant provisions; this summary is not a substitute for legal advice. [Nigeria Data Protection Act 2023, s.37](https://ndpc.gov.ng/wp-content/uploads/2024/03/Nigeria_Data_Protection_Act_2023.pdf).
 
-These are risks to investigate, not findings about a named product or employer.
+### Risk and control analysis
 
-### Proposed controls
+| Risk | Why it matters in recruitment | Practical control / evidence to retain |
+|---|---|---|
+| Solely automated significant decisions | A ranking or rejection may materially affect an applicant | Map which decisions are automated; assess whether s.37 applies; provide meaningful human intervention and a route to contest where required |
+| Inaccurate CV extraction | Errors in dates, qualifications or work history can distort evaluation | Show extracted fields to a reviewer; allow correction; retain source-to-field traceability |
+| Discriminatory criteria or proxies | Criteria may disadvantage applicants for reasons unrelated to job requirements | Document job-related criteria; test outcomes across relevant groups where lawful and feasible; investigate disparities |
+| Automation bias | A reviewer may accept a score without scrutiny | Train reviewers; show evidence and limitations; record overrides and reasons |
+| Excessive personal-data use | CVs can contain more information than the recruitment purpose requires | Define purpose and lawful basis; minimise fields; restrict access and retention |
+| Opaque vendor responsibilities | Employer may not know how a tool ranks or retains applicant data | Conduct vendor due diligence; document roles, data flows, retention, security and incident responsibilities |
+| Weak applicant redress | Applicants may be unable to correct errors or challenge outcomes | Publish a clear contact and review route; log complaints, corrections and outcomes |
 
-1. Define the recruitment purpose and document which decisions the system may support.
-2. Review input data and criteria for relevance, accuracy and potential discriminatory effects.
-3. Give reviewers sufficient information, training, time and authority to challenge recommendations.
-4. Keep final consequential decisions under an appropriately accountable human process.
-5. Provide applicants with clear information and an accessible route to request review or correct data.
-6. Maintain access controls, retention rules, audit records and an incident-response process.
-7. Monitor outcomes after deployment and investigate unexpected patterns.
+### Meaningful human review: from slogan to control
 
-### Before → after
+**Before:** “Keep a human in the loop.”
 
-**Before:** “A human should be in the loop.” This sounds reassuring but does not explain what the person sees, what authority they have or how an error is corrected.
+**After:** “Before an adverse decision is finalised, an appropriately trained reviewer can see the relevant source information, understand the system's role and limitations, correct inaccurate data, disregard an unsupported recommendation, record reasons and refer disputed cases for further review. Applicants are told how to raise a concern or contest a decision.”
 
-**After:** “A trained recruiter receives the relevant evidence and system limitations, can override the recommendation, records the reason for the decision, and can refer disputed or unusual cases for review. The employer monitors outcomes and investigates patterns of exclusion.” This makes oversight operational and auditable.
+A human click is not, by itself, meaningful oversight. The process needs competence, relevant information, time, authority and a recorded ability to change the outcome.
 
-### Decision boundaries
+### Comparative guidance — not Nigerian law
 
-| Activity | Initial governance position |
-|---|---|
-| CV data extraction | May be assisted by automation with accuracy checks and restricted access |
-| Applicant ranking | Treat as decision support; examine criteria and group-level outcomes |
-| Interview scheduling | May be automated within approved rules and correction routes |
-| Applicant rejection | Require a defined, meaningful review and escalation process |
-| Recruitment record changes | Restrict permissions and keep traceable records |
+The UK's ICO recruitment work highlights privacy and data-protection risks in AI-supported recruitment. The Dutch Data Protection Authority has discussed meaningful human intervention in automated decision-making. These sources help test the quality of the proposed controls, but they do not replace Nigerian law or automatically apply to a Nigerian employer.
 
-The appropriate controls depend on jurisdiction, the role, the system and the consequences. This case study is not legal advice and does not determine that a particular practice is lawful or unlawful.
+- [ICO — Recruitment Rewired](https://ico.org.uk/about-the-ico/what-we-do/our-work-on-artificial-intelligence/recruitment-rewired/)
+- [Dutch Data Protection Authority — meaningful human intervention](https://www.autoriteitpersoonsgegevens.nl/en/themes/algorithms-ai/automated-decision-making/meaningful-human-intervention)
 
-### Evidence needed to complete the case study
+### Before → after summary
 
-The next research pass must use primary legal texts and regulator guidance for the selected jurisdiction(s), plus authoritative AI risk-management guidance. Record the source, relevant provision, publication/update date, access date and the specific claim it supports. Do not infer legal requirements from general commentary.
+**Before:** A list of general risks and a broad recommendation for human oversight.
+
+**After:** A jurisdiction-aware case study that identifies a Nigerian statutory provision, connects risks to operational controls, specifies what evidence an employer should retain and labels foreign regulator material as comparative guidance.
+
+### Limits and next verification
+
+- This is a desk-research case study, not an audit of a real recruitment system.
+- It does not decide whether a particular recruitment workflow falls within section 37 or an exception.
+- The full Act and current NDPC guidance should be checked before any operational or legal decision.
+- No bias testing, applicant interviews or employer implementation have been conducted.
 
 ### What this demonstrates
 
-The work shows an ability to identify affected stakeholders, distinguish risks, propose proportionate controls and translate an abstract principle—human oversight—into a practical review process. The current document remains a learning case study until its legal and policy claims are verified against authoritative sources.
+The work demonstrates source selection, jurisdiction awareness, risk analysis and translation of legal principles into practical governance controls. It does not claim legal expertise or compliance certification.
