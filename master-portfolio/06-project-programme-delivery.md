@@ -1,76 +1,65 @@
 # 6. Project & Programme Delivery
 
-## Evidence project: Planning a safe first Vantage Automata MVP
+## Evidence project: Delivering a bounded Vantage Automata prototype
 
-**Status:** Delivery plan documented; implementation and delivery outcomes not yet verified.  
-**Purpose:** Demonstrate how a broad idea can be reduced to a manageable, reviewable project.
+**Status:** Local prototype code committed to the portfolio repository; updated test execution is pending independent verification.  
+**Purpose:** Show how a broad system concept was reduced to a small, testable delivery increment.
 
 ### Delivery objective
 
-Produce a small demo that shows one complete journey: instruction → proposal → validation → human decision → mock action → audit record.
+Demonstrate one low-risk journey: instruction → validation → proposal → human decision → mock action or safe stop → local audit record.
 
-### Scope
+### Scope delivered in code
 
-**Included**
-- One low-risk task type.
-- Simple input interface.
+- One reminder-shaped instruction.
+- Input validation and restricted action type.
 - Structured proposal.
-- Backend validation.
-- Approve/reject decision.
-- Mock action handler.
-- Audit record.
-- Basic automated tests.
+- Approval tied to a fingerprint of the displayed proposal.
+- Duplicate-execution protection within one running process.
+- Mock action only.
+- Safe failure response with no automatic retry.
+- Local JSON Lines audit record.
 
-**Excluded**
-- Real customer records.
-- Payments or financial actions.
-- Sending external messages.
-- Third-party integrations.
-- Multi-user permissions.
-- Autonomous execution.
-- Production deployment.
+### Evidence record
 
-### Milestones and acceptance evidence
-
-| Milestone | Work | Evidence required |
-|---|---|---|
-| 1. Confirm scope | Select one task and define allowed outcomes | Approved one-page scope |
-| 2. Design | Map screens, data fields and approval rules | Workflow and interface notes |
-| 3. Build core flow | Implement input, proposal and validation | Source code and local demonstration |
-| 4. Add controls | Implement approval, rejection and audit record | Recorded behaviour for both decisions |
-| 5. Test | Check valid, invalid, rejected, approved and failed cases | Test output and issue log |
-| 6. Review | Fix defects and document limitations | Review notes and updated README |
-
-### Risks and responses
-
-| Risk | Response |
+| Evidence item | Record |
 |---|---|
-| Scope expands into a general automation platform | Keep one task type and maintain an explicit exclusions list |
-| AI returns malformed or unsafe output | Validate on the application side and fail closed |
-| Approval applies to changed content | Bind approval to the exact proposal version |
-| The same action runs twice | Add duplicate-execution protection |
-| A mock action is mistaken for a real integration | Label the demo clearly and keep the mock handler isolated |
-| A test is described as passed without evidence | Record actual test output before changing status |
+| Repository location | `projects/vantage-automata/prototype/` |
+| Main implementation | `vantage_mvp.py` |
+| Automated tests | `test_vantage_mvp.py` |
+| User-facing explanation | `README.md` |
+| Change recorded | Code, tests and README committed to the portfolio repository |
+| Test status | Nine tests are written; execution output has not yet been captured in this record |
+| Deployment status | Not deployed; local mock only |
+
+### Safety acceptance checks
+
+1. Reject empty, overlong and out-of-scope instructions.
+2. Reject an unauthorised action type.
+3. Reject approval if the proposal content changes after review.
+4. Reject an approval referring to another proposal ID.
+5. Block a second execution attempt.
+6. On action failure, stop and do not automatically retry.
+7. Keep the action mocked; no external account or business data is touched.
 
 ### Before → after
 
-**Before:** “Build Vantage Automata with AI agents and business integrations.” This is too broad to estimate, test or deliver as a first milestone.
+**Before:** “Build Vantage Automata with AI agents and business integrations.”
 
-**After:** “Build one local, low-risk approval journey using mock data. Demonstrate proposal validation, explicit approval/rejection, a harmless mock action and an audit record. Do not add external integrations.” The revised objective has observable acceptance evidence and a manageable boundary.
+**After:** “Deliver one local, low-risk approval journey with proposal validation, exact-content approval, duplicate protection, safe failure and a local audit record.” The revised scope is testable and makes the exclusions explicit.
 
-### Project controls
+### Delivery decisions and limitations
 
-- Maintain a short decision log for changes to scope or architecture.
-- Track risks and unresolved assumptions.
-- Review progress against acceptance evidence, not activity alone.
-- Record defects and decisions.
-- Do not mark a milestone complete until its evidence exists.
-- Keep a clear distinction between planned, in-progress, tested and released work.
+- Deterministic proposal generation was retained so the approval controls can be tested without model variability.
+- The action remains a mock; no reminder is actually created.
+- Duplicate protection is in-memory and does not persist across restarts.
+- The local audit file is not tamper-proof.
+- Authentication, multi-user permissions, durable storage, deployment, monitoring and AI integration remain outside this increment.
 
-### Programme delivery connection
+### What would complete this delivery case
 
-The same approach can support a learning or fellowship project: define the intended outcome, identify the people served, break work into deliverables, schedule realistic milestones, track dependencies and risks, and report results honestly. The portfolio's fellowship mapping is planning evidence; it is not evidence that an application was submitted or a programme delivered.
+Capture the actual test command and output; resolve any failures; demonstrate both approval and rejection paths; record defects and fixes; and add a short reflection on what changed. Do not claim a successful test run until the output is available.
 
-### Current result and next proof
+### What this demonstrates
 
-The current achievement is a defined, bounded delivery plan supported by requirements, workflows and test design. A completed delivery case study will require source code, test results, a demonstration, a short issue/fix record and a reflection on what changed during implementation.
+The record shows scope control, acceptance criteria, risk handling and traceable implementation work. It does not claim a client delivery, production release or operational AI system.
