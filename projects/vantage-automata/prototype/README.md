@@ -1,6 +1,6 @@
 # Vantage Automata — Local MVP Demo
 
-**Status:** Working local proof of concept; five unit tests passed locally.  
+**Status:** Working local proof of concept; nine unit tests cover the current safety behaviour.  
 **Scope:** Deterministic proposal generation and a mock reminder action. No AI provider or external integration is connected.
 
 ## Run
@@ -19,12 +19,20 @@ Enter an instruction beginning with `Remind me to ...`, review the proposed mock
 python -m unittest -v
 ```
 
-The test suite covers a valid proposal, empty input, an out-of-scope request, an overlong instruction and rejection of an unauthorised action type.
+The tests cover valid and invalid input, restricted action types, approval bound to the exact proposal shown, rejection of a changed proposal, duplicate-execution blocking, and safe handling of an action failure.
 
-## Safety boundary
+## Safety behaviour demonstrated
 
-This is a local demonstration, not a production application. It does not send messages, create real reminders, connect to accounts, call an AI model or change external data. Proposal generation is deterministic so that the approval flow can be tested without model variability.
+- **Narrow scope:** only a reminder-shaped instruction is accepted.
+- **Exact approval:** approval is checked against a fingerprint of the proposal content shown to the user. If the proposal changes, approval is invalid.
+- **Duplicate protection:** a proposal cannot be executed again in the same process after an execution attempt.
+- **Fail-safe outcome:** an action error returns a safe failure and is not automatically retried.
+- **Audit trail:** the decision and outcome are appended to a local JSON Lines file.
 
-## Evidence
+## Limits
 
-The prototype demonstrates the first technical slice: instruction → validated proposal → human decision → mock action or stop → audit record. It does not yet demonstrate model integration, authentication, multi-user permissions, persistence hardening or deployment.
+This is a local demonstration, not a production application. The action is a mock; no real reminder is created. Duplicate protection is in-memory and does not survive a restart. The audit file is local and is not tamper-proof. There is no authentication, multi-user permission model, durable transaction store, AI model integration, monitoring or deployment. These controls would need further design and testing before any real-world use.
+
+## Evidence boundary
+
+The prototype demonstrates: instruction → validation → proposal → exact human approval → mock execution or safe stop → local audit record. It does not prove that an AI agent is secure or production-ready.
