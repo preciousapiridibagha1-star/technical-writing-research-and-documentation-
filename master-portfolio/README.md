@@ -1,4 +1,6 @@
-# Master Portfolio Evidence
+# Applied Technology Research & Documentation
+
+## Master Portfolio Evidence
 
 **Owner:** Precious Apiri Dibagha  
 **Portfolio status:** Active, evidence-led development  
@@ -14,6 +16,10 @@ This portfolio brings together six connected capabilities. The examples are base
 4. [Internet Governance & Digital Policy](04-internet-governance-digital-policy.md) — a focused policy brief on meaningful access to digital public and economic opportunities.
 5. [Technical Writing & Documentation](05-technical-writing-documentation.md) — before-and-after examples and a practical documentation standard.
 6. [Project & Programme Delivery](06-project-programme-delivery.md) — scope, milestones, risks, decisions and evidence of delivery.
+
+## External evidence challenge
+
+Read the [Evidence Challenge & Improvement Record](EVIDENCE-CHALLENGE-AND-IMPROVEMENT-RECORD.md) for external sources, critical questions, before-and-after examples and the next improvement steps across all six areas.
 
 ## How to read the evidence
 
