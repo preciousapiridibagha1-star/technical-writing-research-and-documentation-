@@ -9,7 +9,7 @@
 
 The June 2026 report needs a substantial correction before it can be used to make decisions. Some prices and product details have changed, some claims are not supported by evidence shown in the report, and its overall rankings are stronger than the research method allows.
 
-The most important correction for a job seeker in Nigeria is this:
+The most important correction for a job seeker in Nigeria is this. The conclusions below are based on public information, not on accounts or applications tested by the researcher:
 
 - **LoopCV** is the clearest candidate to test first from the information currently available. Its official pricing page describes a free plan and says its paid Standard and Premium plans can search for remote jobs anywhere in the world. That does not guarantee that every vacancy accepts applicants from Nigeria; each job must still be checked.
 - **Sorce** has a useful free tier according to its own website, but it currently requires an iPhone. Its official pages say there is no Android app yet. The Nigerian App Store lists the app, but this does not prove that every job it shows accepts applicants based in Nigeria.
@@ -24,9 +24,9 @@ The original report contains several issues that affect its conclusions.
 
 ### 1.1 It presents old prices as if they are current
 
-The report is marked June 2026. Prices and plan limits can change. The current LoopCV pricing page now displays prices in euros and lists Basic Looper as free, Standard Looper at €8.99 per month, Premium Looper at €29.99 per month and Done For You at €159.99 per month. These do not match the dollar prices in the June report.
+The report is marked June 2026. Prices and plan limits can change. The current LoopCV pricing page now displays prices in euros and lists Basic Looper as free, Standard Looper at €8.99 per month, Premium Looper at €29.99 per month and Done For You at €159.99 per month. These do not match the dollar prices in the June report. **Evidence to check:** LoopCV's live pricing page [L1].
 
-The old Sonara figures are also not safe to repeat as current prices. Sonara's current public pages do not provide a clear public pricing table. A third-party price report is not enough to confirm what a new user in Nigeria would actually be charged.
+The old Sonara figures are also not safe to repeat as current prices. Sonara's current public pages do not provide a clear public pricing table. A third-party price report is not enough to confirm what a new user in Nigeria would actually be charged. **Evidence to check:** Sonara's current website and Terms [S1, S2].
 
 ### 1.2 The Sonara annual-price calculation is inconsistent
 
@@ -87,7 +87,7 @@ Jobright describes itself as an AI job-search assistant. Its public pages descri
 - Confirm whether the specific vacancy accepts applications from Nigeria.
 - Review all AI-edited CV content. It must remain truthful.
 
-**Nigeria decision:** The public pages checked do not provide a clear enough answer about full Nigeria support. Treat this as unconfirmed rather than calling it unavailable.
+**Nigeria decision:** The public pages checked do not provide a clear enough answer about full Nigeria support. Treat this as unconfirmed rather than calling it unavailable. **Evidence checked:** Jobright's public website and platform page [J1, J2].
 
 Official website: https://jobright.ai/
 
@@ -104,7 +104,7 @@ Sonara's current website describes a service that finds matching jobs and applie
 - Do not rely on the old report's $71.40 annual figure or its application-failure percentage as current facts.
 - Confirm the full renewal price, trial conditions, cancellation process and country eligibility before entering payment details.
 
-**Nigeria decision:** Because the Terms are US-focused, this is not a sensible first choice for someone applying from Nigeria unless Sonara confirms otherwise.
+**Nigeria decision:** Because the Terms are US-focused, this is not a sensible first choice for someone applying from Nigeria unless Sonara confirms otherwise. **Evidence checked:** Sonara Terms [S2].
 
 Official website: https://www.sonara.ai/  
 Terms: https://www.sonara.ai/terms-conditions
@@ -131,7 +131,7 @@ The official pricing page says Standard and Premium can search for remote jobs a
 - Check the job source, employer, country restrictions and application status.
 - Avoid allowing generic AI messages to be sent to recruiters without reviewing them.
 
-**Nigeria decision:** The strongest first test from this four-platform list, because the official page explicitly describes worldwide remote-job search on paid plans and offers a free entry plan. Start free and verify actual vacancy eligibility.
+**Nigeria decision:** LoopCV is the most practical first test in this four-platform shortlist because its pricing page describes a free entry plan and worldwide remote-job search on paid plans. This is a reason to test it, not proof that it will produce better results. Verify each vacancy's eligibility before applying. **Evidence checked:** LoopCV pricing [L1].
 
 Official pricing: https://www.loopcv.pro/pricing/  
 Official website: https://www.loopcv.pro/
@@ -152,7 +152,7 @@ Sorce also publishes company-reported figures such as users, swipes, application
 - The official guide says unusual application forms may sometimes prevent completion.
 - Applications requiring a portfolio, video or a writing sample should be handled manually and checked carefully.
 
-**Nigeria decision:** Worth considering if the user has an iPhone and the app shows suitable international vacancies. It is not a practical option for an Android-only user right now.
+**Nigeria decision:** Worth considering if the user has an iPhone and the app shows suitable international vacancies. It is not a practical option for an Android-only user right now. **Evidence checked:** Sorce's download page, FAQ and Nigerian App Store listing [C1–C3].
 
 Official download information: https://www.sorce.jobs/articles/sorce-app-download  
 Official FAQ: https://www.sorce.jobs/articles/sorce-faq  
@@ -199,22 +199,33 @@ This is an updated desk review, not a full hands-on product test.
 
 The next useful validation step is a controlled free-plan test from the user's own device and location. Record the results before making any paid recommendation.
 
-## 7. Sources
+## 7. Evidence trail and sources
+
+The short labels below connect important findings to the public pages used to check them. They make it easier for a reader to retrace the research. A source confirms what its publisher states; it does not independently prove that a product performs well in practice.
+
+- **[J1] Jobright website:** product features and public job-search interface.
+- **[J2] Jobright platform page:** additional public product information.
+- **[S1] Sonara website:** current service description.
+- **[S2] Sonara Terms:** operator and geographic availability wording.
+- **[L1] LoopCV pricing:** plan descriptions, displayed prices and worldwide remote-search wording.
+- **[C1] Sorce download page:** device availability.
+- **[C2] Sorce FAQ:** application flow and limitations.
+- **[C3] Nigerian App Store listing:** app listing in the Nigeria storefront; not proof of job eligibility.
 
 All pages below were checked on 7 November 2026 unless a different date is stated on the page.
 
 ### Official platform sources
 
-- Jobright — https://jobright.ai/  
-- Jobright platform page — https://api.jobright.ai/  
-- Sonara — https://www.sonara.ai/  
-- Sonara Terms — https://www.sonara.ai/terms-conditions  
+- [J1] Jobright — https://jobright.ai/  
+- [J2] Jobright platform page — https://api.jobright.ai/  
+- [S1] Sonara — https://www.sonara.ai/  
+- [S2] Sonara Terms — https://www.sonara.ai/terms-conditions  
 - LoopCV — https://www.loopcv.pro/  
-- LoopCV pricing — https://www.loopcv.pro/pricing/  
-- Sorce download and device support — https://www.sorce.jobs/articles/sorce-app-download  
-- Sorce FAQ and application process — https://www.sorce.jobs/articles/sorce-faq  
+- [L1] LoopCV pricing — https://www.loopcv.pro/pricing/  
+- [C1] Sorce download and device support — https://www.sorce.jobs/articles/sorce-app-download  
+- [C2] Sorce FAQ and application process — https://www.sorce.jobs/articles/sorce-faq  
 - Sorce pricing information — https://www.sorce.jobs/articles/sorce-pricing  
-- Sorce listing in the Nigerian App Store — https://apps.apple.com/ng/app/sorce-ai-job-search/id6504584959  
+- [C3] Sorce listing in the Nigerian App Store — https://apps.apple.com/ng/app/sorce-ai-job-search/id6504584959  
 
 ### Independent context used cautiously
 
