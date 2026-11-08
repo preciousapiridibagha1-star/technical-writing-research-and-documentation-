@@ -89,3 +89,67 @@ This is an introductory learning exercise based on a hypothetical scenario and a
 3. Compare human oversight approaches and identify practical implementation requirements.
 4. Revise this document into a sourced analytical brief.
 5. Add it to the portfolio evidence register only after review and completion.
+
+
+## 10. Applied analysis: human oversight and control
+
+### 10.1 Activities and approval boundaries
+
+The exercise considered five capabilities: reading CVs, contacting applicants, scheduling interviews, rejecting applicants and updating recruitment records.
+
+The initial position is that **final rejection decisions should require meaningful human review**, particularly where the decision could significantly affect an applicant. The AI may identify possible mismatches or recommend an outcome, but a qualified recruiter should be able to inspect the evidence, challenge the recommendation and correct errors.
+
+Other activities do not necessarily require the same level of approval in every organisation:
+
+- **Reading and extracting CV information:** May be automated for a defined purpose, provided access is authorised, data use is transparent and accuracy is checked.
+- **Contacting applicants:** Routine, pre-approved messages may be automated within strict templates and rules. Sensitive, unusual or consequential communications should be escalated for human review.
+- **Scheduling interviews:** May be automated within approved availability and communication rules, with a way for applicants or recruiters to correct mistakes.
+- **Rejecting applicants:** Should have a clearly defined human-review and escalation process. The level of review required will depend on the decision's significance, applicable law and system design.
+- **Updating recruitment records:** May be automated when changes are authorised, traceable and reversible where appropriate. The system should not be able to alter or erase records without controls and audit logs.
+
+The right approach is therefore not to prohibit all autonomous activity. It is to match the level of autonomy to the potential impact, reversibility and risk of each action.
+
+### 10.2 Investigating repeated rejection patterns
+
+If the system repeatedly rejects qualified applicants from Nigeria, India or another group, correcting individual decisions is not enough.
+
+The organisation should investigate the system and recruitment process to identify the cause. Possible causes include:
+
+- Explicit nationality or location filters.
+- Proxy variables that correlate with nationality or location.
+- Biased or unrepresentative training or evaluation data.
+- Incorrectly configured job eligibility criteria.
+- Errors in CV parsing or qualification matching.
+- Recruiter practices that reinforce automated recommendations.
+
+The organisation should preserve relevant logs, assess the scale and impact of the problem, pause or restrict the affected function where necessary, correct affected decisions and test the system again before resuming use.
+
+Nationality or location restrictions are not automatically improper in every situation; some roles may have genuine legal, contractual or security-related eligibility requirements. The employer should be able to identify and justify the relevant requirement rather than allowing an unexplained technical filter to decide.
+
+### 10.3 Permissions and restrictions
+
+The AI agent should operate under the principle of least privilege: it should receive only the access and authority needed for its assigned tasks.
+
+Possible controls include:
+
+- Read-only access to specified applicant information where editing is unnecessary.
+- Permission to send only approved categories of messages.
+- Scheduling access limited to authorised calendars and available time slots.
+- No authority to make final rejection decisions unless a properly governed process explicitly permits the action and applicable requirements are met.
+- Restrictions on exporting, sharing, deleting or retaining applicant data.
+- Authentication, role-based access, audit logs and monitoring.
+- Escalation to a human when information is incomplete, contradictory or outside the agent's approved rules.
+
+### 10.4 Authority to intervene or suspend
+
+The organisation should designate accountable human owners with authority to restrict, pause or suspend the system. This may include the hiring-process owner and relevant senior operational, risk, compliance or data-protection personnel, according to the organisation's structure.
+
+Developers and vendors may be responsible for technical investigation and remediation within their roles, but the employer deploying the system should not assume that responsibility can simply be transferred to the engineers.
+
+A documented incident process should specify who can stop the system, how affected decisions are reviewed, how applicants are treated during the interruption and what evidence is required before the system is restarted.
+
+### 10.5 Key learning
+
+Human oversight is not meaningful merely because a person is present somewhere in the workflow. Reviewers need sufficient information, competence, time and authority to challenge the AI. The organisation also needs clear intervention rights, access controls, monitoring and accountability.
+
+These are initial design recommendations for the hypothetical case. They require further validation against relevant law, standards and authoritative guidance before being treated as a formal compliance assessment.
