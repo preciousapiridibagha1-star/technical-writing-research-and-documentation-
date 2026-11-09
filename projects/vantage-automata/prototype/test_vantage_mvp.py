@@ -50,16 +50,21 @@ class VantageMVPTests(unittest.TestCase):
             )
 
     def test_duplicate_execution_is_blocked(self):
-        first = approve_and_execute(
-            self.proposal, self.proposal.proposal_id,
-            self.fingerprint, self.executed_ids
-        )
-        self.assertIn("MOCK_SUCCESS", first)
-        with self.assertRaisesRegex(ValueError, "no longer pending"):
-            approve_and_execute(
+        with patch("vantage_mvp.run_mock_action", return_value="MOCK_SUCCESS") as action:
+            first = approve_and_execute(
                 self.proposal, self.proposal.proposal_id,
                 self.fingerprint, self.executed_ids
             )
+            self.assertIn("MOCK_SUCCESS", first)
+
+            # Simulate a stale pending copy after the first attempt.
+            self.proposal.status = "PENDING"
+            with self.assertRaisesRegex(ValueError, "Duplicate execution blocked"):
+                approve_and_execute(
+                    self.proposal, self.proposal.proposal_id,
+                    self.fingerprint, self.executed_ids
+                )
+            action.assert_called_once()
 
     def test_execution_failure_stops_without_automatic_retry(self):
         with patch("vantage_mvp.run_mock_action", side_effect=RuntimeError("test")):
