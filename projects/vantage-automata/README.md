@@ -35,6 +35,12 @@ A bounded local demo is available in the prototype folder. It uses deterministic
 - [Source code](prototype/vantage_mvp.py)
 - [Unit tests](prototype/test_vantage_mvp.py)
 
+## Architecture and implementation planning
+
+The supplied Vantage diagrams are conceptual views, not build instructions. The detailed 10-section diagram is a long-term capability map; the simplified dashboard/system diagram is the clearer overview. Neither represents the current prototype. The [shared Architecture & Implementation Guide](../architecture-and-implementation/README.md) explains which capabilities to defer and how a future code or low-code implementation should preserve approval integrity.
+
+The original diagram images were supplied for review in the project conversation on 9 November 2026. They have not yet been committed as repository image assets because the connected GitHub actions in this session support text-file operations but not binary image upload.
+
 ## Strategic and systems-design work
 
 The wider project documentation records problem framing and user assumptions, MVP scope and acceptance criteria, proposed architecture and API contract, approval workflow, risk and control register, technical decisions, implementation plan, test plan and requirements-to-tests traceability. These materials support future development planning; they do not mean that external integrations have been implemented.
@@ -58,6 +64,6 @@ Jarvis AI remains the broader proposed multi-agent business operating ecosystem.
 
 A later iteration should add persistent idempotency, an explicit permission model, stronger audit integrity and tests for malformed or adversarial proposals. If a model is introduced, it should remain a proposal generator and must not grant itself execution authority.
 
-The original Vantage architecture diagram will be added when the original image asset is available. It will illustrate a proposed design, not proof of implementation.
+The supplied Vantage architecture diagrams should be added as clearly labelled visual design references when repository image upload is available. They illustrate proposed future capabilities, not proof of implementation.
 
 **Evidence boundary:** This is a self-directed local proof of concept with passing unit tests. It is not a commissioned client project, deployed application, integrated AI agent or production-ready service.
