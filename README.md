@@ -6,6 +6,12 @@ I am a self-directed researcher and systems thinker interested in how technology
 
 I start with the problem, the people affected and the evidence available. I then define a proportionate approach, document the decisions and limitations, and identify what would need to be built or tested next. I distinguish clearly between concepts, desk research, planned work and verified implementation.
 
+## Professional focus
+
+**Applied AI Systems & Technical Documentation — Junior / Entry-Level.** I research practical problems, analyse workflows, document proportionate AI-enabled solutions, consider responsible-use requirements and test small prototypes. My work is self-directed; I distinguish clearly between design proposals, local prototypes, no-code plans and deployed integrations.
+
+The six capability areas below support one connected delivery method: research the problem → assess risks and context → design the workflow → document requirements → prototype and evaluate → record delivery evidence.
+
 ## Master portfolio — six capability areas
 
 The [Master Portfolio Evidence Index](master-portfolio/README.md) brings together the six capability pages and their supporting evidence. The [Evidence Challenge & Improvement Record](master-portfolio/EVIDENCE-CHALLENGE-AND-IMPROVEMENT-RECORD.md) documents external challenges, before-and-after improvements and limitations. The [Portfolio Status & Verification Record](PORTFOLIO-STATUS.md) summarises completion evidence, final checks and the remaining Area 7 boundary.
@@ -19,8 +25,10 @@ The [Master Portfolio Evidence Index](master-portfolio/README.md) brings togethe
 
 ## Practical systems work
 
+A shared [Architecture & Implementation Guide](projects/architecture-and-implementation/README.md) explains how to interpret the Vantage and Jarvis diagrams, avoid overbuilding, compare code and no-code routes, and use structured JSON contracts without treating prompts as security controls.
+
 - **[Vantage Automata](projects/vantage-automata/README.md)** — self-directed human-supervised task-approval concept. Its first local deterministic prototype is implemented and nine unit tests pass. It uses a mock reminder only; it is not an integrated AI agent or production system.
-- **[Jarvis AI](projects/jarvis-ai/README.md)** — proposed AI-enabled business operating ecosystem. Architecture and MVP planning are documented; implementation is not claimed.
+- **[Jarvis AI](projects/jarvis-ai/README.md)** — proposed AI-enabled business operating ecosystem. Its first proposed MVP is one human-reviewed customer-enquiry workflow; implementation and user validation are not claimed.
 
 Neither project is presented as commissioned client delivery.
 
