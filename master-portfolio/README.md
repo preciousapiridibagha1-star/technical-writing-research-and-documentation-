@@ -7,7 +7,7 @@
 **Evidence scope:** Self-directed system design and local prototype work, desk research, policy analysis and documentation review. No client delivery or deployed AI system is claimed.  
 **Close-out record:** [Portfolio Status & Verification](../PORTFOLIO-STATUS.md).
 
-This portfolio links six connected capabilities. Every page separates existing work, evidence and external challenge, improvement, and what remains unverified.
+This portfolio links six connected capabilities through one delivery method: research the problem, assess context and risks, design a proportionate workflow, document requirements, prototype and evaluate, then record evidence. The recommended entry-level positioning is **Applied AI Systems & Technical Documentation**. Every page separates existing work, evidence and external challenge, improvement, and what remains unverified.
 
 ## The six areas
 
@@ -30,6 +30,8 @@ This portfolio links six connected capabilities. Every page separates existing w
 | 6. Project delivery | [Delivery evidence page](06-project-programme-delivery.md), [Vantage prototype run guide](../projects/vantage-automata/prototype/README.md) and [test suite](../projects/vantage-automata/prototype/test_vantage_mvp.py) | Narrow milestone delivery, acceptance criteria, implementation record and a repeatable nine-test result | Self-directed prototype only; not client delivery, production deployment or independent review. |
 
 ## Evidence and supporting work
+
+- [Architecture & Implementation Guide](../projects/architecture-and-implementation/README.md) — explains the supplied Vantage and Jarvis architecture diagrams, lean MVP boundaries, code/no-code approaches, JSON contracts and professional positioning.
 
 - [Evidence Challenge & Improvement Record](EVIDENCE-CHALLENGE-AND-IMPROVEMENT-RECORD.md) — external challenges, before-and-after improvements and evidence boundaries across all six areas.
 - [Vantage Automata prototype](../projects/vantage-automata/prototype/README.md) — code, test instructions, scope and actual test result.
