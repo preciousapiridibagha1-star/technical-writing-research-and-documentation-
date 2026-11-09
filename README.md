@@ -9,7 +9,11 @@ This repository is **one master portfolio**. It brings together research, system
 
 I am building evidence through self-directed projects and research. I do not present myself as a software engineer or claim coding, production deployment, integrations, community partnerships or measured outcomes that I have not completed.
 
-## Portfolio quality review\n\nSee the [Portfolio Quality Review](PORTFOLIO-QUALITY-REVIEW.md) for the latest audit, remaining cleanup items and evidence standards.\n\n## My professional direction
+## Portfolio quality review
+
+See the [Portfolio Quality Review](PORTFOLIO-QUALITY-REVIEW.md) for the latest audit, completed housekeeping and evidence standards.
+
+## My professional direction
 
 **Technology Researcher & Technical Documentation Specialist**
 
@@ -29,7 +33,7 @@ Technical writing is not a separate side activity in this portfolio. It is how t
 These are self-directed concepts and design/documentation work, not proof of software engineering or deployed products.
 
 ### 2. AI governance and responsible technology
-Work on human authority, accountability, privacy, data permissions, risk boundaries and the social implications of AI. The MindCommons, Vantage and Jarvis projects provide connected examples.
+Work on human decision authority, accountability, privacy, data permissions, risk boundaries and the social implications of AI. The MindCommons, Vantage and Jarvis projects provide connected examples.
 
 ### 3. Technology research and analytical writing
 - [Research Portfolio](research/README.md)
@@ -41,9 +45,9 @@ This pillar demonstrates how I find, compare and assess sources, distinguish evi
 ### 4. Technical writing and documentation
 - [Technical Writing Samples](technical-guides/README.md)
 - [README and documentation guides](technical-guides/README-guides/)
-- [FAQs and documentation examples](technical-guides/)
+- [FAQs, user guides and documentation examples](technical-guides/)
 
-The samples demonstrate structured explanations, software/product overviews, FAQs, user guidance and documentation review.
+The maintained samples demonstrate structured explanations, product overviews, FAQs, user guidance, before-and-after revision and documentation review. Older root-level drafts, where retained, are historical working material rather than the primary samples linked for review.
 
 ### 5. Internet governance, digital policy and public-interest technology
 This is a developing strand connected to the Internet Society pathway. Planned learning and a focused issue brief will add evidence here. Until completed, this is described as work in progress—not an established area of expertise.
@@ -54,7 +58,7 @@ This is a developing strand connected to the Internet Society pathway. Planned l
 
 Researching a project or documenting it is not the same as making an upstream contribution. Actual contributions will be linked only when submitted and verifiable.
 
-## One portfolio for the original eight opportunities
+## One portfolio for seven active opportunities
 
 The original plan covered eight opportunities. Tarbell was later removed at the user's direction, leaving seven active targets. The portfolio remains one shared evidence base; each application selects the most relevant work rather than creating a separate portfolio.
 
@@ -70,7 +74,7 @@ See the [Master Portfolio Opportunity Evidence Map](fellowship-alignment/README.
 
 ## Current priorities
 
-1. Make the master portfolio coherent, accurate and easy to navigate.
+1. Keep the master portfolio coherent, accurate and easy to navigate.
 2. Strengthen the strongest research and documentation samples rather than adding unrelated material.
 3. Complete MindCommons AI's desk research and validate whether the proposed gap is real before treating it as a product opportunity.
 4. Continue Vantage Automata and Jarvis AI as systems-analysis and documentation projects, with any future implementation claims kept strictly evidence-based.
