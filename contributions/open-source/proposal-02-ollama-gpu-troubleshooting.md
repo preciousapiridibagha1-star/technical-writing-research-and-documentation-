@@ -66,4 +66,4 @@ Ollama's contributor guide welcomes small documentation corrections and asks con
 
 ## Status
 
-**Prepared technical documentation proposal — not submitted.** No upstream branch, commit or pull request has been created. Public submission requires the account owner's approval.
+**Superseded as a submission target — not submitted.** Another contributor has already opened [upstream PR #14461](https://github.com/ollama/ollama/pull/14461), which targets the same file and proposes substantially overlapping GPU-fallback guidance. Do not submit a competing duplicate. Retained as a research and technical-writing exercise.
