@@ -1,86 +1,63 @@
 # Vantage Automata
 
-**Project status: Self-directed system concept documented for a future rebuild with a developer. It is not a currently working or verified product.**
+**Project status: Local deterministic proof of concept implemented and unit-tested; not a deployed AI product.**
 
-Vantage Automata is a proposed AI-assisted task and action-approval system. It is intended to help individuals, businesses, companies and agencies turn plain-language instructions into structured action proposals while keeping the user in control of whether an action proceeds.
+Vantage Automata is a self-directed concept for a human-supervised task-approval system. It explores how a user instruction can be converted into a structured proposal, checked against application rules, presented for explicit approval and then handled through a controlled action pathway.
 
-The project is being retained as a documented system design and future product direction. The intended next implementation route is to rebuild the prototype in collaboration with a developer. The earlier exploratory prototype is not being treated as a deliverable or as evidence of a functioning system.
+The broader product remains a concept. The first local proof of concept demonstrates only one narrow reminder workflow. It does not call an AI model, connect external services or alter real business data.
 
 ## The problem the concept explores
 
-AI tools can interpret instructions and prepare actions, but allowing a system to act without clear review can create mistakes, unwanted changes and loss of user trust. Vantage Automata explores a controlled alternative: the system prepares and explains a proposed action, and an authorised person decides whether it may proceed.
+AI tools can interpret instructions and prepare actions, but allowing a system to act without clear review can create mistakes, unwanted changes and loss of user trust. Vantage explores a controlled alternative: the application prepares and explains a proposed action, and an authorised person decides whether it may proceed.
 
-The intended users are not limited to one industry. Potential settings include individuals managing digital tasks, small and growing businesses, companies and agencies. The exact first customer group and use case must be selected and validated before development.
+The intended user group and first commercial use case have not yet been validated. The project is not presented as a universal automation platform.
 
-## Proposed first workflow
+## Proposed system workflow
 
 1. A user enters a task or instruction.
-2. The system validates the request and checks whether it is within the permitted scope.
-3. An AI component prepares a structured action proposal.
-4. The backend validates the proposal against the system's rules.
-5. The user sees the proposed action and relevant details.
+2. The application validates the request and checks whether it is within the permitted scope.
+3. An AI component may later suggest a structured action proposal.
+4. Application logic validates the proposal independently.
+5. The user sees the exact proposed action and relevant details.
 6. The user approves or rejects it.
-7. Rejection stops the workflow. Approval permits only the specifically authorised, safe action.
+7. Rejection stops the workflow. Approval permits only the specific authorised action.
 8. The system records the decision and outcome.
 
-This describes the proposed workflow, not a currently running application.
+The AI component is not the permission authority. The application must enforce scope and approval rules.
 
-## Intended product direction
+## Implemented local proof of concept
 
-The longer-term direction is to develop Vantage Automata into a dependable task-approval product that could be adapted to different customer and organisational workflows. It should not be marketed as a finished universal automation platform. Each use case would need defined permissions, integrations, data boundaries, safeguards and acceptance tests.
+A bounded local demo is available in the prototype folder. It uses deterministic proposal generation and a mock reminder action. It validates the input, binds approval to the exact proposal content displayed, blocks duplicate execution attempts within one process, handles action failure without automatic retry and writes a local audit record.
 
-The first rebuild should remain narrow and use mock data and mock actions. Real integrations and consequential actions should only be considered after the core approval flow has been implemented, reviewed and tested.
+**Verification:** Nine unit tests passed on 9 November 2026 (`python -m unittest -v`; 9 passed, 0 failures, 0 errors). The test run checks only the behaviours covered by the test suite; it is not a security audit or production validation.
+
+- Prototype run guide and evidence: [README](prototype/README.md)
+- [Source code](prototype/vantage_mvp.py)
+- [Unit tests](prototype/test_vantage_mvp.py)
 
 ## Strategic and systems-design work
 
-The portfolio documents:
-- Problem framing and initial user assumptions.
-- MVP scope and acceptance criteria.
-- Proposed system architecture and API contract.
-- Task proposal and human approval workflow.
-- Risk and control register.
-- Technical decision records.
-- Proposed implementation plan.
-- Test plan and requirements-to-tests traceability.
+The wider project documentation records problem framing and user assumptions, MVP scope and acceptance criteria, proposed architecture and API contract, approval workflow, risk and control register, technical decisions, implementation plan, test plan and requirements-to-tests traceability. These materials support future development planning; they do not mean that external integrations have been implemented.
 
-These materials are intended to support a future developer collaboration and make the system's expected behaviour and boundaries understandable before implementation.
+## Safety boundaries and known limitations
 
-## Working local proof of concept
+- The current action is a mock; it does not create a real reminder.
+- Proposal generation is deterministic, not AI-powered.
+- Duplicate protection is in-memory and does not survive a restart.
+- The local JSONL audit file is not tamper-proof.
+- Authentication, multi-user permissions, durable storage, monitoring, deployment and real integrations are not implemented.
+- No user testing, client validation or independent security review has been conducted.
 
-A narrow local demo now implements the first approval-flow slice using deterministic proposal generation and a mock reminder action. It records approval or rejection in a local audit file and includes five unit tests that passed locally. It does not call an AI model or external service and is not a deployed product. See the [prototype README](prototype/README.md), [source code](prototype/vantage_mvp.py) and [tests](prototype/test_vantage_mvp.py).
+Real integrations and consequential actions should be considered only after a threat model, permission model, durable execution controls, audit design and further testing are complete.
 
-## Project documentation
+## Jarvis AI relationship
 
-### Problem and requirements
-- [Problem and User Analysis](requirements/problem-and-user-analysis.md)
-- [MVP Scope and Acceptance Criteria](requirements/mvp-scope.md)
-- [Risk and Control Register](requirements/risk-and-control-register.md)
+Jarvis AI remains the broader proposed multi-agent business operating ecosystem. Vantage is a narrower implementation experiment whose approval controls can be examined and tested before the broader concept is considered. Jarvis is not a deployed multi-agent system.
 
-### Architecture and workflow
-- [System Overview](architecture/system-overview.md)
-- [Initial API Contract](architecture/api-contract.md)
-- [Initial Technical Decisions](architecture/technical-decisions.md)
-- [Instruction and Approval Workflow](workflows/approval-workflow.md)
+## Future evidence
 
-### Implementation and testing
-- [Proposed Implementation Plan](implementation/implementation-plan.md)
-- [MVP Test Plan](testing/test-plan.md)
-- [Requirements-to-Tests Traceability Matrix](testing/requirements-to-tests-traceability.md)
+A later iteration should add persistent idempotency, an explicit permission model, stronger audit integrity and tests for malformed or adversarial proposals. If a model is introduced, it should remain a proposal generator and must not grant itself execution authority.
 
-## Future rebuild approach
+The original Vantage architecture diagram will be added when the original image asset is available. It will illustrate a proposed design, not proof of implementation.
 
-The intended next step is a fresh, inspectable implementation with a developer. The collaboration should establish:
-1. The first customer group and one concrete task workflow.
-2. The agreed MVP requirements and exclusions.
-3. A simple architecture and documented technology choices.
-4. A working prototype using mock data and mock actions.
-5. Test cases, recorded results and fixes.
-6. A short demonstration of the verified workflow.
-
-The original Vantage Automata architecture diagram will be added as a final visual asset. It will present a proposed architecture, not proof of implementation.
-
-## Safety and evidence boundaries
-
-Human approval is central to the design. The first build should not execute payments, send external messages or change customer records. Any later real integration would require explicit permissions, security and privacy review, and tests.
-
-No current working MVP, verified integration, user validation or executed test results are claimed. The earlier exploratory prototype is not required as evidence for this documented concept; the future rebuild will be assessed on its own source, tests and demonstration.
+**Evidence boundary:** This is a self-directed local proof of concept with passing unit tests. It is not a commissioned client project, deployed application, integrated AI agent or production-ready service.
