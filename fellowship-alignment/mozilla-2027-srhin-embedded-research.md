@@ -118,25 +118,25 @@ The application must not imply otherwise. Any health-related technical work must
 
 ## 8. A sensible project direction to investigate — not approved by SRHIN
 
-A plausible direction for discussion with the host is a **community-centred mental-health data governance toolkit or demonstrator**.
+A plausible direction for discussion is **MindCommons AI**, a proposed AI-powered platform for community-governed mental-health data commons.
 
-A third-party guide reproduces what it describes as the SRHIN host challenge: exploring community-owned tools for governance, consent, privacy and benefit-sharing, piloted with young people, people with lived experience and community health workers, with the longer-term aim of a mental-health data commons. The full official host-specific RFP text should be checked before treating this reproduction as definitive.
+The host challenge reproduced in a public guide describes exploring community-owned tools for governance, consent, privacy and benefit-sharing, with pilots involving young people, people with lived experience and community health workers, toward a mental-health data commons. This reproduction is a discovery aid; the official full RFP remains the primary source and should be checked directly before final application claims.
 
-A small technical exploration could investigate:
+The proposed product concept is a web application with role-based workspaces and a coordinated AI assistant. It would explore:
 
-- Purpose-specific, plain-language consent records.
-- How participants can review or change permissions.
-- How access requests are checked against permitted purposes.
-- How decisions, access and permission changes are made transparent and auditable.
-- How community governance and benefit-sharing decisions might be represented without reducing them to a checkbox.
-- What requires human review, community authority, legal advice or specialist privacy expertise.
+- Community-defined data governance and stewardship rules.
+- Purpose-specific participant consent and permissions.
+- Researcher requests for later data use.
+- Rule-based checks against approved permissions and policies.
+- AI assistance to explain, guide, summarise and flag issues.
+- Human and community review of sensitive decisions.
+- Transparent records of decisions and agreed benefit-sharing commitments.
 
-**Proposed portfolio demonstrator:** a small application using synthetic data. A fictional participant grants or declines permission for a defined use; a fictional researcher requests access; the system checks the request against the permission; and the application records the decision for review.
+AI would support the work but would not independently grant access, override community authority or make final ethics decisions. Individual consent and collective community governance would be treated as connected but distinct responsibilities.
 
-This would demonstrate a limited technical workflow, not a production data commons, a legal consent system or proof of community ownership. Software alone cannot establish legitimate community governance. The design would need participatory input and review by SRHIN, community members, people with lived experience, and relevant health, ethics and privacy specialists.
+The current work is **research and product documentation only**: research analysis, product definition, MVP scope, system architecture and proposed dashboard design. No prototype is being built at this stage. The product is not SRHIN-approved, and no partnership, integration or community consultation is claimed.
 
-This is a working hypothesis, not an SRHIN-approved project or confirmed fellowship deliverable. It must be revised if the official host brief or direct discussion with SRHIN establishes a different priority.
-
+This direction must be validated against the full official host brief, SRHIN's existing systems and governance arrangements, and the views of affected communities before any capability is presented as a confirmed gap or final implementation requirement.
 
 ## 9. Portfolio evidence plan
 
@@ -242,15 +242,16 @@ There are still reasons to be cautious:
 
 ## 14. Immediate portfolio priorities
 
-The portfolio should demonstrate the ability to contribute to a technically grounded, responsible-AI project without pretending to be a clinician or production ML engineer. The highest-value next artefacts are:
+The portfolio should demonstrate the ability to research, define and document a technically grounded, responsible-AI project without claiming clinical expertise or production engineering experience.
 
-1. A source-linked SRHIN challenge and institutional research brief, with third-party reproductions clearly distinguished from the official RFP.
-2. A project-specific requirements specification for a community-centred data-governance demonstrator.
-3. A small working prototype using synthetic data only, with purpose-specific consent, access-request checks and an auditable decision history.
-4. A system architecture and data-flow diagram labelled according to what is proposed versus implemented.
-5. Automated tests and a concise test report showing actual results and known limitations.
-6. A privacy, security, misuse and safeguarding review proportionate to the prototype; specialist questions must remain explicitly unresolved until reviewed by qualified people.
-7. One genuine open-source contribution with a public issue/PR and actual review status.
-8. A community engagement and evaluation plan. Do not claim interviews, co-design or consent before they occur.
+Current priorities:
 
-The first prototype is a learning and evidence-building step. It must not use real patient data, make clinical claims or be presented as an SRHIN deployment.
+1. Complete the source-linked SRHIN challenge and ecosystem research, clearly distinguishing official sources from third-party reproductions.
+2. Define MindCommons AI's problem, intended users, value and boundaries.
+3. Document a focused MVP with AI as a central assistance layer and human/community authority preserved.
+4. Create clear system architecture, data-flow and user-journey diagrams labelled as proposals.
+5. Design a simple role-based dashboard experience and explain how it may complement existing SRHIN systems.
+6. Identify validation questions for SRHIN, community representatives, people with lived experience, health and ethics practitioners, and privacy specialists.
+7. Keep all claims about implementation, integration, community consultation and outcomes accurate. No prototype or deployment is claimed at this stage.
+
+Any later technical implementation would be a separate project decision informed by host collaboration, community participation, specialist review and the agreed fellowship scope.
