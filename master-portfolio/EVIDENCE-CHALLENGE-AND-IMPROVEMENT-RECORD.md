@@ -125,3 +125,25 @@ Keep a simple delivery log with five columns: date, task, result/evidence, issue
 ## Source-use note
 
 The sources above are authoritative guidance or research publications, but they serve different purposes and jurisdictions. A framework, regulator's guidance, industry report and technical cheat sheet are not interchangeable. This record uses them to challenge the portfolio's assumptions and identify better questions; it does not claim that the portfolio is certified, legally compliant or independently validated.
+
+
+## Portfolio close-out — 9 November 2026
+
+The improvement actions above have now been carried through into the six-area portfolio. This close-out records the evidence actually produced, not a claim that all future work is complete.
+
+| Area | Improvement implemented | Verification/evidence | Remaining boundary |
+|---|---|---|---|
+| 1. AI systems | Vantage reduced to a local deterministic reminder approval flow with content-bound approval, duplicate-attempt protection and safe failure | Nine unit tests passed on 9 November 2026; code and test file are committed | No AI provider, external integration, deployment, persistent idempotency or security audit |
+| 2. AI governance | Recruitment governance case study anchored in Nigeria Data Protection Act 2023, s.37, with practical controls and comparative guidance separated | Revised source-backed case study in Area 2 | Desk research only; not legal advice or an audit of an employer |
+| 3. Research | Talent Paradox rebuilt as a Nigeria-focused migration/remittances/digital-work brief; job-platform report audited and revised | Source registers, corrections, explicit method and limits; Sorce Android evidence inconsistency recorded | No original fieldwork, systematic review, paid account or application testing |
+| 4. Internet governance | Brief narrowed to meaningful access to cross-border digital work in Nigeria | NCC, National Broadband Plan, National AI Strategy and CBN payments policy cited in Area 4 | Desk research; no original household survey or platform/payment test |
+| 5. Technical writing | Overview, FAQ, workflow guide and cloud/local research brief rewritten as carefully scoped category-level samples | Before/after examples, quality checklist and external documentation standards in Area 5 | No named vendor walkthrough, external usability test or accessibility audit |
+| 6. Project delivery | Delivery record updated from plan-only wording to actual implementation and acceptance outcomes | Nine unit tests passed; code inspected for mock-only boundary | Not a client project, deployed release or production system |
+
+### Sorce evidence clarification
+
+A Google Play listing published by `sorce.jobs` displays an installable Android app (100K+ downloads; listing updated 11 February 2026 when checked). The Nigerian Apple App Store also lists the iOS app. Sorce's own download page and FAQ still say iOS-only and Android not yet available. The comparison now reports the store listings and the provider-documentation inconsistency separately. This does not establish feature parity or that all job listings accept applicants based in Nigeria.
+
+### Portfolio close-out decision
+
+Areas 1–6 now form a coherent and linked evidence portfolio. The remaining caveats concern the boundaries of what the work proves, not unfinished portfolio-page drafting. Area 7, Open-Source & Community Contribution, is now the next workstream and remains intentionally separate.
