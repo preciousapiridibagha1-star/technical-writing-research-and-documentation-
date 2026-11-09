@@ -1,10 +1,12 @@
 # Research Portfolio
 
-This section contains research projects and the methods used to produce them. Each published research document identifies its question, scope, date, sources, method, findings, limitations and practical implications.
+This section contains research projects and the methods used to produce them. Each published document identifies its question, scope, sources, method, findings, limitations and practical implications.
 
 ## Published research
 
-- [AI Job-Search Platforms: Updated Comparison, November 2026](ai-job-search-platforms/updated-comparison-november-2026.md) — a source-checked desk-research comparison of Jobright, Sonara, LoopCV and Sorce. It records corrections to the earlier report and clearly identifies what has not been tested with live accounts, particularly access from Nigeria.
+- [The Talent Paradox: Skilled Migration, Remittances and Digital Work in Nigeria](talent-paradox-skilled-migration-digital-work-nigeria.md) — revised Nigeria-focused desk-research brief distinguishing emigration, remittances and web-based platform work.
+- [AI Job-Search Platforms: Updated Comparison, November 2026](ai-job-search-platforms/updated-comparison-november-2026.md) — source-checked desk-research comparison of Jobright, Sonara, LoopCV and Sorce, including an explicit correction on conflicting Sorce Android information.
+- [Audit of the June 2026 AI Job-Search Platforms Report](ai-job-search-platforms/2026-report-audit-and-corrections.md) — documents unsupported rankings, source issues, pricing corrections and evidence limitations.
 
 ## Research methodology
 
@@ -24,4 +26,4 @@ Research should:
 9. State what the research cannot establish.
 10. Update findings when the underlying information changes.
 
-The presence of a source in a bibliography does not automatically mean it supports every claim. Claims should be traceable to the relevant evidence. Draft material that does not meet this standard is not presented as a completed research sample.
+A source appearing in a bibliography does not automatically support every claim. Claims should be traceable to the relevant evidence. Desk research, qualitative studies and national statistics must be described according to their actual scope; none should be presented as nationally representative unless the method supports that conclusion.
