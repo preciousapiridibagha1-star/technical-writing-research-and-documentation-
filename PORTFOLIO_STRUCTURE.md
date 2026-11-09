@@ -1,96 +1,82 @@
-# Portfolio Structure and Build Plan
+# Master Portfolio — Positioning and Structure
 
-**Owner:** Precious Apiri Dibagha  
-**Working branch:** `portfolio/structure-and-cleanup`  
-**Status:** Active build; existing material is being reviewed and moved carefully.
+**Working branch:** `project/mindcommons-ai-framework`  
+**Purpose:** Maintain one coherent portfolio for the selected fellowship and internship opportunities.
 
-## Portfolio positioning
+## Professional positioning
 
-**Precious Apiri Dibagha — Technical Writer & Researcher**
+**Technology Researcher & Technical Documentation Specialist**  
+**Focus:** AI systems, responsible technology and digital policy.
 
-Primary focus: **AI systems and software documentation**  
-Additional focus: **technical research, cloud infrastructure, open source, digital labour and global mobility**
+This is the single professional direction. Research, systems analysis, responsible-AI thinking and technical documentation are connected capabilities—not separate career identities.
 
-The portfolio will show real examples of technical writing, research and system design. It will be honest about what is complete, in progress, conceptual, tested or deployed.
+The working method is:
 
-## Agreed repository structure
+**Problem understanding → research → analysis → solution/system design → clear documentation and recommendations.**
 
-This is the structure we will follow:
+The portfolio does not claim professional software engineering, programming ability, production deployment or technical integrations. Project work should be presented according to what has actually been researched, specified, documented or independently verified.
+
+## Master portfolio structure
 
 ```text
 /
-├── README.md
+├── README.md                         # Main professional landing page
+├── PORTFOLIO_STRUCTURE.md            # This strategy and structure
+├── PORTFOLIO-STATUS.md               # Evidence and completion status
 ├── projects/
-│   ├── vantage-automata/
-│   │   ├── README.md
-│   │   ├── architecture/
-│   │   ├── requirements/
-│   │   ├── workflows/
-│   │   ├── implementation/
-│   │   ├── testing/
-│   │   └── user-guide/
-│   ├── jarvis-ai/
-│   │   ├── README.md
-│   │   ├── architecture/
-│   │   ├── agent-documentation/
-│   │   ├── system-workflows/
-│   │   └── technical-specifications/
+│   ├── vantage-automata/              # AI workflow analysis and documentation
+│   ├── jarvis-ai/                     # AI product/system strategy and documentation
+│   ├── mindcommons-ai/                # Public-interest AI/data governance case study
 │   └── cloud-infrastructure-and-open-source/
-│       ├── README.md
-│       ├── project-overviews/
-│       └── technical-documentation/
-├── research/
-│   ├── talent-paradox/
-│   ├── ai-job-search-platforms/
-│   └── research-methodology/
-├── technical-guides/
-│   ├── README-guides/
-│   ├── FAQs/
-│   ├── user-guides/
-│   └── documentation-examples/
-├── contributions/
-│   └── open-source/
-└── learning-and-development/
-    └── technical-skills/
+├── research/                          # Research reports and methodology
+├── technical-guides/                  # Documentation samples and guides
+├── fellowship-alignment/              # One evidence map for all target opportunities
+├── contributions/open-source/         # Actual contribution evidence
+├── learning-and-development/          # Learning records tied to portfolio goals
+└── media/                             # Diagrams and project explainer briefs
 ```
 
-Folders will be added when there is real content for them. Git does not track empty folders, so we will use short README or index files where a folder needs an explanation before its first full document is ready.
+## What each pillar proves
 
-## What belongs where
+### 1. AI systems analysis and design
+Vantage Automata, Jarvis AI and MindCommons AI show the ability to understand a problem, define users and workflows, examine system boundaries, compare options, identify risks and document a proposed design. They are not presented as deployed applications.
 
-- **Vantage Automata:** the main practical MVP. Its documentation will cover requirements, architecture, workflow, implementation notes, tests and a user guide. The first demonstrable slice is: instruction → AI interpretation → proposed action → human approval or rejection → safe test action → result and audit log.
-- **Jarvis AI:** the broader multi-agent business-system concept. We will document the diagrams, agent roles, system workflows and technical specifications. We will not describe integrations or deployment as working until they have been implemented and tested.
-- **Cloud infrastructure and open source:** project overviews and technical material connected to the existing cloud infrastructure/open-source work.
-- **Research:** The Talent Paradox, the AI Job Search Platforms research and a transparent account of research methods and source checking.
-- **Technical guides:** the existing software overview, FAQ, user-guide and documentation examples. These are early samples and will be revised for accuracy, scope and usefulness.
-- **Contributions:** actual open-source contributions and documentation reviews. Planned contributions will not be presented as completed.
-- **Learning and development:** practical technical learning tied to work shown in the repository, not a padded list of courses.
+### 2. AI governance and responsible technology
+The projects examine human decision authority, transparency, privacy, access boundaries, oversight and responsible use. This strand connects applied technology with public-interest questions.
 
-## Existing material to preserve and reorganise
+### 3. Technology research and analytical writing
+Research reports show source discovery, evidence comparison, reasoning, limitations and clear conclusions. Research claims must be traceable to sources.
 
-The repository already contains a main README, four cloud-AI documentation samples, a documentation review report, The Talent Paradox report, and earlier cloud infrastructure/open-source research material. The current documentation samples are generic rather than documentation for a named, verified product. We will label that scope clearly unless we later choose and research a specific product.
+### 4. Technical writing and documentation
+Product overviews, FAQs, user guides, README improvements and documentation reviews show the ability to turn technical or complex material into useful information.
 
-Some existing filenames contain accidental trailing newline characters. We will correct those paths while preserving the file contents and updating links.
+### 5. Internet governance and digital policy
+The Internet Society learning and planned issue brief will develop this pillar. Until the work is completed, it remains a stated development priority rather than a completed credential or expertise claim.
 
-## Build order
+### 6. Open-source and community-facing knowledge work
+This pillar contains actual documentation contributions, project research and community-facing knowledge resources. Researching an open-source project must not be labelled an upstream contribution.
 
-1. Establish this agreed structure and replace the root README with a useful portfolio landing page.
-2. Create the Vantage Automata project home and define its first MVP slice.
-3. Create the Jarvis AI project home and record the current system concept without inventing implementation details.
-4. Move and improve the existing documentation samples and cloud/open-source material.
-5. Review and strengthen The Talent Paradox and the AI Job Search Platforms research.
-6. Add learning records and genuine open-source contributions as they happen.
-7. Review all links, claims and project-status labels before merging the working branch into `main`.
+## Relationship between the projects
 
-## Quality rules
+The three main AI projects are not unrelated product ideas:
 
-- Use clear, natural language. Explain technical ideas fully without dressing them up in unnecessary jargon.
-- Separate facts, decisions, assumptions and recommendations.
-- Cite sources for external factual claims and record when important sources were checked.
-- Label work as **concept**, **specified**, **in progress**, **prototyped**, **tested** or **deployed**, as appropriate.
-- Do not claim that a workflow works until it has been run and tested.
-- Use mock data and safe test actions before connecting real accounts or taking consequential actions.
-- Do not claim an open-source contribution until there is a real contribution link.
-- Keep the work on this branch until it has been reviewed. The default branch remains untouched.
+- **Vantage Automata:** how AI-assisted actions can be reviewed and approved by a human.
+- **Jarvis AI:** how AI capabilities could be organised into a useful business operating system.
+- **MindCommons AI:** how communities and authorised stewards could retain visibility and authority over responsible data use in AI development.
 
-This is the working structure and build plan, not a claim that every listed folder or project is already complete.
+Together, they demonstrate systems thinking across workflow design, AI organisation and governance. Their shared evidence is research, analysis, responsible design and documentation—not coding claims.
+
+## Opportunity strategy
+
+The original plan covered eight opportunities. Tarbell was subsequently removed, leaving seven active targets. The same master portfolio supports all targets. Applications use selected work samples and opportunity-specific statements; they do not require seven separate portfolios.
+
+The current list and evidence gaps are maintained in `fellowship-alignment/README.md`.
+
+## Quality controls
+
+- Distinguish facts, assumptions, hypotheses and recommendations.
+- Cite and date public sources.
+- Label each project stage accurately.
+- Avoid duplicate or filler projects.
+- Do not claim implementation, testing, deployment, partnerships or community validation without evidence.
+- Keep the default branch untouched until the working branch is reviewed and approved.
