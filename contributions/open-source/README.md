@@ -20,13 +20,13 @@ An issue investigation or draft patch is not an upstream contribution. A pull re
 8. Submit and respond to maintainers' review.
 9. Record the verified outcome and lessons.
 
-## Prepared contribution proposals
+## Previously prepared proposals — now superseded as submission targets
 
-1. [Ollama — update the Msty URL in README (#18045)](proposal-01-ollama-msty-link.md) — one-line external-link correction, checked against Msty's official domain.
-2. [Ollama — add GPU fallback troubleshooting guidance (#14260)](proposal-02-ollama-gpu-troubleshooting.md) — practical `ollama ps` diagnostic workflow, context-length guidance and carefully qualified model-artifact-size information.
+1. [Ollama — Msty URL correction (#18045)](proposal-01-ollama-msty-link.md) — an existing upstream PR [#18050](https://github.com/ollama/ollama/pull/18050) already proposes this change.
+2. [Ollama — GPU fallback troubleshooting (#14260)](proposal-02-ollama-gpu-troubleshooting.md) — an existing upstream PR [#14461](https://github.com/ollama/ollama/pull/14461) already proposes substantially overlapping documentation.
 
-Both issues were open and unassigned, with no linked branch or pull request in the issue metadata at the time checked. Recheck immediately before submission.
+The [9 November upstream candidate audit](upstream-candidate-audit-2026-11-09.md) records these checks and other alternatives. The original drafts are retained as research records, not represented as available issues to submit against.
 
 ## Current status
 
-**Two candidate changes have been investigated and drafted. Neither has been submitted upstream.** This index does not claim an external contribution or merged pull request.
+**Area 7 is not complete. No external contribution is claimed.** The original candidates were superseded after duplicate PRs were discovered. The connected GitHub account has read-only access to `ollama/ollama`, no fork is present, and the connected actions do not provide repository forking. A fork must be created and connected before genuine upstream branches and PRs can be published.
