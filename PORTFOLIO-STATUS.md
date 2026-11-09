@@ -51,7 +51,7 @@ The checks above are repository/content verification. They are not an external p
 
 ## Area 7 — Open-Source & Community Contribution
 
-Area 7 remains last in the portfolio sequence and is now in progress. Two Ollama issue-specific proposals have been researched and documented: #18045 (Msty link correction) and #14260 (GPU fallback troubleshooting guide). Both are prepared but **not submitted**. No external contribution is claimed until a public pull request is authorised, submitted and traceable. The exact submissions require the account owner's approval.
+Area 7 remains last in the portfolio sequence. The two original Ollama proposals were re-checked and found to have competing upstream PRs: [#18050](https://github.com/ollama/ollama/pull/18050) for issue #18045 and [#14461](https://github.com/ollama/ollama/pull/14461) for issue #14260. Both PRs were open and unmerged when checked on 9 November 2026. They are no longer suitable as duplicate submission targets. The [upstream candidate audit](contributions/open-source/upstream-candidate-audit-2026-11-09.md) records this finding. The connected GitHub account has read-only access to `ollama/ollama`, no fork is present, and the available GitHub actions cannot create one. **No upstream branch, commit or PR has been created, and no external contribution is claimed.**
 
 ## Readiness statement
 
