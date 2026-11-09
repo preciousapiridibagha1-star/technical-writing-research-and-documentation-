@@ -1,85 +1,81 @@
 # Precious Apiri Dibagha
 
-## AI Systems Strategist | Technical Researcher | Technical Writing & Documentation
+## Applied AI Systems, Research & Technical Documentation
 
-I am a self-directed researcher and systems thinker interested in how AI can be applied to real business and organisational problems. My work combines problem analysis, strategic technology evaluation, AI system concept development, architecture planning and technical communication.
+I build a single, connected portfolio of self-directed work across applied AI systems, research, responsible technology, internet and digital policy, technical writing, practical implementation and open-source contribution.
 
-I begin with the problem rather than assuming that AI is the answer. I examine the people affected, the causes of the problem, the desired outcome and the constraints. Where AI may be appropriate, I explore suitable tools and system components, define how responsibilities could be organised, and document the proposed solution so that it can be assessed and, where appropriate, implemented by a technical team.
+My process is evidence-led: understand a real problem, research it, analyse options and risks, design a proportionate system or intervention, document it clearly, then test or implement what is feasible. I distinguish ideas, proposed designs, working demonstrations and verified results. I do not claim professional software engineering, production deployment, community partnerships or outcomes that I have not demonstrated.
 
-My contribution is strategic and documentary. I develop concepts, analyse requirements, map proposed architectures and workflows, consider risks and human oversight, and communicate technical ideas clearly. I do not claim to be a software engineer or to have independently coded, configured, integrated or deployed systems where that work has not been completed.
+## The master portfolio
 
-## Current priority: MindCommons AI — community-governed mental-health data
+This repository is **one master portfolio**, not eight separate portfolios. Each opportunity should draw on the same core body of work. The evidence selected for an application changes; the portfolio itself remains coherent.
 
-- **[MindCommons AI](projects/mindcommons-ai/README.md)** — a research-informed proposal for an AI-powered web application supporting community governance of mental-health data, participant consent and permissions, researcher data-use requests, human and community review, transparency and benefit-sharing. It is a concept and documentation project; no prototype has been built and no relationship or endorsement from SRHIN is claimed.
+### 1. AI systems and practical design
+- [Vantage Automata](projects/vantage-automata/README.md) — human-supervised AI task-approval concept, including requirements, workflow, proposed architecture, API contract, risk controls and test design.
+- [Jarvis AI](projects/jarvis-ai/README.md) — proposed AI-enabled business operating ecosystem, with problem analysis, agent responsibilities, architecture, technology evaluation and MVP prioritisation.
+- [MindCommons AI](projects/mindcommons-ai/README.md) — research-led concept exploring a community-facing stewardship interface for responsible mental-health data use. Its proposed gap is not yet validated; it is explicitly designed to complement, not replace, SRHIN's existing GENSCORE, Gencurate and governance work.
 
-The current work is to complete the research, product definition, MVP scope, system architecture and dashboard design documentation. Any future implementation would be a separate, later decision informed by host and community validation.
+### 2. Research and analytical writing
+- [Research Portfolio](research/README.md) — research scope and evidence standards.
+- [AI Job-Search Platforms: Updated Comparison, November 2026](research/ai-job-search-platforms/updated-comparison-november-2026.md) — comparative research, current feature and pricing checks, limitations and corrections.
+- [Research Methodology](research/research-methodology/research-methodology.md) — source selection, evidence checking, analysis and limitations.
 
-## Master portfolio
+### 3. AI governance and responsible technology
+- [MindCommons AI research and product analysis](projects/mindcommons-ai/research/RESEARCH_AND_ANALYSIS.md) — identifies existing safeguards and governance structures before proposing any additional system.
+- [Vantage Automata risk and human-approval design](projects/vantage-automata/README.md) — human review, permissions and task boundaries.
+- [Jarvis AI architecture and oversight](projects/jarvis-ai/README.md) — role separation, orchestration concepts and human oversight.
 
-This is one portfolio of self-directed projects, research and technical writing. It is intended to demonstrate a connected set of capabilities rather than a collection of unrelated samples.
+### 4. Internet governance and digital policy
+This capability area is being developed for the Internet Society pathway. It will be strengthened through the planned Internet Society pre-fellowship learning and a focused, evidence-based issue brief. No community impact or policy contribution is claimed until completed.
 
-### Self-directed AI systems projects
+### 5. Technical writing and documentation
+- [Technical Writing Samples](technical-guides/README.md) — documentation standards, user-guide sample and before-and-after example.
+- [How to Write a Useful Project README](technical-guides/README-guides/how-to-write-a-project-readme.md).
+- [AI-Assisted Task Approval FAQ](technical-guides/FAQs/ai-assisted-task-approval-concept-faq.md).
+- [Documentation Review Checklist](technical-guides/documentation-examples/documentation-review-checklist.md).
 
-- **[Vantage Automata](projects/vantage-automata/README.md)** — a human-supervised AI task-approval concept. The work covers problem analysis, MVP scope, requirements, proposed architecture, API contract, workflow, risk controls, implementation planning and test design. The earlier Replit workspace and source export are no longer available for verification; the current project is documented as a concept, not a working product.
-- **[Jarvis AI](projects/jarvis-ai/README.md)** — a broader proposed AI-enabled business operating ecosystem. The work explores business-problem diagnosis, agent responsibilities, lead-agent coordination, architecture, technology evaluation, human oversight and MVP prioritisation. Implementation is not verified.
+### 6. Practical implementation and evaluation
+This section records real implementation evidence only: working demonstrations, reproducible tests, screenshots or recordings, test results, limitations and version history. A planned implementation is not presented as completed. Vantage and Jarvis implementation status remains explicitly qualified in their project documents.
 
-Both projects are self-directed. They represent my own exploration and strategic thinking; neither should be mistaken for a commissioned client delivery or a claim of independently implemented software.
+### 7. Open-source and community contribution
+- [Open-Source Contributions](contributions/open-source/README.md) — contribution process and evidence standard.
+- [Cloud Infrastructure and Open Source](projects/cloud-infrastructure-and-open-source/README.md) — project overviews and technical documentation.
+- [n8n Technical Project Overview](projects/cloud-infrastructure-and-open-source/project-overviews/n8n-workflow-automation-overview.md).
+- [Cloud Infrastructure Fundamentals](projects/cloud-infrastructure-and-open-source/project-overviews/cloud-infrastructure-fundamentals.md).
 
-### Research
+## One evidence base, tailored application views
 
-- **[Research Portfolio](research/README.md)** — research scope and evidence standards.
-- **[AI Job-Search Platforms: Updated Comparison, November 2026](research/ai-job-search-platforms/updated-comparison-november-2026.md)** — updated comparison of four platforms, including current feature and pricing checks, limitations and a record of corrections.
-- **AI Job Search Platforms** — research into platforms and tools in this area.
-- **[Research Methodology](research/research-methodology/research-methodology.md)** — source selection, evidence checking, analytical approach and limitations.
+The current active opportunity set is seven, following the decision to remove Tarbell and not replace it with another target:
 
-### Technical writing and documentation
+1. GovAI UK Summer Fellowship — Applied Track.
+2. Mozilla Foundation Fellowship 2027–28.
+3. Internet Society Fellowship.
+4. Cambridge ERA:AI Fellowship.
+5. PIBBSS Fellowship.
+6. Outreachy.
+7. NetHope Humanitarian AI Research Fellowship.
 
-- **[Technical Writing Samples](technical-guides/README.md)** — documentation standards, a user-guide sample and a before-and-after documentation example.
-- **[How to Write a Useful Project README](technical-guides/README-guides/how-to-write-a-project-readme.md)** — a practical guide and editorial checklist.
-- **[AI-Assisted Task Approval FAQ](technical-guides/FAQs/ai-assisted-task-approval-concept-faq.md)** — an illustrative FAQ for a proposed system.
-- **[Documentation Review Checklist](technical-guides/documentation-examples/documentation-review-checklist.md)** — an editorial and technical review framework.
+The [Opportunity Evidence Map](fellowship-alignment/README.md) shows which existing portfolio evidence is relevant, what each opportunity still requires and where the fit is currently weak. It does not create a separate portfolio for each programme.
 
-### Fellowship alignment
+## Current priority
 
-- **[Mozilla 2027–28 SRHIN Embedded Fellowship Research Dossier](fellowship-alignment/mozilla-2027-srhin-embedded-research.md)** — official-host verification, track distinction, SRHIN research, location/funding questions and portfolio evidence plan.
-- **[Eight-Opportunity Evidence Map](fellowship-alignment/README.md)** — maps the same portfolio to all eight target opportunities and identifies the evidence still missing.
-- **[GovAI Applied Track 2027 Application Preparation](fellowship-alignment/govai-applied-track-2027-application-preparation.md)** — evidence-led application positioning, portfolio examples, gaps and submission checklist.
+1. Keep the master portfolio coherent and easy to navigate.
+2. Strengthen the strongest existing evidence rather than adding disconnected projects.
+3. Complete the MindCommons AI research and validation-first product definition without building a prototype at this stage.
+4. Continue the Vantage Automata and Jarvis AI documentation and small, verifiable implementation milestones as separately planned.
+5. Produce genuine open-source contributions and practical evidence where feasible.
+6. Build the Internet Society policy/research strand through the planned pre-fellowship learning.
 
-### Cloud infrastructure and open source
+## Evidence standards
 
-- **[Cloud Infrastructure and Open Source](projects/cloud-infrastructure-and-open-source/README.md)** — project overviews and technical documentation.
-- **[n8n Technical Project Overview](projects/cloud-infrastructure-and-open-source/project-overviews/n8n-workflow-automation-overview.md)** — explains where workflow automation may fit in an AI system, without claiming a tested integration.
-- **[Cloud Infrastructure Fundamentals](projects/cloud-infrastructure-and-open-source/project-overviews/cloud-infrastructure-fundamentals.md)** — conceptual overview of compute, storage, networking, databases, identity, monitoring and shared responsibility.
-- **[Open-Source Contributions](contributions/open-source/README.md)** — contribution process and evidence standard. No external contribution is claimed unless a verifiable submission exists.
-
-## Demonstration media
-
-- [Portfolio Demonstration Video Briefs](media/portfolio-demonstration-video-briefs.md) — short, accuracy-controlled scripts for future Vantage Automata and Jarvis AI explainers. The videos and original diagrams are the final visual assets to add.
-
-## Current development priorities
-
-1. Complete the MindCommons AI research, product definition, MVP scope and architecture documents.
-2. Design and document the proposed dashboard and key user journeys.
-3. Validate the proposed product against the official SRHIN host brief and, where possible, host and community feedback before making implementation claims.
-4. Make genuine, scoped contributions to existing open-source projects and link to the public issues and pull requests.
-5. Keep conceptual work clearly separated from implemented and independently reviewed work.
-
-## How I approach a project
-
-1. Define the problem and identify the people affected.
-2. Research the context, existing approaches and relevant technologies.
-3. Separate the underlying causes from the visible symptoms.
-4. Assess whether AI is suitable and where human judgement must remain.
-5. Shape a proportionate system concept and explain its components.
-6. Define requirements, workflows, permissions, constraints and risks.
-7. Prioritise a realistic first stage and identify what needs technical validation.
-8. Document the proposal clearly enough for review and potential implementation.
-
-## Evidence and project status
-
-I distinguish between research, proposals, plans, prototypes and verified implementations. A diagram is evidence of an architectural proposal; it is not proof of an integration. A test plan is not a test result. Where implementation or testing has not been verified, I state that explicitly and identify what evidence would be needed next.
+- A concept is labelled a concept.
+- A proposed architecture is not a deployed system.
+- A wireframe is not a working product.
+- A test plan is not a test result.
+- A public organisational claim is attributed to its source and is not treated as an independent audit.
+- No partnership, endorsement, integration, user research, community consultation or measured impact is claimed without evidence.
 
 ## About
 
 **Precious Apiri Dibagha**  
-AI Systems Strategist | Technical Researcher | Technical Writing & Documentation
+Applied AI Systems | Research & Analysis | Technical Writing & Documentation
