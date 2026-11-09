@@ -3,7 +3,7 @@
 **Portfolio:** Applied Technology Research & Documentation  
 **Purpose:** Test the current portfolio work against credible external guidance and evidence.  
 **Approach:** Keep what is useful, identify what does not yet stand up, and make a practical improvement plan.  
-**Research checked:** 8 November 2026.
+**Research checked:** 9 November 2026.
 
 This is a focused portfolio review, not a formal audit, systematic review or legal opinion. The sources below challenge and strengthen the work; they do not certify it.
 
@@ -133,7 +133,7 @@ The improvement actions above have now been carried through into the six-area po
 
 | Area | Improvement implemented | Verification/evidence | Remaining boundary |
 |---|---|---|---|
-| 1. AI systems | Vantage reduced to a local deterministic reminder approval flow with content-bound approval, duplicate-attempt protection and safe failure | Nine unit tests passed on 9 November 2026; code and test file are committed | No AI provider, external integration, deployment, persistent idempotency or security audit |
+| 1. AI systems | Vantage reduced to a local deterministic reminder approval flow with content-bound approval, duplicate-attempt protection and safe failure | Nine unit tests passed on 9 November 2026 after strengthening the duplicate-attempt test to exercise the explicit executed-ID guard; exact output and test scope are recorded in the prototype run guide | No AI provider, external integration, deployment, persistent idempotency or security audit |
 | 2. AI governance | Recruitment governance case study anchored in Nigeria Data Protection Act 2023, s.37, with practical controls and comparative guidance separated | Revised source-backed case study in Area 2 | Desk research only; not legal advice or an audit of an employer |
 | 3. Research | Talent Paradox rebuilt as a Nigeria-focused migration/remittances/digital-work brief; job-platform report audited and revised | Source registers, corrections, explicit method and limits; Sorce Android evidence inconsistency recorded | No original fieldwork, systematic review, paid account or application testing |
 | 4. Internet governance | Brief narrowed to meaningful access to cross-border digital work in Nigeria | NCC, National Broadband Plan, National AI Strategy and CBN payments policy cited in Area 4 | Desk research; no original household survey or platform/payment test |
@@ -142,7 +142,7 @@ The improvement actions above have now been carried through into the six-area po
 
 ### Sorce evidence clarification
 
-A Google Play listing published by `sorce.jobs` displays an installable Android app (100K+ downloads; listing updated 11 February 2026 when checked). The Nigerian Apple App Store also lists the iOS app. Sorce's own download page and FAQ still say iOS-only and Android not yet available. The comparison now reports the store listings and the provider-documentation inconsistency separately. This does not establish feature parity or that all job listings accept applicants based in Nigeria.
+A Google Play listing published by `sorce.jobs` displays an installable Android app (100K+ downloads; listing updated 11 February 2026 when checked on 9 November 2026). The Nigerian Apple App Store also lists the iOS app. Sorce's own download page and FAQ still say iOS-only and Android not yet available / on the roadmap. The comparison now reports the store listings and the provider-documentation inconsistency separately. This reporting inconsistency is recorded consistently across the portfolio, but remains unresolved by Sorce itself. It does not establish official Android support, feature parity or that all job listings accept applicants based in Nigeria.
 
 ### Portfolio close-out decision
 
