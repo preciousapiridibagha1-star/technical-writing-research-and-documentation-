@@ -2,7 +2,7 @@
 
 **Repository:** `preciousapiridibagha1-star/technical-writing-research-and-documentation-`  
 **Default branch:** `main`  
-**Status:** Six-area evidence portfolio assembled and verified at desk-research / local-prototype level; Area 7 is the next workstream.
+**Status:** Areas 1–6 closed at the documented desk-research / local-prototype evidence level; final verification pass completed on 9 November 2026. Area 7 is the next workstream.
 
 ## Areas 1–6: consolidated evidence status
 
@@ -15,7 +15,7 @@
 
 ## Coherent portfolio navigation
 
-The [Master Portfolio Evidence Index](master-portfolio/README.md) links all six capability pages. The [Evidence Challenge & Improvement Record](master-portfolio/EVIDENCE-CHALLENGE-AND-IMPROVEMENT-RECORD.md) records the external standards used to challenge the work, before-and-after changes and the evidence boundaries.
+The [Master Portfolio Evidence Index](master-portfolio/README.md) links all six capability pages and contains a consolidated six-area evidence map. The [Evidence Challenge & Improvement Record](master-portfolio/EVIDENCE-CHALLENGE-AND-IMPROVEMENT-RECORD.md) records the external standards used to challenge the work, before-and-after changes and the evidence boundaries.
 
 Supporting artefacts include:
 - `projects/vantage-automata/prototype/` — local code, tests and run instructions.
@@ -31,10 +31,23 @@ The portfolio now contains a working local prototype with passing unit tests, so
 
 ## Final quality caveats
 
-1. The Sorce platform comparison and audit must describe the current evidence carefully: a Google Play Android listing exists, but Sorce's own download page and FAQ still state iOS-only. Listing availability is distinct from official support, feature parity and Nigeria eligibility.
+1. **Sorce Android status remains externally inconsistent.** Google Play displays an installable listing published by `sorce.jobs` (100K+ downloads; listing last updated 11 February 2026 when checked on 9 November 2026), while Sorce's own download page and FAQ still state iOS-only / Android on the roadmap. The portfolio now reports both facts consistently. The contradiction itself is not resolved by Sorce; listing presence does not establish official Android support, feature parity or Nigeria job eligibility.
 2. The cloud-AI overview, FAQ, guide and research brief remain category-level illustrative samples, not verified documentation for a named vendor product.
 3. Original Vantage and Jarvis architecture image assets have not been supplied; the text documentation remains the evidence available.
 4. The Talent Paradox and job-platform comparison are desk research, not systematic reviews or hands-on tests.
+
+
+
+## Final verification pass — 9 November 2026
+
+- [x] **Vantage test suite re-run after strengthening the duplicate-execution test.** The updated test deliberately restores a stale pending state and confirms the explicit executed-ID guard blocks a second attempt; it also asserts the mock handler is called once. The exact nine-test terminal output is recorded in the [prototype run guide](projects/vantage-automata/prototype/README.md). Result: **9 passed, 0 failures, 0 errors**.
+- [x] **FAQ reviewed.** The [cloud-AI assistant FAQ](project-2-faq-document.md) is present, readable and correctly labelled as a category-level sample; it avoids making provider-specific privacy, integration or compatibility guarantees.
+- [x] **Technical-writing sample navigation checked.** The [technical writing index](technical-guides/README.md), its README guide, concept FAQ, user-guide sample, review checklist and before/after example were fetched successfully. Root-level overview, FAQ, guide, research brief and review report were also fetched.
+- [x] **Portfolio navigation checked.** The root README, six capability pages, consolidated master index, evidence challenge record, Vantage and Jarvis project pages, research index and key research briefs were fetched from the repository successfully. No broken target was found among these checked links.
+- [x] **Sorce wording harmonised.** The current and historical comparison, research audit, evidence challenge record and this status record distinguish the installable Google Play listing from Sorce's contradictory iOS-only provider documentation.
+- [x] **Evidence index consolidated.** The [Master Portfolio Evidence Index](master-portfolio/README.md) now includes a six-row evidence map with principal artefacts and explicit evidence boundaries.
+
+The checks above are repository/content verification. They are not an external peer review, legal review, accessibility audit, production security assessment, or live testing of third-party job platforms.
 
 ## Area 7 — Open-Source & Community Contribution
 
