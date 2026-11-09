@@ -33,7 +33,7 @@ The portfolio now contains a working local prototype with passing unit tests, so
 
 1. **Sorce Android status remains externally inconsistent.** Google Play displays an installable listing published by `sorce.jobs` (100K+ downloads; listing last updated 11 February 2026 when checked on 9 November 2026), while Sorce's own download page and FAQ still state iOS-only / Android on the roadmap. The portfolio now reports both facts consistently. The contradiction itself is not resolved by Sorce; listing presence does not establish official Android support, feature parity or Nigeria job eligibility.
 2. The cloud-AI overview, FAQ, guide and research brief remain category-level illustrative samples, not verified documentation for a named vendor product.
-3. Original Vantage and Jarvis architecture image assets have not been supplied; the text documentation remains the evidence available.
+3. Vantage and Jarvis architecture images were supplied for review on 9 November 2026 and are now interpreted in the [Architecture & Implementation Guide](projects/architecture-and-implementation/README.md). The image files are not yet committed to GitHub because the available GitHub connection exposes text-file operations but no binary upload action. They remain proposed design illustrations, not implementation evidence.
 4. The Talent Paradox and job-platform comparison are desk research, not systematic reviews or hands-on tests.
 
 
@@ -55,4 +55,4 @@ Area 7 remains last in the portfolio sequence. The two original Ollama proposals
 
 ## Readiness statement
 
-Areas 1–6 form a coherent, linked evidence-led portfolio at the level described above. Their limits are explicit. This is not a claim of professional certification, independent peer review or production engineering experience. Area 7 has two prepared contribution proposals awaiting approval for upstream submission.
+Areas 1–6 form a coherent, linked evidence-led portfolio at the level described above. The recommended professional focus is Applied AI Systems & Technical Documentation (Junior / Entry-Level), with research, governance, workflow analysis, technical writing and small-scale prototyping presented as one connected delivery method. The new architecture guide explicitly separates long-term diagrams from lean MVP scope. Their limits are explicit. This is not a claim of professional certification, independent peer review or production engineering experience. Area 7 has two prepared contribution proposals awaiting approval for upstream submission.
