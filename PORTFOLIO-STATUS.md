@@ -19,7 +19,7 @@ The [Master Portfolio Evidence Index](master-portfolio/README.md) links all six 
 
 Supporting artefacts include:
 - `projects/vantage-automata/prototype/` — local code, tests and run instructions.
-- `the-talent-paradox-report.md` — Nigeria-focused desk-research brief on skilled migration, remittances and digital work.
+- `research/talent-paradox-skilled-migration-digital-work-nigeria.md` — Nigeria-focused desk-research brief on skilled migration, remittances and digital work.
 - `research/ai-job-search-platforms/updated-comparison-november-2026.md` — public-source comparison for a Nigeria-based job seeker.
 - `research/ai-job-search-platforms/2026-report-audit-and-corrections.md` — source and claim audit.
 - `project-1-software-overview.md`, `project-2-faq-document.md`, `project-3-user-guide.md`, `project-4-research-brief.md` — category-level illustrative cloud AI documentation samples.
@@ -38,8 +38,8 @@ The portfolio now contains a working local prototype with passing unit tests, so
 
 ## Area 7 — Open-Source & Community Contribution
 
-Area 7 remains last by design. The next step is to select two suitable, real public issues, review project contribution rules and prepare meaningful, reviewable changes. No contribution is claimed until a change is genuinely submitted and its repository status can be verified.
+Area 7 remains last in the portfolio sequence and is now in progress. Two Ollama issue-specific proposals have been researched and documented: #18045 (Msty link correction) and #14260 (GPU fallback troubleshooting guide). Both are prepared but **not submitted**. No external contribution is claimed until a public pull request is authorised, submitted and traceable. The exact submissions require the account owner's approval.
 
 ## Readiness statement
 
-Areas 1–6 now form a coherent, evidence-led portfolio at the level described above. Their limits are explicit. This is not a claim of professional certification, independent peer review or production engineering experience. Area 7 is the next workstream.
+Areas 1–6 form a coherent, linked evidence-led portfolio at the level described above. Their limits are explicit. This is not a claim of professional certification, independent peer review or production engineering experience. Area 7 has two prepared contribution proposals awaiting approval for upstream submission.
