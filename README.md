@@ -8,7 +8,7 @@ I start with the problem, the people affected and the evidence available. I then
 
 ## Master portfolio — six capability areas
 
-The [Master Portfolio Evidence Index](master-portfolio/README.md) brings together the six capability pages and their supporting evidence. The [Evidence Challenge & Improvement Record](master-portfolio/EVIDENCE-CHALLENGE-AND-IMPROVEMENT-RECORD.md) documents external challenges, before-and-after improvements and limitations.
+The [Master Portfolio Evidence Index](master-portfolio/README.md) brings together the six capability pages and their supporting evidence. The [Evidence Challenge & Improvement Record](master-portfolio/EVIDENCE-CHALLENGE-AND-IMPROVEMENT-RECORD.md) documents external challenges, before-and-after improvements and limitations. The [Portfolio Status & Verification Record](PORTFOLIO-STATUS.md) summarises completion evidence, final checks and the remaining Area 7 boundary.
 
 1. [AI Systems & Practical Implementation](master-portfolio/01-ai-systems-practical-implementation.md)
 2. [AI Governance & Responsible Technology](master-portfolio/02-ai-governance-responsible-technology.md)
