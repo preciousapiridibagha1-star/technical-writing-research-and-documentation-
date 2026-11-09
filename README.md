@@ -8,9 +8,7 @@ I start with the problem, the people affected and the evidence available. I then
 
 ## Master portfolio — six capability areas
 
-[Evidence Challenge & Improvement Record](master-portfolio/EVIDENCE-CHALLENGE-AND-IMPROVEMENT-RECORD.md) — external sources that challenge the current work, before-and-after improvements and the next evidence to produce.
-
-The [Master Portfolio Evidence Index](master-portfolio/README.md) brings the work together across six areas:
+The [Master Portfolio Evidence Index](master-portfolio/README.md) brings together the six capability pages and their supporting evidence. The [Evidence Challenge & Improvement Record](master-portfolio/EVIDENCE-CHALLENGE-AND-IMPROVEMENT-RECORD.md) documents external challenges, before-and-after improvements and limitations.
 
 1. [AI Systems & Practical Implementation](master-portfolio/01-ai-systems-practical-implementation.md)
 2. [AI Governance & Responsible Technology](master-portfolio/02-ai-governance-responsible-technology.md)
@@ -19,25 +17,25 @@ The [Master Portfolio Evidence Index](master-portfolio/README.md) brings the wor
 5. [Technical Writing & Documentation](master-portfolio/05-technical-writing-documentation.md)
 6. [Project & Programme Delivery](master-portfolio/06-project-programme-delivery.md)
 
-Open-Source & Community Contribution remains the final workstream and will be strengthened through a genuine, traceable contribution rather than a simulated example.
+## Practical systems work
 
-## Self-directed AI systems projects
+- **[Vantage Automata](projects/vantage-automata/README.md)** — self-directed human-supervised task-approval concept. Its first local deterministic prototype is implemented and nine unit tests pass. It uses a mock reminder only; it is not an integrated AI agent or production system.
+- **[Jarvis AI](projects/jarvis-ai/README.md)** — proposed AI-enabled business operating ecosystem. Architecture and MVP planning are documented; implementation is not claimed.
 
-- **[Vantage Automata](projects/vantage-automata/README.md)** — a human-supervised AI task-approval concept. The work covers problem analysis, MVP scope, requirements, proposed architecture, API contract, workflow, risk controls, implementation planning and test design. A working product or verified implementation is not currently claimed.
-- **[Jarvis AI](projects/jarvis-ai/README.md)** — a proposed AI-enabled business operating ecosystem. The work explores business-problem diagnosis, agent responsibilities, lead-agent coordination, architecture, technology evaluation, human oversight and MVP prioritisation. Implementation is not verified.
-
-Both projects are self-directed; neither is presented as commissioned client delivery.
+Neither project is presented as commissioned client delivery.
 
 ## Research
 
 - [Research Portfolio](research/README.md)
-- [AI Job-Search Platforms: Updated Comparison, November 2026](research/ai-job-search-platforms/updated-comparison-november-2026.md) — desk research with source notes, corrections and explicit limits on untested Nigerian account access.
+- [AI Job-Search Platforms: Updated Comparison, November 2026](research/ai-job-search-platforms/updated-comparison-november-2026.md) — desk research, source notes, corrections and limits on untested Nigerian account access.
+- [Audit of the June 2026 AI Job-Search Platforms Report](research/ai-job-search-platforms/2026-report-audit-and-corrections.md)
+- [The Talent Paradox: Skilled Migration, Remittances and Digital Work in Nigeria](research/talent-paradox-skilled-migration-digital-work-nigeria.md) — revised policy research brief with explicit method and evidence limits.
 - [Research Methodology](research/research-methodology/research-methodology.md)
-- [The Talent Paradox](the-talent-paradox-report.md) — research report retained for further evidence and source review.
 
 ## Technical writing and documentation
 
 - [Technical Writing Samples](technical-guides/README.md)
+- [Cloud AI assistant category samples: overview](project-1-software-overview.md), [FAQ](project-2-faq-document.md), [usage guide](project-3-user-guide.md) and [research brief](project-4-research-brief.md).
 - [How to Write a Useful Project README](technical-guides/README-guides/how-to-write-a-project-readme.md)
 - [AI-Assisted Task Approval FAQ](technical-guides/FAQs/ai-assisted-task-approval-concept-faq.md)
 - [Documentation Review Checklist](technical-guides/documentation-examples/documentation-review-checklist.md)
@@ -47,7 +45,7 @@ Both projects are self-directed; neither is presented as commissioned client del
 - [Cloud Infrastructure and Open Source](projects/cloud-infrastructure-and-open-source/README.md)
 - [n8n Technical Project Overview](projects/cloud-infrastructure-and-open-source/project-overviews/n8n-workflow-automation-overview.md) — desk research, not a tested integration.
 - [Cloud Infrastructure Fundamentals](projects/cloud-infrastructure-and-open-source/project-overviews/cloud-infrastructure-fundamentals.md)
-- [Open-Source Contributions](contributions/open-source/README.md) — contribution process and evidence standard. No external contribution is claimed until a verifiable submission exists.
+- [Open-Source Contributions](contributions/open-source/README.md) — contribution process and evidence standard. The next portfolio workstream is two genuine, traceable contributions.
 
 ## Fellowship alignment
 
@@ -69,7 +67,7 @@ These are planning resources, not evidence of programme selection or application
 
 ## Evidence standard
 
-A system diagram demonstrates a proposed design, not a working integration. A test plan is not a test result. Desk research is not hands-on testing. A policy proposal is not proof of compliance. I upgrade project status only when supporting evidence exists.
+A system diagram demonstrates a proposed design, not a working integration. A passing unit test is not a security audit. Desk research is not hands-on testing. A policy proposal is not proof of compliance. I upgrade project status only when supporting evidence exists.
 
 **Precious Apiri Dibagha**  
-AI Systems | Responsible Technology | Research | Technical Writing
+Applied Technology Research | AI Systems | Responsible Technology | Technical Writing
