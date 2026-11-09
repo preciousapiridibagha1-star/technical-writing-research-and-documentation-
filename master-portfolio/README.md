@@ -33,4 +33,4 @@ Each capability page sets out the question or problem, work produced, a before-a
 
 ## Area 7 — intentionally next
 
-Open-Source & Community Contribution is kept separate from the six-area evidence portfolio and is the next workstream. The aim is two meaningful, verifiable external contributions. No contribution will be claimed until changes are genuinely submitted and their repository status is recorded.
+Open-Source & Community Contribution remains separate from the six-area evidence portfolio and is now the active next workstream. Two issue-specific Ollama proposals have been prepared in [the contribution record](../contributions/open-source/README.md): a Msty URL correction and GPU fallback troubleshooting guidance. They are not submitted upstream; no external contribution is claimed until the public pull requests are authorised and submitted.
