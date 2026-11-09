@@ -1,42 +1,71 @@
-# Master Portfolio — Final Completion Record
+# Master Portfolio — Status and Evidence Record
 
-**Working branch:** `portfolio/structure-and-cleanup`
+**Working branch:** `project/mindcommons-ai-framework`  
+**Portfolio model:** One shared master portfolio for the selected opportunities.
 
-The written portfolio has been assembled as one connected body of self-directed systems design, research and technical documentation. Project status and evidence limits are stated plainly. This record distinguishes completed portfolio work from the final visual assets that must be supplied or produced.
+## Professional positioning
 
-## Completed
+**Technology Researcher & Technical Documentation Specialist**  
+Focus: AI systems, responsible technology and digital policy.
 
-- [x] Professional portfolio introduction, positioning and navigation.
-- [x] Clear distinction between self-directed concepts, desk research, proposals and verified implementation.
-- [x] Vantage Automata: problem analysis, MVP scope, architecture, API proposal, workflow, risk controls, technical decisions, implementation plan, test plan and requirements-to-tests traceability.
-- [x] Vantage Automata: future rebuild direction documented as a developer collaboration; earlier exploratory prototype is not treated as a deliverable or evidence.
-- [x] Jarvis AI: system overview, strategic contribution, agent catalogue, lead-agent workflow, technology evaluation, first MVP definition, first-MVP agent specifications and use-case decision record.
-- [x] Research methodology and updated AI job-search platform comparison, with corrections, source notes and explicit limits on untested Nigeria account access.
-- [x] Technical writing samples: README guide, FAQ, user guide, documentation review checklist and before-and-after example.
-- [x] Cloud infrastructure fundamentals and sourced n8n overview, labelled as desk research rather than hands-on testing.
-- [x] Open-source contribution process and accurate statement that no external contribution is claimed.
-- [x] Eight-opportunity fellowship evidence map and GovAI UK Applied Track application-preparation document.
-- [x] Short Vantage Automata and Jarvis AI explainer-video briefs with timing, narration, visual direction and accuracy restrictions.
-- [x] Root and section navigation updated to connect the main portfolio materials.
+The repository combines research, systems analysis, AI governance and technical documentation. These are connected parts of one professional direction.
 
-## Final visual assets — the only portfolio content hand-off remaining
+## Current portfolio evidence
 
-- [ ] Upload the original Vantage Automata architecture diagram.
-- [ ] Upload the original Jarvis AI ecosystem architecture diagram.
-- [ ] Upload the original Jarvis AI Business MVP diagram.
-- [ ] Produce the two short explainer videos using the scripts in `media/portfolio-demonstration-video-briefs.md` and add them to the repository if desired.
+### AI systems analysis and design
+- [x] Vantage Automata: concept, requirements, workflow, proposed architecture, risk controls and technical documentation.
+- [x] Jarvis AI: concept, strategic contribution, agent catalogue, workflow, technology evaluation and MVP definition.
+- [x] MindCommons AI: public-source research, revised problem framing, product definition, validation-first scope, proposed architecture and dashboard concept.
 
-The diagrams should be uploaded as original files, not recreated from memory. The videos must label the projects as concepts with implementation and testing not yet verified. No historical prototype video is required for the portfolio.
+### Research and analysis
+- [x] Research methodology and source-checking materials.
+- [x] AI job-search platforms comparative research.
+- [x] MindCommons AI public-source analysis identifying existing SRHIN governance and the remaining gap hypothesis.
 
-## Outside the portfolio completion boundary
+### Technical writing and documentation
+- [x] Product/software overview sample.
+- [x] FAQ sample.
+- [x] User-guide sample.
+- [x] Documentation review report and checklist.
+- [x] README/documentation guidance.
 
-These are future project or application activities, not blockers to completing the written portfolio:
-- Rebuilding Vantage Automata with a developer and validating it with tests.
-- Validating Jarvis AI's proposed MVP with real businesses before development.
-- Practical live-account testing of job-search platforms from Nigeria.
-- Making an external open-source contribution.
-- Completing and submitting fellowship applications. Application submission remains the applicant's responsibility.
+### AI governance and responsible technology
+- [x] Human approval and oversight concepts in Vantage Automata.
+- [x] AI role and boundary documentation in Jarvis AI.
+- [x] Community authority, data-use accountability and AI limitations analysis in MindCommons AI.
+
+### Internet governance and digital policy
+- [ ] Complete the planned Internet Society pre-fellowship learning.
+- [ ] Produce a focused internet-governance/digital-policy issue brief.
+
+### Open-source and community contribution
+- [x] Open-source contribution process documented.
+- [ ] Complete and link a genuine documentation-focused upstream contribution.
+- [ ] Record maintainer feedback or acceptance only when it occurs.
+
+## Opportunity evidence map
+
+The original plan contained eight opportunities. Tarbell was later removed, leaving seven active targets. The current opportunity-specific evidence and gaps are maintained in `fellowship-alignment/README.md`.
+
+## MindCommons AI — current status
+
+- [x] Public-source review of SRHIN/GENSCORE materials.
+- [x] Recognition that the original broad platform risked duplicating existing work.
+- [x] Narrowed data-use stewardship and accountability hypothesis.
+- [x] Product definition, validation-first MVP scope and proposed architecture.
+- [ ] Verify the SRHIN-specific challenge directly against the official Mozilla RFP.
+- [ ] Validate the suspected gap with SRHIN and relevant community representatives.
+- [ ] Revise, narrow or stop the product concept based on validation.
+
+No prototype, deployment, integration, host endorsement, community consultation or user testing is claimed.
+
+## Outside the current portfolio-completion boundary
+
+- Software engineering or coding implementation is not claimed as a current skill.
+- No unbuilt concept is counted as a working product.
+- No planned open-source contribution is counted as completed.
+- Fellowship applications and selection outcomes are separate from portfolio completion.
 
 ## Completion standard
 
-The written portfolio is considered complete when its content, project boundaries, research limitations, navigation and cross-references are coherent. Adding the original diagrams and optional demonstration videos will complete the visual presentation; it will not convert either proposed system into a working product.
+The portfolio is ready for external review when its positioning is consistent, navigation works, project statuses are accurate, research is sourced, and each sample demonstrates a clear capability within the shared professional direction.
