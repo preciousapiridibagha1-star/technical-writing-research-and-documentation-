@@ -115,3 +115,19 @@ The following pages were checked on 7 November 2026:
 ## Next step
 
 Rebuild the main report around the reader's real needs: finding suitable roles, tailoring applications, keeping control over what is submitted, international availability (especially from Nigeria), current cost and data/privacy risks. Keep the four original platforms for continuity, but allow the evidence to show that one may not be suitable. Add other platforms only if they materially improve the comparison.
+
+
+## Final evidence audit — 9 November 2026
+
+The November comparison is more cautious than the June report: it removes unsupported reliability scores, separates company claims from independent evidence and treats Nigerian access as unconfirmed where official sources do not establish it.
+
+One inconsistency remains: the November comparison says Sorce is iOS-only, while this audit records a Google Play listing. These statements must not both be published as current fact. Recheck the official download page and current Google Play and Apple App Store listings on the publication date. Report app listing availability separately from feature parity and country eligibility.
+
+Other publication rules:
+- Record the date, currency and billing period for every price; verify the final checkout amount before purchase.
+- Do not infer that a vacancy accepts Nigerian applicants merely because a platform can be opened in Nigeria.
+- Do not equate a platform's “submitted” status with confirmed employer receipt.
+- Do not use review ratings or selected complaints as representative reliability measures without a reproducible sampling method.
+- Do not publish universal rankings where the scoring method cannot be repeated.
+
+**Evidence boundary:** This remains public-source desk research. No paid accounts, payments or live applications were tested. The report is not a hands-on evaluation.
