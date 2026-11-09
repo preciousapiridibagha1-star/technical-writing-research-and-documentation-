@@ -12,6 +12,12 @@ The project starts with the business problem, not with a tool. The first task is
 
 For example, slow customer-service responses may be caused by understaffing, fragmented enquiry channels, unclear processes or hard-to-find information. An AI support agent may help with some of these issues, but the right solution depends on the diagnosis. The agent would need approved knowledge, clear boundaries and a reliable route to human staff.
 
+## Architecture and implementation discipline
+
+The supplied Jarvis ecosystem diagram is the long-term vision, not the first build. The AI Business System MVP diagram is an intermediate concept and still shows more roles than the first test requires. The first MVP remains one customer-enquiry workflow with one response-drafting function, approved information, deterministic scope/escalation checks and a human reviewer. The [shared Architecture & Implementation Guide](../architecture-and-implementation/README.md) sets out the lean code and no-code routes and example JSON contracts.
+
+The original diagrams were supplied for review in the project conversation on 9 November 2026. They have not yet been committed as repository image assets because the connected GitHub actions in this session support text-file operations but not binary image upload.
+
 ## Proposed system model
 
 1. **Owner and lead agent** — the owner sets direction and retains authority; the lead agent interprets goals, coordinates specialist work, reviews outputs and reports back.
@@ -46,7 +52,7 @@ This is strategic and systems-design work. It is not a claim that the author ind
 - [First MVP Use-Case Decision Record](decision-records/first-mvp-use-case-decision.md)
 - [Proposed System Architecture](architecture/system-overview.md)
 
-The original ecosystem and AI Business MVP diagrams will be added as the final visual assets for this project.
+The supplied ecosystem and MVP diagrams should be added as labelled visual references when repository image upload is available. They represent proposed architecture, not a deployed system.
 
 ## Technology and evidence boundaries
 
