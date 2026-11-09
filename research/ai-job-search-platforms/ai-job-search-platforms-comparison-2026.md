@@ -1,7 +1,8 @@
 # AI Job-Search Platforms: A Practical Comparison for 2026
 
 **Research status:** Updated desk research; not a hands-on product test  
-**Last checked:** 7 November 2026  
+**Last checked:** 9 November 2026  
+**Version note:** This is an earlier comparison snapshot retained for its revision history. Use the [updated November 2026 comparison](updated-comparison-november-2026.md) for the latest Sorce evidence and current conclusions.  
 **Original comparison:** Jobright, Sonara, LoopCV and Sorce  
 **Main audience:** Job seekers comparing AI tools, with a separate check needed for people applying from Nigeria
 
@@ -9,7 +10,7 @@
 
 AI job-search tools do different jobs. Some help find vacancies, some compare a CV with a job description, some fill in application forms, and some submit applications automatically. Calling all of these "AI auto-apply tools" hides important differences.
 
-The original June 2026 report needs major corrections. Its prices for LoopCV are out of date, it describes Sorce as iOS-only even though a Google Play listing is now available, and it treats several company claims and online reviews as if they were independently proven facts. It also gives reliability scores without showing a clear scoring method.
+The original June 2026 report needs major corrections. Its prices for LoopCV are out of date, and its Sorce availability statement needs more care: Google Play currently displays an installable listing published by sorce.jobs, while Sorce's own download page and FAQ still say iOS-only and that Android is on the roadmap. This is an unresolved inconsistency in the provider's public information, not proof of full Android support. The original report also treats several company claims and online reviews as if they were independently proven facts and gives reliability scores without showing a clear scoring method.
 
 This updated version removes the old winner ranking. It compares what can be checked from current product pages and official terms, and marks what still needs a real account test.
 
@@ -35,7 +36,7 @@ A platform may support some steps and not others. A filled form is not necessari
 | Jobright | AI job-search workspace with matching, CV and cover-letter tools, application support and career guidance. | Its own website and product pages describe matching, fit scores, autofill and other career tools. | Many detailed claims are published by Jobright itself. Current prices, country access and the exact level of automatic submission need to be checked in the account before relying on them. |
 | Sonara | AI-assisted job matching and applications submitted on a user's behalf. | Current terms name BOLD LLC as the operator. The terms describe AI job search, a user-editable job queue, automatic renewal and cancellation rules. | A current public price was not confirmed. Its terms warn that employer websites may block automation and that successful receipt of an application is not guaranteed. |
 | LoopCV | Automated job discovery and application workflows, CV tools and application tracking. | Its current official pricing page lists a free plan and paid plans in euros. The free plan includes one search loop and up to ten applications or emails per month. | Application volume does not prove application quality. Check the exact job sources, permissions, email outreach settings and whether the role is genuinely suitable. |
-| Sorce | Mobile-first job discovery with swipe-based applications and AI-assisted application preparation/submission. | Its own pages describe a free tier and application tailoring. Listings are available on both Google Play and Apple's App Store. | The product's own pages still describe iOS as its main app experience. Check Android feature availability and regional access directly; do not assume both versions are identical. |
+| Sorce | Mobile-first job discovery with swipe-based applications and AI-assisted application preparation/submission. | Google Play displays an installable listing published by sorce.jobs, and the Nigerian App Store lists the iOS app. However, Sorce's own download page and FAQ still state iOS-only and Android on the roadmap. | The provider's own platform guidance conflicts with its Google Play listing. Treat Android support and feature parity as unconfirmed until Sorce clarifies the discrepancy and the app is tested. Neither store listing proves that jobs accept applicants in Nigeria. |
 
 ### Jobright
 
@@ -97,11 +98,12 @@ Official site: https://www.loopcv.pro/
 
 Sorce uses a swipe-style interface for job discovery and AI-supported applications. Its official pages describe a free tier with a daily swipe limit, tailored application materials and application tracking. The company publishes its own user and application totals; these should be labelled as company-reported, not independently verified outcomes.
 
-The earlier report said Sorce was iOS-only and Android was still coming. That is now out of date: a Sorce listing is available on Google Play as well as Apple's App Store. However, the company's own download page still describes iOS as the primary app experience, so feature parity should be checked.
+The current evidence is inconsistent. Google Play displays an installable Sorce listing published by `sorce.jobs` (checked 9 November 2026; 100K+ downloads; last updated 11 February 2026). However, Sorce's own download page and FAQ still say the product is iOS-only and that Android is not yet available / is on the roadmap. The Google Play listing and the provider's own documentation must be reported separately; the listing does not establish official support, feature parity, current maintenance or Nigeria-specific availability.
 
 **What to check before use**
 - Can the app be downloaded and used in the user's country?
-- Does the Android version support the same features as iOS?
+- Can Sorce clarify the conflict between its Google Play listing and its own iOS-only download page/FAQ?
+- If the Android app installs, do its current features match the iOS app, and is it actively supported?
 - What does a swipe trigger: saving, preparing or actually submitting an application?
 - Can the user review the tailored CV and cover letter?
 - Which countries and employers are represented in the job listings?
@@ -118,7 +120,7 @@ Apple App Store: https://apps.apple.com/ng/app/sorce-ai-job-search/id6504584959
 |---|---|
 | Named Sorce the overall winner with an 8/10 reliability score. | Removed the winner label and score because the method and evidence were not strong enough. |
 | Presented LoopCV prices in US dollars and older plan limits. | Replaced them with the current official plan names, euro prices and listed limits. |
-| Described Sorce as iOS-only. | Updated the platform availability note because a Google Play listing is now present. |
+| Described Sorce as iOS-only. | Replaced the binary claim with the documented conflict: a Google Play listing is present, while Sorce's own download page and FAQ still state iOS-only. |
 | Treated Sonara's old trial and subscription prices as current. | Marked those figures as unconfirmed and directed readers to check the current sign-up price and terms. |
 | Presented user complaints and failure percentages as general platform facts. | Removed unsupported failure-rate claims; review themes need dated links and a clear sample. |
 | Used "auto-apply" as one simple feature. | Split job matching, CV tailoring, form filling, submission and tracking into separate steps. |
@@ -135,7 +137,7 @@ Before recommending any platform for use from Nigeria, we need to check:
 2. **Job coverage:** Does it show international, remote and Nigeria-eligible vacancies, not just US roles?
 3. **Work eligibility:** Does it make clear when a job requires US or other country work authorisation?
 4. **Application access:** Can it complete the employer's actual application process from Nigeria?
-5. **Device access:** Is there a working Android app or browser option?
+5. **Device access:** A Google Play listing published by `sorce.jobs` is visible, but Sorce's own download page and FAQ still say iOS-only. Confirm current installability and feature support on the actual device rather than treating the listing as proof of supported Android functionality.
 6. **Payment:** Can a Nigerian user pay, in what currency, and with what card or payment method?
 7. **Privacy:** What CV, contact, employment and other personal information is collected and shared?
 8. **Control:** Can the user check the job and every answer before anything is sent?
