@@ -29,4 +29,4 @@ The [9 November upstream candidate audit](upstream-candidate-audit-2026-11-09.md
 
 ## Current status
 
-**Area 7 is not complete. No external contribution is claimed.** The original candidates were superseded after duplicate PRs were discovered. The connected GitHub account has read-only access to `ollama/ollama`, no fork is present, and the connected actions do not provide repository forking. A fork must be created and connected before genuine upstream branches and PRs can be published.
+**Area 7 remains in progress. No accepted or merged external contribution is claimed.** A focused change for [Shipley Integrations issue #24](shipley-issue-24-investigation.md) was prepared and committed to the personal fork, but upstream submission was withheld because two open PRs already proposed the same correction. The record documents the investigation, AI assistance, human review, duplicate check and limits of verification.
