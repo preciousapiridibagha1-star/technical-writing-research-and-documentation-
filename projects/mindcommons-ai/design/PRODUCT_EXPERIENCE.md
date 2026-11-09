@@ -1,136 +1,102 @@
-# Product Experience and Dashboard Structure
+# Product Experience — Community Data Stewardship Workspace
 
 ## 1. Product experience
 
-MindCommons AI should feel like a clear, modern web workspace. People should see the tasks that belong to their role without needing to understand technical data-governance language.
+If validation confirms a need, MindCommons AI should feel like a focused, modern dashboard for community data stewards and authorised reviewers. It is not a generic mental-health platform or a chat-only product.
 
-The application is dashboard-first, with an AI assistant available throughout the relevant screens.
+The screen should make the next governance task clear and let users trace information back to approved source records.
 
-It is not a chat-only application.
+## 2. Primary user roles
 
-## 2. Main navigation
+- **Community stewards / lived-experience representatives:** review permitted summaries, governance conditions and community follow-up.
+- **Authorised governance and ethics reviewers:** examine new or changed data-use proposals and record decisions within their authority.
+- **Researchers:** submit complete proposals and respond to clarification requests.
+- **System administrators:** manage accounts and role permissions under the host's approved rules.
 
-A simple navigation structure:
+Participants are not automatically given a new consent portal. Gencurate already publicly describes consent-before-collection. A separate participant experience would only be designed if SRHIN identifies a distinct need not already covered.
+
+## 3. Main navigation
 
 - Overview
-- My permissions (participant role)
-- Data-use requests (researcher role)
-- Review queue (reviewer role)
-- Community governance
-- Transparency
-- Community benefits
+- Data-use register
+- New-use requests
+- Review workspace
+- Decision history
+- Community benefit follow-up
+- Governance documents
 - Ask MindCommons AI
-- Settings and help
 
-Users only see the navigation items their role permits.
+Navigation is role-specific. Users only see sections they are authorised to access.
 
-## 3. Main dashboard
+## 4. Governance & Community Dashboard
 
-The dashboard should show:
-- A short welcome and role-specific summary.
-- Important tasks that need attention.
-- Recent request or consent activity.
-- Clear status cards.
-- A visible Ask AI entry point.
-- Shortcuts to the user's most common actions.
+The main screen should prioritise:
+- New or changed data-use proposals requiring attention.
+- Reviews due and missing evidence.
+- Conditions attached to previous decisions that need follow-up.
+- Community-defined benefit commitments and progress.
+- Links to the relevant governance decision, charter, SOP or approved source.
+- A contextual AI assistant.
 
-Avoid crowded analytics, decorative charts and information that does not help the user take a useful next step.
+Do not use decorative analytics or display sensitive participant data. The dashboard is for making governance work understandable, not for turning people into metrics.
 
-## 4. Role-specific experiences
+## 5. Researcher Workspace
 
-### Participant Centre
+- Start a new-use or change request.
+- Describe purpose, data category, collaborators, duration and AI/model-development use.
+- Attach relevant ethics and privacy documentation.
+- See required information before submission.
+- Track review status and respond to questions.
 
-Main areas:
-- My choices and permissions.
-- What my information may be used for.
-- Updates and requests.
-- Ask the Participant Assistant.
-- Help and contact options.
+AI can help organise the submission but cannot create evidence or certify ethics compliance.
 
-The language should be plain, respectful and accessible. Participants should never be pressured by the assistant to agree.
+## 6. Review Workspace
 
-### Researcher Workspace
+- Read the proposal and its purpose.
+- View applicable approved conditions and source records.
+- See AI-generated missing-information flags.
+- Route to the correct human/community/ethics authority.
+- Record decision, reasons, conditions and review date after an authorised human decision.
 
-Main areas:
-- Create a request.
-- Drafts and submitted requests.
-- Required information checklist.
-- Request status and reviewer questions.
-- Ask the Research Assistant.
+The software must not imply that AI or a general administrator has authority that belongs to LEWG or another governance body.
 
-The AI can help a researcher express their purpose clearly, but the researcher is responsible for the accuracy of the submission.
+## 7. Community accountability view
 
-### Governance and Community Workspace
+- Show approved data-use purposes and conditions at an appropriate level.
+- Explain who made the decision and which authority was responsible.
+- Show follow-up items and agreed community benefit commitments.
+- Protect participant identities and confidential research details.
 
-Main areas:
-- Requests awaiting review.
-- Requests needing clarification.
-- Requests referred for community or ethics review.
-- Applicable rules and permission information.
-- Decision history.
-- Community governance materials.
+Community members must help decide what transparency means and what information is safe to publish.
 
-The AI prepares a summary and highlights questions. Reviewers can inspect the underlying information before recording a decision.
+## 8. AI assistant experience
 
-### Transparency and Community Benefits
-
-Main areas:
-- Recent governance activity.
-- Approved, rejected and pending requests.
-- Reasons for decisions, subject to access permissions.
-- Agreed benefit commitments.
-- Responsible organisations and progress.
-- Public-safe summary reports.
-
-The public view must not expose participant identities, private requests or sensitive research details.
-
-## 5. AI assistant experience
-
-The AI assistant should be available through a persistent but unobtrusive button or side panel.
-
-It should:
-- Know the user's role and current task.
-- Answer from approved guidance and records the user may access.
-- Explain where an answer came from.
-- Say when information is missing or uncertain.
-- Offer to prepare a draft or summary.
-- Ask for confirmation before initiating any permitted workflow action.
-- Hand off to a human when a question requires authority or specialist judgement.
+The assistant is a persistent but unobtrusive side panel. It is aware of the current task and user role, but it only receives records that the application has authorised.
 
 Example prompts:
-- Participant: "What does this permission allow?"
-- Researcher: "What information is missing from my request?"
-- Reviewer: "Summarise the request and show which rules need checking."
-- Community representative: "Which benefit commitments are overdue?"
+- "Explain this approved condition in plain language and show me its source."
+- "What information is missing from this new-use request?"
+- "Summarise the proposal and compare it with the conditions attached to the previous decision."
+- "Which community benefit follow-ups are due this month?"
 
-## 6. Visual direction
+It should show source links, label AI-generated summaries, admit uncertainty and hand off authority questions to a human.
 
-The interface should be:
-- Modern, calm and professional.
-- Mobile-responsive.
-- Easy to read, with clear headings and generous spacing.
-- Designed for low-bandwidth environments.
-- Accessible to people with different levels of digital confidence.
-- Consistent across all roles.
+## 9. Visual and accessibility direction
 
-Use simple status labels such as Draft, Submitted, In Review, More Information Needed, Approved and Declined. Colour must not be the only way status is communicated.
+- Calm, modern, desktop-first but mobile-responsive.
+- Warm off-white background, deep navy text, forest-teal actions and a restrained violet AI accent.
+- Plain language, readable type, clear status labels and generous spacing.
+- Low-bandwidth and mobile layouts considered from the start.
+- Colour is never the only way to communicate status.
+- AI helps but never becomes the only route to complete a task.
 
-## 7. Dashboard design deliverable
+## 10. Validation before final design
 
-The next visual design task is to create:
-1. One main dashboard layout showing the navigation, overview cards, recent activity and AI assistant.
-2. One role-specific example, preferably the Governance & Community Workspace, because it demonstrates the product's distinctive workflow.
-3. A simple participant view to check that consent and permissions remain understandable.
+Confirm with SRHIN and community representatives:
+- Whether these roles and tasks reflect their actual process.
+- Which records may be displayed and to whom.
+- Which language and accessibility needs matter.
+- Whether the AI assistant solves a real task better than simpler interface guidance.
+- Whether a new interface reduces workload or creates duplicate administration.
 
-These are proposed screen layouts, not screenshots of an existing SRHIN product.
-
-## 8. Design questions to validate
-
-- Which roles and navigation labels make sense to participants and community partners?
-- Should the AI assistant support voice as well as text?
-- Which languages should be available first?
-- What accessibility needs should guide the interface?
-- Which dashboard actions matter most to each user group?
-- What information can be shown to the community without revealing private data?
-
-The interface should be refined with the people expected to use it, not designed solely from the project team's assumptions.
+The dashboard is a design hypothesis, not a screenshot of an existing SRHIN system.
