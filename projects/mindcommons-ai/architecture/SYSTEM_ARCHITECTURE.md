@@ -1,174 +1,125 @@
-# System Architecture
+# System Architecture — Proposed Stewardship Layer
 
-## 1. Architecture overview
+## 1. Architecture purpose
 
-MindCommons AI is proposed as a web application with role-based dashboards, a shared application layer, a coordinated AI assistant and secure governance records.
+This is a logical architecture for a possible community-facing data-use stewardship interface. It is deliberately narrower than the original platform concept because SRHIN already publicly describes Gencurate, LEWG, governance charters, ethics oversight, SOPs and reporting.
 
-The architecture is intentionally simple. The AI assistant supports the workflows; the application and its approved rules control access and record decisions.
+The design assumes existing SRHIN systems remain authoritative. The proposed interface would only connect to them if a specific gap is confirmed and the owners approve a safe integration.
 
-## 2. Main architecture diagram
+## 2. Logical architecture
 
 ```mermaid
 flowchart TB
-    subgraph USERS["People using MindCommons AI"]
-      P["Participant"]
-      R["Researcher"]
-      G["Governance reviewer"]
-      C["Community representative"]
-      A["Administrator"]
-    end
+  U[Community stewards / lived-experience representatives]
+  R[Researchers submitting new or changed data-use proposals]
+  H[Authorised governance and ethics reviewers]
 
-    subgraph UI["Role-based web application"]
-      PC["Participant Centre"]
-      RW["Researcher Workspace"]
-      GW["Governance & Community Workspace"]
-      TB["Transparency & Benefits"]
-      CHAT["Contextual AI Chat"]
-    end
+  subgraph UI[Proposed stewardship workspace]
+    DASH[Community stewardship dashboard]
+    FORM[New-use / change request]
+    REVIEW[Governance review workspace]
+    TRACE[Decision and condition history]
+    BENEFIT[Community benefit follow-up]
+    CHAT[Contextual MindCommons AI assistant]
+  end
 
-    subgraph CORE["Application services"]
-      AUTH["Identity and role permissions"]
-      CONSENT["Consent and permission records"]
-      REQUEST["Data-use request workflow"]
-      RULES["Approved governance rules"]
-      REVIEW["Human and community review"]
-      AUDIT["Decision and activity records"]
-      BENEFIT["Community benefit commitments"]
-    end
+  subgraph APP[Application-controlled services]
+    ID[Identity and role permissions]
+    WORK[Request and review workflow]
+    RULES[Structured approved conditions]
+    LOG[Decision and follow-up register]
+    FILTER[Privacy and data-minimisation controls]
+  end
 
-    subgraph AI["Coordinated AI assistance"]
-      ROUTER["AI assistant and task router"]
-      KNOW["Approved policy and help knowledge"]
-      TOOLS["Permission-checked application tools"]
-    end
+  AI[AI assistance service]
+  KNOW[Approved governance documents and authorised records]
 
-    DB[("Secure governance database")]
-    INT["Approved integration boundary"]
-    SRHIN["Existing SRHIN systems - only if confirmed"]
+  subgraph EXISTING[Existing authoritative systems — only if confirmed]
+    GEN[Gencurate / relevant data records]
+    GOV[LEWG, ethics and governance decisions]
+    DOC[Approved charters, SOPs and agreements]
+  end
 
-    P --> PC
-    R --> RW
-    G --> GW
-    C --> GW
-    A --> GW
-    PC --> CHAT
-    RW --> CHAT
-    GW --> CHAT
-    TB --> CHAT
-
-    PC --> AUTH
-    RW --> AUTH
-    GW --> AUTH
-    TB --> AUTH
-
-    AUTH --> CONSENT
-    AUTH --> REQUEST
-    REQUEST --> RULES
-    RULES --> REVIEW
-    REVIEW --> AUDIT
-    CONSENT --> AUDIT
-    BENEFIT --> AUDIT
-
-    CHAT --> ROUTER
-    ROUTER --> KNOW
-    ROUTER --> TOOLS
-    TOOLS --> AUTH
-    TOOLS --> CONSENT
-    TOOLS --> REQUEST
-    TOOLS --> RULES
-    TOOLS --> AUDIT
-    TOOLS --> BENEFIT
-
-    CONSENT --> DB
-    REQUEST --> DB
-    RULES --> DB
-    REVIEW --> DB
-    AUDIT --> DB
-    BENEFIT --> DB
-
-    CORE --> INT
-    INT -. "approved, validated connection only" .-> SRHIN
+  U --> DASH
+  R --> FORM
+  H --> REVIEW
+  DASH --> ID
+  FORM --> WORK
+  REVIEW --> WORK
+  TRACE --> ID
+  BENEFIT --> ID
+  WORK --> RULES
+  WORK --> LOG
+  LOG --> FILTER
+  CHAT --> AI
+  AI --> KNOW
+  AI --> FILTER
+  FILTER --> ID
+  FILTER -. approved reference or metadata connection .-> GEN
+  FILTER -. approved governance records .-> GOV
+  KNOW -. approved documents .-> DOC
+  AI --> WORK
 ```
 
-## 3. How the parts work
+## 3. What each part does
 
-### User interface
+- **Dashboard:** shows proposals, reviews, conditions and follow-up relevant to the signed-in person's role.
+- **Request workflow:** records new or changed data-use proposals in a structured format.
+- **Approved conditions:** contains only rules and conditions that authorised governance bodies have approved.
+- **Decision register:** records the decision, authority, rationale, conditions and review date, or links to the authoritative source record.
+- **Benefit follow-up:** records community-defined commitments and progress; it does not decide what is fair.
+- **AI assistant:** explains approved information, helps prepare requests, identifies missing evidence and drafts summaries.
+- **Existing systems:** remain the source of truth. The proposed interface should reference records rather than copy sensitive data wherever possible.
 
-Each person sees the workspace relevant to their role. The same application can present different tasks and records without giving every user the same access.
+## 4. AI and permission boundaries
 
-### Application services
+The AI assistant must not have unrestricted database access. The application first checks the user's role and record permissions, then supplies only the information that user is authorised to see.
 
-These services handle the actual work:
-- Store consent and permission records.
-- Receive and track research requests.
-- Apply approved, structured governance rules.
-- Route requests for human or community review.
-- Record decisions and changes.
-- Track benefit commitments.
+AI can:
+- Explain a governance condition and cite its source record.
+- Help prepare a change-of-use request.
+- Identify missing fields or documents.
+- Compare a proposal with structured, approved conditions.
+- Prepare a summary for authorised reviewers.
+- Summarise follow-up actions and community benefit commitments.
 
-### AI assistance layer
-
-One coordinated AI service supports different tasks based on the user's role. It retrieves approved guidance and authorised records, then prepares explanations, summaries and suggestions.
-
-The AI does not directly connect to the database with unrestricted privileges. Any action it proposes must go through the same permission checks and application rules as a normal user action.
-
-### Secure records
-
-The platform stores only the information needed for governance workflows. It should not become a duplicate repository of all mental-health records.
-
-### Integration boundary
-
-The application may eventually exchange limited information with existing SRHIN systems. This depends on confirmed needs, technical interfaces, data-sharing agreements and approval from the relevant system owners. No integration is assumed to exist today.
-
-## 4. AI responsibilities and limits
-
-| AI task | AI role | Control |
-|---|---|---|
-| Explain consent | Explain approved wording in accessible language | Participant chooses; approved wording remains available |
-| Guide researcher | Help complete a request | Researcher reviews and submits |
-| Assess request | Compare request fields with approved rules and flag issues | Rules engine enforces checks; humans decide exceptions and sensitive cases |
-| Summarise records | Explain status and activity | Role permissions filter records before retrieval |
-| Report benefits | Summarise commitments and progress | Community representatives define and review commitments |
+AI cannot approve a request, grant access, change consent, create governance policy, override LEWG or ethics decisions, or decide benefit fairness.
 
 ## 5. Example workflow
 
 ```mermaid
 sequenceDiagram
-    participant Participant
-    participant App as MindCommons AI
-    participant Assistant as AI Assistant
-    participant Researcher
-    participant Reviewer as Human/Community Reviewer
-    participant Log as Governance Records
+  participant Researcher
+  participant App as Stewardship Workspace
+  participant AI as MindCommons AI
+  participant Reviewer as Authorised Reviewer
+  participant Record as Decision Register
+  participant Community as Community Steward
 
-    Participant->>App: Review data-use explanation
-    Participant->>App: Choose specific permission
-    App->>Log: Record permission and version
-
-    Researcher->>App: Submit data-use request
-    App->>App: Check required fields and access rules
-    App->>Assistant: Prepare request summary and flag issues
-    Assistant-->>App: Summary and review flags
-    App->>Reviewer: Route request and evidence
-    Reviewer->>App: Record decision and reasons
-    App->>Log: Record decision and audit event
-    App-->>Researcher: Notify request status
-    App-->>Participant: Show permitted status information
+  Researcher->>App: Submit new or changed data-use proposal
+  App->>App: Check required fields and user permissions
+  App->>AI: Prepare summary and compare with approved conditions
+  AI-->>App: Summary, missing evidence and source links
+  App->>Reviewer: Route proposal for human review
+  Reviewer->>App: Record decision, conditions and review date
+  App->>Record: Save decision reference and audit event
+  App-->>Community: Show permitted, privacy-safe update
+  App->>Record: Track agreed follow-up and benefit commitments
 ```
 
-## 6. Important safeguards
+## 6. Design safeguards
 
-- Role permissions are checked by the application, not decided by the AI model.
-- Consent records and community rules are separate and both must be considered.
-- AI summaries are labelled as AI-generated and can be corrected.
-- Sensitive decisions require authorised human review.
-- Public reports contain aggregated or otherwise approved information, never identifiable participant details.
-- AI requests and outputs should be logged appropriately without unnecessarily copying sensitive conversation content.
-- The platform must provide a route to complete essential tasks without using the chatbot.
-- Data retention, deletion, withdrawal and access policies require legal, ethical and community review.
+- Existing SRHIN systems and governance bodies remain authoritative.
+- Do not duplicate participant-level data unless strictly necessary and approved.
+- Role and record permissions are enforced by the application, not by AI.
+- AI summaries are labelled and linked to source records.
+- Ambiguous or conflicting conditions are escalated to humans.
+- Community benefit arrangements are defined by community and host authorities.
+- Public or community-wide views contain only approved, privacy-preserving information.
+- Every essential task has a non-chat route.
 
-## 7. Architecture boundaries
+## 7. What is not specified
 
-This diagram is a proposed logical architecture. It does not specify final technologies, hosting, database products, AI providers, APIs or security certifications. Those choices should follow the host's actual needs and technical environment.
+This diagram does not select a technology stack, database, hosting provider, AI model, API or security certification. Those decisions require confirmed requirements and SRHIN's technical review.
 
-The architecture is not a claim that MindCommons AI is integrated with SRHIN or that SRHIN has approved this design.
+This is a proposed logical design, not an existing integration or a claim that the product is approved. No prototype is being built at this stage.
