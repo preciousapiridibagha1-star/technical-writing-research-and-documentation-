@@ -1,96 +1,50 @@
-# Portfolio Structure and Build Plan
+# Portfolio Structure and Evidence Plan — Close-out Record
 
 **Owner:** Precious Apiri Dibagha  
-**Working branch:** `portfolio/structure-and-cleanup`  
-**Status:** Active build; existing material is being reviewed and moved carefully.
+**Default branch:** main  
+**Updated:** 9 November 2026  
+**Status:** The six-area master portfolio is assembled and cross-linked. Open-source contributions are the next workstream.
 
-## Portfolio positioning
+## Current portfolio positioning
 
-**Precious Apiri Dibagha — Technical Writer & Researcher**
+**Applied Technology Research & Documentation**
 
-Primary focus: **AI systems and software documentation**  
-Additional focus: **technical research, cloud infrastructure, open source, digital labour and global mobility**
+The portfolio presents self-directed work in AI systems, responsible technology, research, internet governance, technical writing and project delivery. It distinguishes concepts, desk research, local implementation and verified test evidence. It does not claim client delivery, formal professional certification or a deployed AI product.
 
-The portfolio will show real examples of technical writing, research and system design. It will be honest about what is complete, in progress, conceptual, tested or deployed.
+## Repository structure
 
-## Agreed repository structure
+The live repository structure is recorded in the [Master Portfolio Evidence Index](master-portfolio/README.md). Key areas include:
 
-This is the structure we will follow:
+- master-portfolio/ — six capability pages, evidence challenge and portfolio close-out.
+- projects/vantage-automata/ — system concept, implementation records and tested local prototype.
+- projects/jarvis-ai/ — proposed multi-agent business-system design; no implementation claim.
+- research/ — Nigeria-focused migration/digital labour brief, job-platform comparison and research methods.
+- technical-guides/ and the four root-level project samples — technical writing examples and review evidence.
+- contributions/open-source/ — contribution standards and the next workstream.
 
-```text
-/
-├── README.md
-├── projects/
-│   ├── vantage-automata/
-│   │   ├── README.md
-│   │   ├── architecture/
-│   │   ├── requirements/
-│   │   ├── workflows/
-│   │   ├── implementation/
-│   │   ├── testing/
-│   │   └── user-guide/
-│   ├── jarvis-ai/
-│   │   ├── README.md
-│   │   ├── architecture/
-│   │   ├── agent-documentation/
-│   │   ├── system-workflows/
-│   │   └── technical-specifications/
-│   └── cloud-infrastructure-and-open-source/
-│       ├── README.md
-│       ├── project-overviews/
-│       └── technical-documentation/
-├── research/
-│   ├── talent-paradox/
-│   ├── ai-job-search-platforms/
-│   └── research-methodology/
-├── technical-guides/
-│   ├── README-guides/
-│   ├── FAQs/
-│   ├── user-guides/
-│   └── documentation-examples/
-├── contributions/
-│   └── open-source/
-└── learning-and-development/
-    └── technical-skills/
-```
+## Six-area completion summary
 
-Folders will be added when there is real content for them. Git does not track empty folders, so we will use short README or index files where a folder needs an explanation before its first full document is ready.
+1. AI Systems & Practical Implementation: Vantage local deterministic proof of concept implemented; nine unit tests passed. Jarvis remains conceptual.
+2. AI Governance & Responsible Technology: Nigerian recruitment-governance case study anchored in the Data Protection Act 2023 and supported by comparative international guidance.
+3. Research & Analytical Writing: revised Talent Paradox brief and audited AI job-platform comparison; public-source limitations recorded.
+4. Internet Governance & Digital Policy: Nigeria-focused meaningful-access policy brief with national primary sources and measured/target distinctions.
+5. Technical Writing & Documentation: four category-level cloud-AI samples revised; Vantage documentation aligned to the local prototype.
+6. Project & Programme Delivery: delivery evidence updated with actual implementation scope, acceptance criteria and test output.
 
-## What belongs where
+For detail, see [Portfolio Status](PORTFOLIO-STATUS.md), the [Master Portfolio Index](master-portfolio/README.md) and the [Evidence Challenge & Improvement Record](master-portfolio/EVIDENCE-CHALLENGE-AND-IMPROVEMENT-RECORD.md).
 
-- **Vantage Automata:** the main practical MVP. Its documentation will cover requirements, architecture, workflow, implementation notes, tests and a user guide. The first demonstrable slice is: instruction → AI interpretation → proposed action → human approval or rejection → safe test action → result and audit log.
-- **Jarvis AI:** the broader multi-agent business-system concept. We will document the diagrams, agent roles, system workflows and technical specifications. We will not describe integrations or deployment as working until they have been implemented and tested.
-- **Cloud infrastructure and open source:** project overviews and technical material connected to the existing cloud infrastructure/open-source work.
-- **Research:** The Talent Paradox, the AI Job Search Platforms research and a transparent account of research methods and source checking.
-- **Technical guides:** the existing software overview, FAQ, user-guide and documentation examples. These are early samples and will be revised for accuracy, scope and usefulness.
-- **Contributions:** actual open-source contributions and documentation reviews. Planned contributions will not be presented as completed.
-- **Learning and development:** practical technical learning tied to work shown in the repository, not a padded list of courses.
+## Area 7 — next
 
-## Existing material to preserve and reorganise
-
-The repository already contains a main README, four cloud-AI documentation samples, a documentation review report, The Talent Paradox report, and earlier cloud infrastructure/open-source research material. The current documentation samples are generic rather than documentation for a named, verified product. We will label that scope clearly unless we later choose and research a specific product.
-
-Some existing filenames contain accidental trailing newline characters. We will correct those paths while preserving the file contents and updating links.
-
-## Build order
-
-1. Establish this agreed structure and replace the root README with a useful portfolio landing page.
-2. Create the Vantage Automata project home and define its first MVP slice.
-3. Create the Jarvis AI project home and record the current system concept without inventing implementation details.
-4. Move and improve the existing documentation samples and cloud/open-source material.
-5. Review and strengthen The Talent Paradox and the AI Job Search Platforms research.
-6. Add learning records and genuine open-source contributions as they happen.
-7. Review all links, claims and project-status labels before merging the working branch into `main`.
+Open-Source & Community Contribution is intentionally separate and begins after Areas 1–6. The target is two meaningful, verifiable external contributions. Each must be grounded in a real issue or identified defect, comply with the project's contribution rules and be recorded accurately as proposed, submitted, merged or closed.
 
 ## Quality rules
 
-- Use clear, natural language. Explain technical ideas fully without dressing them up in unnecessary jargon.
 - Separate facts, decisions, assumptions and recommendations.
-- Cite sources for external factual claims and record when important sources were checked.
-- Label work as **concept**, **specified**, **in progress**, **prototyped**, **tested** or **deployed**, as appropriate.
-- Do not claim that a workflow works until it has been run and tested.
+- Cite external factual claims and preserve the source/date trail.
+- Label work as concept, specified, locally implemented, tested or deployed as appropriate.
+- Do not claim a workflow works until it has been run and tested.
 - Use mock data and safe test actions before connecting real accounts or taking consequential actions.
-- Do not claim an open-source contribution until there is a real contribution link.
-- Keep the work on this branch until it has been reviewed. The default branch remains untouched.
+- Do not claim an open-source contribution until a real change has been submitted.
+- Verify cross-links and filenames before describing the portfolio as complete.
 
-This is the working structure and build plan, not a claim that every listed folder or project is already complete.
+This close-out record supersedes the earlier build-order status in this file. It does not remove or rewrite project history; it records the current default-branch state.
