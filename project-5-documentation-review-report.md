@@ -1,101 +1,63 @@
-# Documentation Review: Current Portfolio Samples
+# Documentation Review: Cloud AI Samples and Vantage Documentation
 
 **Reviewed by:** Precious Apiri Dibagha  
-**Review status:** Initial review  
-**Scope:** The README and the four existing cloud AI assistant writing samples  
-**Date:** 7 November 2026
+**Review status:** Revised self-review  
+**Date:** 9 November 2026
 
-## Why this review was written
+## Purpose and scope
 
-I reviewed the documents currently in this repository to understand what is already useful, what needs more work and what should not yet be presented as finished professional work.
+This review examines the four cloud AI assistant samples and the Vantage prototype documentation. It records what changed after the initial review and what still requires independent verification. It is not a formal certification, security audit, vendor evaluation or peer review.
 
-This is an initial review, not a formal certification or an independent technical audit. I have not tested a live cloud AI product, inspected its code or verified every technical statement against a vendor's documentation. The findings below are based on the content of the files in this repository.
+## Materials reviewed
 
-## Documents reviewed
+- [Cloud AI software overview](project-1-software-overview.md)
+- [Cloud AI FAQ](project-2-faq-document.md)
+- [Cloud AI usage guide](project-3-user-guide.md)
+- [Cloud versus local deployment research brief](project-4-research-brief.md)
+- [Vantage project overview](projects/vantage-automata/README.md)
+- [Vantage prototype guide](projects/vantage-automata/prototype/README.md)
 
-- `README.md`
-- `project-1-software-overview.md`
-- `project-2-faq-document.md`
-- `project-3-user-guide.md`
-- `project-4-research-brief.md`
+## Findings and changes made
 
-The Talent Paradox is a separate research paper and needs its own review. It is not graded in this document.
+| Finding from initial review | Revision made | Current status |
+|---|---|---|
+| Category material looked like one named product | All four cloud-AI samples now identify themselves as category-level or illustrative material | Corrected; no vendor-specific claim is made |
+| FAQ included broad security and integration claims | Rewritten to tell users what to check and explain that controls vary by provider, plan and region | Corrected |
+| Usage guide was too generic to be safely used as vendor instructions | Rebuilt as a bounded workflow with prerequisites, expected results, troubleshooting and an explicit non-vendor-specific label | Improved; live product steps remain unverified |
+| Research brief used open source, open weights, local and offline interchangeably | Rebuilt with definitions and a sourced decision framework; removed absolute privacy and zero-cost claims | Corrected at desk-research level |
+| Vantage overview described only a future concept | Updated to distinguish the broader concept from the implemented deterministic local proof of concept | Corrected |
+| Vantage docs did not clearly disclose test evidence | Prototype README and project overview now record nine passing unit tests and their scope | Verified by local unit-test run, not independent review |
 
-## What is working so far
+## Before → after examples
 
-### 1. The documents have a clear starting structure
+### Security and privacy
+**Before:** “Local models provide complete privacy and absolute data sovereignty.”
 
-The overview, FAQ, user guide and research brief each have a recognisable purpose. Headings and lists make the content fairly easy to scan, including on a phone.
+**After:** “Local execution may reduce prompt transmission to an external inference provider, but security still depends on the application, device, network, logs, backups and access controls. Local hosting is not a privacy guarantee.”
 
-### 2. The writing is generally accessible
+### Integrations
+**Before:** “Most modern platforms offer APIs, browser extensions or direct integrations.”
 
-Most explanations avoid unnecessary technical detail. The samples try to explain AI assistants to people who may use the tools without building them.
+**After:** “Integration options vary by product, region and plan. Check the provider's current documentation for supported connectors, API access, limits and permissions.”
 
-### 3. The set shows different documentation tasks
+### User guidance
+**Before:** “Access the platform, formulate your instruction, review and refine.”
 
-Taken together, the files demonstrate an attempt to write a product overview, answer common user questions, explain a basic user journey and compare two broad types of AI systems. That is a useful foundation for a portfolio.
+**After:** The new workflow guide states its prerequisites, gives a bounded instruction example, requires source checking, explains safe export and lists recovery steps. It explicitly directs readers to the chosen provider's own instructions for exact interface steps.
 
-## What needs to improve
+## Standards and sources consulted
 
-### 1. The product being documented is not clearly identified
+- [Google Developer Documentation Style Guide](https://developers.google.com/style/) — reader-focused structure, clarity and consistent terminology.
+- [Open Source Initiative — Open Source AI Definition](https://opensource.org/ai/open-source-ai-definition) — distinctions relevant to open-source AI claims.
+- [Ollama documentation](https://github.com/ollama/ollama/blob/main/docs/faq.mdx) and [Meta Llama model information](https://dev.meta.ai/llama/docs/getting-the-models/meta) — selected examples of runtime requirements and model-specific terms.
 
-The overview and user guide describe a general category of cloud AI assistants. They do not explain one named product, its actual interface, supported features, account requirements or known limitations.
+## What remains unverified
 
-That means the current user guide is closer to a general usage outline than a guide someone could follow to use a particular product. We should either choose a real product and verify its features, or clearly label the material as a general illustrative example.
+- No named vendor product has been selected for a fully tested, product-specific guide.
+- No live vendor walkthrough or external-reader usability test was performed.
+- No accessibility conformance audit was performed.
+- Passing Vantage unit tests do not establish security, reliability under load or production readiness.
 
-### 2. Some security and privacy statements are too broad
+## Evidence boundary
 
-The FAQ refers to encryption such as TLS and AES-256 and suggests that enterprise platforms use these protections. The research brief also describes local models as offering complete privacy and absolute data sovereignty.
-
-These statements need qualification. Security controls differ between providers and deployment arrangements. Running a model locally can reduce some data-sharing risks, but it does not automatically make a device, application or network secure. We should name the exact product or deployment being discussed and link to reliable technical documentation before making specific claims.
-
-### 3. The comparison in the research brief needs more careful treatment
-
-The brief compares proprietary cloud models with open-weight or locally hosted models. This is a useful topic, but the current categories are too neat. Open-weight models are not all deployed locally, and local deployment does not automatically mean that every part of a system is open source.
-
-Claims about hardware requirements, cost, privacy, offline access and customisation should be checked against specific examples. A comparison should also explain that performance and requirements vary by model and hardware.
-
-### 4. The user guide does not yet guide a reader through a real task
-
-The three steps—open the platform, write an instruction, review the answer—are understandable, but they do not cover account setup, attaching a file, managing a conversation, exporting work, reporting a problem or checking the product's current limitations.
-
-We should not add instructions for features until they have been confirmed for the product selected.
-
-### 5. The FAQ needs more useful, specific answers
-
-The questions cover relevant themes, but some answers are broad. For example, the answer about integrations says that most modern platforms offer APIs, browser extensions or direct integrations. That is not true of every platform in the same way.
-
-The revised FAQ should distinguish between what is generally possible and what a named product actually supports. It should also include practical questions a new user is likely to ask.
-
-### 6. The research brief needs sources and a clearer method
-
-The brief makes claims about model hosting, hardware, privacy, customisation and maintenance without citing sources. It also does not explain how the products or examples were selected.
-
-A stronger version should state its research question, define the comparison criteria, identify the sources consulted and give the date those sources were checked. It should separate documented facts from the author's interpretation.
-
-### 7. The README needs to work as a portfolio landing page
-
-The current README combines the portfolio introduction with a long section about The Talent Paradox. It also contains placeholder links for reading and downloading the report, rather than working links. A note about the missing PDF link was accidentally left in the text.
-
-The README should introduce the author and the focus of the portfolio, then direct readers to individual projects. The research paper should have its own project page and should only offer a PDF download if an actual PDF is present in the repository.
-
-## Current assessment
-
-I am not assigning letter grades or describing these files as fully verified. That would give readers more confidence than the current evidence supports.
-
-At this stage, the files are **early portfolio samples**. They show a useful starting ability to organise information and explain general concepts, but they need more product-specific detail, source checking and practical examples before they can be treated as finished documentation.
-
-## Recommended revision order
-
-1. Decide whether the cloud AI assistant samples will document one real product or remain clearly labelled general examples.
-2. Revise the product overview so that its scope, audience, features and limitations are precise.
-3. Rework the FAQ using questions grounded in the chosen product and reliable sources.
-4. Turn the user guide into a practical task-based guide, checking every instruction against the actual product.
-5. Rebuild the research brief with a transparent method, specific examples and citations.
-6. Rewrite this review after those changes and record what was actually checked.
-
-## Review limitations
-
-This review is based on the repository documents available at the time of writing. It is not a security assessment, product test, peer review or certification. No claim is made that the documents have been independently verified or that the described systems have been implemented.
-
-The purpose is to be clear about the work completed so far and to give the next revision a practical direction.
+The review demonstrates a structured self-review, substantive revisions and an evidence checklist. It does not establish professional certification, independent peer review, vendor product testing or formal accessibility conformance.
