@@ -30,4 +30,4 @@ Ollama's contribution guide welcomes small documentation corrections, requests f
 
 ## Status
 
-**Prepared proposal — not submitted.** No upstream branch, commit or pull request has been created. Public submission requires the account owner's approval.
+**Superseded as a submission target — not submitted.** Another contributor has already opened [upstream PR #18050](https://github.com/ollama/ollama/pull/18050) for this exact change. Do not submit a duplicate. Retained as an issue-research and link-verification exercise.
