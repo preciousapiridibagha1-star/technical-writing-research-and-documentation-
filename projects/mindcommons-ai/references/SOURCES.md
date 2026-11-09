@@ -1,75 +1,34 @@
-# Research Sources
+# Sources and Evidence Register
 
-**Last checked:** 9 November 2026
+**Last reviewed:** 9 November 2026  
+**Method:** Public web sources. Organisational pages are evidence of what the organisation publicly describes, not independent verification of internal operations.
 
-This register distinguishes official public materials from third-party reproductions. A public description shows what its publisher says is in place; it does not independently audit operational performance or establish that an unmentioned tool does not exist.
+## Mozilla Foundation
 
-## Mozilla Foundation — official sources
+1. [2027 Call for Applications](https://www.mozillafoundation.org/en/what-we-do/grantmaking/fellowship/2027-call-for-applications/) — confirms SRHIN is a Track I Embedded host and directs applicants to the full RFP for host-specific details.
+2. [2027 Fellowship FAQs](https://www.mozillafoundation.org/en/what-we-do/grantmaking/fellowship/2027-call-for-applications/faqs/) — explains Embedded collaboration and that fellows work on an independent project aligned with the host mission, not as staff delivering services directly to existing host programmes.
+3. [Official Letter of Intent form](https://mozillafoundation.tfaforms.net/wf/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImtpZCI6InYyIn0.eyJ3b3JrZmxvd1Nlc3Npb25JZCI6ImRkNzc4NmE2LTQxMjEtNGIyYS1hYWE4LTNhOTNlYjRmMjc0ZiIsIm5vbmNlIjoiZWJjUlc2MXNMN050bnNjd3ZIOGJzMVU4YjRWZkNrQWYlM0FkMDczYmRhZDBmYmVmZjc4Mzc1NGEyYzkzNWVlZGQ1NyIsImV2ZW50IjoiZm9ybS52aWV3LmRpc3BsYXkiLCJleHBpcmVzIjoxNzk1NDAyNjE1fQ.BDXOjzjpzOTWcHcavgXOW4TjBMkJZGcz7icfUAsC4Y0) — asks for project outputs, target users, traction, public benefit and milestones.
+4. [Third-party reproduction of SRHIN host challenge](https://rekoja.com/find/mozilla-fellowship/guide) — discovery aid only. The detailed wording must be checked against Mozilla's original RFP PDF before final application claims.
 
-1. **2027 Call for Applications**  
-   https://www.mozillafoundation.org/en/what-we-do/grantmaking/fellowship/2027-call-for-applications/  
-   Confirms SRHIN as a Track I host and publishes the fellowship structure and timeline.
+## SRHIN / GENSCORE public materials
 
-2. **2027 Fellowship FAQs**  
-   https://www.mozillafoundation.org/en/what-we-do/grantmaking/fellowship/2027-call-for-applications/faqs/  
-   Explains the Embedded and Independent tracks and the relationship between Fellows and host organisations.
+5. [GENSCORE main platform description](https://www.genscore.io/) — describes Gencurate, consent before collection, annotation, clinician sign-off, model development and human review.
+6. [GENSCORE Governance & Ethics](https://www.genscore.io/governance.html) — describes LEWG, Data, Ethics & Safety Monitoring Board, charters, SOPs, escalation, dashboards, reports, audits, data protection and consent safeguards.
+7. [SRHIN Knowledge Hub](https://resources.srhin.org/) — public collection of research, toolkits, guidelines and frameworks.
+8. [Epistemic Authority Decision Matrix](https://resources.srhin.org/item/epistemic-authority-decision-matrix) — a tool to define decisions where lived-experience contributors hold authority.
+9. [Guide for People with Lived Experience in AI Mental-Health Tool Design](https://resources.srhin.org/item/ai-co-design-guide) — public co-design resource.
+10. [Lived-Experience Compensation and Governance Template](https://resources.srhin.org/item/lived-experience-compensation-governance-template) — existing resource on compensation, credit, protection and contributor authority.
+11. [LEEF Checklist](https://resources.srhin.org/) — listed on the Knowledge Hub as a pre-launch check for digital mental-health tools.
 
-3. **Full 2027–2028 RFP PDF**  
-   https://assets.mofoprod.net/network/documents/PUBLIC_2027_2028_Fellowship_RFP-2.pdf  
-   Linked from Mozilla's official call. The SRHIN-specific challenge text must be checked directly in this PDF before final application wording. The PDF was not successfully extracted in this review.
+## Evidence interpretation
 
-## SRHIN and GENSCORE — official public materials
+- Public evidence confirms substantial existing SRHIN work in consent, data curation, lived-experience governance, ethics oversight, privacy and co-production resources.
+- Public evidence does **not** establish whether SRHIN already has an internal ledger for approved data uses, later changes and community commitments.
+- The proposed gap is therefore a hypothesis for validation, not a finding of organisational failure.
+- No internal workflow, API, database, contract or security control was inspected.
+- No SRHIN staff, LEWG member, participant or community health worker was interviewed.
+- No prototype, partnership, endorsement, integration or deployment is claimed.
 
-4. **SRHIN — Our Work**  
-   https://srhin.org/our-work/  
-   Overview of mental health, digital health/AI, community organising, research and lived-experience priorities.
+## Research decision
 
-5. **GENSCORE — Platform**  
-   https://www.genscore.io/  
-   Describes culturally grounded mental-health AI, Gencurate, consent before collection, annotation, clinician sign-off and monitoring.
-
-6. **GENSCORE — Governance & Ethics**  
-   https://www.genscore.io/governance.html  
-   Describes LEWG, the Data, Ethics & Safety Monitoring Board, steering committee, governance charter, human-oversight charter, escalation protocol, SOPs, monthly dashboards, quarterly reporting, annual external audits, consent, de-identification and access controls.
-
-7. **GENSCORE — Lived Experience**  
-   https://www.genscore.io/lived-experience.html  
-   Describes LEWG as co-applicants sharing responsibility for decisions, outputs and governance; its work across design, delivery and dissemination; member compensation; and the 12-member language-group structure.
-
-8. **SRHIN — ALPHA Center**  
-   https://srhin.org/alpha-center/  
-   Describes SRHIN's AI-for-low-resource public-health work and its public-health technology projects.
-
-9. **SRHIN Knowledge Hub**  
-   https://resources.srhin.org/  
-   Public library of publications, guidelines, frameworks, toolkits and policy briefs.
-
-10. **SRHIN Knowledge Hub — LEEF Checklist**  
-    Available through the Knowledge Hub. A pre-launch checklist for lived-experience involvement in digital mental-health tools.
-
-11. **SRHIN Knowledge Hub — Template for Lived Experience Compensation and Governance in Digital Health Projects**  
-    Available through the Knowledge Hub. A policy template covering compensation, credit, protection and decision-making authority for lived-experience contributors.
-
-12. **SRHIN Knowledge Hub — Co-Production Readiness Self-Assessment**  
-    Available through the Knowledge Hub. A tool for assessing whether a project is ready to involve people with lived experience appropriately.
-
-13. **SRHIN Knowledge Hub — Epistemic Authority Decision Matrix**  
-    Available through the Knowledge Hub. A planning grid for identifying which decisions lived-experience contributors hold authority over.
-
-14. **GENSCORE — Team**  
-    https://www.genscore.io/team.html  
-    Publicly identifies clinical, ethics, research and lived-experience leadership roles.
-
-## Third-party reproduction — not primary evidence
-
-15. **Rekoja — Mozilla Fellowship 2027 guide**  
-    https://rekoja.com/find/mozilla-fellowship/guide  
-    Reproduces the SRHIN host challenge wording about community-owned tools for mental-health data governance, consent, privacy and benefit-sharing, with pilots involving young people, people with lived experience and community health workers. This is not the primary source; verify the exact wording against Mozilla's RFP.
-
-## Evidence and limitations
-
-- No internal SRHIN systems, APIs, databases, contracts or SOPs have been reviewed.
-- No community or staff interviews have been conducted.
-- No independent audit of GENSCORE's operational performance has been conducted.
-- Public materials do not prove that a community-facing secondary-use register or benefit-tracking workflow is absent.
-- The proposed product gap is therefore a validation hypothesis, not a verified deficiency.
+Carry forward only the Community Data-Use Accountability Ledger hypothesis. If validation shows the workflow is already handled effectively, do not build a duplicate.
