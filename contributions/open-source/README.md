@@ -1,32 +1,32 @@
 # Open-Source Contributions
 
-This section will record contributions to external open-source projects and supporting documentation.
+This section records evidence for external open-source contribution work. It distinguishes issue investigation and patch preparation from a change that has actually been submitted.
 
 ## Contribution record standard
 
-For each contribution, record:
-- Project and repository.
-- Issue, discussion or documentation area addressed.
-- Why the change was needed.
-- The exact contribution made.
-- Review or maintainer feedback.
-- Pull request or commit reference.
-- Final status: proposed, submitted, merged or closed.
+For every contribution, record the upstream project, issue addressed, problem, exact change, verification performed, pull request or commit, maintainer feedback, and final status.
 
-Do not list an issue investigation as a contribution if no change was submitted. Do not describe a pull request as merged unless the repository confirms it.
+An issue investigation or draft patch is not an upstream contribution. A pull request is not merged until the upstream repository confirms it. Never claim tests passed unless they were run and the output is recorded.
 
 ## Contribution workflow
 
-1. Read the project's README, contribution guide and code of conduct.
-2. Identify a real documentation or usability issue.
-3. Check whether the issue is already being addressed.
-4. Ask maintainers for clarification where the scope is unclear.
-5. Prepare a focused change consistent with project conventions.
-6. Check links, formatting, terminology and factual accuracy.
-7. Submit the contribution with a concise explanation.
-8. Respond constructively to review.
-9. Record the final outcome and lessons.
+1. Read the upstream README, contribution guide and code of conduct.
+2. Confirm the issue is open and check assignees, related branches and duplicate PRs.
+3. Read the relevant implementation or documentation source.
+4. Prepare a focused change that matches project conventions.
+5. Run project-specified checks and verify factual claims and links.
+6. Review the complete diff.
+7. Obtain approval before creating a public upstream branch or pull request.
+8. Submit and respond to maintainers' review.
+9. Record the verified outcome and lessons.
+
+## Prepared contribution proposals
+
+1. [Ollama — update the Msty URL in README (#18045)](proposal-01-ollama-msty-link.md) — one-line external-link correction, checked against Msty's official domain.
+2. [Ollama — add GPU fallback troubleshooting guidance (#14260)](proposal-02-ollama-gpu-troubleshooting.md) — practical `ollama ps` diagnostic workflow, context-length guidance and carefully qualified model-artifact-size information.
+
+Both issues were open and unassigned, with no linked branch or pull request in the issue metadata at the time checked. Recheck immediately before submission.
 
 ## Current status
 
-This area is reserved for verifiable contributions. No external contribution is claimed by this index alone.
+**Two candidate changes have been investigated and drafted. Neither has been submitted upstream.** This index does not claim an external contribution or merged pull request.
