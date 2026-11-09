@@ -8,11 +8,11 @@ I begin with the problem rather than assuming that AI is the answer. I examine t
 
 My contribution is strategic and documentary. I develop concepts, analyse requirements, map proposed architectures and workflows, consider risks and human oversight, and communicate technical ideas clearly. I do not claim to be a software engineer or to have independently coded, configured, integrated or deployed systems where that work has not been completed.
 
-## Current priority: community-centred mental-health data governance
+## Current priority: MindCommons AI — community-governed mental-health data
 
-- **[Community Mental Health Data Governance Demonstrator](projects/community-mental-health-data-governance/README.md)** — a proposed, synthetic-data-only prototype exploring purpose-specific consent, data-access decisions and accountability records. It is a self-directed learning project inspired by research into the Mozilla 2027–28 SRHIN Embedded Fellowship challenge. It is not SRHIN-approved, and the application has not yet been built.
+- **[MindCommons AI](projects/mindcommons-ai/README.md)** — a research-informed proposal for an AI-powered web application supporting community governance of mental-health data, participant consent and permissions, researcher data-use requests, human and community review, transparency and benefit-sharing. It is a concept and documentation project; no prototype has been built and no relationship or endorsement from SRHIN is claimed.
 
-The immediate goal is to turn this specification into a small, testable working prototype, then publish the implementation, tests, architecture, screenshots and known limitations. The project will not handle real health data or provide clinical advice.
+The current work is to complete the research, product definition, MVP scope, system architecture and dashboard design documentation. Any future implementation would be a separate, later decision informed by host and community validation.
 
 ## Master portfolio
 
@@ -58,9 +58,9 @@ Both projects are self-directed. They represent my own exploration and strategic
 
 ## Current development priorities
 
-1. Build and test the community mental-health data-governance demonstrator using synthetic data only.
-2. Publish reproducible setup instructions, architecture and data-flow documentation.
-3. Add screenshots and a short demonstration only after the application works.
+1. Complete the MindCommons AI research, product definition, MVP scope and architecture documents.
+2. Design and document the proposed dashboard and key user journeys.
+3. Validate the proposed product against the official SRHIN host brief and, where possible, host and community feedback before making implementation claims.
 4. Make genuine, scoped contributions to existing open-source projects and link to the public issues and pull requests.
 5. Keep conceptual work clearly separated from implemented and independently reviewed work.
 
