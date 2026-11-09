@@ -1,104 +1,131 @@
 # Research and Analysis
 
-**Research status:** Preliminary desk research, 9 November 2026  
-**Purpose:** Understand the SRHIN challenge and its existing public ecosystem before defining a product.  
-**Evidence rule:** Separate what public sources confirm from what still needs direct validation.
+**Research status:** Expanded public-source review, 9 November 2026  
+**Purpose:** Identify the actual problem in the SRHIN host challenge, map what SRHIN already has, and avoid proposing a duplicate system.  
+**Evidence standard:** Public descriptions establish what SRHIN says it has built or operates. They do not independently verify every claim or reveal internal workflows. Gaps below are hypotheses until confirmed with SRHIN and affected communities.
 
-## 1. The challenge we are responding to
+## 1. The host challenge
 
-The SRHIN host challenge, as reproduced in a public guide to the Mozilla 2027–2028 call, describes a concern that mental-health data from African communities can be used to develop AI without meaningful consent, community control or a fair share of the benefits.
+Mozilla's official 2027–2028 call confirms SRHIN as a Track I Embedded host and points applicants to the full RFP for the host-specific challenge. The challenge wording reproduced by a third-party guide describes the concern that mental-health data from African communities may be used to develop AI without meaningful consent, community control or fair benefit-sharing. It calls for community-owned tools for governance, consent, privacy and benefit-sharing, piloted with young people, people with lived experience and community health workers, toward a mental-health data commons.
 
-The challenge calls for exploration of community-owned tools for:
+**Source caution:** The official RFP PDF is linked from Mozilla's call page, but its SRHIN section was not independently extracted in this review. The reproduced wording is a discovery aid, not a substitute for checking the original PDF before an application is submitted.
 
-- Data governance.
-- Consent.
-- Privacy.
-- Benefit-sharing.
-- Piloting with young people, people with lived experience of mental-health conditions and community health workers.
-- A longer-term mental-health data commons governed with and by communities.
+## 2. SRHIN's existing work is substantial
 
-The official Mozilla call confirms SRHIN as a Track I host and directs applicants to the full RFP for each host's specific challenge. The host-specific wording above is taken from a public reproduction of the challenge and must be checked against the official RFP PDF before final application claims are made.
+Public SRHIN and GENSCORE materials show that this is not an organisation starting from zero.
 
-## 2. What SRHIN already does
+### GENSCORE and Gencurate
 
-SRHIN's public work includes mental health, digital health, AI and data science, community organising and research.
+GENSCORE describes a culturally grounded mental-health AI initiative working across Hausa, Yorùbá and Nigerian Pidgin. Gencurate is presented as the data-curation pipeline through which voice notes, interviews and narratives pass before possible use in model development.
 
-Relevant public programmes and infrastructure include:
+Its public platform description says the process includes:
+- Consent before collection, in the speaker's own language.
+- Contextual annotation by trained people.
+- Clinician review and sign-off before material joins the training corpus.
+- Monitoring representation across language, gender, age and region.
 
-- **BraveHeart:** youth-focused mental-health support and psychoeducation work.
-- **GENSCORE:** a culturally grounded, multilingual mental-health screening initiative.
-- **Gencurate:** the data-curation process described by GENSCORE for consent checking, contextual annotation and clinician review.
-- **ALPHA Center:** an initiative connected to AI applications for low-resource public health.
+### Existing governance and lived-experience structures
 
-Sources are listed in [Research Sources](../references/SOURCES.md).
+The GENSCORE Governance & Ethics page publicly describes:
+- A Lived Experience Working Group (LEWG).
+- An independent Data, Ethics & Safety Monitoring Board.
+- A project steering committee and institutional collaborators.
+- A written governance charter and human-oversight charter.
+- An escalation protocol and standard operating procedures.
+- Monthly governance/performance dashboards, quarterly reports and annual external audits.
+- Ethics approval, informed consent, de-identification, encryption and restricted access.
 
-## 3. Existing safeguards already described publicly
+The GENSCORE lived-experience page goes further: it describes LEWG members as co-applicants who share responsibility for decisions, outputs and governance; it describes compensated participation, co-design, co-authoring the Human Oversight Charter, research dissemination and a 12-member working group across three language communities.
 
-GENSCORE's public governance and platform materials already describe:
+### Public governance resources
 
-- Informed consent before recording or collection.
-- Consent in a participant's preferred language.
-- De-identification before analysis.
-- Encryption and restricted access.
-- Clinical review before data enters the training corpus.
-- Fairness and representation monitoring.
-- Lived-experience participation and institutional ethics oversight.
+SRHIN's Knowledge Hub publicly lists practical resources, including:
+- The LEEF Checklist for pre-launch review of digital mental-health tools.
+- A template for lived-experience compensation and governance.
+- The Co-Production Readiness Self-Assessment.
+- The Epistemic Authority Decision Matrix, designed to clarify which decisions lived-experience contributors hold authority over.
+- A plain-language guide for people with lived experience to participate in AI mental-health tool design.
 
-This is a crucial finding. MindCommons AI must not claim that SRHIN has no consent, privacy or governance processes. A proposed tool must build on what exists, not duplicate it.
+These materials materially change the product analysis. It would be inaccurate to claim that SRHIN lacks community participation, lived-experience governance, compensation guidance, consent safeguards, ethics oversight or accountability structures.
 
-## 4. The opportunity to investigate
+## 3. What this means: the broad original product would duplicate existing work
 
-The host challenge points toward community ownership and governance across the wider life of mental-health data, including later research and AI uses.
+The first MindCommons AI concept was too broad. A general platform containing consent management, a researcher request portal, community governance, audit dashboards and benefit tracking could duplicate or repackage capabilities and structures SRHIN already publicly describes.
 
-A useful research question is:
+In particular:
+- A new consent collection tool would overlap with Gencurate's consent-before-collection process.
+- A new lived-experience governance framework would overlap with LEWG, the Human Oversight Charter and SRHIN's published decision-making resources.
+- A generic governance dashboard would risk duplicating GENSCORE's stated monthly KPI dashboards and reporting.
+- A generic AI assistant would add little value unless it addresses a specific operational task not already served by existing tools.
 
-> How might young people, people with lived experience and community health workers have practical, understandable and enforceable ways to shape the rules for mental-health data use, review requests, see what decisions were made and monitor how agreed benefits return to their communities?
+**Decision:** Do not present the original broad MindCommons AI platform as a confirmed gap or proceed as if SRHIN needs a replacement governance system.
 
-Potential areas to validate with SRHIN include:
+## 4. The narrower opportunity worth validating
 
-1. How community-defined rules are recorded and translated into day-to-day data-use decisions.
-2. How later or secondary data-use requests are handled.
-3. How individual consent choices interact with collective community governance.
-4. How people can understand, review or change permissions over time.
-5. How access decisions and exceptions are explained and audited.
-6. How benefit-sharing commitments are agreed, tracked and reported.
-7. What tools communities themselves can own, operate or govern.
+The strongest remaining hypothesis is not "SRHIN has no governance". It is whether SRHIN and its community partners need a **community-facing data-use stewardship and accountability layer that connects existing governance decisions to the later lifecycle of data**.
 
-These are questions and hypotheses, not claims that the current SRHIN systems lack these capabilities.
+The public material reviewed explains data collection, consent, annotation, clinician sign-off, oversight bodies and governance documentation. It does not clearly show, in the public-facing descriptions, a shared operational interface for community members and authorised stewards to:
 
-## 5. Preliminary problem statement
+1. View a plain-language register of approved data-use purposes and the rules attached to them.
+2. Trace how an approved dataset or data category may be reused beyond its original collection or project.
+3. Review and record new or changed data-use proposals against existing community decisions.
+4. See which governance body or community authority approved a use, under what conditions, and when it should be reviewed again.
+5. Monitor the delivery of community benefits attached to a specific data-use arrangement, where such arrangements exist.
+6. Access understandable, privacy-preserving explanations of data-use history without exposing participant-level records.
 
-Communities contribute valuable knowledge and lived experience to mental-health research and AI development. They need more than a one-time consent interaction: they need meaningful participation in setting data-use rules, oversight of subsequent uses, understandable records of decisions and a role in defining and monitoring shared benefits.
+This is a **public-evidence gap**, not proof of an operational gap. SRHIN may already have internal tools, procedures or contractual arrangements for these tasks that are not described publicly.
 
-The opportunity is to explore an AI-supported, community-governed platform that makes these responsibilities easier to understand and carry out while respecting existing clinical, ethical and institutional safeguards.
+## 5. Refined problem statement
 
-## 6. What the proposed product must respect
+SRHIN has publicly documented important foundations for responsible mental-health data and AI: informed consent, data curation, clinical review, lived-experience co-governance, ethics oversight and accountability processes.
 
-- **Individual rights:** a person's consent and privacy choices must not be erased by a collective process.
-- **Community authority:** individual consent alone does not establish community ownership or collective governance.
-- **Purpose limitation:** data should only be used for purposes permitted by the applicable consent, law and governance rules.
-- **Privacy:** transparency must not expose participant identities or sensitive information.
-- **Human accountability:** AI can prepare analysis and recommendations, but authorised people and community structures remain responsible for consequential decisions.
-- **Existing infrastructure:** integrations must be based on confirmed technical capabilities and permission, not assumptions.
-- **Benefit-sharing:** communities should help define what benefits are appropriate; the application can record and monitor commitments but cannot decide fairness by itself.
+The question worth investigating is how those existing safeguards and community decision rights are carried forward and made visible when data is considered for new, changing or secondary uses over time. The practical challenge may be connecting governance decisions, authorised data-use purposes, review conditions and community benefit commitments in a way that community stewards can understand and oversee.
 
-## 7. Research limitations and validation questions
+The product should therefore be considered only as a possible **complementary stewardship interface**, not a replacement for GENSCORE, Gencurate, LEWG or SRHIN's governance bodies.
 
-This is desk research using public sources. It is not an audit of SRHIN's internal systems, a legal review, a clinical review or community consultation.
+## 6. What would prove the gap is real?
 
-Before treating a product feature as a confirmed solution, we need answers from SRHIN and relevant community representatives:
+Before confirming the product, ask SRHIN and community representatives:
+- Is there already a system or register for approved data-use purposes and subsequent/secondary use requests?
+- How are changes in purpose, new collaborators, model-training use or commercial use reviewed?
+- Can community representatives see the status and rationale of data-use decisions at an appropriate level of detail?
+- How are conditions imposed by LEWG, the ethics board or other governance bodies attached to the relevant data-use workflow?
+- How are benefit-sharing commitments linked to a particular use, monitored and reported?
+- Which parts are already handled by Gencurate, internal databases, agreements, SOPs or manual processes?
+- What is difficult for participants or community stewards in practice?
+- Would a new interface reduce friction, or would it add another system and administrative burden?
 
-- What governance tools and processes are already in use?
-- Which groups have authority to set or approve community data-use rules?
-- What data commons model is intended: a shared governed resource, a technical repository, a federated arrangement or another model?
-- Which existing systems could the proposed platform connect to, and through what approved interfaces?
-- What parts of the workflow are currently difficult for participants, researchers or community representatives?
-- What does meaningful benefit-sharing look like to the communities involved?
-- What safeguards apply when young people or minors participate?
-- What must remain outside the AI system's responsibilities?
+If these workflows are already handled effectively, the proposed application should be narrowed further or abandoned rather than built for its own sake.
 
-## 8. Research conclusion
+## 7. Product principles and boundaries
 
-The challenge is not simply to build a consent form, an access-request tracker or a chatbot. It is to explore how communities can govern mental-health data as a shared resource while protecting individual rights and enabling responsible research and AI development.
+- Preserve SRHIN's existing governance bodies and community authority.
+- Do not collect consent again if an existing approved process already does so.
+- Do not copy or centralise sensitive participant data unnecessarily.
+- Treat individual consent and collective governance as related but distinct.
+- Keep policy enforcement in application rules and approved human decisions, not in free-form model judgement.
+- AI can explain approved records, identify missing information, compare a proposal with documented conditions and prepare summaries.
+- AI must not approve data access, change consent, overrule LEWG or ethics decisions, or decide what benefits are fair.
+- Any integration must be based on documented need, permission, technical feasibility and security review.
 
-MindCommons AI is a proposed response to that challenge. Its final scope must be refined through the official RFP, host discussion and participatory design with affected communities.
+## 8. Research limitations
+
+This remains desk research. We have not:
+- Reviewed SRHIN's internal systems, contracts, APIs, databases or SOPs.
+- Independently audited GENSCORE's claimed technical or governance performance.
+- Interviewed SRHIN staff, LEWG members, young people or community health workers.
+- Verified how data-use requests, secondary use or benefit-sharing are handled in daily operations.
+- Conducted legal, clinical, ethics or security review.
+
+The public website and Knowledge Hub are unusually informative, but public documentation cannot establish the absence of private operational tools.
+
+## 9. Research conclusion and go/no-go position
+
+**There is a real problem in the host challenge:** communities need meaningful control over mental-health data and the benefits of AI development.
+
+**There is also substantial existing SRHIN work addressing that problem:** GENSCORE, Gencurate, LEWG, the Data, Ethics & Safety Monitoring Board, the Human Oversight Charter, governance procedures and public co-production resources.
+
+Therefore, the original broad MindCommons AI platform is not sufficiently differentiated and should not be presented as filling a verified gap.
+
+A narrower community-facing data-use stewardship and accountability layer is worth exploring because the public materials reviewed do not clearly show how governance decisions and community benefit commitments are operationally connected across later data uses. This remains a hypothesis. The next decisive step is validation with SRHIN and community stewards. If existing systems already do this well, do not build a duplicate.
+
