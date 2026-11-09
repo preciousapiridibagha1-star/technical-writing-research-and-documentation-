@@ -1,34 +1,39 @@
-# Project 2: Professional FAQ Document - Cloud AI Assistants
+# Project 2: FAQ — Cloud-Based AI Assistants (Category-Level Sample)
 
-##  Frequently Asked Questions (FAQ)
+**Document type:** Illustrative FAQ for a general product category.  
+**Audience:** New users evaluating a cloud-based AI assistant.  
+**Scope:** This sample explains questions to ask; it does not describe or guarantee the features of a named provider.
 
-### 1. What is a Cloud-Based AI Assistant?
-**Q:** How do cloud-based AI assistants differ from traditional desktop software?  
-**A:** Cloud-based AI assistants operate entirely on remote cloud servers rather than local hardware. Users access them via standard web browsers or APIs, meaning they require no local installation, heavy processing power, or manual software updates.
+## 1. What is a cloud-based AI assistant?
 
----
+A cloud-based AI assistant is accessed through an internet-connected service. The provider operates some or all of the computing infrastructure used to process requests. The exact architecture, browser or app support, and local-device requirements vary by product.
 
-### 2. Data Privacy & Security
-**Q:** Is user data secure when interacting with cloud AI models?  
-**A:** Enterprise-grade cloud AI platforms utilize robust encryption protocols (such as TLS for data in transit and AES-256 for data at rest). However, professional users should avoid inputting sensitive proprietary data, personal identification information (PII), or classified credentials unless operating within a secure, dedicated enterprise environment with strict data-retention opt-outs.
+## 2. Is information I enter private?
 
----
+Do not assume that information is private merely because a service uses encryption or is marketed for business use. Before entering sensitive information, review the provider's privacy notice, terms, data-retention settings, training-use policy, access controls and any enterprise agreement that applies to your account. Follow your organisation's data-handling rules.
 
-### 3. Prompt Engineering & Accuracy
-**Q:** Why do AI assistants sometimes provide incorrect or unexpected responses, and how can users prevent this?  
-**A:** AI models rely on statistical probability rather than conscious reasoning. "Hallucinations" occur when a prompt lacks sufficient context or constraints. Users can improve output accuracy by utilizing structured prompt engineering principles, such as defining clear roles, supplying reference data, and specifying formatting guidelines.
+## 3. Why can an AI assistant give an incorrect answer?
 
----
+Generative AI systems can produce plausible but inaccurate, incomplete or outdated content. A clear prompt and relevant source material can improve usefulness, but neither guarantees correctness. Check important facts against reliable primary sources before acting on the output.
 
-### 4. Integration & Workflows
-**Q:** Can cloud AI assistants integrate with external productivity or documentation tools?  
-**A:** Yes. Most modern AI platforms offer Application Programming Interfaces (APIs), browser extensions, or direct integrations with workplace utilities like GitHub, Notion, and cloud storage systems to streamline automated documentation and content workflows.
+## 4. Can it connect to tools such as GitHub, Notion or cloud storage?
 
----
+That depends on the provider, product, account plan, region and permissions. Check the current integration directory or API documentation for the exact service. Confirm what data an integration can read or change before enabling it. Do not infer that a connector exists because another AI product offers one.
 
-### 5. Accessibility & Hardware Requirements
-**Q:** What kind of computer or device do I need to run a cloud AI assistant?  
-**A:** Because computations occur on remote cloud servers, users only need a standard device (such as a smartphone, tablet, or low-spec laptop) with a stable internet connection and an active web browser.
+## 5. What device and internet connection do I need?
 
----
-> **Portfolio Note:** This document demonstrates technical research proficiency, user-centric problem anticipation, and structured formatting designed for documentation and policy research roles.
+A browser-accessible service may work on a range of computers or mobile devices, but compatibility, supported browsers, app availability and minimum requirements are product-specific. A stable internet connection is normally required for cloud-hosted inference. Check the provider's current system requirements.
+
+## 6. Can I use a cloud assistant for professional research or writing?
+
+It can support outlining, summarisation, drafting and idea development. It should not replace source checking, expert judgement or the user's responsibility for the final work. Verify quotations, references, calculations and time-sensitive claims independently.
+
+## 7. What should I check before choosing a service?
+
+Check the supported countries, pricing and billing period, plan limits, privacy and retention terms, data export/deletion options, accessibility, integrations, support channels and cancellation process. Test a low-risk task before relying on the service for important work.
+
+## Evidence and limitations
+
+This is a category-level learning sample, not vendor documentation. No named product was tested, and no universal security, privacy, integration or compatibility guarantee is made. To turn this into product-specific documentation, select a provider and verify each statement against its current official documentation.
+
+**Portfolio purpose:** Demonstrates audience-focused FAQ structure, practical question selection and careful separation of general explanation from product-specific facts.
