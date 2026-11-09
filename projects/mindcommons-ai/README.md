@@ -1,55 +1,64 @@
 # MindCommons AI
+## Community Data-Use Accountability Ledger
 
-**Working description:** A possible community-facing AI stewardship interface for responsible mental-health data use.
+**One-line concept:** A small, AI-assisted workspace that helps community-authorised stewards trace approved mental-health data uses, review proposed changes and follow up on community-agreed obligations.
 
-**Status:** Research and product concept only. No prototype has been built.  
-**Host context:** SRHIN is being considered as the Mozilla Foundation 2027–2028 Track I Embedded host.  
-**Relationship:** This is not commissioned, approved, endorsed or deployed by SRHIN.
+**Project status:** Desk research and product specification only. No prototype, host approval, integration or community validation is claimed.  
+**Host context:** SRHIN / Mozilla Foundation 2027–2028 Track I Embedded challenge.  
+**Relationship:** Independent project hypothesis; not commissioned, endorsed or operated by SRHIN.
 
-## Why the concept changed
+## The problem we are investigating
 
-Public research shows SRHIN already describes substantial relevant infrastructure and governance: Gencurate consent and curation, the Lived Experience Working Group (LEWG), a Data, Ethics & Safety Monitoring Board, a Human Oversight Charter, governance procedures, reporting and community co-production resources.
+SRHIN already publicly documents important foundations: Gencurate consent and data curation, lived-experience co-governance through LEWG, independent ethics oversight, governance charters, escalation procedures and public resources on lived-experience authority and compensation.
 
-The original broad platform would risk duplicating these systems. We have narrowed the idea to one question: **is there a need for a community-facing workspace that connects existing governance decisions to new or changed data-use proposals, review conditions, transparent records and agreed community benefits over time?**
+We should not rebuild those.
 
-That gap is not yet confirmed. If SRHIN already handles it effectively, the proposed product should be narrowed further or stopped.
+The remaining question is narrower: **when an already-governed mental-health data resource is proposed for a new or changed use, can the community-authorised decision, its conditions and any agreed benefit obligations be traced together in a clear, privacy-preserving way?**
 
-## The proposed product, if the gap is validated
+Public materials do not establish whether SRHIN already has an internal process for this. This is a gap to validate, not a confirmed deficiency.
 
-A dashboard-first web workspace with:
-- A role-restricted register of approved data-use purposes and conditions.
-- A structured process for proposing new or changed uses.
-- A governance review view that connects proposals to authoritative decisions and required reviewers.
-- A privacy-preserving community accountability view for approved uses, follow-up conditions and agreed benefit commitments.
-- One integrated AI assistant that explains approved records, helps prepare requests, flags missing information and drafts reviewer summaries.
+## The smallest useful product: three capabilities
 
-AI does not approve access, change consent, override LEWG or ethics authorities, or decide what benefits are fair.
+1. **Approved-use record** — a plain-language, role-restricted record of the approved purpose, applicable conditions, responsible decision authority, review date and link to the authoritative source. It references existing consent and governance records; it does not collect consent again or store participant-level data.
+2. **Change-of-use review** — a structured request when purpose, collaborator, model-development activity or another material use changes. It identifies the relevant existing conditions, routes the proposal to the authority designated by SRHIN/community rules, and records the human decision and conditions.
+3. **Community-obligation follow-up** — a traceable record of community-agreed commitments attached to an approved use, including responsible party, due date, evidence/update and status. It does not determine what benefits are fair or promise financial distribution.
 
-## Research-to-design workflow
+### AI is built into the workflow
 
-1. [Research and analysis](research/RESEARCH_AND_ANALYSIS.md)
+One contextual AI assistant can explain approved conditions, help complete a change request, identify missing information, prepare a reviewer summary and summarise outstanding obligations. It must cite the source records it used, admit when information is missing and stay within the user's permissions.
+
+**AI never grants access, approves a change, changes consent, invents policy or overrides community decision-makers.** Application permissions and authorised human decisions control all consequential actions.
+
+## Why this is different from existing SRHIN work
+
+- Not Gencurate: no new voice collection, consent capture, annotation or clinical review.
+- Not LEWG: no new governance body, charter or authority matrix.
+- Not the Data, Ethics & Safety Monitoring Board: no replacement oversight or ethics review.
+- Not a generic KPI dashboard: it tracks only the lifecycle of a specific approved use, its conditions and its agreed obligations.
+- Not a new research portal: it does not manage research projects generally.
+
+It is a proposed thin accountability layer across existing authoritative records—only if SRHIN confirms that the workflow is not already adequately supported.
+
+## Research-to-design documents
+
+1. [Research and gap analysis](research/RESEARCH_AND_ANALYSIS.md)
 2. [Product definition](product/PRODUCT_DEFINITION.md)
-3. [Validation-first MVP scope](product/MVP_SCOPE.md)
-4. [System architecture](architecture/SYSTEM_ARCHITECTURE.md)
+3. [Three-capability MVP](product/MVP_SCOPE.md)
+4. [Logical system architecture](architecture/SYSTEM_ARCHITECTURE.md)
 5. [Product experience](design/PRODUCT_EXPERIENCE.md)
-6. [Dashboard layout](design/DASHBOARD_LAYOUT.md)
-7. [Sources](references/SOURCES.md)
+6. [Dashboard layout concept](design/DASHBOARD_LAYOUT.md)
+7. [Source register](references/SOURCES.md)
 
-## What this project is not
+## Validation questions that decide whether to proceed
 
-It is not a replacement for GENSCORE, Gencurate, LEWG, SRHIN's ethics oversight or its governance procedures. It is not a consent-capture system by default, a clinical tool, a public health-record database or an autonomous AI decision-maker.
+- Does an internal register already connect each approved data use to its conditions and source decision?
+- Is there an established route for new or changed purposes, collaborators or model-development uses?
+- Can authorised community stewards trace the decision and its follow-up without requesting multiple manual reports?
+- Are community-agreed benefit commitments linked to the relevant data use and tracked already?
+- Would a small shared view improve oversight, or duplicate records and add administrative burden?
 
-## Current validation gates
+If SRHIN already does these things well, stop or redirect the concept. Do not build a duplicate system.
 
-Before a product can be confirmed, SRHIN and community representatives must establish:
-- Which relevant workflows already exist and where their authoritative records live.
-- Whether new/changed data uses are already traceable.
-- Whether community representatives can see the information they need.
-- Whether benefit commitments are already tracked effectively.
-- Whether a new interface would reduce friction rather than create another system.
+## Naming and status
 
-No internal system review, API access, staff or community interviews, integration, partnership or implementation is claimed.
-
-## Naming
-
-MindCommons AI is a provisional working name, not a cleared brand.
+MindCommons AI is a provisional working name, not a cleared brand. The product is a research-backed design hypothesis, not a working application.
