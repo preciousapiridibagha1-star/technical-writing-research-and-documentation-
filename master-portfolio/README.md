@@ -45,4 +45,4 @@ Each capability page sets out the question or problem, work produced, a before-a
 
 ## Area 7 — intentionally next
 
-Open-Source & Community Contribution remains separate from the six-area evidence portfolio and is now the active next workstream. Two issue-specific Ollama proposals have been prepared in [the contribution record](../contributions/open-source/README.md): a Msty URL correction and GPU fallback troubleshooting guidance. They are not submitted upstream; no external contribution is claimed until the public pull requests are authorised and submitted.
+Open-Source & Community Contribution remains separate from the six-area evidence portfolio and is the next workstream. The original Ollama proposals were checked against current upstream activity and both already have competing PRs ([#18050](https://github.com/ollama/ollama/pull/18050) and [#14461](https://github.com/ollama/ollama/pull/14461)); neither should be submitted as a duplicate. The [candidate audit](../contributions/open-source/upstream-candidate-audit-2026-11-09.md) records the result and the current fork/push-access blocker. No external contribution is claimed.
