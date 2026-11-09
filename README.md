@@ -45,7 +45,7 @@ Neither project is presented as commissioned client delivery.
 - [Cloud Infrastructure and Open Source](projects/cloud-infrastructure-and-open-source/README.md)
 - [n8n Technical Project Overview](projects/cloud-infrastructure-and-open-source/project-overviews/n8n-workflow-automation-overview.md) — desk research, not a tested integration.
 - [Cloud Infrastructure Fundamentals](projects/cloud-infrastructure-and-open-source/project-overviews/cloud-infrastructure-fundamentals.md)
-- [Open-Source Contributions](contributions/open-source/README.md) — contribution process and evidence standard. The next portfolio workstream is two genuine, traceable contributions.
+- [Open-Source Contributions](contributions/open-source/README.md) — two issue-specific Ollama contribution proposals prepared for upstream review; no public PR is claimed yet.
 
 ## Fellowship alignment
 
