@@ -9,7 +9,7 @@ This repository is **one master portfolio**. It brings together research, system
 
 I am building evidence through self-directed projects and research. I do not present myself as a software engineer or claim coding, production deployment, integrations, community partnerships or measured outcomes that I have not completed.
 
-## My professional direction
+## Portfolio quality review\n\nSee the [Portfolio Quality Review](PORTFOLIO-QUALITY-REVIEW.md) for the latest audit, remaining cleanup items and evidence standards.\n\n## My professional direction
 
 **Technology Researcher & Technical Documentation Specialist**
 
