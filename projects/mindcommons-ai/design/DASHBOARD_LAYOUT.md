@@ -1,85 +1,51 @@
-# Governance & Community Dashboard — Layout Concept
+# Dashboard Layout — Community Data-Use Accountability Ledger
 
-**Status:** Proposed screen structure only. Not a live product or evidence of an SRHIN workflow.
+**Status:** Structure concept only. The final visual style will be designed after the user's visual reference is supplied.
 
-## Primary job of this screen
+## Purpose
 
-Help an authorised community steward or governance reviewer understand which proposed data uses need attention, what existing decisions and conditions apply, and what follow-up commitments are due.
+A focused workspace for authorised stewards to trace approved data uses, review proposed changes and follow up on community-agreed commitments.
 
-The dashboard does not replace GENSCORE, Gencurate, LEWG, the Data, Ethics & Safety Monitoring Board or SRHIN's existing reporting. It is a possible interface for connecting records if a real gap is validated.
+## Navigation
 
-## Desktop structure
+- Overview
+- Approved uses
+- Change reviews
+- Community commitments
+- Governance sources
 
-```text
-┌──────────────────┬───────────────────────────────────────────────────────────────┐
-│ MINDCOMMONS AI   │ Search records   Help   Notifications   Profile                │
-│                  ├───────────────────────────────────────────────────────────────┤
-│ Overview         │ Community stewardship                                         │
-│ Data-use register│ See proposals, conditions and follow-up that need attention    │
-│ New-use requests │                                                               │
-│ Review workspace │ ┌─────────────────┐ ┌──────────────────┐ ┌──────────────────┐ │
-│ Decision history │ │ New proposals   │ │ Reviews due      │ │ Commitments due  │ │
-│ Benefit tracking │ │       06        │ │        03        │ │        04        │ │
-│ Governance links │ └─────────────────┘ └──────────────────┘ └──────────────────┘ │
-│                  │                                                               │
-│                  │ REQUESTS NEEDING ATTENTION                                    │
-│                  │ ┌──────────────────────────────────────────┬───────────────┐  │
-│                  │ │ Proposal / purpose / submitted           │ Status        │  │
-│                  │ │ New research use — synthetic example     │ Needs review  │  │
-│                  │ │ Changed collaborator — synthetic example │ More info     │  │
-│                  │ │ AI model evaluation — synthetic example  │ Routed        │  │
-│                  │ └──────────────────────────────────────────┴───────────────┘  │
-│                  │                                                               │
-│                  │ GOVERNANCE CONDITIONS             COMMUNITY BENEFITS          │
-│                  │ • Condition due for review        • Commitment / owner         │
-│                  │ • Reviewer assigned                • Progress / next update    │
-│                  │                                                               │
-│                  │                                   ┌─────────────────────────┐ │
-│                  │                                   │ MINDCOMMONS AI ASSISTANT│ │
-│                  │                                   │ Ask about a rule,       │ │
-│                  │                                   │ decision or request.   │ │
-│                  │                                   │                         │ │
-│                  │                                   │ “Summarise the approved │ │
-│                  │                                   │ conditions for this     │ │
-│                  │                                   │ proposal and show the   │ │
-│                  │                                   │ source records.”        │ │
-│                  │                                   │ [Ask a question...]     │ │
-│                  │                                   └─────────────────────────┘ │
-└──────────────────┴───────────────────────────────────────────────────────────────┘
-```
+## Overview content
 
-All names, counts and request examples in any visual mockup must be clearly synthetic placeholders. Do not show real participant data.
+1. **Changes requiring attention** — proposals awaiting the appropriate human review.
+2. **Approved uses under review** — records approaching their agreed review date.
+3. **Commitments to follow up** — community-agreed obligations with upcoming or overdue updates.
+4. **Recent decisions** — source-linked decisions and conditions, visible only to authorised roles.
 
-## Main areas
+Avoid generic analytics cards, vanity metrics, participant counts and any sensitive participant-level data.
 
-1. **Data-use register:** approved purposes, conditions, decision authority, status, review date and source-record link.
-2. **New-use requests:** new or changed purposes, collaborators, model-training/evaluation or commercial-use proposals.
-3. **Review workspace:** applicable conditions, missing evidence, routing and human decision record.
-4. **Decision history:** decision, rationale, conditions, reviewer authority and review date.
-5. **Benefit tracking:** community-defined commitments, owner, progress and evidence of delivery.
-6. **Governance links:** authoritative charter, SOP, ethics approval or community decision source.
+## Record detail
 
-## AI assistant behaviour
+Each approved-use record should show:
+- Plain-language approved purpose.
+- Data resource reference (not the data itself).
+- Conditions and restrictions.
+- Decision authority and date.
+- Link to authoritative decision and consent-policy source.
+- Changes and review history.
+- Linked community commitments.
 
-The assistant is visible in the workspace and can:
-- Explain the current governance rule using the linked approved source.
-- Summarise a proposal and identify missing information.
-- Compare the proposal with documented conditions.
-- Show why it flagged an issue and link to the underlying record.
-- Summarise due follow-up and benefit commitments for authorised users.
+## Change-review screen
 
-It must not create a new rule, make an approval, or reveal restricted records. If source records are missing or contradictory, it says so and routes the question to an authorised human.
+Show the original approved use beside the proposed change, relevant conditions, missing information, reviewer routing and decision record. AI summary is a supporting panel, not the centre of the screen.
+
+## AI placement
+
+A compact contextual assistant panel or expandable drawer. It should be available when useful, not dominate the dashboard. Example: "Explain the conditions linked to this approved use" or "Summarise what changed in this request." All answers link to source records.
 
 ## Visual design direction
 
-- Desktop-first, responsive, calm and professional.
-- Warm off-white canvas, deep navy typography, forest-teal primary actions and a restrained violet accent for AI.
-- Clear status chips and generous whitespace.
-- The request queue is the main focus; analytics are secondary.
-- The AI panel is prominent but does not dominate the workflow.
-- Every consequential item links to its source record.
-- Mobile layout stacks cards and turns the AI panel into a slide-up drawer.
+The user prefers a premium, modern interface with green as the primary design direction. Final layout, spacing, typography, card treatment and AI placement are intentionally pending the user's visual reference. This document defines product hierarchy, not final art direction.
 
-## Important limitation
+## Privacy
 
-This is a design hypothesis for a possible stewardship workflow. The exact information, roles, labels and screen structure must change if SRHIN's existing process or community preferences differ.
+No real participant names, health information, recordings or identifiable examples in mockups. Use clearly synthetic data only.
