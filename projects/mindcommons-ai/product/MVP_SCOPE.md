@@ -1,96 +1,86 @@
-# Minimum Viable Product — Validation-First Scope
+# Minimum Viable Product — Three-Capability Scope
 
-## Purpose
+**Status:** Proposed scope for validation and fellowship planning. This is not an instruction to build a prototype now.
 
-This document defines the smallest product scope worth validating. It is **not a decision to build a prototype**.
+## One workflow
 
-The original four-module concept was too broad and risked duplicating Gencurate, LEWG, the Human Oversight Charter, existing governance procedures and SRHIN's reporting arrangements. The MVP hypothesis is now deliberately narrower.
+**Approved data use → proposed material change → authorised human decision → traceable conditions and community-agreed follow-up.**
 
-## 1. Core workflow to investigate
+The MVP is deliberately limited to three connected capabilities.
 
-**A proposed change or new use of an existing mental-health data resource → relevant governance conditions are identified → authorised review takes place → the decision and follow-up commitments are traceable.**
+## 1. Approved-use record
 
-This workflow is worth pursuing only if SRHIN confirms that current systems do not already support it adequately.
+Minimum fields:
+- Reference to the data resource (no participant-level records).
+- Plain-language approved purpose.
+- Conditions / restrictions.
+- Authorising body and decision date.
+- Link to the authoritative approval / consent-policy record.
+- Current status and next review date.
 
-## 2. Candidate MVP components
+**Acceptance test:** An authorised steward can identify the approved purpose, conditions, decision authority and source record without searching across disconnected documents.
 
-### A. Data-use register
-A role-restricted, plain-language record of:
-- Approved data-use purposes or categories.
-- Applicable conditions and restrictions.
-- Responsible governance body or decision authority.
-- Approval status and review date.
-- Links to the authoritative source record.
+## 2. Change-of-use review
 
-The application should reference existing records where possible rather than copy sensitive datasets or participant details.
+Minimum fields:
+- Existing approved-use reference.
+- Description and reason for the proposed change.
+- New purpose, collaborators, AI/model-development involvement and duration, where relevant.
+- Supporting documents / ethics references.
+- Missing-information checklist.
+- Assigned decision authority.
+- Human decision, rationale, conditions and review date.
 
-### B. New-use / change request
-An authorised researcher can submit:
-- Research purpose and public benefit.
-- Data category requested.
-- Intended collaborators and recipients.
-- Whether AI training, model evaluation or commercial activity is involved.
-- Proposed duration, safeguards and ethics approvals.
-- What has changed from a previously approved use.
+AI assistance: prepare a structured summary, flag missing fields and compare the proposal with approved, machine-readable conditions. All flags are advisory and source-linked.
 
-### C. Governance review workspace
-Authorised reviewers can:
-- See the request and the applicable documented conditions.
-- View missing information and potential conflicts.
-- Route the proposal to the appropriate community, lived-experience or ethics authority.
-- Record a human decision, conditions, rationale and review date.
+**Acceptance test:** A reviewer can see what is changing, which approved conditions may apply, what evidence is missing and which human authority must decide.
 
-### D. Community accountability view
-Appropriately authorised community representatives can:
-- See privacy-preserving summaries of approved uses.
-- Review outstanding conditions and follow-up actions.
-- Monitor agreed benefit commitments and their status.
-- See the responsible party and evidence of progress, where disclosure is appropriate.
+## 3. Community-obligation follow-up
 
-Benefit arrangements must be defined by the community and host partners. The application only records and reports them.
+Minimum fields:
+- Commitment wording as agreed by authorised community/host parties.
+- Linked approved data use and decision.
+- Responsible owner.
+- Due date / review date.
+- Status and update.
+- Evidence or source link.
 
-## 3. AI assistant
+Examples could include returning findings in an agreed format, community feedback sessions, contributor recognition or other locally agreed benefits. These are examples only; the community defines the actual commitments.
 
-One coordinated AI assistant is a core capability within the workflow. It can:
-- Explain an approved governance condition.
-- Help complete a new-use request.
-- Identify missing fields or documents.
-- Compare a proposal against structured, approved conditions.
-- Prepare a concise review summary with links to source records.
-- Explain status and follow-up actions to authorised users.
+**Acceptance test:** An authorised community steward can identify each agreed commitment, its owner, progress and source decision.
 
-The assistant must show its sources and distinguish confirmed rules from missing or ambiguous information. It must say when it cannot determine an answer.
+## AI across the workflow
 
-AI cannot:
-- Approve, reject or grant access.
-- Change consent or governance rules.
-- Decide whether a proposal is ethically acceptable.
-- Override LEWG, ethics boards or community authority.
-- reveal sensitive records to a user without permission.
+One role-aware assistant:
+- Explains the approved record and links its source.
+- Helps prepare a change request.
+- Identifies missing information and potential condition conflicts.
+- Drafts reviewer summaries.
+- Summarises overdue or upcoming obligations.
 
-## 4. What is deliberately excluded
+No independent access decision, ethics decision, consent decision, policy creation or benefit allocation.
 
-- Replacing Gencurate's consent and data-curation workflow.
-- Creating a new lived-experience governance group or ethics board.
-- Replacing SRHIN's charters, SOPs, escalation process or audit arrangements.
-- Collecting or storing raw participant mental-health data.
-- Clinical screening, diagnosis or treatment.
-- Automatic benefit payments.
+## Out of scope
+
+- New consent capture or participant portal.
+- Data collection, storage or curation.
+- Clinical screening, diagnosis or therapy.
+- Full research project management.
+- Replacement ethics / governance process.
+- Generic KPI or organisational dashboard.
+- Public participant-level data.
+- Automatic payment or benefit distribution.
 - Blockchain, tokens or complex multi-agent architecture.
-- Any unverified integration.
+- Unapproved integration with Gencurate or any SRHIN system.
 
-## 5. Validation gates before an MVP can be approved
+## Validation gates before implementation
 
-1. **Workflow confirmation:** SRHIN maps how new and changed data uses are handled today.
-2. **Gap confirmation:** community stewards and relevant reviewers identify a specific pain point, not just a feature preference.
-3. **Non-duplication:** the proposed interface is shown to complement existing systems and not create a parallel source of truth.
-4. **Authority mapping:** SRHIN and community partners identify who can view, recommend, approve, reject and appeal.
-5. **Data minimisation:** agree which metadata is needed and what must remain in existing secure systems.
-6. **AI suitability:** confirm which tasks benefit from AI and which should remain ordinary forms, rules or human decisions.
-7. **Evaluation:** agree a baseline and measures such as review traceability, completeness, turnaround time, user understanding and administrative burden.
+1. SRHIN confirms whether an approved-use register already exists.
+2. SRHIN and community partners explain how material use changes are reviewed today.
+3. They confirm whether benefit commitments are already tracked and what is missing.
+4. They identify authoritative systems, record owners and permitted data.
+5. Community partners approve what transparency means and what may be shown.
+6. Privacy, ethics and security specialists review the proposed minimum data and AI boundary.
+7. A small workflow test demonstrates reduced effort without duplicate records.
 
-If these gates show that current processes already work well, do not build the proposed application. A research or documentation contribution may be more useful.
-
-## 6. Status
-
-Validation-first product scope only. No prototype or implementation is underway. No SRHIN workflow, API, partnership or community requirement is assumed.
+If these gates show no meaningful unmet need, do not build the MVP.
