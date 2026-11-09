@@ -116,27 +116,31 @@ The applicant does **not** currently demonstrate:
 
 The application must not imply otherwise. Any health-related technical work must be co-designed with SRHIN and qualified practitioners, with appropriate consent, privacy, safeguarding and clinical oversight.
 
-## 8. A sensible project direction to investigate — not approved by SRHIN
+## 8. A narrower project direction to investigate — not approved by SRHIN
 
-A plausible direction for discussion is **MindCommons AI**, a proposed AI-powered platform for community-governed mental-health data commons.
+The original concept was too broad and risked duplicating Gencurate, LEWG, the Data, Ethics & Safety Monitoring Board, the Human Oversight Charter, governance procedures and public co-production resources.
 
-The host challenge reproduced in a public guide describes exploring community-owned tools for governance, consent, privacy and benefit-sharing, with pilots involving young people, people with lived experience and community health workers, toward a mental-health data commons. This reproduction is a discovery aid; the official full RFP remains the primary source and should be checked directly before final application claims.
+The revised concept is **MindCommons AI — Community Data-Use Accountability Ledger**.
 
-The proposed product concept is a web application with role-based workspaces and a coordinated AI assistant. It would explore:
+Its one workflow is: **trace an approved data use, review a material change to that use, and follow up on community-agreed obligations.**
 
-- Community-defined data governance and stewardship rules.
-- Purpose-specific participant consent and permissions.
-- Researcher requests for later data use.
-- Rule-based checks against approved permissions and policies.
-- AI assistance to explain, guide, summarise and flag issues.
-- Human and community review of sensitive decisions.
-- Transparent records of decisions and agreed benefit-sharing commitments.
+It has three capabilities only:
 
-AI would support the work but would not independently grant access, override community authority or make final ethics decisions. Individual consent and collective community governance would be treated as connected but distinct responsibilities.
+1. **Approved-use record:** a minimal, role-restricted record of the approved purpose, conditions, decision authority, review date and link to authoritative records. It does not collect consent again or store participant-level mental-health data.
+2. **Change-of-use review:** a structured request for a material change in purpose, collaborator or AI/model-development use. It links the proposal to existing conditions, identifies missing information, routes it to the authority designated by SRHIN/community rules and records the human decision.
+3. **Community-obligation follow-up:** tracks commitments that the relevant community and authorised parties have actually agreed, including owner, due date, status and evidence. It does not decide what benefits are fair or distribute payments.
 
-The current work is **research and product documentation only**: research analysis, product definition, MVP scope, system architecture and proposed dashboard design. No prototype is being built at this stage. The product is not SRHIN-approved, and no partnership, integration or community consultation is claimed.
+One integrated AI assistant supports these three tasks by explaining approved conditions, helping prepare a request, flagging missing information, preparing source-linked reviewer summaries and summarising due commitments. It cannot approve access, change consent, invent policy or override community decision-makers.
 
-This direction must be validated against the full official host brief, SRHIN's existing systems and governance arrangements, and the views of affected communities before any capability is presented as a confirmed gap or final implementation requirement.
+### Why this narrower scope may add value
+
+Public SRHIN materials already describe consent before collection, data curation, lived-experience co-governance, ethics oversight, governance documents and reporting. The public materials reviewed do not clearly establish whether a single community-authorised workflow connects a specific approved use to later changes, decision conditions and agreed obligations.
+
+That is the only gap hypothesis this project carries forward. It may already be handled internally. If so, the project should be stopped or redirected rather than duplicated.
+
+The current work remains **desk research and product documentation only**. No prototype, integration, host approval or community consultation is claimed. Any future implementation would be a later fellowship-stage decision after validation and co-design, not a current deliverable or commitment.
+
+The exact SRHIN host challenge wording must still be checked against Mozilla's original RFP PDF before final application claims.
 
 ## 9. Portfolio evidence plan
 
