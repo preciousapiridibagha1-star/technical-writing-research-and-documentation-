@@ -45,7 +45,7 @@ Neither project is presented as commissioned client delivery.
 - [Cloud Infrastructure and Open Source](projects/cloud-infrastructure-and-open-source/README.md)
 - [n8n Technical Project Overview](projects/cloud-infrastructure-and-open-source/project-overviews/n8n-workflow-automation-overview.md) — desk research, not a tested integration.
 - [Cloud Infrastructure Fundamentals](projects/cloud-infrastructure-and-open-source/project-overviews/cloud-infrastructure-fundamentals.md)
-- [Open-Source Contributions](contributions/open-source/README.md) — upstream candidate audit found existing PRs for the two original proposals; no public contribution is claimed.
+- [Open-Source Contributions](contributions/open-source/README.md) and [upstream candidate audit](contributions/open-source/upstream-candidate-audit-2026-11-09.md) — existing PRs cover the two original proposals; no public contribution is claimed.
 
 ## Fellowship alignment
 
