@@ -1,6 +1,6 @@
 # Audit of the June 2026 AI Job-Search Platforms Report
 
-**Audit date:** 7 November 2026  
+**Audit date:** 9 November 2026  
 **Original report:** *AI Job Search Platforms — Deep Research & Comparison Report 2026*  
 **Platforms covered:** Jobright, Sonara, LoopCV and Sorce  
 **Purpose:** Record problems that must be corrected before the report is republished or used to make decisions.
@@ -67,9 +67,9 @@ The current official pricing page lists a free Basic Looper plan with one job-ti
 
 ### 7. Sorce's mobile availability needs a fresh check
 
-The original report says Sorce is iOS-only and that Android is still coming. The current Google Play listing shows an Android app, while the Apple App Store also lists an iPhone app. Sorce's own download material still describes iOS as its primary app experience, so availability and feature parity should not be treated as identical across platforms.
+The original report says Sorce is iOS-only and that Android is still coming. A Google Play listing published by sorce.jobs shows an installable Android app (the store listing displayed 100K+ downloads and an update date of 11 February 2026 when checked). The Nigerian Apple App Store also lists the iPhone app. However, Sorce's own download page and FAQ continue to state that the product is iOS-only and Android is on the roadmap. The provider's public information is inconsistent; the two store listings should be reported separately from official support, feature parity and Nigeria-specific eligibility.
 
-**Correction:** Say that listings are available on both Google Play and Apple's App Store at the audit date. Do not assume both versions have exactly the same features or user experience.
+**Correction:** State that an Android listing is present on Google Play and an iOS listing is present in the Nigerian App Store, while flagging that Sorce's own download page and FAQ still state iOS-only. Do not infer feature parity, official support status or Nigeria-specific job eligibility from store presence alone.
 
 ### 8. The review evidence is too weak for broad reliability claims
 
@@ -131,3 +131,16 @@ Other publication rules:
 - Do not publish universal rankings where the scoring method cannot be repeated.
 
 **Evidence boundary:** This remains public-source desk research. No paid accounts, payments or live applications were tested. The report is not a hands-on evaluation.
+
+
+## Final correction — Sorce Android listing (9 November 2026)
+
+The current public evidence resolves the earlier wording problem but reveals a provider-documentation inconsistency:
+
+- Google Play displays **Sorce - AI Job Search**, published by `sorce.jobs`, with an install option, 100K+ downloads and a last-updated date of 11 February 2026 when checked.
+- The Nigerian Apple App Store lists the iOS app.
+- Sorce's own download page and FAQ still say that the product is iOS-only and that Android is not yet available.
+
+The comparison now records the Android listing rather than repeating the outdated iOS-only conclusion, while clearly flagging the provider's inconsistent information. An app-store listing does not prove feature parity, current maintenance, Nigeria-specific support or job eligibility. Those points remain untested.
+
+Sources checked: [Google Play listing](https://play.google.com/store/apps/details?id=com.swypebeta.app), [Sorce download page](https://www.sorce.jobs/articles/sorce-app-download), [Sorce FAQ](https://www.sorce.jobs/articles/sorce-faq), [Nigeria App Store listing](https://apps.apple.com/ng/app/sorce-ai-job-search/id6504584959).
