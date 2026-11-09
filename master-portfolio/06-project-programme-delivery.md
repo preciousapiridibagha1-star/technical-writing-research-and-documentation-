@@ -2,25 +2,25 @@
 
 ## Evidence project: Delivering a bounded Vantage Automata prototype
 
-**Status:** Local prototype code committed to the portfolio repository; updated test execution is pending independent verification.  
-**Purpose:** Show how a broad system concept was reduced to a small, testable delivery increment.
+**Status:** Local proof of concept committed; nine unit tests passed on 9 November 2026.  
+**Purpose:** Demonstrate how a broad system concept was reduced to a small, testable delivery increment with observable acceptance evidence.
 
 ### Delivery objective
 
-Demonstrate one low-risk journey: instruction → validation → proposal → human decision → mock action or safe stop → local audit record.
+Deliver one low-risk workflow: instruction → validation → proposal → human decision → mock action or safe stop → local audit record.
 
-### Scope delivered in code
+### Scope delivered
 
 - One reminder-shaped instruction.
-- Input validation and restricted action type.
-- Structured proposal.
-- Approval tied to a fingerprint of the displayed proposal.
-- Duplicate-execution protection within one running process.
+- Input validation and a restricted action type.
+- Structured proposal with a unique identifier.
+- Approval bound to the fingerprint of the exact proposal shown.
+- Duplicate-attempt protection within one running process.
 - Mock action only.
-- Safe failure response with no automatic retry.
+- Safe failure response without automatic retry.
 - Local JSON Lines audit record.
 
-### Evidence record
+### Delivery and verification record
 
 | Evidence item | Record |
 |---|---|
@@ -28,38 +28,45 @@ Demonstrate one low-risk journey: instruction → validation → proposal → hu
 | Main implementation | `vantage_mvp.py` |
 | Automated tests | `test_vantage_mvp.py` |
 | User-facing explanation | `README.md` |
-| Change recorded | Code, tests and README committed to the portfolio repository |
-| Test status | Nine tests are written; execution output has not yet been captured in this record |
+| Delivery status | Source, tests and run guide committed to the portfolio repository |
+| Test command | `python -m unittest -v` |
+| Test result | **9 tests passed; 0 failures; 0 errors** |
+| Verification date | 9 November 2026 |
+| Verification method | Retrieved exact committed files from GitHub and ran them in an isolated Python 3 directory |
+| CI status | No CI run is claimed |
 | Deployment status | Not deployed; local mock only |
 
-### Safety acceptance checks
+### Acceptance criteria and outcomes
 
-1. Reject empty, overlong and out-of-scope instructions.
-2. Reject an unauthorised action type.
-3. Reject approval if the proposal content changes after review.
-4. Reject an approval referring to another proposal ID.
-5. Block a second execution attempt.
-6. On action failure, stop and do not automatically retry.
-7. Keep the action mocked; no external account or business data is touched.
+| Acceptance check | Outcome |
+|---|---|
+| Reject empty, overlong and out-of-scope instructions | Covered by unit tests |
+| Reject an unauthorised action type | Covered by unit test |
+| Reject approval if proposal content changes after review | Covered by unit test |
+| Reject approval referring to another proposal ID | Covered by unit test |
+| Block a second execution attempt | Covered by unit test |
+| On action failure, stop without automatic retry | Covered by unit test |
+| Keep the action mocked and avoid external services | Verified by code inspection; no external call is present in the prototype |
 
 ### Before → after
 
 **Before:** “Build Vantage Automata with AI agents and business integrations.”
 
-**After:** “Deliver one local, low-risk approval journey with proposal validation, exact-content approval, duplicate protection, safe failure and a local audit record.” The revised scope is testable and makes the exclusions explicit.
+**After:** “Deliver one local approval journey with validation, exact-content approval, duplicate-attempt protection, safe failure and a local audit record.” The revised scope is observable and testable.
 
 ### Delivery decisions and limitations
 
-- Deterministic proposal generation was retained so the approval controls can be tested without model variability.
+- Deterministic proposal generation was retained so the control flow could be tested without model variability.
 - The action remains a mock; no reminder is actually created.
 - Duplicate protection is in-memory and does not persist across restarts.
 - The local audit file is not tamper-proof.
 - Authentication, multi-user permissions, durable storage, deployment, monitoring and AI integration remain outside this increment.
+- The nine passing unit tests establish only the behaviour covered by those tests; they do not prove security, reliability under load or production readiness.
 
-### What would complete this delivery case
+### What remains to improve
 
-Capture the actual test command and output; resolve any failures; demonstrate both approval and rejection paths; record defects and fixes; and add a short reflection on what changed. Do not claim a successful test run until the output is available.
+A future iteration should add persistent idempotency, stronger audit integrity, a clearer permission model and tests for malformed or hostile proposal content. Any move to real integrations should begin with a threat model and narrowly scoped credentials. A short demonstration recording and independent code review would add useful evidence.
 
 ### What this demonstrates
 
-The record shows scope control, acceptance criteria, risk handling and traceable implementation work. It does not claim a client delivery, production release or operational AI system.
+The record shows scope control, acceptance criteria, delivery decisions, implementation evidence and actual test execution. It does not claim a client delivery, production release or operational AI system.
