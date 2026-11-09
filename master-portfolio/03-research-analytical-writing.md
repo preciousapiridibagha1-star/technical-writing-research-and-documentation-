@@ -1,21 +1,27 @@
 # 3. Research & Analytical Writing
 
-## Evidence project: AI job-search platforms comparison
+## Evidence project A: AI job-search platforms comparison
 
-**Status:** Desk research; no live accounts, payments or applications were tested.  
-**Research purpose:** Help a job seeker in Nigeria understand which platform claims are relevant, what can be checked publicly and what must be confirmed before relying on a service.
+**Status:** Public-source desk research; no live accounts, payments or applications were tested.  
+**Research purpose:** Help a Nigeria-based job seeker distinguish provider claims, country eligibility and product features that still require hands-on testing.
 
 ### Research approach
 
-A useful comparison needs a defined question, a date, a geography and evidence standards. Platform marketing claims are not the same as verified user experience.
+The comparison examines Jobright, Sonara, LoopCV and Sorce. It records public product information, terms, pricing and app-store listings, while making uncertainty visible. It was revised after an audit found unsupported rankings, outdated prices and overconfident conclusions.
 
-The existing comparison examines Jobright, Sonara, LoopCV and Sorce. It records public information about features, pricing and access, while explicitly identifying uncertainties about Nigerian eligibility and actual account functionality.
+A further Sorce check found an Android listing on Google Play while the provider's own download page and FAQ still state iOS-only. The report now treats this as a documented inconsistency rather than silently choosing one source. Listing availability, feature parity and Nigeria-specific eligibility remain distinct questions.
 
 ### Before → after
 
-**Before:** “Which AI job-search platform is the best?” This invites a universal ranking without specifying the user's location, device, budget or job-market needs.
+**Before:** “Which AI job-search platform is the best?” This invites a universal ranking without a defined geography, device, budget or use case.
 
-**After:** “Which platform's publicly documented features, pricing and geographic conditions appear relevant to a Nigeria-based job seeker, and which claims still require a live account test?” This creates a question that can be investigated and its limits explained.
+**After:** “What do public sources establish about product features, price, device listings and country restrictions for a Nigeria-based job seeker, and what remains untested?” The revised question supports a cautious, reproducible comparison.
+
+## Evidence project B: The Talent Paradox
+
+The revised [Nigeria-focused research brief](../research/talent-paradox-skilled-migration-digital-work-nigeria.md) examines skilled migration, remittances and web-based platform work. It rejects the oversimplified claim that digital work is a frictionless substitute for emigration.
+
+The brief distinguishes national remittance estimates from the effects of skilled migration; identifies that a seven-country platform-work figure is not Nigeria-only; and treats a qualitative study of 23 Nigerian platform workers as contextual evidence, not a nationally representative survey.
 
 ### Evidence discipline
 
@@ -23,22 +29,26 @@ For each important claim, record:
 - The exact claim being checked.
 - The source and whether it is primary or secondary.
 - Publication/update date and access date.
-- Geography and user group the claim applies to.
-- Whether it is a product statement, independent evidence or an inference.
-- Any uncertainty, contradiction or missing information.
+- Geography and user group to which the claim applies.
+- Whether it is a provider statement, independent evidence or an inference.
+- Counter-evidence, uncertainty and missing information.
 
 ### Analysis, not just description
 
-A comparison should explain why a feature matters. For example, a platform may advertise remote roles, but that does not establish that every listed employer accepts applicants residing in Nigeria. A free plan may exist, but its usefulness depends on limits and current terms. Device compatibility can exclude a user before the feature comparison even begins.
+A comparison should explain why a feature matters. A platform may advertise remote roles, but that does not establish that an employer accepts applicants residing in Nigeria. A free plan may exist, but its usefulness depends on limits and current terms. A digital-work participation statistic may be multi-country, not specific to Nigeria. Those distinctions materially change the conclusion.
 
-### Limitations
+### What remains weak or unverified
 
-The existing report is desk research. It does not establish actual signup success, account availability, job quality, application outcomes or service reliability for Nigerian users. Pricing and features can change; time-sensitive claims must be rechecked before publication.
+- No live platform signup, payment or application flow has been tested.
+- App-store availability does not prove support or job eligibility in Nigeria.
+- The Talent Paradox is focused desk research, not a systematic review or original field study.
+- The cited qualitative study and multi-country survey cannot establish national prevalence or causation.
+- Prices and product features can change and must be rechecked before a purchase decision.
 
-### Further research sample: The Talent Paradox
+### Improved solution and next evidence
 
-The report should be reviewed using the same evidence standard: define the central claim, separate evidence from interpretation, check the source trail, identify counter-explanations and make the conclusion proportionate to the evidence. It should not be presented as a completed research paper until that review is finished.
+The next research increment should test selected platforms using a documented, lawful account/device setup and a controlled checklist, if resources and eligibility permit. For migration and digital labour, a stronger study would add comparable Nigeria-specific labour-market data and original worker interviews, with appropriate research ethics.
 
 ### What this demonstrates
 
-The work demonstrates structured comparison, question framing, source evaluation and transparent communication of uncertainty. Its strongest feature is not a claim that one platform wins; it is the clear separation of public evidence from untested assumptions.
+The work demonstrates question framing, source evaluation, claim correction, comparison, geographical caution and transparent limitation-setting. It does not claim a universal platform winner, causal migration findings or hands-on testing that has not occurred.
