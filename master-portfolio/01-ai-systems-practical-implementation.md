@@ -2,70 +2,76 @@
 
 ## Evidence project: Vantage Automata
 
-**Status:** System specified; working implementation not yet verified.  
-**Role demonstrated:** Independent systems analysis, requirements definition, workflow design and implementation planning.
+**Status:** Local deterministic proof of concept implemented; nine unit tests passed on 9 November 2026. It is not a deployed AI agent.  
+**Role demonstrated:** Independent problem analysis, requirements definition, workflow design, safe scoping, AI-system architecture thinking and a bounded implementation.
 
-### The problem
+### Existing work and problem
 
-AI tools can interpret instructions and prepare actions, but an incorrect or poorly scoped action can affect people, records or business operations. A useful system needs clear boundaries and a person who can review consequential actions.
+The original Vantage concept described an AI-enabled business assistant capable of coordinating tasks and integrations. That ambition was too broad to verify as one milestone. AI-generated actions can affect people, records or business operations, so the execution boundary must be controlled by application logic rather than by model output alone.
 
-### Proposed solution
+### Practical solution delivered
 
-Vantage Automata turns a plain-language instruction into a structured proposal. The application validates the proposal, shows the user what would happen, waits for approval or rejection, and records the outcome. The first version uses mock actions only.
+Vantage was reduced to one narrow local journey. The committed Python prototype accepts only a reminder-shaped instruction, validates its scope, creates a structured proposal, asks for approval and simulates a mock action. The decision and outcome are written to a local JSON Lines audit file.
 
-**First demonstrable slice**
+The prototype is deterministic: it does not call an AI provider or external service. The point of this first build is to demonstrate and test the workflow controls before any model or integration is considered.
 
-1. Enter a task.
-2. Check that the instruction is present and within the demo's limited scope.
-3. Generate a structured proposal.
-4. Display the proposed action and its details.
-5. Ask the user to approve or reject.
-6. Run only a harmless mock action after approval.
-7. Save an audit record.
+### Delivered workflow
+
+1. Accept a short instruction beginning with `Remind me to ...`.
+2. Reject empty, overlong or out-of-scope input.
+3. Create a structured proposal with a unique identifier.
+4. Calculate a fingerprint of the proposal content displayed to the user.
+5. Require approval of that exact proposal; a changed proposal invalidates approval.
+6. Permit one mock execution attempt within the running process.
+7. Stop safely on execution failure without an automatic retry.
+8. Record the decision and outcome locally.
+
+### Verification evidence
+
+- **Implementation:** `projects/vantage-automata/prototype/vantage_mvp.py`
+- **Tests:** `projects/vantage-automata/prototype/test_vantage_mvp.py`
+- **Run guide and limitations:** `projects/vantage-automata/prototype/README.md`
+- **Test result:** `python -m unittest -v` — **9 tests passed, 0 failures, 0 errors**, 9 November 2026.
+- **Scope of verification:** the exact committed files were retrieved from GitHub and run in an isolated Python 3 directory. No CI run or external service test is claimed.
 
 ### Before → after
 
-**Before:** “Let AI handle my tasks.” This is broad, has no defined permissions, and does not explain what happens when the model is wrong.
+**Before:** “Build Vantage Automata with AI agents and business integrations.” This was too broad to test and did not specify an authority boundary.
 
-**After:** “For one low-risk task, the system prepares a proposal, validates its fields, shows the proposed action, requires explicit approval, performs a mock action only, and records the decision.” The scope is testable and the authority boundary is visible.
+**After:** “Demonstrate one local reminder workflow with input validation, a proposal, exact-content human approval, duplicate-attempt protection, safe failure and an audit record.” This is a bounded, observable implementation milestone.
 
 ### System responsibilities
 
-| Component | Responsibility |
-|---|---|
-| User interface | Collect the instruction and show the proposal |
-| Application/backend | Enforce scope, validation and approval rules |
-| AI component | Suggest a structured proposal; it does not grant permission |
-| Approval control | Record an explicit approve/reject decision |
-| Mock action handler | Simulate the approved action without contacting an external service |
-| Audit record | Store the instruction, proposal, decision and outcome |
+| Component | Responsibility in the concept | Current evidence |
+|---|---|---|
+| User interface | Collect instruction and show proposal | Command-line interaction in local demo |
+| Application logic | Enforce scope, validation and approval rules | Implemented deterministic Python functions |
+| AI component | May later suggest structured proposals; cannot grant permission | Not connected or implemented |
+| Approval control | Record explicit approval/rejection of the displayed proposal | Fingerprint check implemented |
+| Action handler | Perform only an allowed action | Mock reminder only |
+| Audit record | Record instruction, proposal, decision and outcome | Local JSONL append implemented |
 
-The application—not the model—must enforce permissions. Approval must apply to the exact proposal shown; changing the proposal should require a new approval.
+### What external guidance challenges
 
-### Practical implementation milestone
-
-The first implementation should be a small local demo, not a universal automation platform. It should include:
-- One narrow task type.
-- Mock data and mock actions.
-- Required-field and allowed-value validation.
-- Explicit approval and rejection.
-- Duplicate-approval protection.
-- A readable audit record.
-- Tests for invalid input, rejection, approval and simulated failure.
+The [Evidence Challenge & Improvement Record](EVIDENCE-CHALLENGE-AND-IMPROVEMENT-RECORD.md) links the design to OWASP agent-security guidance, Microsoft's agent safety recommendations and NIST's Generative AI Risk Management Profile. These sources reinforce that approval is only one control: scope restriction, independent validation, least privilege, monitoring, failure handling and adversarial testing matter too.
 
 ### Jarvis AI: broader systems thinking
 
-Jarvis AI remains a proposed multi-agent business operating ecosystem. Its agent catalogue, lead-agent coordination, technology evaluation and MVP decision record show how a broad concept can be decomposed into roles and stages. It is not a deployed multi-agent system. Vantage remains the first practical implementation priority because its scope is narrower and easier to test.
+Jarvis AI remains a proposed multi-agent business operating ecosystem. Its architecture, agent catalogue, coordination concepts and MVP planning demonstrate system decomposition and design documentation. It is not a deployed multi-agent system. Vantage is the first practical implementation because its narrow scope can be tested.
 
-### Evidence retained
+### What remains weak or unverified
 
-- Vantage problem and user analysis.
-- MVP scope and acceptance criteria.
-- System overview and API contract.
-- Approval workflow and risk register.
-- Implementation plan, test plan and traceability matrix.
-- Jarvis architecture, agent and workflow documentation.
+- No AI model or agent framework is connected.
+- No external tools, accounts, messages, payments or business records are accessed.
+- Duplicate protection is in-memory and does not survive a restart.
+- The local audit file is not tamper-proof.
+- Authentication, durable storage, permissions, monitoring, deployment and user testing are not implemented.
+- The original Vantage and Jarvis architecture diagrams still need their original image files to be added.
 
-### Honest limits and next proof
+### Improved solution and next evidence
 
-No live integration, production deployment, customer validation or executed test result is claimed. The next proof is a working local demo with source code, repeatable tests and a short demonstration. Real accounts, messages, payments and customer records remain out of scope.
+Keep Vantage deterministic until the control flow is understood and independently reviewed. A later increment should add persistent execution identifiers, stronger audit storage, explicit permission boundaries and tests for malformed or adversarial proposals. Only after those controls are designed should a model be introduced as a proposal generator, never as the source of execution authority.
+
+### What this demonstrates
+
+This work demonstrates the ability to reduce a broad AI-system concept to a bounded implementation, define control points, write and run unit tests, document limitations and avoid claiming a production system that does not exist.
