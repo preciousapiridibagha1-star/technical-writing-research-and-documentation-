@@ -48,6 +48,7 @@ The AI capabilities are organised by task, not by a requirement to build many se
 - [Minimum viable product](product/MVP_SCOPE.md)
 - [System architecture](architecture/SYSTEM_ARCHITECTURE.md)
 - [Product and dashboard experience](design/PRODUCT_EXPERIENCE.md)
+- [Main dashboard layout wireframe](design/DASHBOARD_LAYOUT.md)
 - [Research sources](references/SOURCES.md)
 
 ## Important design principles
