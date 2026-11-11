@@ -25,6 +25,22 @@ The intended users are not limited to one industry. Potential settings include i
 
 This describes the proposed workflow, not a currently running application.
 
+## Human oversight and governance model
+
+Human approval is a control over authority, not a decorative confirmation step. The person reviewing a proposal must be able to understand what will happen, what information will be affected and what the system is uncertain about.
+
+| Control area | Proposed rule | Why it matters | Evidence still required |
+|---|---|---|---|
+| Authority | The user retains final authority; the model cannot approve its own proposal. | Prevents delegated model output from becoming self-authorising. | Role and permission tests. |
+| Specific consent | Approval applies only to the exact action and parameters displayed. | Prevents broad or ambiguous approval from authorising a different action. | Changed-payload and replay tests. |
+| Validation | Treat model output as untrusted; validate structure, scope and permissions on the backend. | Model fluency is not proof of correctness or authorisation. | Schema, boundary and negative tests. |
+| Rejection | Rejection is terminal for that proposal; it cannot silently re-enter execution. | Makes the user's decision effective. | State-transition tests. |
+| Uncertainty | Missing, conflicting or out-of-scope information stops the workflow and requests human input. | Avoids guessing where consequences may follow. | Ambiguous-input and failure tests. |
+| Data minimisation | Use mock data for the first build; do not log secrets or unnecessary personal data. | Reduces exposure while the design is being tested. | Data-flow and log review. |
+| Traceability | Record the proposal, decision, authorised scope and outcome without storing unnecessary sensitive content. | Supports review and incident investigation. | Audit-record reconciliation. |
+
+The controls above are design requirements, not verified safeguards in a deployed product. They should be tested before any real-world integration is enabled.
+
 ## Intended product direction
 
 The longer-term direction is to develop Vantage Automata into a dependable task-approval product that could be adapted to different customer and organisational workflows. It should not be marketed as a finished universal automation platform. Each use case would need defined permissions, integrations, data boundaries, safeguards and acceptance tests.
