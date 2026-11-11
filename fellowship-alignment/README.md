@@ -14,7 +14,7 @@
 | Internet governance and digital policy | Planned Internet Society learning and a future focused issue brief | This is a developing strand; do not claim completed policy work yet. |
 | Technical writing and documentation | User guides, FAQs, README work, documentation review examples | Clear technical communication and information architecture. |
 | Practical implementation and evaluation | Only verified working milestones, demonstrations and test records | Evidence that a design can be built and evaluated. Planned work is not counted as completed. |
-| Open-source and community contribution | Contribution portfolio and actual public issues/PRs when completed | Collaboration and contribution practice. No merged contribution is claimed unless verifiable. |
+| Open-source and community contribution | uniunihan-db README correction PR #10; future contributions only when submitted | Issue-based documentation work, careful text correction, source checking and a real fork/branch/commit/pull-request workflow. PR #10 is open and awaiting review; it is not merged. |
 
 ## Opportunity-by-opportunity evidence selection
 
@@ -36,7 +36,7 @@ These priorities strengthen shared evidence rather than creating separate portfo
 2. Build one or two narrow, demonstrable implementation milestones and document actual tests.
 3. Complete a rigorous research brief with transparent sources, method, limitations and actionable findings.
 4. Develop the Internet Society strand through the planned learning and one focused internet-governance issue brief.
-5. Make a genuine open-source contribution and record its actual status.
+5. Continue making carefully scoped open-source contributions; track each as proposed, submitted, under review or merged.
 6. Add a humanitarian AI case study only when it can be researched rigorously and not as filler.
 7. Keep the MindCommons AI project conditional on validation; do not build a duplicate of existing SRHIN systems.
 
@@ -46,6 +46,7 @@ These priorities strengthen shared evidence rather than creating separate portfo
 - Evidence-based research and source checking.
 - Awareness of AI risks, permissions and human oversight.
 - Technical writing and documentation improvement.
+- A real, submitted open-source documentation correction, currently awaiting maintainer review.
 - Clear separation between concepts, planned work and verified implementation.
 
 ## What it cannot currently claim
@@ -55,8 +56,12 @@ These priorities strengthen shared evidence rather than creating separate portfo
 - A verified SRHIN partnership or endorsement.
 - Community interviews or co-design completed for MindCommons AI.
 - A confirmed operational gap in SRHIN's internal governance workflows.
-- Merged open-source contributions or measured community outcomes unless subsequently evidenced.
+- A merged open-source contribution or measured community outcomes unless subsequently evidenced.
 
 ## Application rule
 
 The portfolio stays unified. For each application, select the most relevant work samples and explain the connection in the applicant's own words. Do not exaggerate the fit, invent experience or create a separate identity for each programme.
+
+## Open-source contribution record
+
+See [Open-source contributions](../open-source/README.md) for the verified status and evidence of each contribution.
