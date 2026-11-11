@@ -5,6 +5,7 @@ This section contains research projects and the methods used to produce them. Ea
 ## Published research
 
 - [AI Job-Search Platforms: Updated Comparison, November 2026](ai-job-search-platforms/updated-comparison-november-2026.md) — a source-checked desk-research comparison of Jobright, Sonara, LoopCV and Sorce. It records corrections to the earlier report and clearly identifies what has not been tested with live accounts, particularly access from Nigeria.
+- [Applied Analysis: Human Oversight in AI-Assisted Job Applications](ai-assisted-decision-making-human-oversight.md) — an analytical companion examining applicant authority, eligibility checks, truthful self-representation, privacy and human review across AI-assisted application workflows. It distinguishes design analysis from measured platform outcomes.
 
 ## Research methodology
 
