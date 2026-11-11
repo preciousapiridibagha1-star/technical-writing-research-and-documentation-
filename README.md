@@ -39,13 +39,13 @@ The [Master Portfolio Evidence Index](master-portfolio/README.md) connects the e
 ### Applied AI systems analysis
 - [Vantage Automata](projects/vantage-automata/README.md) — a human-supervised task-approval concept with a narrow deterministic local proof of concept. Nine unit tests passed; it is not a deployed AI agent or production system.
 - [Jarvis AI](projects/jarvis-ai/README.md) — strategic analysis and documentation for a proposed AI-enabled business operating ecosystem. It remains a concept; integrations and deployment are not claimed.
-- [Architecture & Implementation Guide](projects/architecture-and-implementation/README.md) — explains the proposed architecture, implementation boundaries and the distinction between diagrams and working software.
+- [Architecture & Implementation Guide](projects/architecture-and-implementation/README.md) — explains the proposed architecture, implementation boundaries and the distinction between diagrams and working software.\n- [MindCommons AI — Community Data-Use Accountability Ledger](projects/mindcommons-ai/README.md) — a research-backed design hypothesis for tracing approved data uses, material changes and community-agreed obligations, with strict human authority and data-minimisation boundaries. It is not host-approved or implemented.
 
 ### Research and public-interest analysis
 - [Research Portfolio](research/README.md)
 - [The Talent Paradox: Skilled Migration, Remittances and Digital Work in Nigeria](research/talent-paradox-skilled-migration-digital-work-nigeria.md)
 - [AI Job-Search Platforms: Updated Comparison, November 2026](research/ai-job-search-platforms/updated-comparison-november-2026.md)
-- [AI recruitment governance case study](ai-governance-and-internet-policy/case-study-1-ai-recruitment-governance.md) — a developing, source-led governance exercise; not an audit of a real recruitment system.
+- [AI recruitment governance case study](ai-governance-and-internet-policy/case-study-1-ai-recruitment-governance.md) — a developing, source-led governance exercise; not an audit of a real recruitment system.\n- [Human oversight in AI-assisted decisions](research/ai-assisted-decision-making-human-oversight.md) — analysis of human authority, eligibility checks, privacy and review in consequential AI-assisted workflows.
 
 ### Technical writing
 - [Technical Writing Samples](technical-guides/README.md)
@@ -63,7 +63,7 @@ The existing evidence is relevant as a foundation:
 - the governance case study examines accountability, privacy and consequential decisions;
 - technical writing turns findings into clear, usable research outputs.
 
-The portfolio does **not** yet claim humanitarian field experience, partnership with aid organisations, interviews with affected communities, a completed humanitarian AI evaluation or measured programme impact. The next substantive research addition should be a carefully scoped humanitarian AI adoption/governance case study grounded in credible public sources and explicit limitations—not a speculative product pitch.
+The portfolio does **not** yet claim humanitarian field experience, partnership with aid organisations, interviews with affected communities, a completed humanitarian AI evaluation or measured programme impact. The MindCommons AI work is an independent, desk-researched design hypothesis inspired by a separate fellowship-host context; it is not humanitarian fieldwork and is not presented as NetHope project experience. The next substantive research addition should be a carefully scoped humanitarian AI adoption/governance case study grounded in credible public sources and explicit limitations—not a speculative product pitch.
 
 ## One portfolio for the active opportunity set
 
@@ -79,7 +79,7 @@ The same evidence base supports the seven active targets. Each application shoul
 
 Tarbell was part of the original eight-opportunity list but was later removed from the active target set. The original eight-target history is retained in the opportunity evidence map; it is not counted as an active application target.
 
-See the [Master Portfolio Opportunity Evidence Map](fellowship-alignment/README.md) for the evidence-to-opportunity mapping, current gaps and development priorities.
+See the [Master Portfolio Opportunity Evidence Map](fellowship-alignment/README.md) for the evidence-to-opportunity mapping, current gaps and development priorities. The [GovAI Applied Track Evidence Brief](fellowship-alignment/govai-applied-track-evidence-brief.md) shows how the same body of work can be selected and framed for one specific application.
 
 ## How I work
 
