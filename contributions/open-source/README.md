@@ -42,6 +42,10 @@ No candidate will be described as a contribution until a real change is submitte
 6. Submit the pull request and respond to maintainer feedback.
 7. Record the verified outcome and lessons.
 
+## 2. Contribution selection note
+
+A candidate in `pydata/pydata-sphinx-theme#1629` was reviewed but not selected: an earlier PR (#2476) was closed after maintainers found its documentation change insufficiently contextualised, and a new contributor had already asked maintainers to clarify the remaining scope. Repeating that work without a distinct, confirmed scope would risk duplication.
+
 ## Earlier proposals and investigations
 
 - [Ollama — Msty URL correction (#18045)](proposal-01-ollama-msty-link.md) — an existing upstream PR [#18050](https://github.com/ollama/ollama/pull/18050) already proposed this change.
