@@ -21,6 +21,22 @@ For example, slow customer-service responses may be caused by understaffing, fra
 
 The broader ecosystem diagram and the simplified AI Business System MVP diagram are related views of the same direction. The MVP should validate one narrow workflow before attempting the wider ecosystem.
 
+## Human oversight, permissions and accountability
+
+The owner or authorised staff member remains accountable for business decisions. An agent may prepare information or a draft, but it should not grant itself authority or expand its own access.
+
+| Situation | Agent behaviour | Human responsibility |
+|---|---|---|
+| Routine question supported by approved information | Prepare a draft and show the source used. | Review and decide whether to use it. |
+| Information missing, outdated or conflicting | State the uncertainty and stop short of inventing an answer. | Check the source or provide corrected information. |
+| Complaint, refund, payment, account change or sensitive matter | Escalate without taking the consequential action. | Handle the case through the business's authorised process. |
+| Request outside the approved topics | Explain that it is out of scope and route to a person. | Decide whether the scope should change. |
+| Proposed change to knowledge or permissions | Do not apply the change automatically. | Approve, document and periodically review the change. |
+
+The first MVP should use least-privilege access, approved knowledge, test data and human review. External sending and consequential actions remain disabled unless separately scoped, authorised, tested and reviewed.
+
+These are proposed governance requirements. They are not evidence that the system currently enforces them.
+
 ## Strategic and systems-design contribution
 
 The project documents work in:
