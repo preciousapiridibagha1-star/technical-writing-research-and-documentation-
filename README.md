@@ -1,81 +1,107 @@
 # Precious Apiri Dibagha
 
-## Applied Technology Research & Documentation
+## Technology Research & Technical Documentation
+### Focus: AI systems, responsible technology and public-interest applications
 
-I am a self-directed researcher and systems thinker interested in how technology can address practical business and societal problems. My work brings together AI system design, responsible technology, research, internet governance, technical documentation and project planning.
+I research technology problems, examine the evidence around digital and AI systems, analyse how those systems affect people and organisations, and turn complex findings into clear documentation, evaluations and practical recommendations.
 
-I start with the problem, the people affected and the evidence available. I then define a proportionate approach, document the decisions and limitations, and identify what would need to be built or tested next. I distinguish clearly between concepts, desk research, planned work and verified implementation.
+This repository is **one master portfolio**, not a collection of unrelated projects or separate professional identities. Its central method is:
 
-## Professional focus
+**Understand the problem and affected people → research the context and evidence → analyse the technology and its risks → develop a proportionate recommendation or system design → document the reasoning, limitations and next steps.**
 
-**Applied AI Systems & Technical Documentation — Junior / Entry-Level.** I research practical problems, analyse workflows, document proportionate AI-enabled solutions, consider responsible-use requirements and test small prototypes. My work is self-directed; I distinguish clearly between design proposals, local prototypes, no-code plans and deployed integrations.
+My professional direction is **Technology Researcher & Technical Documentation Specialist**, with a developing focus on responsible AI and public-interest technology. My work is self-directed unless a project is explicitly identified otherwise. I distinguish desk research, concepts, local prototypes and submitted contributions from field research, deployed systems and independently verified outcomes.
 
-The six capability areas below support one connected delivery method: research the problem → assess risks and context → design the workflow → document requirements → prototype and evaluate → record delivery evidence.
+## Why these projects belong together
 
-## Master portfolio — six capability areas
+The projects explore different stages of the same problem-solving process:
 
-The [Master Portfolio Evidence Index](master-portfolio/README.md) brings together the six capability pages and their supporting evidence. The [Evidence Challenge & Improvement Record](master-portfolio/EVIDENCE-CHALLENGE-AND-IMPROVEMENT-RECORD.md) documents external challenges, before-and-after improvements and limitations. The [Portfolio Status & Verification Record](PORTFOLIO-STATUS.md) summarises completion evidence, final checks and the remaining Area 7 boundary.
+- **Research** establishes what is known, what is uncertain and whose interests are affected.
+- **AI systems analysis** examines whether a proposed system is appropriate, what it should do and where its boundaries should sit.
+- **AI governance** considers accountability, privacy, permissions, human oversight, safety and potential harm.
+- **Technical documentation** makes the evidence, requirements, decisions and procedures understandable to other people.
+- **Open-source contribution** provides a route to apply documentation and research skills in real public repositories.
+- **Public-interest and humanitarian analysis** applies these methods to technology adoption where context, institutional capacity and effects on affected communities matter.
 
-1. [AI Systems & Practical Implementation](master-portfolio/01-ai-systems-practical-implementation.md)
-2. [AI Governance & Responsible Technology](master-portfolio/02-ai-governance-responsible-technology.md)
-3. [Research & Analytical Writing](master-portfolio/03-research-analytical-writing.md)
-4. [Internet Governance & Digital Policy](master-portfolio/04-internet-governance-digital-policy.md)
-5. [Technical Writing & Documentation](master-portfolio/05-technical-writing-documentation.md)
-6. [Project & Programme Delivery](master-portfolio/06-project-programme-delivery.md)
+## Master portfolio — evidence areas
 
-## Practical systems work
+1. [AI Systems & Practical Implementation](master-portfolio/01-ai-systems-practical-implementation.md) — system analysis, scoped design and a small local Vantage proof of concept.
+2. [AI Governance & Responsible Technology](master-portfolio/02-ai-governance-responsible-technology.md) — human oversight, data protection, accountability and risk analysis.
+3. [Research & Analytical Writing](master-portfolio/03-research-analytical-writing.md) — source-based comparison, Nigeria-focused research and transparent limitations.
+4. [Internet Governance & Digital Policy](master-portfolio/04-internet-governance-digital-policy.md) — public-interest digital policy and internet governance, with further learning in progress.
+5. [Technical Writing & Documentation](master-portfolio/05-technical-writing-documentation.md) — product explanations, FAQs, user guidance, README improvement and review.
+6. [Project & Programme Delivery](master-portfolio/06-project-programme-delivery.md) — problem definition, scope, milestones, acceptance criteria and evidence of completed work.
+7. [Open-source contribution record](contributions/open-source/README.md) — upstream issue-based documentation work and actual pull-request status.
 
-A shared [Architecture & Implementation Guide](projects/architecture-and-implementation/README.md) explains how to interpret the Vantage and Jarvis diagrams, avoid overbuilding, compare code and no-code routes, and use structured JSON contracts without treating prompts as security controls.
+The [Master Portfolio Evidence Index](master-portfolio/README.md) connects the evidence areas. The [Evidence Challenge & Improvement Record](master-portfolio/EVIDENCE-CHALLENGE-AND-IMPROVEMENT-RECORD.md) records how the work was challenged and improved. [Portfolio Status](PORTFOLIO-STATUS.md) records verification and remaining limitations.
 
-- **[Vantage Automata](projects/vantage-automata/README.md)** — self-directed human-supervised task-approval concept. Its first local deterministic prototype is implemented and nine unit tests pass. It uses a mock reminder only; it is not an integrated AI agent or production system.
-- **[Jarvis AI](projects/jarvis-ai/README.md)** — proposed AI-enabled business operating ecosystem. Its first proposed MVP is one human-reviewed customer-enquiry workflow; implementation and user validation are not claimed.
+## Core projects and research
 
-Neither project is presented as commissioned client delivery.
+### Applied AI systems analysis
+- [Vantage Automata](projects/vantage-automata/README.md) — a human-supervised task-approval concept with a narrow deterministic local proof of concept. Nine unit tests passed; it is not a deployed AI agent or production system.
+- [Jarvis AI](projects/jarvis-ai/README.md) — strategic analysis and documentation for a proposed AI-enabled business operating ecosystem. It remains a concept; integrations and deployment are not claimed.
+- [Architecture & Implementation Guide](projects/architecture-and-implementation/README.md) — explains the proposed architecture, implementation boundaries and the distinction between diagrams and working software.
 
-## Research
-
+### Research and public-interest analysis
 - [Research Portfolio](research/README.md)
-- [AI Job-Search Platforms: Updated Comparison, November 2026](research/ai-job-search-platforms/updated-comparison-november-2026.md) — desk research, source notes, corrections and limits on untested Nigerian account access.
-- [Audit of the June 2026 AI Job-Search Platforms Report](research/ai-job-search-platforms/2026-report-audit-and-corrections.md)
-- [The Talent Paradox: Skilled Migration, Remittances and Digital Work in Nigeria](research/talent-paradox-skilled-migration-digital-work-nigeria.md) — revised policy research brief with explicit method and evidence limits.
-- [Research Methodology](research/research-methodology/research-methodology.md)
+- [The Talent Paradox: Skilled Migration, Remittances and Digital Work in Nigeria](research/talent-paradox-skilled-migration-digital-work-nigeria.md)
+- [AI Job-Search Platforms: Updated Comparison, November 2026](research/ai-job-search-platforms/updated-comparison-november-2026.md)
+- [AI recruitment governance case study](ai-governance-and-internet-policy/case-study-1-ai-recruitment-governance.md) — a developing, source-led governance exercise; not an audit of a real recruitment system.
 
-## Technical writing and documentation
-
+### Technical writing
 - [Technical Writing Samples](technical-guides/README.md)
-- [Cloud AI assistant category samples: overview](project-1-software-overview.md), [FAQ](project-2-faq-document.md), [usage guide](project-3-user-guide.md) and [research brief](project-4-research-brief.md).
-- [How to Write a Useful Project README](technical-guides/README-guides/how-to-write-a-project-readme.md)
-- [AI-Assisted Task Approval FAQ](technical-guides/FAQs/ai-assisted-task-approval-concept-faq.md)
-- [Documentation Review Checklist](technical-guides/documentation-examples/documentation-review-checklist.md)
+- [Product overview](project-1-software-overview.md), [FAQ](project-2-faq-document.md), [user guide](project-3-user-guide.md) and [research brief](project-4-research-brief.md) — category-level illustrative samples, not verified documentation for a named vendor product.
+- [Documentation review report](project-5-documentation-review-report.md)
+- [README writing guide](technical-guides/README-guides/how-to-write-a-project-readme.md)
 
-## Cloud infrastructure and open source
+## NetHope as the anchor application lens
 
-- [Cloud Infrastructure and Open Source](projects/cloud-infrastructure-and-open-source/README.md)
-- [n8n Technical Project Overview](projects/cloud-infrastructure-and-open-source/project-overviews/n8n-workflow-automation-overview.md) — desk research, not a tested integration.
-- [Cloud Infrastructure Fundamentals](projects/cloud-infrastructure-and-open-source/project-overviews/cloud-infrastructure-fundamentals.md)
-- [Open-Source Contributions](contributions/open-source/README.md) and [upstream candidate audit](contributions/open-source/upstream-candidate-audit-2026-11-09.md) — existing PRs cover the two original proposals; no public contribution is claimed.
+The **NetHope Humanitarian AI Research Fellowship** is the eighth opportunity in the original target set and the current anchor for strengthening the portfolio's public-interest direction. It gives the portfolio a clear application lens: how organisations should evaluate, adopt and govern AI in humanitarian and nonprofit contexts.
 
-## Fellowship alignment
+The existing evidence is relevant as a foundation:
+- research methods and source evaluation help assess claims about AI tools and their suitability;
+- Vantage and Jarvis provide examples of system-boundary, permission and human-oversight analysis;
+- the governance case study examines accountability, privacy and consequential decisions;
+- technical writing turns findings into clear, usable research outputs.
 
-- [Eight-Opportunity Evidence Map](fellowship-alignment/README.md)
-- [GovAI Applied Track 2027 Application Preparation](fellowship-alignment/govai-applied-track-2027-application-preparation.md)
+The portfolio does **not** yet claim humanitarian field experience, partnership with aid organisations, interviews with affected communities, a completed humanitarian AI evaluation or measured programme impact. The next substantive research addition should be a carefully scoped humanitarian AI adoption/governance case study grounded in credible public sources and explicit limitations—not a speculative product pitch.
 
-These are planning resources, not evidence of programme selection or application submission.
+## One portfolio for the active opportunity set
+
+The same evidence base supports the seven active targets. Each application should select the relevant work and explain the fit; the portfolio should not split into different identities.
+
+1. GovAI UK Summer Fellowship 2027 — Applied Track.
+2. Mozilla Foundation Fellowship 2027–2028 — Embedded Fellowship Track preferred.
+3. Internet Society Fellowship — pre-fellowship training is planned for learning and portfolio development; applying is not yet committed.
+4. Cambridge ERA:AI Fellowship.
+5. PIBBSS Fellowship.
+6. Outreachy Internship.
+7. NetHope Humanitarian AI Research Fellowship — anchor lens for public-interest and humanitarian AI research.
+
+Tarbell was part of the original eight-opportunity list but was later removed from the active target set. The original eight-target history is retained in the opportunity evidence map; it is not counted as an active application target.
+
+See the [Master Portfolio Opportunity Evidence Map](fellowship-alignment/README.md) for the evidence-to-opportunity mapping, current gaps and development priorities.
 
 ## How I work
 
-1. Define the problem and the people affected.
-2. Research the context and check relevant evidence.
-3. Separate causes, assumptions and symptoms.
-4. Assess whether technology or AI is appropriate.
-5. Define a proportionate solution and its limits.
-6. Document requirements, workflows, risks and decisions.
-7. Identify the smallest useful next step and how it can be tested.
-8. Record what was actually completed and what remains uncertain.
+1. Define the problem, users and affected stakeholders.
+2. Identify what evidence is available and what is missing.
+3. Compare sources and separate facts, assumptions and uncertainty.
+4. Assess whether AI or another technology is appropriate.
+5. Identify risks, permissions, accountability and human decision points.
+6. Develop a proportionate analysis, workflow or recommendation.
+7. Document the reasoning, evidence, limitations and next steps.
+8. Record only work that has actually been completed and verified.
 
-## Evidence standard
+## Evidence and honesty standard
 
-A system diagram demonstrates a proposed design, not a working integration. A passing unit test is not a security audit. Desk research is not hands-on testing. A policy proposal is not proof of compliance. I upgrade project status only when supporting evidence exists.
+- Desk research is not field research or a systematic review.
+- A hypothetical case study is not an audit of a real organisation.
+- A product idea or architecture diagram is not a deployed system.
+- A local prototype is not a production integration.
+- Passing unit tests are not a security audit.
+- A submitted pull request is not a merged contribution.
+- Public organisational statements are attributed; they are not treated as independent verification.
+- No partnership, endorsement, consultation, deployment or measured impact is claimed without evidence.
 
 **Precious Apiri Dibagha**  
-Applied Technology Research | AI Systems | Responsible Technology | Technical Writing
+Technology Research | Responsible AI | Technical Documentation
