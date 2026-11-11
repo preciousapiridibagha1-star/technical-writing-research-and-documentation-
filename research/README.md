@@ -8,7 +8,7 @@ This section contains research projects and the methods used to produce them. Ea
 - [AI Job-Search Platforms: Updated Comparison, November 2026](ai-job-search-platforms/updated-comparison-november-2026.md) — source-checked desk-research comparison of Jobright, Sonara, LoopCV and Sorce, including an explicit correction on conflicting Sorce Android information.
 - [Audit of the June 2026 AI Job-Search Platforms Report](ai-job-search-platforms/2026-report-audit-and-corrections.md) — documents unsupported rankings, source issues, pricing corrections and evidence limitations.
 
-## Research methodology
+- [MindCommons AI research and gap analysis](../projects/mindcommons-ai/research/RESEARCH_AND_ANALYSIS.md) — desk research on publicly documented governance capabilities and an unverified workflow hypothesis; it does not establish an internal host deficiency.\n\n## Research methodology
 
 - [Research Methodology](research-methodology/research-methodology.md) — source selection, evidence checking, analytical approach and limitations.
 
