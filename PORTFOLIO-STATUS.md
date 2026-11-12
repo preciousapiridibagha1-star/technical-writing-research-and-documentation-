@@ -1,58 +1,75 @@
-# Master Portfolio — Progress and Evidence Record
+# Master Portfolio — Progress, Verification & Next Actions
 
 **Repository:** `preciousapiridibagha1-star/technical-writing-research-and-documentation-`  
 **Default branch:** `main`  
-**Status:** Areas 1–6 closed at the documented desk-research / local-prototype evidence level; final verification pass completed on 9 November 2026. Area 7 is the next workstream.
+**Last repository audit:** 12 November 2026  
+**Current phase:** Opportunity applications and targeted evidence strengthening.
 
-## Areas 1–6: consolidated evidence status
+## Consolidated portfolio status
 
-- [x] **Area 1 — AI Systems & Practical Implementation:** Vantage local deterministic prototype committed; nine unit tests passed on 9 November 2026. Jarvis remains a documented concept, not a deployed system.
-- [x] **Area 2 — AI Governance & Responsible Technology:** Nigeria Data Protection Act 2023 section 37 anchored recruitment governance case study, with practical safeguards and clearly labelled comparative guidance.
-- [x] **Area 3 — Research & Analytical Writing:** revised Nigeria-focused Talent Paradox brief and audited AI job-platform comparison; public-source research limitations stated.
-- [x] **Area 4 — Internet Governance & Digital Policy:** Nigeria-focused meaningful-access policy brief using NCC, NITDA and CBN policy sources; policy targets separated from measured outcomes.
-- [x] **Area 5 — Technical Writing & Documentation:** overview, FAQ, usage guide and research brief reviewed as category-level illustrative samples; unsafe generalisations corrected and product-specific verification limits disclosed.
-- [x] **Area 6 — Project & Programme Delivery:** Vantage delivery record updated with actual implementation scope, acceptance outcomes and test output.
+The master portfolio is already consolidated on `main`. Pull request #1 (portfolio structure and documentation) and pull request #2 (NetHope anchor and MindCommons integration) are merged.
 
-## Coherent portfolio navigation
+- [x] **Area 1 — AI Systems & Practical Implementation:** Vantage Automata has a narrow deterministic local prototype and nine recorded passing unit tests. It is not a deployed AI agent or production system. Jarvis AI remains a documented concept.
+- [x] **Area 2 — AI Governance & Responsible Technology:** Nigeria Data Protection Act 2023–anchored recruitment governance analysis, human-oversight analysis and MindCommons governance design hypothesis are documented. They are desk research/design work, not legal advice, an organisational audit or community-validated work.
+- [x] **Area 3 — Research & Analytical Writing:** Nigeria-focused research, AI job-platform comparison and claim-audit materials are present. These are public-source desk research, not systematic reviews or original field research.
+- [x] **Area 4 — Internet Governance & Digital Policy:** Nigeria-focused meaningful-access policy work is present. Further learning and a focused issue brief remain development priorities.
+- [x] **Area 5 — Technical Writing & Documentation:** Overview, FAQ, user-guide, research-brief and documentation-review samples are present. Category-level samples are not vendor-verified documentation.
+- [x] **Area 6 — Project & Programme Delivery:** Vantage scope, requirements, workflow, risk controls, implementation record and test evidence are documented as self-directed work.
+- [ ] **Area 7 — Open-source & Community Contribution:** One upstream pull request has been submitted; the second contribution remains outstanding.
 
-The [Master Portfolio Evidence Index](master-portfolio/README.md) links all six capability pages and contains a consolidated six-area evidence map. The [Evidence Challenge & Improvement Record](master-portfolio/EVIDENCE-CHALLENGE-AND-IMPROVEMENT-RECORD.md) records the external standards used to challenge the work, before-and-after changes and the evidence boundaries.
+## Open-source contribution record
 
-Supporting artefacts include:
-- `projects/vantage-automata/prototype/` — local code, tests and run instructions.
-- `research/talent-paradox-skilled-migration-digital-work-nigeria.md` — Nigeria-focused desk-research brief on skilled migration, remittances and digital work.
-- `research/ai-job-search-platforms/updated-comparison-november-2026.md` — public-source comparison for a Nigeria-based job seeker.
-- `research/ai-job-search-platforms/2026-report-audit-and-corrections.md` — source and claim audit.
-- `project-1-software-overview.md`, `project-2-faq-document.md`, `project-3-user-guide.md`, `project-4-research-brief.md` — category-level illustrative cloud AI documentation samples.
-- `master-portfolio/05-technical-writing-documentation.md` — sample review and revision record.
+1. **uniunihan-db PR #10:** submitted and open, awaiting maintainer review; not merged. It corrects Mandarin pinyin in a README example. This is a small documentation contribution.
+2. **Second contribution:** not yet selected or submitted. Several candidates were screened and correctly rejected because of overlapping work, unclear scope, another contributor taking the task, or implementation demands beyond the current verified skill scope.
 
-## What the evidence does—and does not—prove
+Candidate screening is not counted as a contribution. Do not claim a second contribution until a real upstream change has been submitted.
 
-The portfolio now contains a working local prototype with passing unit tests, source-backed desk research, a Nigeria-specific policy brief, a governance case study and documented technical-writing revisions. It does not prove a deployed AI product, a real-world integration, professional legal advice, original field research, live job-platform testing, a policy intervention or client delivery.
+See [Open-source Contributions](contributions/open-source/README.md).
 
-## Final quality caveats
+## NetHope and opportunity positioning
 
-1. **Sorce Android status remains externally inconsistent.** Google Play displays an installable listing published by `sorce.jobs` (100K+ downloads; listing last updated 11 February 2026 when checked on 9 November 2026), while Sorce's own download page and FAQ still state iOS-only / Android on the roadmap. The portfolio now reports both facts consistently. The contradiction itself is not resolved by Sorce; listing presence does not establish official Android support, feature parity or Nigeria job eligibility.
-2. The cloud-AI overview, FAQ, guide and research brief remain category-level illustrative samples, not verified documentation for a named vendor product.
-3. Vantage and Jarvis architecture images were supplied for review on 9 November 2026 and are now interpreted in the [Architecture & Implementation Guide](projects/architecture-and-implementation/README.md). The image files are not yet committed to GitHub because the available GitHub connection exposes text-file operations but no binary upload action. They remain proposed design illustrations, not implementation evidence.
-4. The Talent Paradox and job-platform comparison are desk research, not systematic reviews or hands-on tests.
+The NetHope Humanitarian AI Research Fellowship is the eighth opportunity in the original target sequence and the current public-interest/humanitarian anchor lens. Tarbell was subsequently removed, leaving seven active targets. The opportunity map preserves this distinction.
 
+The portfolio does not claim humanitarian field experience, interviews with affected communities, aid-sector employment, a partnership or endorsement, or measured programme impact. MindCommons AI remains an independent desk-researched design hypothesis and is not represented as host-approved or implemented.
 
+## Main-branch audit — 12 November 2026
 
-## Final verification pass — 9 November 2026
+The following branches were compared with `main`:
 
-- [x] **Vantage test suite re-run after strengthening the duplicate-execution test.** The updated test deliberately restores a stale pending state and confirms the explicit executed-ID guard blocks a second attempt; it also asserts the mock handler is called once. The exact nine-test terminal output is recorded in the [prototype run guide](projects/vantage-automata/prototype/README.md). Result: **9 passed, 0 failures, 0 errors**.
-- [x] **FAQ reviewed.** The [cloud-AI assistant FAQ](project-2-faq-document.md) is present, readable and correctly labelled as a category-level sample; it avoids making provider-specific privacy, integration or compatibility guarantees.
-- [x] **Technical-writing sample navigation checked.** The [technical writing index](technical-guides/README.md), its README guide, concept FAQ, user-guide sample, review checklist and before/after example were fetched successfully. Root-level overview, FAQ, guide, research brief and review report were also fetched.
-- [x] **Portfolio navigation checked.** The root README, six capability pages, consolidated master index, evidence challenge record, Vantage and Jarvis project pages, research index and key research briefs were fetched from the repository successfully. No broken target was found among these checked links.
-- [x] **Sorce wording harmonised.** The current and historical comparison, research audit, evidence challenge record and this status record distinguish the installable Google Play listing from Sorce's contradictory iOS-only provider documentation.
-- [x] **Evidence index consolidated.** The [Master Portfolio Evidence Index](master-portfolio/README.md) now includes a six-row evidence map with principal artefacts and explicit evidence boundaries.
+| Branch | Comparison with main | Decision |
+|---|---|---|
+| `portfolio/master-portfolio-readiness` | Diverged; six commits ahead and 86 behind. Its Vantage prototype and delivery notes are older and weaker than the tested implementation now on main. | Preserve as history; do not merge. |
+| `portfolio/nethope-anchor-consolidation` | Diverged; contains the historical NetHope/MindCommons consolidation already merged through PR #2, plus later branch-only commits. | Preserve as history; do not merge wholesale. |
+| `portfolio/open-source-pr10-progress` | Heavily diverged; includes older portfolio and project material, including an outdated GovAI preparation draft. | Preserve as history; do not merge wholesale. |
+| `portfolio/structure-and-cleanup` | Heavily diverged and contains older project/status versions. | Preserve as history; do not merge. |
+| `project/mindcommons-ai-framework` | Heavily diverged and overlaps work already consolidated in main. | Preserve as history; do not merge wholesale. |
 
-The checks above are repository/content verification. They are not an external peer review, legal review, accessibility audit, production security assessment, or live testing of third-party job platforms.
+No branch was deleted or force-updated. The default branch remains `main`. The comparisons show why blindly merging old branches would risk reintroducing outdated status, prototype descriptions or duplicate project structures. Only a specific, verified, still-missing improvement should be cherry-picked or recreated on a fresh branch.
 
-## Area 7 — Open-Source & Community Contribution
+## Remaining quality and presentation items
 
-Area 7 remains last in the portfolio sequence. The two original Ollama proposals were re-checked and found to have competing upstream PRs: [#18050](https://github.com/ollama/ollama/pull/18050) for issue #18045 and [#14461](https://github.com/ollama/ollama/pull/14461) for issue #14260. Both PRs were open and unmerged when checked on 9 November 2026. They are no longer suitable as duplicate submission targets. The [upstream candidate audit](contributions/open-source/upstream-candidate-audit-2026-11-09.md) records this finding. The connected GitHub account has read-only access to `ollama/ollama`, no fork is present, and the available GitHub actions cannot create one. **No upstream branch, commit or PR has been created, and no external contribution is claimed.**
+1. The Vantage and Jarvis architecture images are not yet committed as repository assets. The owner will upload them when laptop access is available. Until then, the architecture guide explains their intended meaning and explicitly labels them as proposed design illustrations.
+2. The root README presents seven active targets and identifies NetHope as the eighth in the original sequence. The fellowship evidence map preserves the historical numbering and removal of Tarbell. Keep this distinction explicit.
+3. The root README has seven evidence areas; the internal Master Portfolio Evidence Index has six capability areas, with open-source contribution tracked separately as Area 7. These are two levels of the same navigation model, not missing content.
+4. Recheck time-sensitive opportunity requirements and deadlines against official programme pages before each submission.
+
+## Evidence standard
+
+- Desk research is not field research or a systematic review.
+- A fictional case study is not an audit of a real organisation.
+- A concept or architecture diagram is not a deployed system.
+- A local prototype is not a production integration.
+- Passing unit tests do not constitute a security audit.
+- A submitted pull request is not a merged contribution.
+- Public organisational statements are attributed, not treated as independent verification.
+- No partnership, endorsement, consultation, deployment or measured impact is claimed without evidence.
+
+## Immediate priority: GovAI UK Summer Fellowship 2027 — Applied Track
+
+The current application window is open and the official deadline is 23:59 UK time on Sunday 22 November 2026. The fellowship runs 7 June–27 August 2027 in London, is full-time and in person, pays £14,000 and provides travel support. GovAI states that temporary work-visa sponsorship is available for successful applicants who need it.
+
+The application should use the current [GovAI Applied Track preparation brief](fellowship-alignment/govai-applied-track-2027-application-preparation.md). The case must be based on self-directed project work, research, systems thinking, documentation and evidence of judgement—not invented employment, programme-management experience, professional AI governance delivery or deployment.
 
 ## Readiness statement
 
-Areas 1–6 form a coherent, linked evidence-led portfolio at the level described above. The recommended professional focus is Applied AI Systems & Technical Documentation (Junior / Entry-Level), with research, governance, workflow analysis, technical writing and small-scale prototyping presented as one connected delivery method. The new architecture guide explicitly separates long-term diagrams from lean MVP scope. Their limits are explicit. This is not a claim of professional certification, independent peer review or production engineering experience. Area 7 has two prepared contribution proposals awaiting approval for upstream submission.
+The master portfolio is coherent enough to support applications now. Do not delay the GovAI application until the second open-source contribution or architecture images are complete. Those are separate improvement tasks, not prerequisites for submitting an accurate application.
