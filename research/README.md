@@ -7,6 +7,7 @@ This section contains research projects and the methods used to produce them. Ea
 - [The Talent Paradox: Skilled Migration, Remittances and Digital Work in Nigeria](talent-paradox-skilled-migration-digital-work-nigeria.md) — revised Nigeria-focused desk-research brief distinguishing emigration, remittances and web-based platform work.
 - [AI Job-Search Platforms: Updated Comparison, November 2026](ai-job-search-platforms/updated-comparison-november-2026.md) — source-checked desk-research comparison of Jobright, Sonara, LoopCV and Sorce, including an explicit correction on conflicting Sorce Android information.
 - [Audit of the June 2026 AI Job-Search Platforms Report](ai-job-search-platforms/2026-report-audit-and-corrections.md) — documents unsupported rankings, source issues, pricing corrections and evidence limitations.
+- [Applied Analysis: Human Oversight in AI-Assisted Job Applications](ai-assisted-decision-making-human-oversight.md) — examines applicant authority, eligibility checks, truthful self-representation, privacy and human review; desk-based analysis, not a live platform evaluation.
 
 - [MindCommons AI research and gap analysis](../projects/mindcommons-ai/research/RESEARCH_AND_ANALYSIS.md) — desk research on publicly documented governance capabilities and an unverified workflow hypothesis; it does not establish an internal host deficiency.
 
