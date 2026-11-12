@@ -81,7 +81,7 @@ The same evidence base supports the seven active targets. Each application shoul
 
 Tarbell was part of the original eight-opportunity list but was later removed from the active target set. The original eight-target history is retained in the opportunity evidence map; it is not counted as an active application target.
 
-See the [Master Portfolio Opportunity Evidence Map](fellowship-alignment/README.md) for the evidence-to-opportunity mapping, current gaps and development priorities. The [GovAI Applied Track Evidence Brief](fellowship-alignment/govai-applied-track-evidence-brief.md) shows how the same body of work can be selected and framed for one specific application.
+See the [Master Portfolio Opportunity Evidence Map](fellowship-alignment/README.md) for the evidence-to-opportunity mapping, current gaps and development priorities. The [GovAI Applied Track Evidence Brief](fellowship-alignment/govai-applied-track-evidence-brief.md) shows how the same body of work can be selected and framed for one specific application. The [GovAI 2027 Application Preparation Brief](fellowship-alignment/govai-applied-track-2027-application-preparation.md) records the current call details, evidence selection, truthful narrative and submission plan.
 
 ## How I work
 
