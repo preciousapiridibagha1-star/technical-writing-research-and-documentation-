@@ -38,6 +38,14 @@ This is a description of the work represented in the portfolio, not a claim of p
 | Technical writing samples | Explaining a proposed workflow to users, improving unclear documentation, and applying a repeatable review standard. | Some examples are illustrative documents for a proposed system, not documentation for a live product. |
 | Fellowship evidence map | Ability to assess fit, identify missing evidence and prioritise work honestly. | A planning document, not evidence of programme participation. |
 
+### New evidence added — FINOS G7 AI SBOM guidance review (12 November 2026)
+
+- **Upstream discussion:** [FINOS AI Governance Framework issue #424](https://github.com/finos/ai-governance-framework/issues/424), with a substantive research comment submitted.
+- **Portfolio research note:** [G7 AI SBOM guidance review](../contributions/open-source/finos-g7-ai-sbom-review-2026.md).
+- **Portfolio change record:** [PR #3](https://github.com/preciousapiridibagha1-star/technical-writing-research-and-documentation-/pull/3) (open; not merged).
+
+This is relevant evidence of independent public-source research, technical writing and judgement about AI supply-chain transparency, evidence provenance, uncertainty and governance controls. It is a discussion contribution, not a FINOS code pull request, paid work, security assessment or evidence of professional AI governance employment. Use it as a supporting example of research and documentation quality; do not present it as an established FINOS collaboration or endorsement.
+
 ## 4. The application story to build
 
 A credible application narrative can connect three ideas:
