@@ -20,7 +20,7 @@ The current evidence provides a foundation, not proof of humanitarian expertise:
 
 | Portfolio evidence | Relevance to humanitarian AI research | Boundary |
 |---|---|---|
-| Research methodology and source-based comparisons | Assessing tool claims, evidence quality, suitability and uncertainty | Desk research; not field evaluation or systematic review |
+| Research methodology and source-based comparisons, including the [human-oversight analysis of AI-assisted job applications](../research/ai-assisted-decision-making-human-oversight.md) | Assessing tool claims, evidence quality, eligibility, applicant authority and uncertainty | Desk research and design analysis; not field evaluation or systematic review |
 | Vantage Automata | Analysing human approval, permissions, action boundaries and accountability | Narrow local deterministic proof of concept; not an AI deployment |
 | Jarvis AI | Analysing proposed AI-enabled organisational workflows and oversight | Concept and documentation; no verified integration |
 | AI recruitment governance case study | Examining consequential AI decisions, privacy, fairness and human review | Developing hypothetical case study; not an audit |
@@ -39,8 +39,8 @@ The next high-value evidence addition is a rigorous humanitarian AI adoption/gov
 | **4. Cambridge ERA:AI Fellowship** | Research methodology, AI governance, risk analysis, system boundaries and analytical writing. | Develop a focused AI safety research question and a deeper, methodologically rigorous research output. This remains a stretch rather than an established research profile. |
 | **5. PIBBSS Fellowship** | Analytical research, systems thinking, responsible technology and structured writing. | Demonstrate deeper AI safety research experience and the ability to undertake mentored full-time research. Current portfolio evidence is not a substitute for that experience. |
 | **6. Outreachy Internship** | Technical documentation, README improvement, issue-based contributions and the public contribution record. | Build a record of accepted/merged contributions, maintainer collaboration and sustained participation in an eligible project. Check each round's eligibility and contribution rules. |
-| **7. NetHope Humanitarian AI Research Fellowship** | Research and source evaluation, AI adoption/governance analysis, human oversight, system-risk thinking and clear research documentation. | Add a substantive humanitarian AI case study, stronger humanitarian/nonprofit domain grounding and, where feasible, verified evaluation evidence. The first pilot cohort closed in October 2026; a future cohort is not confirmed. |
-| **8. Tarbell Center for AI Journalism Fellowship — removed from active list** | Research, source checking, AI subject knowledge and technical explanation. | Removed at the user's direction. Do not treat as an active application target or prioritise portfolio work for it. If ever reconsidered, journalism/reporting evidence and the programme's restrictions on AI-generated application writing samples would need separate attention. |
+| **8. NetHope Humanitarian AI Research Fellowship — anchor opportunity** | Research and source evaluation, AI adoption/governance analysis, human oversight, system-risk thinking and clear research documentation. | Add a substantive humanitarian AI case study, stronger humanitarian/nonprofit domain grounding and, where feasible, verified evaluation evidence. The first pilot cohort closed in October 2026; a future cohort is not confirmed. |
+| **Tarbell Center for AI Journalism Fellowship — historical, removed** | Research, source checking, AI subject knowledge and technical explanation. | Removed at the user's direction. It is not an active application target and should not displace the NetHope anchor. |
 
 ## Shared capability map
 
@@ -48,7 +48,7 @@ The next high-value evidence addition is a rigorous humanitarian AI adoption/gov
 |---|---|---|
 | AI systems analysis and practical implementation | Vantage Automata, Jarvis AI, architecture and implementation guide | Defines problems, scope, workflows, permissions and implementation limits |
 | AI governance and responsible technology | Recruitment governance case study, Vantage oversight design, Jarvis safeguards | Analyses accountability, privacy, human authority and potential harms |
-| Research and analytical writing | Research methodology, Nigeria-focused briefs, AI platform comparison | Evaluates sources, compares evidence and communicates uncertainty |
+| Research and analytical writing | Research methodology, Nigeria-focused briefs, AI platform comparison and human-oversight analysis | Evaluates sources, compares evidence, analyses human decision points and communicates uncertainty |
 | Internet governance and digital policy | Nigeria-focused digital policy research and planned Internet Society learning | Connects technology analysis to public-interest and policy contexts |
 | Technical writing and documentation | Product overview, FAQ, user guide, README guide, review report | Makes technical information clear and navigable |
 | Project and programme delivery | Vantage scope, acceptance criteria, test records and project documentation | Shows how work is bounded, planned and checked |
