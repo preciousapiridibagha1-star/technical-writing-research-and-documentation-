@@ -46,6 +46,14 @@ No candidate will be described as a contribution until a real change is submitte
 
 A candidate in `pydata/pydata-sphinx-theme#1629` was reviewed but not selected: an earlier PR (#2476) was closed after maintainers found its documentation change insufficiently contextualised, and a new contributor had already asked maintainers to clarify the remaining scope. Repeating that work without a distinct, confirmed scope would risk duplication.
 
+## Additional candidate checks — 12 November 2026
+
+- **pydata/pydata-sphinx-theme#1629:** not selected. The issue remains open, but maintainers' discussion shows unresolved scope around version-switcher and warning-banner behaviour. PR #2476 was previously closed after review feedback that its documentation was insufficiently contextualised, and a new contributor has asked maintainers to clarify the remaining work. A second attempt without a distinct, confirmed scope would risk duplication.
+- **strands-agents/harness-sdk#2572:** not selected. A maintainer offered the missing Galileo integrations-catalog entry to another contributor, who had already asked to take the work.
+- **strands-agents/harness-sdk#2584:** not selected. Although open and labelled ready for contribution, the requested cross-provider LiteLLM hook examples require implementation and technical validation beyond the current documentation-focused scope.
+
+These checks are evidence of issue screening, not contributions. The second submitted contribution remains outstanding.
+
 ## Earlier proposals and investigations
 
 - [Ollama — Msty URL correction (#18045)](proposal-01-ollama-msty-link.md) — an existing upstream PR [#18050](https://github.com/ollama/ollama/pull/18050) already proposed this change.
