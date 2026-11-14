@@ -43,7 +43,7 @@ This is a description of the work represented in the portfolio, not a claim of p
 
 - **Upstream discussion:** [FINOS AI Governance Framework issue #424](https://github.com/finos/ai-governance-framework/issues/424), with a substantive research comment submitted.
 - **Portfolio research note:** [G7 AI SBOM guidance review](../contributions/open-source/finos-g7-ai-sbom-review-2026.md).
-- **Portfolio change record:** [PR #3](https://github.com/preciousapiridibagha1-star/technical-writing-research-and-documentation-/pull/3) (open; not merged).
+- **Portfolio change record:** [PR #3](https://github.com/preciousapiridibagha1-star/technical-writing-research-and-documentation-/pull/3) (merged into the master portfolio on 14 November 2026).
 
 This is relevant evidence of independent public-source research, technical writing and judgement about AI supply-chain transparency, evidence provenance, uncertainty and governance controls. It is a discussion contribution, not a FINOS code pull request, paid work, security assessment or evidence of professional AI governance employment. Use it as a supporting example of research and documentation quality; do not present it as an established FINOS collaboration or endorsement.
 
