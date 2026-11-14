@@ -119,6 +119,7 @@ Be ready to discuss how work is improved through feedback, how uncertainty is co
 ## 7. Roadblock audit and actions before submitting
 
 - [x] Read the official Applied Track page and distinguish it from the Research Track: the Applied Track is for practical projects where research is not the main duty.
+- [x] Check education requirements: GovAI states there are no specific role requirements and does not set a strict degree requirement. Do not treat the absence of a degree as an automatic disqualification; present verifiable work and capability honestly.
 - [ ] Run a final link and consistency check on the selected portfolio pages and ensure that every link opens from a logged-out browser.
 - [ ] Prepare and proofread a concise CV that accurately records education, work, independent projects, tools and dates. Do not invent formal roles or qualifications. The CV has not yet been reviewed in this preparation workflow.
 - [x] Select the core examples: Vantage Automata, FINOS AI SBOM review and research/technical documentation. Be able to explain the problem, your contribution, decisions, limitations and next steps.
