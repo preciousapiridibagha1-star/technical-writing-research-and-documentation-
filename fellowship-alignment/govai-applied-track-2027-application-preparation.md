@@ -1,6 +1,6 @@
 # GovAI UK Summer Fellowship 2027 — Applied Track Application Preparation
 
-**Research checked:** 7 November 2026  
+**Research checked:** 14 November 2026  
 **Application deadline:** 23:59 UK time, Sunday 22 November 2026  
 **Fellowship dates:** 7 June–27 August 2027  
 **Location:** London, full-time and in person  
@@ -32,9 +32,10 @@ This is a description of the work represented in the portfolio, not a claim of p
 
 | Evidence | What it demonstrates | Important boundary |
 |---|---|---|
-| Vantage Automata project documentation | Problem analysis, scope control, human approval, risk controls, proposed architecture, workflow and test planning. | A self-directed concept. The earlier implementation cannot currently be verified; do not call it a functioning product. |
+| Vantage Automata project documentation and local proof of concept | Problem analysis, scope control, human approval, risk controls, implementation discipline and test evidence. The narrow deterministic local reminder workflow has nine recorded passing unit tests. | Self-directed local proof of concept only. It does not use an AI model, connect external services or alter real business data; it is not a deployed product. |
 | Jarvis AI system proposal and first MVP definition | Ability to reduce a broad multi-agent idea to a narrow, testable business use case and consider when a simpler design is preferable. | Proposed design only; no user validation or implementation is claimed. |
 | AI job-search platform comparison and correction audit | Comparing products, checking official information, correcting outdated or unsupported claims, and stating research limitations. | Desk research, not hands-on testing; Nigerian account access remains unverified. |
+| FINOS AI Governance Framework issue #424 — G7 AI SBOM review | Independent source-based research, critical analysis of AI supply-chain transparency, evidence qualification, governance recommendations and concise public discussion. | Issue discussion comment submitted; awaiting maintainer/community response. Portfolio PR #3 is open and unmerged. Desk research only: no supplier SBOM or deployed system tested; no FINOS endorsement claimed. |
 | Technical writing samples | Explaining a proposed workflow to users, improving unclear documentation, and applying a repeatable review standard. | Some examples are illustrative documents for a proposed system, not documentation for a live product. |
 | Fellowship evidence map | Ability to assess fit, identify missing evidence and prioritise work honestly. | A planning document, not evidence of programme participation. |
 
