@@ -2,7 +2,7 @@
 
 **Repository:** `preciousapiridibagha1-star/technical-writing-research-and-documentation-`  
 **Default branch:** `main`  
-**Last repository audit:** 12 November 2026  
+**Last repository audit:** 14 November 2026  
 **Current phase:** Opportunity applications and targeted evidence strengthening.
 
 ## Consolidated portfolio status
@@ -15,14 +15,14 @@ The master portfolio is already consolidated on `main`. Pull request #1 (portfol
 - [x] **Area 4 — Internet Governance & Digital Policy:** Nigeria-focused meaningful-access policy work is present. Further learning and a focused issue brief remain development priorities.
 - [x] **Area 5 — Technical Writing & Documentation:** Overview, FAQ, user-guide, research-brief and documentation-review samples are present. Category-level samples are not vendor-verified documentation.
 - [x] **Area 6 — Project & Programme Delivery:** Vantage scope, requirements, workflow, risk controls, implementation record and test evidence are documented as self-directed work.
-- [ ] **Area 7 — Open-source & Community Contribution:** One upstream pull request has been submitted; the second contribution remains outstanding.
+- [x] **Area 7 — Open-source & Community Contribution:** Two distinct upstream contributions have been submitted: a small documentation pull request and a source-based AI governance issue discussion. Both remain open/awaiting maintainer response; neither is merged or endorsed.
 
 ## Open-source contribution record
 
 1. **uniunihan-db PR #10:** submitted and open, awaiting maintainer review; not merged. It corrects Mandarin pinyin in a README example. This is a small documentation contribution.
-2. **Second contribution:** not yet selected or submitted. Several candidates were screened and correctly rejected because of overlapping work, unclear scope, another contributor taking the task, or implementation demands beyond the current verified skill scope.
+2. **FINOS AI Governance Framework issue #424:** source-based review of the G7 AI SBOM minimum-elements guidance, submitted as an upstream issue discussion comment on 12 November 2026. The corresponding portfolio record is PR #3, which is open and not merged. The upstream discussion is awaiting maintainer/community response. This is a research and governance-analysis contribution, not a code PR, technical validation, security audit or FINOS endorsement.
 
-Candidate screening is not counted as a contribution. Do not claim a second contribution until a real upstream change has been submitted.
+Candidate screening is not counted as a contribution. Keep the two submitted contributions distinct and report their actual review/merge status.
 
 See [Open-source Contributions](contributions/open-source/README.md).
 
