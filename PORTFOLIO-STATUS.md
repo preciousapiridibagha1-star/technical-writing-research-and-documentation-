@@ -7,7 +7,7 @@
 
 ## Consolidated portfolio status
 
-The master portfolio is already consolidated on `main`. Pull request #1 (portfolio structure and documentation) and pull request #2 (NetHope anchor and MindCommons integration) are merged.
+The master portfolio is consolidated on `main`. Pull request #1 (portfolio structure and documentation), pull request #2 (NetHope anchor and MindCommons integration), pull request #3 (FINOS G7 AI SBOM review and contribution record), and pull request #5 (GovAI evidence and application-readiness corrections) are merged.
 
 - [x] **Area 1 — AI Systems & Practical Implementation:** Vantage Automata has a narrow deterministic local prototype and nine recorded passing unit tests. It is not a deployed AI agent or production system. Jarvis AI remains a documented concept.
 - [x] **Area 2 — AI Governance & Responsible Technology:** Nigeria Data Protection Act 2023–anchored recruitment governance analysis, human-oversight analysis and MindCommons governance design hypothesis are documented. They are desk research/design work, not legal advice, an organisational audit or community-validated work.
@@ -15,7 +15,7 @@ The master portfolio is already consolidated on `main`. Pull request #1 (portfol
 - [x] **Area 4 — Internet Governance & Digital Policy:** Nigeria-focused meaningful-access policy work is present. Further learning and a focused issue brief remain development priorities.
 - [x] **Area 5 — Technical Writing & Documentation:** Overview, FAQ, user-guide, research-brief and documentation-review samples are present. Category-level samples are not vendor-verified documentation.
 - [x] **Area 6 — Project & Programme Delivery:** Vantage scope, requirements, workflow, risk controls, implementation record and test evidence are documented as self-directed work.
-- [x] **Area 7 — Open-source & Community Contribution:** Two distinct upstream contributions have been submitted: a small documentation pull request and a source-based AI governance issue discussion. Both remain open/awaiting maintainer response; neither is merged or endorsed.
+- [x] **Area 7 — Open-source & Community Contribution:** Two distinct upstream contributions have been submitted: a small documentation pull request and a source-based AI governance issue discussion. The uniunihan-db PR remains open and unmerged; the FINOS issue discussion awaits maintainer/community response. No external acceptance or endorsement is claimed.
 
 ## Open-source contribution record
 
