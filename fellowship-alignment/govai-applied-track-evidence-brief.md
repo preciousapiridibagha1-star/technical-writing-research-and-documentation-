@@ -16,7 +16,7 @@ The November 2026 AI job-search platform comparison shows a structured approach 
 **Applied relevance:** evidence gathering, prioritisation, evaluating uncertainty and communicating a decision without overstating confidence.
 
 ### 2. Product and systems thinking
-Vantage Automata documents a bounded task-approval concept, including problem framing, requirements, architecture, workflow, risk register and proposed tests.
+Vantage Automata documents a bounded task-approval concept and a narrow deterministic local reminder proof of concept. The local implementation has nine recorded passing unit tests. It does not use an AI model, connect external services or alter real business data.
 
 Jarvis AI documents a broader business-systems concept while narrowing the first proposed MVP to one customer-support workflow.
 
@@ -36,7 +36,7 @@ The AI-assisted job-application analysis applies similar reasoning to truthful s
 **Applied relevance:** identifying risks early, designing proportionate safeguards and keeping accountability with the appropriate human decision-maker.
 
 ### 4. Technical communication
-The portfolio includes product overviews, structured project documentation, workflow descriptions, risk tables, proposed acceptance criteria, FAQs and user-facing guidance.
+The portfolio includes product overviews, structured project documentation, workflow descriptions, risk tables, proposed acceptance criteria, FAQs and user-facing guidance. The FINOS AI Governance Framework #424 contribution adds an external issue-discussion example of source-based AI governance research and technical communication.
 
 **Applied relevance:** making complex work understandable to colleagues, reviewers and non-specialist stakeholders.
 
@@ -48,9 +48,15 @@ The portfolio does not yet demonstrate:
 - externally commissioned delivery;
 - measured user outcomes;
 - a completed project with a partner organisation;
-- a merged open-source contribution.
+- a merged open-source contribution (the uniunihan-db PR #10 and FINOS issue discussion are submitted but remain open/awaiting response; the latter is not a code PR).
 
 These are real gaps. The application should not disguise them.
+
+### FINOS AI SBOM review — external research and communication evidence
+
+The review of the G7 minimum-elements guidance was posted to FINOS AI Governance Framework issue #424 on 12 November 2026. It examines why an AI SBOM can improve supply-chain transparency without proving safety or assurance, and proposes practical ways organisations can distinguish declared, corroborated, unknown and withheld information and connect inventories to governance processes.
+
+**Applied relevance:** source evaluation, concise technical communication, evidence discipline and practical recommendations. The contribution is an issue discussion, not a code pull request, merged change, FINOS endorsement or technical assessment of a deployed AI system. The corresponding portfolio record is included in merged portfolio PR #3.
 
 ## How to present the experience
 
@@ -62,8 +68,8 @@ This wording should be adapted to the actual application questions and supported
 
 ## Priority next evidence
 
-1. Obtain a real review or collaboration outcome through an open-source contribution.
-2. Complete one small, inspectable implementation milestone with tests, if technically feasible and genuinely completed.
+1. Respond constructively to maintainer/community feedback on the two submitted contributions; do not treat review or merge as a prerequisite for the GovAI application.
+2. Preserve the Vantage local proof-of-concept test evidence and, if time allows, make its README and test instructions easy for a reviewer to reproduce.
 3. Keep a record of decisions, feedback and revisions so the application can describe actual delivery rather than intention.
 
 ## Application rule
