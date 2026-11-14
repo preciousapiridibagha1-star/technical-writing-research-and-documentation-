@@ -19,18 +19,18 @@ For every contribution, record the upstream project, issue addressed, problem, e
 
 **Evidence boundary:** This is a small documentation correction. It demonstrates an initial upstream contribution workflow, not software engineering expertise or a substantial code contribution. It has not been accepted or merged.
 
-## 2. Second contribution — in progress
+## 2. FINOS AI Governance Framework — Review of G7 AI SBOM guidance
 
-A second upstream issue has not yet been selected or submitted. Selection criteria:
+- **Upstream repository:** [finos/ai-governance-framework](https://github.com/finos/ai-governance-framework)
+- **Issue:** [#424 — Review and discuss the G7 guidance on SBOM for AI](https://github.com/finos/ai-governance-framework/issues/424)
+- **Contribution type:** Independent source-based research and governance analysis, submitted as an issue discussion comment.
+- **Status:** Discussion contribution submitted on 12 November 2026; awaiting maintainer/community response. No upstream pull request or code change is claimed.
+- **Upstream contribution:** [Issue comment with findings and practical discussion questions](https://github.com/finos/ai-governance-framework/issues/424#issuecomment-6818628176).
+- **Portfolio evidence:** [Full review note](finos-g7-ai-sbom-review-2026.md); portfolio PR #3 is open and unmerged.
+- **Work completed:** Reviewed the G7 AI SBOM minimum-elements guidance and public CISA/ANSSI summaries; distinguished a transparency inventory from assurance; analysed evidence provenance, unknown versus withheld information, hashes and signatures, lifecycle updates and integration with existing governance controls; documented limitations and discussion questions.
+- **Skills evidenced:** Public-source research, critical reading, AI supply-chain governance analysis, evidence qualification, technical writing and communicating practical recommendations.
 
-1. The issue is open and its scope is clear.
-2. No existing pull request already addresses the same change.
-3. The repository's contribution guide and licence/attribution requirements are understood.
-4. The work is realistic and can be verified with available skills and access.
-5. The contribution adds a distinct skill or evidence dimension; it should not be another cosmetic typo.
-6. The issue has a credible connection to AI governance, public-interest technology, humanitarian/nonprofit systems or technical documentation.
-
-No candidate will be described as a contribution until a real change is submitted.
+**Evidence boundary:** This is independent desk research, not a supplier SBOM assessment, technical validation, security audit, legal opinion or adopted FINOS policy. The contribution is an issue discussion response; it is not a merged pull request and does not imply endorsement by FINOS or the maintainers.
 
 ## Contribution workflow
 
@@ -39,20 +39,20 @@ No candidate will be described as a contribution until a real change is submitte
 3. Read the relevant source documentation and verify the underlying facts.
 4. Prepare a focused change matching project conventions.
 5. Run applicable checks and review the complete diff.
-6. Submit the pull request and respond to maintainer feedback.
+6. Submit the pull request or issue discussion contribution and respond to maintainer feedback.
 7. Record the verified outcome and lessons.
 
-## 2. Contribution selection note
+## Earlier contribution selection notes
 
 A candidate in `pydata/pydata-sphinx-theme#1629` was reviewed but not selected: an earlier PR (#2476) was closed after maintainers found its documentation change insufficiently contextualised, and a new contributor had already asked maintainers to clarify the remaining scope. Repeating that work without a distinct, confirmed scope would risk duplication.
 
-## Additional candidate checks — 12 November 2026
+### Additional candidate checks — 12 November 2026
 
 - **pydata/pydata-sphinx-theme#1629:** not selected. The issue remains open, but maintainers' discussion shows unresolved scope around version-switcher and warning-banner behaviour. PR #2476 was previously closed after review feedback that its documentation was insufficiently contextualised, and a new contributor has asked maintainers to clarify the remaining work. A second attempt without a distinct, confirmed scope would risk duplication.
 - **strands-agents/harness-sdk#2572:** not selected. A maintainer offered the missing Galileo integrations-catalog entry to another contributor, who had already asked to take the work.
-- **strands-agents/harness-sdk#2584:** not selected. Although open and labelled ready for contribution, the requested cross-provider LiteLLM hook examples require implementation and technical validation beyond the current documentation-focused scope.
+- **strands-agents/harness-sdk#2584:** not selected. Although open and labelled ready for contribution, the requested cross-provider LiteLLM hook examples require implementation and technical validation beyond the current verified skill scope.
 
-These checks are evidence of issue screening, not contributions. The second submitted contribution remains outstanding.
+These checks are evidence of issue screening, not submitted contributions.
 
 ## Earlier proposals and investigations
 
