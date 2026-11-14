@@ -1,7 +1,7 @@
 # GovAI UK Summer Fellowship 2027 — Applied Track Application Preparation
 
 **Research checked:** 14 November 2026  
-**Application deadline:** 23:59 UK time, Sunday 22 November 2026  
+**Application deadline:** 23:59 UK time (GMT), Sunday 22 November 2026 — 00:59 Nigeria time (WAT), Monday 23 November 2026  
 **Fellowship dates:** 7 June–27 August 2027  
 **Location:** London, full-time and in person  
 **Status:** Preparation document. This is not an application submission and does not claim eligibility or selection.
