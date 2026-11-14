@@ -22,6 +22,16 @@ The projects explore different stages of the same problem-solving process:
 - **Open-source contribution** provides a route to apply documentation and research skills in real public repositories.
 - **Public-interest and humanitarian analysis** applies these methods to technology adoption where context, institutional capacity and effects on affected communities matter.
 
+## Selected independent research and analytical reports
+
+**Independent research and analytical reports (self-directed, not peer-reviewed).**
+
+1. [The Talent Paradox: Skilled Migration, Remittances and Digital Work in Nigeria](research/talent-paradox-skilled-migration-digital-work-nigeria.md) — independent Nigeria-focused research brief, 2026.
+2. [AI Job-Search Platforms: Updated Comparison, November 2026](research/ai-job-search-platforms/updated-comparison-november-2026.md) — public-source comparison report, 2026.
+3. [Audit of the June 2026 AI Job-Search Platforms Report](research/ai-job-search-platforms/2026-report-audit-and-corrections.md) — research audit and corrections report, 2026.
+4. [Applied Analysis: Human Oversight in AI-Assisted Job Applications](research/ai-assisted-decision-making-human-oversight.md) — independent analytical report, 2026.
+5. [Review of G7 Guidance on SBOMs for AI](contributions/open-source/finos-g7-ai-sbom-review-2026.md) — independent governance analysis submitted as a discussion comment to the [FINOS AI Governance Framework community, issue #424](https://github.com/finos/ai-governance-framework/issues/424), 2026. The discussion is awaiting maintainer/community response.
+
 ## Master portfolio — evidence areas
 
 1. [AI Systems & Practical Implementation](master-portfolio/01-ai-systems-practical-implementation.md) — system analysis, scoped design and a small local Vantage proof of concept.
@@ -47,7 +57,7 @@ The [Master Portfolio Evidence Index](master-portfolio/README.md) connects the e
 - [The Talent Paradox: Skilled Migration, Remittances and Digital Work in Nigeria](research/talent-paradox-skilled-migration-digital-work-nigeria.md)
 - [AI Job-Search Platforms: Updated Comparison, November 2026](research/ai-job-search-platforms/updated-comparison-november-2026.md)
 - [AI recruitment governance case study](ai-governance-and-internet-policy/case-study-1-ai-recruitment-governance.md) — a developing, source-led governance exercise; not an audit of a real recruitment system.
-- [Human oversight in AI-assisted decisions](research/ai-assisted-decision-making-human-oversight.md) — analysis of human authority, eligibility checks, privacy and review in consequential AI-assisted workflows.
+- [Applied Analysis: Human Oversight in AI-Assisted Job Applications](research/ai-assisted-decision-making-human-oversight.md) — analysis of human authority, eligibility checks, privacy and review in consequential AI-assisted workflows.
 
 ### Technical writing
 - [Technical Writing Samples](technical-guides/README.md)
