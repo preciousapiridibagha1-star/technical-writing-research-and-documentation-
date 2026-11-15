@@ -47,7 +47,6 @@ The projects explore different stages of the same problem-solving process:
 1. [AI Systems & Practical Implementation](master-portfolio/01-ai-systems-practical-implementation.md) — system analysis, scoped design and a small local Vantage proof of concept.
 2. [AI Governance & Responsible Technology](master-portfolio/02-ai-governance-responsible-technology.md) — human oversight, data protection, accountability and risk analysis.
 3. [Research & Analytical Writing](master-portfolio/03-research-analytical-writing.md) — source-based comparison, Nigeria-focused research and transparent limitations.
-4. [Internet Governance & Digital Policy](master-portfolio/04-internet-governance-digital-policy.md) — public-interest digital policy and internet governance, with further learning in progress.
 5. [Technical Writing & Documentation](master-portfolio/05-technical-writing-documentation.md) — product explanations, FAQs, user guidance, README improvement and review.
 6. [Project & Programme Delivery](master-portfolio/06-project-programme-delivery.md) — problem definition, scope, milestones, acceptance criteria and evidence of completed work.
 7. [Open-source contribution record](contributions/open-source/README.md) — upstream issue-based documentation work and actual pull-request status.
@@ -93,11 +92,10 @@ The portfolio does **not** yet claim humanitarian field experience, partnership 
 
 ## One portfolio for the active opportunity set
 
-The same evidence base supports the seven active targets. Each application should select the relevant work and explain the fit; the portfolio should not split into different identities.
+The same evidence base supports the six active targets. Each application should select the relevant work and explain the fit; the portfolio should not split into different identities.
 
 1. GovAI UK Summer Fellowship 2027 — Applied Track.
 2. Mozilla Foundation Fellowship 2027–2028 — Embedded Fellowship Track preferred.
-3. Internet Society Fellowship — exploratory target; pre-fellowship training is not registered or completed, and an application decision has not been made.
 4. Cambridge ERA:AI Fellowship.
 5. PIBBSS Fellowship.
 6. Outreachy Internship.
