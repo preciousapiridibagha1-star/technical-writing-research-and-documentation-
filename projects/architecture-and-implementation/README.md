@@ -223,7 +223,7 @@ The six portfolio areas are not six unrelated career identities. They form one d
 3. **Systems analysis:** decide whether AI is useful and define a proportionate workflow.
 4. **Technical documentation:** explain requirements, decisions and implementation clearly.
 5. **Prototype and evaluation:** build or specify a small test and record what it proves.
-6. **Project delivery:** define scope, acceptance criteria, limitations and next steps.
+6. **Project delivery:** define scope, acceptance criteria, limitations and next steps.\n\nInternet governance is the policy context for technology access and impact; it is not a second unrelated product-building career.
 
 ### What an interviewer should understand quickly
 
