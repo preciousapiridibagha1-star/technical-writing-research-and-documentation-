@@ -61,23 +61,6 @@ University College London describes critical appraisal as checking trustworthine
 ### What changes next
 For each research report, add a one-page source and claim table. Check whether each conclusion is supported by the evidence cited. Include contrary evidence and missing information. For The Talent Paradox, do not polish the conclusion until the argument and sources have been checked.
 
-## 4. Internet Governance & Digital Policy
-
-### What the current work says
-The brief argues that internet participation depends on more than coverage: affordability, devices, skills, safety and access to relevant services matter.
-
-### What external evidence adds
-- ITU's Global Connectivity Report 2025 defines universal and meaningful connectivity through six interdependent dimensions: quality, availability, affordability, devices, skills and security. It also discusses the role of national data ecosystems in evidence-based policy. [ITU Global Connectivity Report 2025](https://www.itu.int/itu-d/reports/statistics/global-connectivity-report-2025/).
-- GSMA's 2025 research distinguishes coverage from adoption and examines affordability, knowledge, skills, safety and relevant content as barriers to meaningful mobile internet use. [GSMA State of Mobile Internet Connectivity 2025](https://www.gsmaintelligence.com/research/the-state-of-mobile-internet-connectivity-2025-overview-report).
-
-### Before → after
-**Before:** “More people need internet access so they can get online jobs.”
-
-**After:** “Digital participation should be assessed across availability, quality, affordability, suitable devices, skills and safety. For online work, also examine platform eligibility, payment access and whether opportunities are genuinely open across borders.”
-
-### What changes next
-Narrow the brief to Nigeria and one practical issue: access to cross-border digital work. Use ITU and GSMA for the connectivity context, then add Nigerian primary sources for local prices, connectivity, regulation and payment access. Clearly separate measured facts from proposed policy options.
-
 ## 5. Technical Writing & Documentation
 
 ### What the current work says
@@ -117,7 +100,6 @@ Keep a simple delivery log with five columns: date, task, result/evidence, issue
 | 1 | Strengthen Vantage demo controls | Tests for changed proposal, duplicate approval and failure handling |
 | 2 | Upgrade recruitment governance case study | Source-backed risk/control table and jurisdiction limits |
 | 3 | Audit existing research reports | Claim-to-source check, counter-evidence and transparent conclusion |
-| 4 | Narrow digital policy brief to Nigeria | Local primary sources and clearly scoped policy options |
 | 5 | Review technical writing samples | Tested instructions, consistent terminology and reader-focused edits |
 | 6 | Start a real delivery log | Dated decisions, test results, issues and fixes |
 | 7 | Open-source and community contribution | A real public issue, contribution and verifiable repository record; intentionally last |
@@ -136,7 +118,6 @@ The improvement actions above have now been carried through into the six-area po
 | 1. AI systems | Vantage reduced to a local deterministic reminder approval flow with content-bound approval, duplicate-attempt protection and safe failure | Nine unit tests passed on 9 November 2026 after strengthening the duplicate-attempt test to exercise the explicit executed-ID guard; exact output and test scope are recorded in the prototype run guide | No AI provider, external integration, deployment, persistent idempotency or security audit |
 | 2. AI governance | Recruitment governance case study anchored in Nigeria Data Protection Act 2023, s.37, with practical controls and comparative guidance separated | Revised source-backed case study in Area 2 | Desk research only; not legal advice or an audit of an employer |
 | 3. Research | Talent Paradox rebuilt as a Nigeria-focused migration/remittances/digital-work brief; job-platform report audited and revised | Source registers, corrections, explicit method and limits; Sorce Android evidence inconsistency recorded | No original fieldwork, systematic review, paid account or application testing |
-| 4. Internet governance | Brief narrowed to meaningful access to cross-border digital work in Nigeria | NCC, National Broadband Plan, National AI Strategy and CBN payments policy cited in Area 4 | Desk research; no original household survey or platform/payment test |
 | 5. Technical writing | Overview, FAQ, workflow guide and cloud/local research brief rewritten as carefully scoped category-level samples | Before/after examples, quality checklist and external documentation standards in Area 5 | No named vendor walkthrough, external usability test or accessibility audit |
 | 6. Project delivery | Delivery record updated from plan-only wording to actual implementation and acceptance outcomes | Nine unit tests passed; code inspected for mock-only boundary | Not a client project, deployed release or production system |
 
