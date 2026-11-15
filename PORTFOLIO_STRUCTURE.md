@@ -9,7 +9,7 @@
 
 **Applied Technology Research & Documentation**
 
-The portfolio presents self-directed work in AI systems, responsible technology, research, internet governance, technical writing and project delivery. It distinguishes concepts, desk research, local implementation and verified test evidence. It does not claim client delivery, formal professional certification or a deployed AI product.
+The portfolio presents self-directed work in AI systems, responsible technology, research, technical writing and project delivery. It distinguishes concepts, desk research, local implementation and verified test evidence. It does not claim client delivery, formal professional certification or a deployed AI product.
 
 ## Repository structure
 
