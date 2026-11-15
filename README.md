@@ -11,6 +11,16 @@ This repository is **one master portfolio**, not a collection of unrelated proje
 
 My professional direction is **Technology Researcher & Technical Documentation Specialist**, with a developing focus on responsible AI and public-interest technology. My work is self-directed unless a project is explicitly identified otherwise. I distinguish desk research, concepts, local prototypes and submitted contributions from field research, deployed systems and independently verified outcomes.
 
+## Start here
+
+New to this portfolio? Use these three entry points:
+
+1. **[Master Portfolio Evidence Index](master-portfolio/README.md)** — the six connected capability areas, core examples and evidence boundaries.
+2. **[Selected research and projects](#selected-independent-research-and-analytical-reports)** — examples of research, system analysis, documentation and practical work.
+3. **[Portfolio Status & Verification](PORTFOLIO-STATUS.md)** — what has been completed, what has been checked and what remains in progress.
+
+The [Opportunity Evidence Map](fellowship-alignment/README.md) explains how the same portfolio evidence can be selected for different applications. It is an application-planning aid, not a separate portfolio.
+
 ## Why these projects belong together
 
 The projects explore different stages of the same problem-solving process:
@@ -87,7 +97,7 @@ The same evidence base supports the seven active targets. Each application shoul
 
 1. GovAI UK Summer Fellowship 2027 — Applied Track.
 2. Mozilla Foundation Fellowship 2027–2028 — Embedded Fellowship Track preferred.
-3. Internet Society Fellowship — pre-fellowship training is planned for learning and portfolio development; applying is not yet committed.
+3. Internet Society Fellowship — exploratory target; pre-fellowship training is not registered or completed, and an application decision has not been made.
 4. Cambridge ERA:AI Fellowship.
 5. PIBBSS Fellowship.
 6. Outreachy Internship.
