@@ -45,6 +45,8 @@ The demonstration is a limited proof of concept. It is not a complete MVP or pro
 
 ## Product documents
 
+- [Fellowship MVP and project case](application-mvp-and-case.md)
+- [Backend proof of concept](prototype/backend/README.md)
 - [Product requirements](product-requirements.md)
 - [Sector modules](sector-modules.md)
 - [System architecture](system-architecture.md)
