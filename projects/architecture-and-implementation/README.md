@@ -225,8 +225,6 @@ The six portfolio areas are not six unrelated career identities. They form one d
 5. **Prototype and evaluation:** build or specify a small test and record what it proves.
 6. **Project delivery:** define scope, acceptance criteria, limitations and next steps.
 
-Internet governance is the policy context for technology access and impact; it is not a second unrelated product-building career.
-
 ### What an interviewer should understand quickly
 
 Within the first minute, the portfolio should communicate:
