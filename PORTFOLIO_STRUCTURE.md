@@ -27,9 +27,8 @@ The live repository structure is recorded in the [Master Portfolio Evidence Inde
 1. AI Systems & Practical Implementation: Vantage local deterministic proof of concept implemented; nine unit tests passed. Jarvis remains conceptual.
 2. AI Governance & Responsible Technology: Nigerian recruitment-governance case study anchored in the Data Protection Act 2023 and supported by comparative international guidance.
 3. Research & Analytical Writing: revised Talent Paradox brief and audited AI job-platform comparison; public-source limitations recorded.
-4. Internet Governance & Digital Policy: Nigeria-focused meaningful-access policy brief with national primary sources and measured/target distinctions.
-5. Technical Writing & Documentation: four category-level cloud-AI samples revised; Vantage documentation aligned to the local prototype.
-6. Project & Programme Delivery: delivery evidence updated with actual implementation scope, acceptance criteria and test output.
+4. Technical Writing & Documentation: four category-level cloud-AI samples revised; Vantage documentation aligned to the local prototype.
+5. Project & Programme Delivery: delivery evidence updated with actual implementation scope, acceptance criteria and test output.
 
 For detail, see [Portfolio Status](PORTFOLIO-STATUS.md), the [Master Portfolio Index](master-portfolio/README.md) and the [Evidence Challenge & Improvement Record](master-portfolio/EVIDENCE-CHALLENGE-AND-IMPROVEMENT-RECORD.md).
 
