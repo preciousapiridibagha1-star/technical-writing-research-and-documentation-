@@ -44,6 +44,10 @@ The projects explore different stages of the same problem-solving process:
 
 The [Master Portfolio Evidence Index](master-portfolio/README.md) connects the evidence areas. The [Evidence Challenge & Improvement Record](master-portfolio/EVIDENCE-CHALLENGE-AND-IMPROVEMENT-RECORD.md) records how the work was challenged and improved. [Portfolio Status](PORTFOLIO-STATUS.md) records verification and remaining limitations.
 
+## Organisational technology project
+
+- [AI-Powered Organisational Intelligence Platform](projects/organisational-intelligence-platform/README.md) — a modular product concept for helping organisations consolidate programme information, monitor activities and indicators, and prepare evidence-based reports. The initial demonstration is scoped to Public Health, Health Organisation Programmes and Education, using synthetic data. This is a documented concept and planned limited demonstration, not a completed production system.
+
 ## Core projects and research
 
 ### Applied AI systems analysis
