@@ -48,7 +48,6 @@ The next high-value evidence addition is a rigorous humanitarian AI adoption/gov
 | AI systems analysis and practical implementation | Vantage Automata, Jarvis AI, architecture and implementation guide | Defines problems, scope, workflows, permissions and implementation limits |
 | AI governance and responsible technology | Recruitment governance case study, Vantage oversight design, Jarvis safeguards | Analyses accountability, privacy, human authority and potential harms |
 | Research and analytical writing | Research methodology, Nigeria-focused briefs, AI platform comparison and human-oversight analysis | Evaluates sources, compares evidence, analyses human decision points and communicates uncertainty |
-| Internet governance and digital policy | Nigeria-focused digital-policy research; no Internet Society training participation is currently claimed | Connects technology analysis to public-interest and policy contexts |
 | Technical writing and documentation | Product overview, FAQ, user guide, README guide, review report | Makes technical information clear and navigable |
 | Project and programme delivery | Vantage scope, acceptance criteria, test records and project documentation | Shows how work is bounded, planned and checked |
 | Open-source and community contribution | uniunihan-db PR #10 and future verified contributions | Shows issue-based work in a public repository and a real contribution workflow |
@@ -82,7 +81,6 @@ See [Open-source Contributions](../contributions/open-source/README.md) for the 
 
 1. Build a source-grounded humanitarian AI adoption/governance case study as the anchor research sample.
 2. Continue improving the shared research method: transparent source selection, claim checking, limitations and reproducible reasoning.
-3. If still relevant, first check the Internet Society pre-fellowship programme and registration status; do not describe the training as started or completed. A focused internet-governance issue brief can be considered separately.
 4. Continue narrow, genuine open-source documentation contributions and record actual review outcomes.
 5. Preserve the distinction between concept, desk research, prototype, submitted PR and verified external outcome.
 6. Tailor each application by selecting evidence from this same portfolio; do not create separate identities or inflate programme fit.
