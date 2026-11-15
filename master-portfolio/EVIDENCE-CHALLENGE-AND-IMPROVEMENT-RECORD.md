@@ -61,6 +61,20 @@ University College London describes critical appraisal as checking trustworthine
 ### What changes next
 For each research report, add a one-page source and claim table. Check whether each conclusion is supported by the evidence cited. Include contrary evidence and missing information. For The Talent Paradox, do not polish the conclusion until the argument and sources have been checked.
 
+## 4. Internet Governance & Digital Policy
+
+### What the current work says
+The brief argues that internet participation depends on more than coverage: affordability, devices, skills, safety and access to relevant services matter.
+
+### What the evidence supports
+The Nigeria-focused brief uses national primary sources to distinguish broadband coverage indicators, expired policy targets, AI infrastructure constraints and cross-border payment policy direction. It reframes the issue from simple connectivity expansion to meaningful participation in cross-border digital work.
+
+### What remains unverified
+The work is desk research. It includes no original household survey, interviews, platform account tests or payment-provider tests. National indicators cannot describe every state, community or individual.
+
+### What changes next
+Add state-level NCC evidence, current affordability data and a small, documented comparison of platform eligibility and payment terms. Preserve the distinction between policy targets and measured outcomes.
+
 ## 5. Technical Writing & Documentation
 
 ### What the current work says
@@ -100,7 +114,7 @@ Keep a simple delivery log with five columns: date, task, result/evidence, issue
 | 1 | Strengthen Vantage demo controls | Tests for changed proposal, duplicate approval and failure handling |
 | 2 | Upgrade recruitment governance case study | Source-backed risk/control table and jurisdiction limits |
 | 3 | Audit existing research reports | Claim-to-source check, counter-evidence and transparent conclusion |
-| 5 | Review technical writing samples | Tested instructions, consistent terminology and reader-focused edits |
+| 4 | Narrow digital policy brief to Nigeria | Local primary sources and clearly scoped policy options |\n| 5 | Review technical writing samples | Tested instructions, consistent terminology and reader-focused edits |
 | 6 | Start a real delivery log | Dated decisions, test results, issues and fixes |
 | 7 | Open-source and community contribution | A real public issue, contribution and verifiable repository record; intentionally last |
 
