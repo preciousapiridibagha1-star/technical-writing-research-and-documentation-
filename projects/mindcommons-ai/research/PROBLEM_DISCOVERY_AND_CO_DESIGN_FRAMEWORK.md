@@ -145,7 +145,15 @@ The stages are sequential enough to create discipline, but iterative in practice
 
 **Gate:** Can we demonstrate what changed, for whom, under what conditions and with what limitations?
 
-## 4. Stakeholder discovery and question toolkit
+## 4. Engineering layer: from validated problem to working intervention
+
+The six stages above define the research and co-design process. The companion [Problem-to-System Engineering Framework](PROBLEM_TO_SYSTEM_ENGINEERING_FRAMEWORK.md) sits underneath that methodology and explains the practical engineering work carried out as evidence develops: current-state system mapping, requirements definition, solution-option comparison, architecture, implementation, testing, evaluation and operational handover.
+
+This engineering layer does **not** mean that every problem should become software. A website, internal tool, AI assistant, API, workflow redesign, governance process, training intervention, improvement to an existing system—or a documented no-build decision—may be appropriate depending on the validated need.
+
+The distinction is important for this preparation: we can demonstrate systems thinking and engineering capability through a clearly labelled synthetic-data proof of concept, while remaining honest that it is not an SRHIN-approved solution. The actual intervention must remain open until the host and relevant affected stakeholders have helped validate the problem and requirements.
+
+## 11. Stakeholder discovery and question toolkit
 
 The following questions are a preparation bank. They are not a rigid questionnaire. Questions should be adapted to each person's role, language, knowledge, consent and safeguarding needs. Ask open questions first; use probes only where they help clarify an answer.
 
