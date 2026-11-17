@@ -14,7 +14,7 @@ The projects are not unrelated. Vantage and Jarvis explore AI system design and 
 
 ## Why NetHope is the anchor lens
 
-The NetHope Humanitarian AI Research Fellowship focuses the portfolio on a consequential public-interest question: how humanitarian and nonprofit organisations can evaluate, adopt and govern AI responsibly.
+The NetHope Humanitarian AI Research Fellowship focuses the portfolio on a consequential public-interest question: how humanitarian and nonprofit organisations can evaluate, adopt and govern AI responsibly. This is an opportunity-specific anchor lens, not a reason to force every future application into humanitarian AI.
 
 The current evidence provides a foundation, not proof of humanitarian expertise:
 
@@ -34,7 +34,7 @@ The next high-value evidence addition is a rigorous humanitarian AI adoption/gov
 | Opportunity | Relevant evidence from the shared portfolio | What still needs strengthening |
 |---|---|---|
 | **1. GovAI UK Summer Fellowship 2027 — Applied Track** | AI governance, human oversight, source-based research, structured project documentation and clear communication. | Stronger evidence of completed practical work, prioritisation, judgement and delivery in a team context. The programme's full-time in-person London requirement and visa conditions must be considered honestly. |
-| **2. Mozilla Foundation Fellowship 2027–28 — Embedded Track preferred** | MindCommons AI's research-led community data-use stewardship concept; Vantage's approval boundaries; research and documentation. | Validate the proposed need with the prospective host and community before claiming a real gap. A credible embedded project needs a real host relationship, community relevance and a path to a working result. No partnership or endorsement is claimed. |
+| **2. Mozilla Foundation Fellowship 2027–28 — track/project discovery in progress** | MindCommons AI is a possible SRHIN-related research hypothesis; Vantage, Jarvis and the Organisational Intelligence Platform provide separate systems-thinking evidence. The applicant has also identified strong interest in Raising p(bloom) and business models for a post-agentic web. | Do not assume Embedded is easier or select it solely because Nigeria is eligible. Investigate the SRHIN ecosystem and both Independent-interest areas, then compare track fit, users, problem evidence, distinctness, feasibility and demonstrated capability. No host relationship or project approval is claimed. See the [Mozilla project discovery brief](mozilla-2027-project-discovery.md). |
 | **3. Internet Society Fellowship** | Nigeria-focused digital-policy research, public-interest technology analysis, responsible AI and clear research communication. | Strengthen the Nigeria-focused policy analysis with a focused issue brief and careful source evaluation. |
 | **4. Cambridge ERA:AI Fellowship** | Research methodology, AI governance, risk analysis, system boundaries and analytical writing. | Develop a focused AI safety research question and a deeper, methodologically rigorous research output. This remains a stretch rather than an established research profile. |
 | **5. PIBBSS Fellowship** | Analytical research, systems thinking, responsible technology and structured writing. | Demonstrate deeper AI safety research experience and the ability to undertake mentored full-time research. Current portfolio evidence is not a substitute for that experience. |
@@ -89,3 +89,8 @@ See [Open-source Contributions](../contributions/open-source/README.md) for the 
 ## Application rule
 
 The portfolio stays unified. For each opportunity, choose the most relevant evidence, explain the connection in the applicant's own words and disclose the limits. A strong fit is demonstrated through accurate work and sound judgement, not by claiming experience that has not been gained.
+
+
+## Mozilla Foundation Fellowship — project discovery
+
+The Mozilla route is currently in discovery, not final proposal drafting. The applicant has expressed interest in **Raising p(bloom)** and **Business models for a post-agentic web**, while the SRHIN Embedded challenge remains a separate route to investigate. The [Mozilla project discovery brief](mozilla-2027-project-discovery.md) defines the users, evidence, validation questions and decision process required before choosing a track. Do not treat geographic eligibility as evidence that a track is easier to win.
