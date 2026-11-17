@@ -220,7 +220,7 @@ The Mozilla/SRHIN preparation area will make the progression from research to im
 |---|---|---|
 | [Problem Discovery & Co-Design Framework](PROBLEM_DISCOVERY_AND_CO_DESIGN_FRAMEWORK.md) | Research stages, stakeholder discovery, evidence safeguards and validation | Created; proposed self-directed framework |
 | **Problem-to-System Engineering Framework** | Method for translating validated needs into proportionate interventions | Created; proposed self-directed framework |
-| **System Architecture and Design Methodology** | Detailed architecture decisions, diagrams, data flows and design records | Planned; not yet created |
+| [System Architecture and Design Methodology](SYSTEM_ARCHITECTURE_AND_DESIGN_METHODOLOGY.md) | Practical method for describing system parts, information flows, permissions, integrations and design choices | Created; proposed method, not a host-specific architecture |
 | **Prototype and Implementation Evidence** | Source code, setup instructions, demonstrations and implementation notes | To be developed after selecting a justified demonstration |
 | **Testing and Evaluation Reports** | Test results, acceptance evidence, limitations and iteration | To be developed when an implementation exists |
 | **Host Validation and Requirements Record** | Authorised host-confirmed needs, requirements and decisions | Only after authorised SRHIN engagement |
