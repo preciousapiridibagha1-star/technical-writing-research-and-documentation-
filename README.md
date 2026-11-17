@@ -40,6 +40,10 @@ For application planning, see the [Opportunity Evidence Map](fellowship-alignmen
 
 The six capability pages are the core Master Portfolio. Open-source contributions are tracked separately as an external evidence record.
 
+## Mozilla Fellowship preparation — SRHIN
+
+The [SRHIN Problem Discovery & Co-Design Framework](projects/mindcommons-ai/research/PROBLEM_DISCOVERY_AND_CO_DESIGN_FRAMEWORK.md) sets out the six-stage approach, central research question, stakeholder discovery toolkit and evidence safeguards for the Mozilla Foundation Fellowship 2027–2028 Embedded route. It keeps the solution open: MindCommons is a hypothesis, not a predetermined product.
+
 ## Selected independent research
 
 These are self-directed, public-source research and analytical outputs; they are not presented as peer-reviewed publications or original field research.
