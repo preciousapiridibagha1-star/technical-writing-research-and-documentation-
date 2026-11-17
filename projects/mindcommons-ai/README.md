@@ -39,6 +39,8 @@ One contextual AI assistant can explain approved conditions, help complete a cha
 
 It is a proposed thin accountability layer across existing authoritative records—only if SRHIN confirms that the workflow is not already adequately supported.
 
+The [System Architecture and Design Methodology](research/SYSTEM_ARCHITECTURE_AND_DESIGN_METHODOLOGY.md) provides a practical, defensible way to explain requirements, system components, data flows, permissions, integrations, technology choices and testing. It uses generic examples and does not claim to describe SRHIN's actual systems.
+
 ## Engineering and implementation approach
 
 The [Problem-to-System Engineering Framework](research/PROBLEM_TO_SYSTEM_ENGINEERING_FRAMEWORK.md) sits underneath the six-stage discovery and co-design methodology. It describes how validated needs are translated into requirements, solution options, architecture, implementation, testing and operational handover—without assuming that the answer must be a website or new software.
