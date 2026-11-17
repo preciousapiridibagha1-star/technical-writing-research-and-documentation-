@@ -39,9 +39,17 @@ One contextual AI assistant can explain approved conditions, help complete a cha
 
 It is a proposed thin accountability layer across existing authoritative records—only if SRHIN confirms that the workflow is not already adequately supported.
 
+## Engineering and implementation approach
+
+The [Problem-to-System Engineering Framework](research/PROBLEM_TO_SYSTEM_ENGINEERING_FRAMEWORK.md) sits underneath the six-stage discovery and co-design methodology. It describes how validated needs are translated into requirements, solution options, architecture, implementation, testing and operational handover—without assuming that the answer must be a website or new software.
+
+The framework also defines the engineering evidence roadmap: a system-engineering capability document, a synthetic-data proof of concept selected after further research, and a practical host discovery/co-design toolkit. These are preparation steps, not claims of SRHIN approval or completed implementation.
+
 ## Research-to-design documents
 
 1. [Research and gap analysis](research/RESEARCH_AND_ANALYSIS.md)
+2. [Problem Discovery & Co-Design Framework](research/PROBLEM_DISCOVERY_AND_CO_DESIGN_FRAMEWORK.md)
+3. [Problem-to-System Engineering Framework](research/PROBLEM_TO_SYSTEM_ENGINEERING_FRAMEWORK.md)
 2. [Product definition](product/PRODUCT_DEFINITION.md)
 3. [Three-capability MVP](product/MVP_SCOPE.md)
 4. [Logical system architecture](architecture/SYSTEM_ARCHITECTURE.md)
