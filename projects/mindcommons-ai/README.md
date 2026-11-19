@@ -1,74 +1,106 @@
-# MindCommons AI
-## Community Data-Use Accountability Ledger
+# CORA AI
+## Community-Owned Rights & Access — AI-Assisted Consent Toolkit
 
-**One-line concept:** A small, AI-assisted workspace that helps community-authorised stewards trace approved mental-health data uses, review proposed changes and follow up on community-agreed obligations.
+CORA AI is a small open-source application that records purpose-specific consent, checks whether a requested data use is permitted, and keeps an audit history.
 
-**Project status:** Desk research and product specification only. No prototype, host approval, integration or community validation is claimed.  
-**Host context:** SRHIN / Mozilla Foundation 2027–2028 Track I Embedded challenge.  
-**Relationship:** Independent project hypothesis; not commissioned, endorsed or operated by SRHIN.
+**Principle:** One application. One bounded MVP. AI-assisted operation. Human-owned authority.
 
-## The problem we are investigating
+**Status:** MVP specification and implementation plan; working application not yet claimed.  
+**Demonstrator target:** 28 November 2026.  
+**Demo data:** Synthetic records only. No real mental-health or participant data.
 
-SRHIN already publicly documents important foundations: Gencurate consent and data curation, lived-experience co-governance through LEWG, independent ethics oversight, governance charters, escalation procedures and public resources on lived-experience authority and compensation.
+## What CORA AI does
 
-We should not rebuild those.
+It is one reusable web application with a REST API. It can run independently or later be connected to another system by a developer.
 
-The remaining question is narrower: **when an already-governed mental-health data resource is proposed for a new or changed use, can the community-authorised decision, its conditions and any agreed benefit obligations be traced together in a clear, privacy-preserving way?**
+The MVP has exactly three capabilities:
 
-Public materials do not establish whether SRHIN already has an internal process for this. This is a gap to validate, not a confirmed deficiency.
+1. **Purpose-specific consent records.** Record whether a participant grants or refuses a defined use, such as research or AI model training. Choices are separate for each purpose. Participants can withdraw a previously granted permission.
+2. **Access permission checks.** When a user or connected system requests a data use, the backend checks the current consent record for that exact purpose and returns allow or deny.
+3. **Consent and access audit history.** Record consent creation, refusal, withdrawal, access requests, approvals and denials so authorised users can inspect what happened and when.
 
-## The smallest useful product: three capabilities
+## AI is the operating assistant — not the authority
 
-1. **Approved-use record** — a plain-language, role-restricted record of the approved purpose, applicable conditions, responsible decision authority, review date and link to the authoritative source. It references existing consent and governance records; it does not collect consent again or store participant-level data.
-2. **Change-of-use review** — a structured request when purpose, collaborator, model-development activity or another material use changes. It identifies the relevant existing conditions, routes the proposal to the authority designated by SRHIN/community rules, and records the human decision and conditions.
-3. **Community-obligation follow-up** — a traceable record of community-agreed commitments attached to an approved use, including responsible party, due date, evidence/update and status. It does not determine what benefits are fair or promise financial distribution.
+One integrated AI assistant is the main conversational guide inside the application. It explains purposes and consent status, guides users through forms, helps prepare access requests, checks for missing information, explains backend allow/deny reasons and summarises authorised audit events.
 
-### AI is built into the workflow
+AI does not choose or grant consent, withdraw consent on someone's behalf, approve access, override a denial, change a participant's choice or invent policy. The backend permission service applies the rules deterministically. The AI receives only context the current user is authorised to see and can use only a small set of approved application tools.
 
-One contextual AI assistant can explain approved conditions, help complete a change request, identify missing information, prepare a reviewer summary and summarise outstanding obligations. It must cite the source records it used, admit when information is missing and stay within the user's permissions.
+If the AI provider is unavailable or no API key is configured, the core application still works through ordinary forms and API endpoints.
 
-**AI never grants access, approves a change, changes consent, invents policy or overrides community decision-makers.** Application permissions and authorised human decisions control all consequential actions.
+## What is included
 
-## Why this is different from existing SRHIN work
+- Participant consent screen with separate purposes.
+- Grant, refuse and withdraw actions.
+- Administrator view of pseudonymous demo participants and consent status.
+- Access-request form.
+- Backend permission check for the exact requested purpose.
+- Allow/deny result with reason.
+- Chronological audit history.
+- One bounded, permission-aware AI assistant.
+- Small REST API for future integration.
+- Synthetic sample data, automated tests and setup documentation.
 
-- Not Gencurate: no new voice collection, consent capture, annotation or clinical review.
-- Not LEWG: no new governance body, charter or authority matrix.
-- Not the Data, Ethics & Safety Monitoring Board: no replacement oversight or ethics review.
-- Not a generic KPI dashboard: it tracks only the lifecycle of a specific approved use, its conditions and its agreed obligations.
-- Not a new research portal: it does not manage research projects generally.
+## What is excluded
 
-It is a proposed thin accountability layer across existing authoritative records—only if SRHIN confirms that the workflow is not already adequately supported.
+No mental-health chatbot, screening or diagnosis tool, clinical record system, research-management platform, general-purpose autonomous agent, data marketplace or full data commons. No real participant data, production identity verification, benefit payments, blockchain, federated learning, differential privacy, advanced cryptography, mobile-native app, multiple AI agents or live SRHIN integration.
 
-The [System Architecture and Design Methodology](research/SYSTEM_ARCHITECTURE_AND_DESIGN_METHODOLOGY.md) provides a practical, defensible way to explain requirements, system components, data flows, permissions, integrations, technology choices and testing. It uses generic examples and does not claim to describe SRHIN's actual systems.
+No host approval, partnership, endorsement or production deployment is claimed.
 
-## Engineering and implementation approach
+## Demonstration workflow
 
-The [Problem-to-System Engineering Framework](research/PROBLEM_TO_SYSTEM_ENGINEERING_FRAMEWORK.md) sits underneath the six-stage discovery and co-design methodology. It describes how validated needs are translated into requirements, solution options, architecture, implementation, testing and operational handover—without assuming that the answer must be a website or new software.
+Use fictional participant P001 and dataset D001:
 
-The framework also defines the engineering evidence roadmap: a system-engineering capability document, a synthetic-data proof of concept selected after further research, and a practical host discovery/co-design toolkit. These are preparation steps, not claims of SRHIN approval or completed implementation.
+1. P001 grants research permission.
+2. P001 refuses AI model training.
+3. A research access request is allowed.
+4. An AI-training request is denied.
+5. P001 withdraws research permission.
+6. A new research request is denied.
+7. The audit history shows all consent and access events in order.
 
-## Research-to-design documents
+## Application structure
 
-1. [Research and gap analysis](research/RESEARCH_AND_ANALYSIS.md)
-2. [Problem Discovery & Co-Design Framework](research/PROBLEM_DISCOVERY_AND_CO_DESIGN_FRAMEWORK.md)
-3. [Problem-to-System Engineering Framework](research/PROBLEM_TO_SYSTEM_ENGINEERING_FRAMEWORK.md)
-2. [Product definition](product/PRODUCT_DEFINITION.md)
-3. [Three-capability MVP](product/MVP_SCOPE.md)
-4. [Logical system architecture](architecture/SYSTEM_ARCHITECTURE.md)
-5. [Product experience](design/PRODUCT_EXPERIENCE.md)
-6. [Dashboard layout concept](design/DASHBOARD_LAYOUT.md)
-7. [Source register](references/SOURCES.md)
+- Web interface: participant, requester and administrator screens.
+- AI assistant: explains and guides the workflow through approved tools.
+- Consent service: records grant, refusal and withdrawal.
+- Permission service: makes the authoritative allow/deny decision.
+- Audit service: records consequential events.
+- Database: stores minimum pseudonymous consent, request and audit metadata.
+- REST API: allows another system's trusted backend to submit a permission check.
 
-## Validation questions that decide whether to proceed
+## Proposed implementation
 
-- Does an internal register already connect each approved data use to its conditions and source decision?
-- Is there an established route for new or changed purposes, collaborators or model-development uses?
-- Can authorised community stewards trace the decision and its follow-up without requesting multiple manual reports?
-- Are community-agreed benefit commitments linked to the relevant data use and tracked already?
-- Would a small shared view improve oversight, or duplicate records and add administrative burden?
+React frontend; Python/FastAPI backend; SQLite local demo database; pytest automated tests; one configurable AI model provider accessed through a server-side adapter. These are proposed choices, not completed implementation.
 
-If SRHIN already does these things well, stop or redirect the concept. Do not build a duplicate system.
+## Build sequence
 
-## Naming and status
+1. Freeze data model, purposes and permission rules.
+2. Build consent and withdrawal backend operations.
+3. Build access-check service and audit events.
+4. Add automated tests.
+5. Build the participant, requester and administrator screens.
+6. Add the bounded AI assistant.
+7. Run the synthetic demonstration end to end.
+8. Publish setup, API, limitations and handover documentation.
 
-MindCommons AI is a provisional working name, not a cleared brand. The product is a research-backed design hypothesis, not a working application.
+The first demonstrator is local and synthetic-data-only. It is not safe for real mental-health data or production use until authentication, authorisation, secure hosting, secrets management, database hardening, backups, monitoring and independent security/privacy review are completed.
+
+## Handover and maintenance boundary
+
+The deliverable is a documented open-source MVP, not indefinite maintenance. The repository will explain how to run, test, configure and integrate it. After handover, adopters may fork, host, extend or integrate it themselves. Production operation and future feature development belong to the adopting organisation and its technical maintainers.
+
+## Licence intention
+
+The intended licence is Mozilla Public License 2.0 (MPL-2.0), subject to confirming the final licensing decision and adding the complete licence text. MPL-2.0 does not mean Mozilla Foundation owns, sponsors or endorses this project.
+
+## Project documents
+
+- Product definition: product/PRODUCT_DEFINITION.md
+- Locked MVP scope: product/MVP_SCOPE.md
+- System architecture: architecture/SYSTEM_ARCHITECTURE.md
+- AI operating model: architecture/AI_OPERATING_MODEL.md
+- Implementation and handover: product/IMPLEMENTATION_AND_HANDOVER.md
+- User experience: design/PRODUCT_EXPERIENCE.md
+- Screen layout: design/DASHBOARD_LAYOUT.md
+
+**Product boundary:** Build the smallest complete tool that proves purpose-specific consent, withdrawal, access enforcement and an audit trail—with AI assisting operation, never replacing consent or human authority.
