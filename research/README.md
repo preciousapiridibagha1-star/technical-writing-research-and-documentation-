@@ -9,7 +9,7 @@ This section contains research projects and the methods used to produce them. Ea
 - [Audit of the June 2026 AI Job-Search Platforms Report](ai-job-search-platforms/2026-report-audit-and-corrections.md) — documents unsupported rankings, source issues, pricing corrections and evidence limitations.
 - [Applied Analysis: Human Oversight in AI-Assisted Job Applications](ai-assisted-decision-making-human-oversight.md) — examines applicant authority, eligibility checks, truthful self-representation, privacy and human review; desk-based analysis, not a live platform evaluation.
 
-- [MindCommons AI research and gap analysis](../projects/mindcommons-ai/research/RESEARCH_AND_ANALYSIS.md) — desk research on publicly documented governance capabilities and an unverified workflow hypothesis; it does not establish an internal host deficiency.
+- [CORA AI MVP specification](../projects/cora-ai/README.md) — product scope, AI operating boundaries, architecture and handover plan; this is project documentation, not a research report.
 
 ## Research methodology
 
