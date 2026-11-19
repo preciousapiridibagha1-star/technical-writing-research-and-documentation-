@@ -91,7 +91,7 @@ The deliverable is a documented open-source MVP, not indefinite maintenance. The
 
 ## Licence intention
 
-The intended licence is Mozilla Public License 2.0 (MPL-2.0), subject to confirming the final licensing decision and adding the complete licence text. MPL-2.0 does not mean Mozilla Foundation owns, sponsors or endorses this project.
+The project includes the full Mozilla Public License 2.0 text in [LICENSE](LICENSE). The licence applies to the CORA AI project files in this folder, not automatically to the rest of the portfolio repository. MPL-2.0 does not mean Mozilla Foundation owns, sponsors or endorses this project.
 
 ## Project documents
 
