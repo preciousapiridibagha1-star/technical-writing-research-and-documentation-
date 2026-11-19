@@ -34,7 +34,7 @@ Replace the existing sentence about pressing Enter with:
 - Confirmed the issue is open and was created on 19 November 2026.
 - Confirmed the current source text in `docs/central-backup.rst` matches the reported behavior and examples.
 - Confirmed no issue comments and no matching pull request found in the search performed.
-- This is a proposed change based on the issue report and source inspection. **The commands have not been executed against an actual backup file.** The patch should be validated with OpenSSL against a no-passphrase test backup before upstream submission, if a suitable test fixture is available.
+- **Local command verification performed:** created a synthetic payload beginning with `PGDMP`, encrypted and decrypted it with OpenSSL 3.5.5 using ChaCha20/PBKDF2 and an explicit empty passphrase (`-pass pass:`); byte-for-byte round-trip comparison succeeded. The diagnostic pipeline returned `PGDMP`.\n- **Limitations:** This was a synthetic test, not an actual ODK backup file; the full `pg_restore` validation and documentation build were not performed. A real-backup test and docs build should still be performed before upstream submission.
 
 ## Patch
 
