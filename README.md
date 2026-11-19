@@ -31,7 +31,7 @@ For application planning, see the [Opportunity Evidence Map](fellowship-alignmen
 | Area | What it covers | Main evidence |
 |---|---|---|
 | **1. AI Systems & Practical Implementation** | System analysis, scoped design, workflows, safeguards and local proof of concept | [Vantage Automata](projects/vantage-automata/README.md) · [Jarvis AI](projects/jarvis-ai/README.md) · [Architecture guide](projects/architecture-and-implementation/README.md) |
-| **2. AI Governance & Responsible Technology** | Human oversight, privacy, accountability, permissions and risk | [Governance case study](ai-governance-and-internet-policy/case-study-1-ai-recruitment-governance.md) · [CORA AI](projects/mindcommons-ai/README.md) |
+| **2. AI Governance & Responsible Technology** | Human oversight, privacy, accountability, permissions and risk | [Governance case study](ai-governance-and-internet-policy/case-study-1-ai-recruitment-governance.md) · [CORA AI](projects/cora-ai/README.md) |
 | **3. Research & Analytical Writing** | Source evaluation, Nigeria-focused research, comparisons and evidence limitations | [Research index](research/README.md) |
 | **4. Internet Governance & Digital Policy** | Internet governance, meaningful access and Nigeria-focused digital policy | [Policy evidence brief](master-portfolio/04-internet-governance-digital-policy.md) |
 | **5. Technical Writing & Documentation** | Product explanations, FAQs, user guidance, README writing and documentation review | [Technical writing samples](technical-guides/README.md) · [Master portfolio evidence](master-portfolio/05-technical-writing-documentation.md) |
@@ -42,7 +42,7 @@ The six capability pages are the core Master Portfolio. Open-source contribution
 
 ## Mozilla Fellowship preparation — SRHIN
 
-The [CORA AI MVP](projects/mindcommons-ai/README.md) is the defined project: a small AI-assisted application for purpose-specific consent, withdrawal, access permission checks and audit history. Its AI assistant guides operation but cannot grant consent or override the deterministic permission service. The demonstrator is scoped to synthetic data and is not presented as a production deployment or host-approved integration.
+The [CORA AI MVP](projects/cora-ai/README.md) is the defined project: a small AI-assisted application for purpose-specific consent, withdrawal, access permission checks and audit history. Its AI assistant guides operation but cannot grant consent or override the deterministic permission service. The demonstrator is scoped to synthetic data and is not presented as a production deployment or host-approved integration.
 
 ## Selected independent research
 
@@ -59,7 +59,7 @@ These are self-directed, public-source research and analytical outputs; they are
 - [Vantage Automata](projects/vantage-automata/README.md) — narrow deterministic reminder-approval proof of concept; nine unit tests are recorded as passing. Not an AI agent or production deployment.
 - [Jarvis AI](projects/jarvis-ai/README.md) — documented long-term AI-enabled business-system concept; implementation is not claimed.
 - [AI-Powered Organisational Intelligence Platform](projects/organisational-intelligence-platform/README.md) — product concept and limited backend proof of concept using synthetic data; not a complete MVP or production system.
-- [CORA AI](projects/mindcommons-ai/README.md) — independent, desk-researched design hypothesis for community data-use accountability; not host-approved, implemented or community-validated.
+- [CORA AI](projects/cora-ai/README.md) — independent, desk-researched design hypothesis for community data-use accountability; not host-approved, implemented or community-validated.
 - [Architecture & Implementation Guide](projects/architecture-and-implementation/README.md) — explains how to interpret the Vantage and Jarvis designs without confusing vision diagrams with working software.
 - [Cloud Infrastructure & Open Source](projects/cloud-infrastructure-and-open-source/README.md) — technical overviews and research notes.
 
