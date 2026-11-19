@@ -54,7 +54,7 @@ A candidate in `pydata/pydata-sphinx-theme#1629` was reviewed but not selected: 
 
 These checks are evidence of issue screening, not submitted contributions.
 
-## Earlier proposals and investigations
+## 3. ODK Central documentation — empty passphrase command correction (prepared)\n\n- **Upstream repository:** [getodk/docs](https://github.com/getodk/docs)\n- **Issue:** [#2132 — central-backup: no-passphrase instructions are incorrect](https://github.com/getodk/docs/issues/2132)\n- **Contribution type:** Documentation command correction, proposed.\n- **Status:** Patch prepared and recorded in portfolio branch; not submitted upstream.\n- **Evidence:** [Patch analysis](odk-2132-empty-passphrase-fix.md).\n- **Boundary:** Source and issue were inspected. Commands have not been executed against a real backup; no upstream PR is claimed.\n\n## Earlier proposals and investigations
 
 - [Ollama — Msty URL correction (#18045)](proposal-01-ollama-msty-link.md) — an existing upstream PR [#18050](https://github.com/ollama/ollama/pull/18050) already proposed this change.
 - [Ollama — GPU fallback troubleshooting (#14260)](proposal-02-ollama-gpu-troubleshooting.md) — an existing upstream PR [#14461](https://github.com/ollama/ollama/pull/14461) already proposed substantially overlapping documentation.
