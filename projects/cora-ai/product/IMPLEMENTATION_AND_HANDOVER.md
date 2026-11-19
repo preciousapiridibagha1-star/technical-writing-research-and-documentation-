@@ -60,11 +60,18 @@ The MVP is not approved for real participant or mental-health data. Production u
 
 The API is an integration point, not automatic integration. A developer at the adopting organisation must connect the API to its identity system and ensure every relevant data-release path checks permission.
 
-## 7. Maintenance boundary
+## 7. Sustainability, adoption and continuity
 
-This project is delivered as an open-source codebase and handover package. The project author is not committing to indefinite hosting, support, feature development, security patching or integration work after handover. Any organisation adopting the software must designate its own technical maintainer and operational owner.
+CORA AI will be delivered as a usable, documented open-source application that another organisation or developer can run, inspect, adapt and integrate into an existing system.
+
+During the Fellowship, the Fellow is responsible for leading the project, delivering the agreed milestones, documenting decisions and working with the host and affected communities to refine the project. The handover package will make the software understandable and transferable beyond the Fellowship period.
+
+The project will document how an adopting organisation can assign a maintainer, run the application, review and update the code, and connect the API to its own systems. The Fellow will make the code and non-confidential project materials openly available under the licence agreed with Mozilla.
+
+This MVP does not assume that the Fellow personally operates a permanent hosted service or independently provides indefinite maintenance after the Fellowship. Long-term hosting, operational support and future extensions should have an identified owner in the adopting organisation or a community of maintainers. The project’s sustainability and post-Fellowship pathway will be discussed with the host and refined during the Fellowship, rather than treated as a reason to stop delivering or supporting the work during the grant period.
 
 ## 8. Release checklist
+
 
 - [ ] All three MVP capabilities implemented.
 - [ ] Synthetic end-to-end workflow demonstrated.
