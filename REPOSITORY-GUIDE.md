@@ -71,7 +71,7 @@ Open [Projects Index](projects/README.md) for the complete file-by-file project 
 | `projects/vantage-automata/` | Human-supervised task-approval concept and local deterministic prototype | Narrow local proof of concept; not a deployed AI product |
 | `projects/jarvis-ai/` | Proposed AI-enabled business operating ecosystem | Concept and documentation; no integration/deployment claim |
 | `projects/organisational-intelligence-platform/` | Modular programme-information, monitoring and reporting platform concept | Limited backend proof of concept with synthetic data; not complete MVP/production |
-| `projects/mindcommons-ai/` | Community data-use accountability design hypothesis | Desk research/specification only; no host approval or community validation |
+| `projects/cora-ai/` | AI-assisted purpose-specific consent and access-control MVP | Locked MVP specification; synthetic-data demonstrator planned; no production deployment |
 | `projects/architecture-and-implementation/` | Shared guide to Vantage and Jarvis architecture and MVP boundaries | Architecture guidance; supplied diagram images are not yet repository assets |
 | `projects/cloud-infrastructure-and-open-source/` | Cloud infrastructure and open-source technical overviews | Research/overview documents, not tested deployment guides |
 
@@ -85,7 +85,7 @@ Start at [research/README.md](research/README.md).
 - `research/ai-job-search-platforms/2026-report-audit-and-corrections.md` — audit and correction record.
 - `research/ai-job-search-platforms/ai-job-search-platforms-comparison-2026.md` — earlier comparison version retained as project history.
 - `research/research-methodology/research-methodology.md` — research approach and quality rules.
-- `projects/mindcommons-ai/research/RESEARCH_AND_ANALYSIS.md` — MindCommons host-context research and unverified gap hypothesis.
+- `projects/cora-ai/architecture/AI_OPERATING_MODEL.md` — AI assistant permissions and boundaries.
 
 ## 6. Technical-writing files
 
