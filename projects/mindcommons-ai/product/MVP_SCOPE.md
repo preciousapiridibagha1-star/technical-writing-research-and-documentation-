@@ -1,86 +1,102 @@
-# Minimum Viable Product — Three-Capability Scope
+# Locked MVP Scope — CORA AI
 
-**Status:** Proposed scope for validation and fellowship planning. This is not an instruction to build a prototype now.
+**Status:** Locked.  
+**Demonstrator target:** 28 November 2026.  
+**Data:** Synthetic only.  
+**Product:** One web application plus REST API.
 
-## One workflow
+## Product statement
 
-**Approved data use → proposed material change → authorised human decision → traceable conditions and community-agreed follow-up.**
+CORA AI is an AI-assisted open-source consent and access-control application. It records consent separately for each defined purpose, checks requested use against the current consent record and maintains an audit history.
 
-The MVP is deliberately limited to three connected capabilities.
+## The only three core capabilities
 
-## 1. Approved-use record
+### 1. Consent records
+- Create a pseudonymous demo participant.
+- Show separately defined purposes, initially research and AI model training.
+- Record grant or refusal for each purpose.
+- Allow explicit withdrawal of a previously granted purpose.
+- Store purpose, resource reference, status, timestamp and consent-text version.
+- Display current purpose-by-purpose status.
 
-Minimum fields:
-- Reference to the data resource (no participant-level records).
-- Plain-language approved purpose.
-- Conditions / restrictions.
-- Authorising body and decision date.
-- Link to the authoritative approval / consent-policy record.
-- Current status and next review date.
+### 2. Access permission checks
+- Accept a request for a defined participant, resource and purpose.
+- Check the current matching consent on the backend.
+- Return ALLOW or DENY with a reason.
+- Deny by default if permission is missing, refused, withdrawn or mismatched.
+- Record the request and outcome.
+- Expose the check through the web interface and a documented REST endpoint.
 
-**Acceptance test:** An authorised steward can identify the approved purpose, conditions, decision authority and source record without searching across disconnected documents.
+### 3. Audit history
+- Record consent grants, refusals and withdrawals.
+- Record access requests, approvals and denials.
+- Include timestamp, event type, pseudonymous reference, purpose, actor/service, outcome and reason.
+- Show chronological history to an authorised administrator.
+- Do not provide ordinary edit/delete controls for historical events.
 
-## 2. Change-of-use review
+## AI assistant requirements
 
-Minimum fields:
-- Existing approved-use reference.
-- Description and reason for the proposed change.
-- New purpose, collaborators, AI/model-development involvement and duration, where relevant.
-- Supporting documents / ethics references.
-- Missing-information checklist.
-- Assigned decision authority.
-- Human decision, rationale, conditions and review date.
+One integrated assistant supports all three capabilities. It explains, guides, prepares requests, checks completeness, invokes approved read/check tools and summarises authorised events.
 
-AI assistance: prepare a structured summary, flag missing fields and compare the proposal with approved, machine-readable conditions. All flags are advisory and source-linked.
+It cannot make consent choices, grant access, override a denial, rewrite policy or directly mutate the database. Consequential actions require explicit user action and backend validation. The AI is the central conversational operating interface; it is not the source of authority. The deterministic permission service returns the final access decision.
 
-**Acceptance test:** A reviewer can see what is changing, which approved conditions may apply, what evidence is missing and which human authority must decide.
+Core functions must remain available without an AI API key.
 
-## 3. Community-obligation follow-up
+## Required screens
 
-Minimum fields:
-- Commitment wording as agreed by authorised community/host parties.
-- Linked approved data use and decision.
-- Responsible owner.
-- Due date / review date.
-- Status and update.
-- Evidence or source link.
+1. Welcome and role entry.
+2. Participant consent.
+3. Consent status.
+4. Access request.
+5. Allow/deny result.
+6. Audit history.
+7. Contextual AI assistant panel.
 
-Examples could include returning findings in an agreed format, community feedback sessions, contributor recognition or other locally agreed benefits. These are examples only; the community defines the actual commitments.
+## Minimal data objects
 
-**Acceptance test:** An authorised community steward can identify each agreed commitment, its owner, progress and source decision.
+- Participant: pseudonymous ID and demo metadata.
+- DataResource: synthetic resource/dataset ID and description.
+- Purpose: stable purpose key and plain-language definition.
+- ConsentRecord: participant, resource, purpose, status, version and timestamp.
+- AccessRequest: requester, participant/resource, purpose, timestamp and outcome.
+- AuditEvent: event type, references, actor/service, timestamp, outcome and reason.
 
-## AI across the workflow
+No names, phone numbers, clinical notes, diagnoses, voice recordings or actual health datasets are needed.
 
-One role-aware assistant:
-- Explains the approved record and links its source.
-- Helps prepare a change request.
-- Identifies missing information and potential condition conflicts.
-- Drafts reviewer summaries.
-- Summarises overdue or upcoming obligations.
+## Required API operations
 
-No independent access decision, ethics decision, consent decision, policy creation or benefit allocation.
+Record a consent choice; withdraw a consent choice; retrieve current consent status for an authorised caller; submit an access permission check; retrieve audit history for an authorised administrator; send a message to the bounded assistant.
 
-## Out of scope
+Every endpoint validates inputs and permissions on the server. Exact route names and schemas are documented in the architecture document.
 
-- New consent capture or participant portal.
-- Data collection, storage or curation.
-- Clinical screening, diagnosis or therapy.
-- Full research project management.
-- Replacement ethics / governance process.
-- Generic KPI or organisational dashboard.
-- Public participant-level data.
-- Automatic payment or benefit distribution.
-- Blockchain, tokens or complex multi-agent architecture.
-- Unapproved integration with Gencurate or any SRHIN system.
+## Acceptance tests
 
-## Validation gates before implementation
+- Participant can grant research consent.
+- Participant can refuse AI-training consent independently.
+- Research access is allowed when matching research consent is granted.
+- AI-training access is denied when AI-training consent is refused.
+- Research access is denied after research consent is withdrawn.
+- Missing consent is denied.
+- A request for a different purpose is denied.
+- Every consent and access event appears in audit history.
+- Unauthorised roles cannot view restricted records or perform another role's action.
+- AI cannot override a denied result or change consent without an explicit authorised action.
+- Core functions work when the AI provider is unavailable.
 
-1. SRHIN confirms whether an approved-use register already exists.
-2. SRHIN and community partners explain how material use changes are reviewed today.
-3. They confirm whether benefit commitments are already tracked and what is missing.
-4. They identify authoritative systems, record owners and permitted data.
-5. Community partners approve what transparency means and what may be shown.
-6. Privacy, ethics and security specialists review the proposed minimum data and AI boundary.
-7. A small workflow test demonstrates reduced effort without duplicate records.
+## Explicitly out of scope
 
-If these gates show no meaningful unmet need, do not build the MVP.
+Real personal, mental-health or clinical data; production identity verification; production hosting and operations; live SRHIN or other platform integration; mobile-native apps; multiple AI agents; autonomous background operations; AI-generated consent decisions; AI approval of access; blockchain; federated learning; differential privacy; advanced cryptography; bulk migration; complex analytics; multi-language translation in the first demonstrator; legal or security certification.
+
+## Build order
+
+1. Backend data model and consent rules.
+2. Access-check service and audit events.
+3. Automated tests.
+4. Simple web screens.
+5. AI assistant with limited tools and no direct database access.
+6. Synthetic end-to-end demonstration.
+7. Setup, API, limitations and handover documentation.
+
+## Definition of done
+
+The synthetic demonstration passes, automated tests pass, AI boundaries are enforced in code, API and local setup are documented, and the repository clearly labels the product as a synthetic-data demonstrator—not a production health-data system.
