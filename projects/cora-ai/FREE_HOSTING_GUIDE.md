@@ -8,7 +8,7 @@ Expected public URL after Pages is enabled and deployment succeeds:
 
 `https://preciousapiridibagha1-star.github.io/technical-writing-research-and-documentation-/`
 
-To activate it after merging this branch: repository Settings → Pages → Build and deployment → Source: **GitHub Actions**. No domain purchase or paid plan is required.
+The Pages workflow is committed, but GitHub did not allow the repository integration to create the Pages site automatically. You must enable it once: repository Settings → Pages → Build and deployment → Source: **GitHub Actions**. Then the workflow can publish the site. No domain purchase or paid plan is required.
 
 If no backend URL is configured in the page's `cora-api-base` meta tag, the interface runs a clearly labelled browser-only demonstration using localStorage. Those records exist only in that visitor's browser and are not shared with other visitors.
 
@@ -16,7 +16,7 @@ If no backend URL is configured in the page's `cora-api-base` meta tag, the inte
 
 The FastAPI + SQLite implementation remains the authoritative deterministic permission engine. `render.yaml` now explicitly selects Render's **Free** web-service plan. It does not request a paid persistent disk, paid compute, or a paid database. The service uses an ephemeral SQLite file at `/tmp/cora_demo.sqlite3`.
 
-Render's official free-service documentation says Python web services can run on its Free instance. The service sleeps after 15 minutes without traffic and can take about a minute to wake. Its local filesystem is ephemeral: SQLite records are lost when the service spins down, restarts or redeploys. Render may also restart free services. This is suitable only for a temporary synthetic demonstration, not production or durable records.
+Render's official free-service documentation says Python web services can run on its Free instance. Do not add a payment method or approve any paid upgrade. Render documents included bandwidth and pipeline limits; usage beyond included outbound bandwidth may be billed, so stop if the dashboard requests payment details or does not show $0. The service sleeps after 15 minutes without traffic and can take about a minute to wake. Its local filesystem is ephemeral: SQLite records are lost when the service spins down, restarts or redeploys. Render may also restart free services. This is suitable only for a temporary synthetic demonstration, not production or durable records.
 
 Official details: https://render.com/docs/free
 
