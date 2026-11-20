@@ -59,7 +59,7 @@ These are self-directed, public-source research and analytical outputs; they are
 - [Vantage Automata](projects/vantage-automata/README.md) — narrow deterministic reminder-approval proof of concept; nine unit tests are recorded as passing. Not an AI agent or production deployment.
 - [Jarvis AI](projects/jarvis-ai/README.md) — documented long-term AI-enabled business-system concept; implementation is not claimed.
 - [AI-Powered Organisational Intelligence Platform](projects/organisational-intelligence-platform/README.md) — product concept and limited backend proof of concept using synthetic data; not a complete MVP or production system.
-- [CORA AI](projects/cora-ai/README.md) — independent, desk-researched design hypothesis for community data-use accountability; not host-approved, implemented or community-validated.
+- [CORA AI](projects/cora-ai/README.md) — independent prototype for purpose-specific consent and deterministic data-use permissions; interactive browser UI and SQLite-backed API implemented with synthetic data. Not host-approved, community-validated or production-ready.
 - [Architecture & Implementation Guide](projects/architecture-and-implementation/README.md) — explains how to interpret the Vantage and Jarvis designs without confusing vision diagrams with working software.
 - [Cloud Infrastructure & Open Source](projects/cloud-infrastructure-and-open-source/README.md) — technical overviews and research notes.
 
