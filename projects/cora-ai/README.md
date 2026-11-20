@@ -109,3 +109,11 @@ The project includes the full Mozilla Public License 2.0 text in [LICENSE](LICEN
 - Screen layout: design/DASHBOARD_LAYOUT.md
 
 **Product boundary:** Build the smallest complete tool that proves purpose-specific consent, withdrawal, access enforcement and an audit trail—with AI assisting operation, never replacing consent or human authority.
+
+## Working prototype
+
+The first runnable implementation milestone is now in [implementation/](implementation/).
+It contains the deterministic consent engine, a synthetic demonstration, automated
+test cases and setup instructions. It is an early in-memory prototype, not a
+production application; see the implementation README for its limitations and
+the exact evidence status.
