@@ -18,7 +18,7 @@
 </div><footer>Independent prototype · Synthetic data only · Not production-ready · Not a legal consent mechanism · No SRHIN partnership, approval or integration is claimed.<br><a href="https://github.com/preciousapiridibagha1-star/technical-writing-research-and-documentation-/tree/cora-free-public-demo/projects/cora-ai">Inspect CORA source and documentation on GitHub</a></footer>
 </main><script>
 const $=id=>document.getElementById(id),KEY="cora-demo-v04";
-const API_BASE=($('meta[name="cora-api-base"]')?.content||"").trim().replace(/\/$/,"");
+const API_BASE=(document.querySelector('meta[name="cora-api-base"]')?.content||"").trim().replace(/\/$/,"");
 const localState=()=>{try{return JSON.parse(localStorage.getItem(KEY))||{consents:{},events:[]}}catch{return{consents:{},events:[]}}};
 const save=s=>localStorage.setItem(KEY,JSON.stringify(s));
 const vals=()=>({participant_id:$("participant").value.trim(),resource_id:$("resource").value.trim(),purpose:$("purpose").value});
