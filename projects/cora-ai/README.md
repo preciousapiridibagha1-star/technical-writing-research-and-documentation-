@@ -85,6 +85,11 @@ React frontend; Python/FastAPI backend; SQLite local demo database; pytest autom
 
 The first demonstrator is local and synthetic-data-only. It is not safe for real mental-health data or production use until authentication, authorisation, secure hosting, secrets management, database hardening, backups, monitoring and independent security/privacy review are completed.
 
+## Evidence and delivery
+
+- [Evidence and delivery roadmap](PROJECT_EVIDENCE_AND_DELIVERY_ROADMAP.md): project qualities, evidence inventory, milestones and honest status.
+- [Technical decision log](TECHNICAL_DECISION_LOG.md): documented decisions, rationale and validation requirements.
+
 ## Handover and maintenance boundary
 
 The deliverable is a documented open-source MVP, not indefinite maintenance. The repository will explain how to run, test, configure and integrate it. After handover, adopters may fork, host, extend or integrate it themselves. Production operation and future feature development belong to the adopting organisation and its technical maintainers.
