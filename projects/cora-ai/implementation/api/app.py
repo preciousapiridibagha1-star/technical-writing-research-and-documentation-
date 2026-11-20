@@ -1,4 +1,5 @@
 """HTTP API and browser interface for the synthetic CORA AI prototype."""
+import os
 from pathlib import Path
 import sys
 
@@ -8,21 +9,25 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
 IMPLEMENTATION_DIR = Path(__file__).resolve().parents[1]
-UI_DIR = Path(__file__).resolve().parent / "ui"
+API_DIR = Path(__file__).resolve().parent
+UI_DIR = API_DIR / "ui"
 if str(IMPLEMENTATION_DIR) not in sys.path:
     sys.path.insert(0, str(IMPLEMENTATION_DIR))
 
 from consent_engine import ConsentEngine  # noqa: E402
 
+DEFAULT_DB_PATH = API_DIR / "data" / "cora_demo.sqlite3"
+DB_PATH = Path(os.environ.get("CORA_DB_PATH", str(DEFAULT_DB_PATH))).expanduser()
+
 app = FastAPI(
     title="CORA AI Consent Prototype API",
-    version="0.2.0",
+    version="0.3.0",
     description=(
         "Synthetic demonstration API. Decisions are deterministic backend "
         "rules, not AI decisions. Do not submit real personal data."
     ),
 )
-engine = ConsentEngine()
+engine = ConsentEngine(db_path=DB_PATH)
 
 
 class ConsentAction(BaseModel):
@@ -48,7 +53,11 @@ app.mount("/assets", StaticFiles(directory=UI_DIR), name="assets")
 
 @app.get("/health")
 def health():
-    return {"status": "ok", "mode": "synthetic-prototype"}
+    return {
+        "status": "ok",
+        "mode": "synthetic-prototype",
+        "storage": "sqlite",
+    }
 
 
 @app.post("/consents")

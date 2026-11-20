@@ -18,39 +18,28 @@ footer{margin-top:20px;color:#77837c;font-size:11px;line-height:1.6;text-align:c
 </style>
 </head>
 <body><main class="shell">
-<header><div class="brand"><div class="mark">C</div><div><h1>CORA AI</h1><p>Community-Owned Rights &amp; Access</p></div></div><span class="badge">Prototype · v0.2</span></header>
+<header><div class="brand"><div class="mark">C</div><div><h1>CORA AI</h1><p>Community-Owned Rights &amp; Access</p></div></div><span class="badge">Prototype · v0.3</span></header>
 <section class="intro"><div><h2>Consent, made explicit.</h2><p>Explore how purpose-specific choices affect data-use permissions. Every decision below is made by deterministic backend rules—not by an AI model.</p></div><span class="synthetic">Synthetic demo only</span></section>
 <div class="grid">
 <section class="card"><h3>Consent workspace</h3><p class="sub">Choose a fictional participant, dataset and purpose. Then record a consent choice.</p>
-<div class="fields">
-<div class="field"><label for="participant">Participant ID</label><input id="participant" value="P001" maxlength="40"></div>
-<div class="field"><label for="resource">Dataset ID</label><input id="resource" value="D001" maxlength="40"></div>
-<div class="field" style="grid-column:1/-1"><label for="purpose">Purpose</label><select id="purpose"><option value="research">Research</option><option value="model_training">AI model training</option></select></div>
-</div>
+<div class="fields"><div class="field"><label for="participant">Participant ID</label><input id="participant" value="P001" maxlength="40"></div><div class="field"><label for="resource">Dataset ID</label><input id="resource" value="D001" maxlength="40"></div><div class="field" style="grid-column:1/-1"><label for="purpose">Purpose</label><select id="purpose"><option value="research">Research</option><option value="model_training">AI model training</option></select></div></div>
 <div class="actions"><button class="btn primary" data-action="grant">Grant consent</button><button class="btn danger" data-action="refuse">Refuse</button><button class="btn secondary" data-action="withdraw">Withdraw consent</button></div>
 <div id="consentResult" class="result" role="status" aria-live="polite">Choose an action to record a consent decision.</div>
-<div class="statusline"><span>Current consent status</span><span id="currentStatus" class="statuspill">Not checked</span></div>
-</section>
-<section class="card"><h3>Permission checker</h3><p class="sub">Ask the backend whether the selected data use is currently permitted.</p>
-<p style="font-size:13px;color:#65736b;line-height:1.6">The check uses the exact participant, dataset and purpose selected in the consent workspace. Missing or non-granted consent must be denied.</p>
-<button id="check" class="btn primary" style="width:100%">Check permission</button>
-<div id="permissionResult" class="result" role="status" aria-live="polite">No permission check has been run yet.</div>
-</section>
+<div class="statusline"><span>Current consent status</span><span id="currentStatus" class="statuspill">Not checked</span></div></section>
+<section class="card"><h3>Permission checker</h3><p class="sub">Ask the backend whether the selected data use is currently permitted.</p><p style="font-size:13px;color:#65736b;line-height:1.6">The check uses the exact participant, dataset and purpose selected in the consent workspace. Missing or non-granted consent must be denied.</p><button id="check" class="btn primary" style="width:100%">Check permission</button><div id="permissionResult" class="result" role="status" aria-live="polite">No permission check has been run yet.</div></section>
 <section class="card audit"><div class="audithead"><div><h3>Audit history</h3><p class="sub" style="margin:5px 0 0">Chronological record of consent changes and permission checks.</p></div><button id="refreshAudit" class="btn quiet">Refresh history</button></div><div id="events" class="events"><div class="empty">Loading audit events…</div></div></section>
 </div>
-<footer>Demonstration only. Uses fictional IDs and temporary in-memory state. Do not enter real participant, health or sensitive personal data. Not production-ready and not a legal consent mechanism.</footer>
+<footer>Demonstration only. Uses fictional IDs and a local SQLite database. Do not enter real participant, health or sensitive personal data. Not production-ready and not a legal consent mechanism.</footer>
 </main>
 <script>
 const $=id=>document.getElementById(id);
 const values=()=>({participant_id:$("participant").value.trim(),resource_id:$("resource").value.trim(),purpose:$("purpose").value});
 const show=(node,html,kind="")=>{node.className="result"+(kind?" "+kind:"");node.innerHTML=html};
 async function request(path,options={}){const response=await fetch(path,{headers:{"Content-Type":"application/json"},...options});let data={};try{data=await response.json()}catch{}if(!response.ok)throw new Error(data.detail||"Request failed ("+response.status+")");return data}
-function validate(v){if(!v.participant_id||!v.resource_id){throw new Error("Participant ID and dataset ID are required.")}return v}
-async function refreshStatus(){const v=validate(values());try{const record=await request("/consents/"+encodeURIComponent(v.participant_id)+"/"+encodeURIComponent(v.resource_id)+"/"+encodeURIComponent(v.purpose));$("currentStatus").textContent=record.status;$("currentStatus").className="statuspill "+record.status}catch(error){$("currentStatus").textContent=error.message.includes("404")||error.message.includes("No consent")?"No record":"Unavailable";$("currentStatus").className="statuspill"}}
-async function refreshAudit(){try{const data=await request("/audit");const host=$("events");host.replaceChildren();if(!data.events.length){host.innerHTML='<div class="empty">No events yet. Record a consent choice or run a permission check.</div>';return}data.events.slice().reverse().forEach(event=>{const row=document.createElement("div");row.className="event";const left=document.createElement("div");const title=document.createElement("b");title.textContent=event.event_type==="consent_change"?"Consent updated":"Permission checked";const detail=document.createElement("small");detail.textContent=event.participant_id+" · "+event.resource_id+" · "+event.purpose+" · "+event.explanation;left.append(title,detail);const right=document.createElement("span");right.className="outcome";right.textContent=event.outcome;row.append(left,right);host.append(row)})}catch(error){$("events").innerHTML='<div class="empty"></div>';$("events").firstChild.textContent=error.message}}
+function validate(v){if(!v.participant_id||!v.resource_id)throw new Error("Participant ID and dataset ID are required.");return v}
+async function refreshStatus(){try{const v=validate(values());const record=await request("/consents/"+encodeURIComponent(v.participant_id)+"/"+encodeURIComponent(v.resource_id)+"/"+encodeURIComponent(v.purpose));$("currentStatus").textContent=record.status;$("currentStatus").className="statuspill "+record.status}catch(error){$("currentStatus").textContent=error.message.includes("404")||error.message.includes("No consent")?"No record":"Unavailable";$("currentStatus").className="statuspill"}}
+async function refreshAudit(){try{const data=await request("/audit");const host=$("events");host.replaceChildren();if(!data.events.length){host.innerHTML='<div class="empty">No events yet. Record a consent choice or run a permission check.</div>';return}data.events.slice().reverse().forEach(event=>{const row=document.createElement("div");row.className="event";const left=document.createElement("div");const title=document.createElement("b");title.textContent=event.event_type==="consent_change"?"Consent updated":"Permission checked";const detail=document.createElement("small");detail.textContent=event.participant_id+" · "+event.resource_id+" · "+event.purpose+" · "+event.explanation;left.append(title,detail);const right=document.createElement("span");right.className="outcome";right.textContent=event.outcome;row.append(left,right);host.append(row)})}catch(error){$("events").replaceChildren();const empty=document.createElement("div");empty.className="empty";empty.textContent=error.message;$("events").append(empty)}}
 document.querySelectorAll("[data-action]").forEach(button=>button.addEventListener("click",async()=>{try{const v=validate(values());const record=await request("/consents",{method:"POST",body:JSON.stringify({...v,action:button.dataset.action})});show($("consentResult"),"Consent recorded: <strong>"+record.status.toUpperCase()+"</strong>"+record.purpose);await refreshStatus();await refreshAudit()}catch(error){show($("consentResult"),error.message,"deny")}}));
 $("check").addEventListener("click",async()=>{try{const result=await request("/permissions/check",{method:"POST",body:JSON.stringify(validate(values()))});show($("permissionResult"),"<strong>"+result.decision+"</strong>"+result.reason,result.decision==="ALLOW"?"allow":"deny");await refreshAudit()}catch(error){show($("permissionResult"),error.message,"deny")}});
-$("refreshAudit").addEventListener("click",refreshAudit);
-["participant","resource","purpose"].forEach(id=>$(id).addEventListener("change",refreshStatus));
-refreshStatus();refreshAudit();
+$("refreshAudit").addEventListener("click",refreshAudit);["participant","resource","purpose"].forEach(id=>$(id).addEventListener("change",refreshStatus));refreshStatus();refreshAudit();
 </script></body></html>

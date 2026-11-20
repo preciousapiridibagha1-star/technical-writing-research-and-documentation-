@@ -1,8 +1,8 @@
-# CORA AI — Deterministic Consent Prototype
+# CORA AI — SQLite-backed consent prototype
 
-This folder contains the first runnable implementation milestone: a small Python
-engine that records purpose-specific consent, checks permission, and records an
-audit history.
+This folder contains the deterministic consent engine, synthetic demonstration,
+automated tests and FastAPI browser application. The API stores consent and
+audit records in SQLite so they survive process restarts.
 
 ## What this prototype demonstrates
 
@@ -11,68 +11,65 @@ audit history.
 - Access is allowed only when a current grant matches the exact participant,
   resource and purpose.
 - Missing, refused, withdrawn or mismatched consent results in **DENY**.
-- Consent changes and permission checks are recorded in an in-memory audit log.
+- Consent changes and permission checks are recorded in an SQLite audit table.
 
 The demonstration uses fictional identifiers only: `P001` and `D001`.
 
-## Run it
+## Run the engine demonstration
 
-You need Python 3.10 or newer. No third-party packages are required.
-
-From this folder, run:
+You need Python 3.10 or newer. From this folder:
 
 ```bash
 python demo.py
-```
-
-Run the automated checks:
-
-```bash
 python -m unittest -v
 ```
 
+The standalone engine defaults to an in-memory SQLite database for isolated
+demonstration runs. The API configures a persistent SQLite file.
+
+## Run the browser application
+
+From the `api/` folder:
+
+```bash
+python -m venv .venv
+pip install -r requirements.txt
+uvicorn app:app --reload
+```
+
+Open `http://127.0.0.1:8000/`. See [api/README.md](api/README.md) for
+database configuration, API endpoints, tests and deployment details.
+
+## Persistence design
+
+- SQLite database path is configured with `CORA_DB_PATH`.
+- Default local path: `api/data/cora_demo.sqlite3`.
+- Consent primary key: participant ID + resource ID + purpose.
+- Consent state and its audit event are written in one transaction.
+- Audit events are appended in database order.
+- Tests use temporary database files and verify state after reopening.
+
 ## Important limitations
 
-This is an early learning prototype, not a production application.
+This is an early synthetic demonstration, not a production application.
 
-- Data is held in memory and disappears when the program exits.
-- There is no database, user login, authentication or API yet.
-- The audit log is not tamper-resistant.
-- The prototype does not connect to real datasets or external systems.
+- Use fictional identifiers and synthetic data only.
+- No authentication, authorisation, encryption, rate limiting or production monitoring.
+- The audit log is not tamper-resistant and the database has no automated backup.
+- The public demonstration is a shared writable sandbox.
+- The prototype does not connect to real datasets or enforce access at external data-release points.
 - It does not establish that consent was informed, freely given or legally valid.
-- It does not prevent copies or data uses outside a system that enforces its decisions.
 - It has not undergone security, privacy, legal or community review.
-- It does not use AI to make permission decisions. Permission decisions are deterministic.
+- Permission decisions are deterministic; AI does not make them.
 
 Never enter real participant, health or other sensitive personal data.
 
-## Next development steps
-
-1. Review the rules and test cases.
-2. Add a persistent local database and API boundary.
-3. Add a minimal user interface for the synthetic demonstration.
-4. Add a bounded AI assistant that explains system information but cannot grant
-   consent, change permission or override a denial.
-5. Conduct technical, privacy, security and community review before any real use.
-
 ## Evidence status
 
-**Implemented:** in-memory consent state, exact-purpose permission checks,
-default-deny behaviour, audit events, demonstration script and automated tests.
+SQLite persistence is implemented in the API. Automated tests cover consent rules,
+audit recording and state recovery after reopening the database. GitHub Actions
+is the verification environment; see the workflow associated with the current
+SQLite persistence pull request for its exact results.
 
-**Verified in GitHub Actions (20 November 2026):** all 8 consent-engine tests
-passed, the synthetic demonstration executed successfully, and all 6 API tests
-passed. See [TEST_RESULTS.md](TEST_RESULTS.md) for the run record.
-
-This verification does not establish persistence, production security,
-deployment readiness or suitability for real participant data.
-
-## HTTP API
-
-A FastAPI interface has also been added under `api/`. It exposes consent
-recording, permission checks, current consent lookup, audit history and a health
-endpoint. See [api/README.md](api/README.md) for setup and request examples.
-
-**API implementation status:** source code and API test cases are committed.
-They have not yet been executed in a local Python environment, so API test
-results are not claimed.
+Persistence does not establish production security, legal compliance, backup
+resilience, deployment readiness or suitability for real participant data.
