@@ -4,6 +4,7 @@ from pathlib import Path
 import sys
 
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
@@ -26,6 +27,17 @@ app = FastAPI(
         "Synthetic demonstration API. Decisions are deterministic backend "
         "rules, not AI decisions. Do not submit real personal data."
     ),
+)
+allowed_origins = [origin.strip() for origin in os.environ.get(
+    "CORA_ALLOWED_ORIGINS",
+    "https://preciousapiridibagha1-star.github.io",
+).split(",") if origin.strip()]
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=allowed_origins,
+    allow_credentials=False,
+    allow_methods=["GET", "POST"],
+    allow_headers=["Content-Type"],
 )
 engine = ConsentEngine(db_path=DB_PATH)
 
