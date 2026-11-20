@@ -1,0 +1,39 @@
+name: CORA AI Prototype Tests
+
+on:
+  push:
+    paths:
+      - "projects/cora-ai/implementation/**"
+      - ".github/workflows/cora-prototype-tests.yml"
+  pull_request:
+    paths:
+      - "projects/cora-ai/implementation/**"
+      - ".github/workflows/cora-prototype-tests.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test-consent-engine-and-api:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install API test dependencies
+        working-directory: projects/cora-ai/implementation/api
+        run: python -m pip install -r requirements.txt
+
+      - name: Run deterministic consent engine tests
+        working-directory: projects/cora-ai/implementation
+        run: python -m unittest -v
+
+      - name: Run API tests
+        working-directory: projects/cora-ai/implementation/api
+        run: python -m pytest -v
