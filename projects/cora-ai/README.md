@@ -117,3 +117,9 @@ It contains the deterministic consent engine, a synthetic demonstration, automat
 test cases and setup instructions. It is an early in-memory prototype, not a
 production application; see the implementation README for its limitations and
 the exact evidence status.
+
+The implementation folder now also contains a FastAPI interface under
+[implementation/api/](implementation/api/), with endpoints for recording
+consent, checking permissions, reading consent state and viewing audit events.
+The API source and tests are committed; execution and test verification remain
+outstanding.
