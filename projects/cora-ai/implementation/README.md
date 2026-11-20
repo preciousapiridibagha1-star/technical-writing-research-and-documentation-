@@ -60,8 +60,12 @@ Never enter real participant, health or other sensitive personal data.
 **Implemented:** in-memory consent state, exact-purpose permission checks,
 default-deny behaviour, audit events, demonstration script and automated tests.
 
-**Not yet verified here:** execution of the tests in a local Python environment,
-API behaviour, persistence, interface behaviour, security or production readiness.
+**Verified in GitHub Actions (20 November 2026):** all 8 consent-engine tests
+passed, the synthetic demonstration executed successfully, and all 6 API tests
+passed. See [TEST_RESULTS.md](TEST_RESULTS.md) for the run record.
+
+This verification does not establish persistence, production security,
+deployment readiness or suitability for real participant data.
 
 ## HTTP API
 
