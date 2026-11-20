@@ -1,12 +1,20 @@
-"""Automated checks for the CORA AI deterministic consent engine."""
+"""Automated checks for the CORA AI SQLite-backed consent engine."""
+import tempfile
 import unittest
+from pathlib import Path
 
 from consent_engine import ConsentEngine
 
 
 class ConsentEngineTests(unittest.TestCase):
     def setUp(self):
-        self.engine = ConsentEngine()
+        self.temp_dir = tempfile.TemporaryDirectory()
+        self.db_path = Path(self.temp_dir.name) / "test.sqlite3"
+        self.engine = ConsentEngine(self.db_path)
+
+    def tearDown(self):
+        self.engine.close()
+        self.temp_dir.cleanup()
 
     def test_no_record_defaults_to_deny(self):
         result = self.engine.check_permission("P001", "D001", "research")
@@ -64,6 +72,21 @@ class ConsentEngineTests(unittest.TestCase):
         self.assertEqual(len(history), 2)
         self.assertEqual(history[0]["event_type"], "consent_change")
         self.assertEqual(history[1]["event_type"], "permission_check")
+
+    def test_consent_and_audit_survive_engine_restart(self):
+        self.engine.record_consent("P001", "D001", "research", "grant")
+        self.engine.close()
+        restarted = ConsentEngine(self.db_path)
+        try:
+            record = restarted.get_consent("P001", "D001", "research")
+            self.assertEqual(record["status"], "granted")
+            self.assertEqual(len(restarted.get_audit_history()), 1)
+            self.assertEqual(
+                restarted.check_permission("P001", "D001", "research")["decision"],
+                "ALLOW",
+            )
+        finally:
+            restarted.close()
 
 
 if __name__ == "__main__":

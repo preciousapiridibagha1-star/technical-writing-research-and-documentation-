@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: cora-ai-synthetic-demo
+    runtime: python
+    plan: free
+    region: ohio
+    rootDir: projects/cora-ai/implementation/api
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: CORA_DB_PATH
+        value: /tmp/cora_demo.sqlite3
+      - key: CORA_ALLOWED_ORIGINS
+        value: https://preciousapiridibagha1-star.github.io
