@@ -1,28 +1,47 @@
-# CORA AI — Free public demonstration
+# CORA AI — zero-cost public demonstration
 
-## Stage 1: GitHub Pages
+## Stage 1: GitHub Pages (static frontend)
 
-The static demonstration is in `docs/index.html`. GitHub Pages can publish this browser interface from the repository using GitHub Actions. The browser-only mode uses localStorage and synthetic IDs; it is **not** the Python backend and records stay in the visitor's browser.
+The browser interface is in `docs/index.html`. It is designed to publish as a static site from this public GitHub repository. The deployment workflow is `.github/workflows/deploy-pages.yml`.
 
-The workflow is `.github/workflows/deploy-pages.yml`. After this branch is merged, enable Pages in repository Settings → Pages → Build and deployment → Source: GitHub Actions. The workflow then publishes the site. No custom domain or paid plan is required for this public repository.
+Expected public URL after Pages is enabled and deployment succeeds:
 
-Expected URL:
 `https://preciousapiridibagha1-star.github.io/technical-writing-research-and-documentation-/`
 
-## Stage 2: free Python API hosting (prepared, not yet deployed)
+To activate it after merging this branch: repository Settings → Pages → Build and deployment → Source: **GitHub Actions**. No domain purchase or paid plan is required.
 
-The FastAPI + SQLite API remains the authoritative permission engine. A candidate zero-cost host is a Hugging Face Docker Space on its free CPU tier. Free Space storage is ephemeral: SQLite records may be lost when the Space restarts or is rebuilt. Do not treat this as durable storage or use real participant data.
+If no backend URL is configured in the page's `cora-api-base` meta tag, the interface runs a clearly labelled browser-only demonstration using localStorage. Those records exist only in that visitor's browser and are not shared with other visitors.
 
-Before connecting the static site to a remote API:
-1. Create a public Docker Space with no paid hardware.
-2. Copy the API deployment package in `hosting/huggingface/` into the Space repository root.
-3. Set the Space's port to 7860 (Dockerfile does this).
-4. Set the GitHub Pages origin in the API CORS allow-list.
-5. Add the resulting Space URL to the site's `cora-api-base` meta tag and redeploy Pages.
-6. Verify health, grant/refuse/withdraw, permission checks and audit history.
+## Stage 2: Python API on Render Free
 
-This repository change does not create a Hugging Face account/Space or claim that the API is publicly live. Free hardware availability and current limits should be checked in the account before use. Do not enable paid hardware, persistent storage, or any paid add-on.
+The FastAPI + SQLite implementation remains the authoritative deterministic permission engine. `render.yaml` now explicitly selects Render's **Free** web-service plan. It does not request a paid persistent disk, paid compute, or a paid database. The service uses an ephemeral SQLite file at `/tmp/cora_demo.sqlite3`.
 
-## Security boundary
+Render's official free-service documentation says Python web services can run on its Free instance. The service sleeps after 15 minutes without traffic and can take about a minute to wake. Its local filesystem is ephemeral: SQLite records are lost when the service spins down, restarts or redeploys. Render may also restart free services. This is suitable only for a temporary synthetic demonstration, not production or durable records.
 
-This is a shared synthetic demonstration only. It has no authentication, participant identity verification, rate limiting, backup, tamper-resistant audit log or external dataset enforcement. Visitors may change demo records. Never enter real personal, health or mental-health data.
+Official details: https://render.com/docs/free
+
+### Deploy steps
+
+1. Merge the hosting branch into the repository's default branch after reviewing the changes.
+2. Sign in to Render and connect the GitHub repository.
+3. Choose **New → Blueprint** and select this repository's `render.yaml`.
+4. Before creating anything, inspect the plan. It must say **Free**. Do not select Starter, paid compute, persistent disk, paid database, or an add-on. Do not enter payment details or approve an upgrade.
+5. Create the service only if the dashboard confirms the Free plan and $0 service cost.
+6. Wait for deployment and test `/health`. Expected response includes `"status":"ok"` and `"storage":"sqlite"`.
+7. Copy the service's public `onrender.com` base URL into the `cora-api-base` meta tag in `docs/index.html`, commit and deploy Pages again.
+8. Test grant, refuse, withdraw, permission checks and audit history from the GitHub Pages interface. The first request after idle may take about a minute.
+
+If Render asks for a payment method, paid upgrade or any amount above $0, stop. Do not proceed. The browser-only GitHub Pages demo remains available without the backend.
+
+## Important limitations
+
+- This is a shared synthetic demonstration. Do not enter real participant, health or mental-health data.
+- Free Render service data is temporary and may reset after idle spin-down, restart or redeployment.
+- The service may be unavailable while it wakes from idle.
+- No authentication, authorisation, rate limiting, backups, tamper-resistant audit log, production monitoring or external dataset enforcement is implemented.
+- A public demo does not establish SRHIN approval, partnership, consultation or integration.
+- This is not a legal consent mechanism or a production service.
+
+## Hugging Face hosting note
+
+Hugging Face Static Spaces are free, but the current official documentation says Docker/Gradio Spaces running on compute require a paid plan for ordinary accounts (with a limited ZeroGPU exception for eligible Gradio apps). Therefore this Python FastAPI backend is **not** being assigned to a Hugging Face Docker Space as a zero-cost solution.
