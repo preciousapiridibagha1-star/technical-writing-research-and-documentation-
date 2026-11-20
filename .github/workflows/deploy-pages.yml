@@ -1,7 +1,7 @@
 name: Deploy CORA AI demo to GitHub Pages
 on:
   push:
-    branches: [cora-free-public-demo]
+    branches: [main]
     paths:
       - "docs/**"
       - ".github/workflows/deploy-pages.yml"
