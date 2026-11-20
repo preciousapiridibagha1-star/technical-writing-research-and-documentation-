@@ -123,3 +123,10 @@ The implementation folder now also contains a FastAPI interface under
 consent, checking permissions, reading consent state and viewing audit events.
 The API source and tests are committed; execution and test verification remain
 outstanding.
+
+## Prototype verification
+
+The deterministic engine has 8 passing unit tests, the synthetic demonstration
+executes successfully, and the HTTP API has 6 passing endpoint tests in GitHub
+Actions. See [implementation/TEST_RESULTS.md](implementation/TEST_RESULTS.md)
+for the verification record and limitations. This is not production validation.
