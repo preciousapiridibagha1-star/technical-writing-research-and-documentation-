@@ -5,7 +5,7 @@ CORA AI is a small open-source application that records purpose-specific consent
 
 **Principle:** One application. One bounded MVP. AI-assisted operation. Human-owned authority.
 
-**Status:** Early interactive browser demonstrator with SQLite-backed persistence. Not production-ready.  
+**Status:** Interactive browser demonstrator with SQLite-backed deterministic consent engine; free public-hosting configuration prepared, deployment not yet verified. Not production-ready.  
 **Demo data:** Synthetic records only. No real mental-health or participant data.
 
 ## What CORA AI does
