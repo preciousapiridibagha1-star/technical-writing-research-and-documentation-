@@ -34,6 +34,10 @@ jobs:
         working-directory: projects/cora-ai/implementation
         run: python -m unittest -v
 
+      - name: Execute synthetic end-to-end demonstration
+        working-directory: projects/cora-ai/implementation
+        run: python demo.py
+
       - name: Run API tests
         working-directory: projects/cora-ai/implementation/api
         run: python -m pytest -v
