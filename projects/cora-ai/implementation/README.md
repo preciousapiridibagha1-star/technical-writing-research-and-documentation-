@@ -62,3 +62,13 @@ default-deny behaviour, audit events, demonstration script and automated tests.
 
 **Not yet verified here:** execution of the tests in a local Python environment,
 API behaviour, persistence, interface behaviour, security or production readiness.
+
+## HTTP API
+
+A FastAPI interface has also been added under `api/`. It exposes consent
+recording, permission checks, current consent lookup, audit history and a health
+endpoint. See [api/README.md](api/README.md) for setup and request examples.
+
+**API implementation status:** source code and API test cases are committed.
+They have not yet been executed in a local Python environment, so API test
+results are not claimed.
