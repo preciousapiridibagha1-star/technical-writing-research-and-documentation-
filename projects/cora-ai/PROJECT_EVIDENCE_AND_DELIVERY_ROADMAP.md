@@ -2,7 +2,7 @@
 
 **Purpose:** Convert the existing CORA AI design specification into inspectable, honest evidence of problem analysis, technical reasoning, execution, learning and public-benefit intent.
 
-**Current stage:** Specification and architecture documentation. The working application is not yet implemented. No community validation, deployment, host endorsement or integration is claimed.
+**Current stage:** Specification plus first runnable-code milestone committed. The deterministic consent engine, synthetic demo script and automated test cases are in the repository. The tests have not yet been executed in a local environment and the prototype is not deployed. No community validation, deployment, host endorsement or integration is claimed.
 
 ## Evidence strategy
 
@@ -33,9 +33,9 @@ Use prior work, current skills, scope, dependencies, resources and milestones to
 | Problem framing | Product definition and architecture | Documented; community input not yet gathered |
 | Product scope | Locked MVP scope | Documented; implementation not yet tested |
 | System design | Architecture and AI operating model | Documented; requires technical review |
-| Consent rules | Defined grant/refusal/withdrawal and purpose matching | Specified; code and tests needed |
+| Consent rules | `implementation/consent_engine.py` and `implementation/test_consent_engine.py` | Implemented in an in-memory prototype; test execution still to be recorded |
 | AI boundaries | Bounded assistant; deterministic permission service | Specified; implementation and adversarial tests needed |
-| Execution | Implementation and handover plan | Planned; no functional milestone yet |
+| Execution | `implementation/demo.py` and `implementation/README.md` | Synthetic demo script and run instructions committed; local run not yet verified |
 | Community engagement | Proposed co-design pathway | Not yet conducted |
 | Validation | Acceptance criteria | Test evidence not yet produced |
 | Public benefit | Open-source intention and project rationale | Pathway proposed; outcomes not yet demonstrated |
@@ -57,7 +57,7 @@ Use prior work, current skills, scope, dependencies, resources and milestones to
 - Implement default-deny behaviour.
 - Record auditable events.
 
-**Exit evidence:** source code and automated tests for the rules.
+**Exit evidence:** source code, automated test cases and synthetic demo script committed. Local test execution and result capture remain outstanding.
 
 ### Milestone 2 — Testable API and demo workflow
 - Expose consent and permission operations through the API.
@@ -111,7 +111,7 @@ The project must not presume that its design reflects the preferences of affecte
 
 ## Honest project status
 
-- This repository currently contains a specification and plan, not a completed application.
+- The repository contains a specification, architecture and an early runnable in-memory consent prototype; it is not a completed application.
 - The demonstrator will use synthetic data only.
 - No partnership, endorsement or integration with SRHIN is claimed.
 - The project is not a consent certification, legal compliance guarantee or production access-control solution.
