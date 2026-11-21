@@ -193,15 +193,34 @@ function handleParticipantConsent(q){
  }
  return null;
 }
-document.getElementById('chatForm').addEventListener('submit',e=>{
+// Set this to the deployed CORA API origin when the backend is hosted.
+window.CORA_API_BASE_URL = window.CORA_API_BASE_URL || '';
+let assistantConversation=[];
+document.getElementById('chatForm').addEventListener('submit',async e=>{
  e.preventDefault();let input=document.getElementById('chatInput'),q=input.value.trim();if(!q)return;
  addChatBubble(q,true);input.value='';
- let answer=role==='participant'?handleParticipantConsent(q):null;
- if(answer===null){
-  const t=q.toLowerCase();
-  answer=t.includes('training')||t.includes('purpose')?'Research and AI model training are separate purposes. A grant for one purpose does not authorise the other. CORA checks the exact purpose requested.':t.includes('withdraw')?'A participant can withdraw a previously granted permission. Once withdrawn, that grant no longer satisfies the permission check; the result is DENY.':t.includes('deny')||t.includes('permission')||t.includes('check')?'The permission check requires an exact participant ID, dataset and purpose match with a current grant. If consent is missing, refused, withdrawn or mismatched, the result is DENY.':t.includes('data')?'This prototype uses synthetic records only. The data access and release service is not implemented, so no research data is delivered.':'CORA explains purposes, helps users navigate and explains system results. The participant makes the consent decision; the backend validates and records an explicit choice. I cannot approve access or override a backend denial.';
- }
- addChatBubble(answer,false);
+ const send=document.querySelector('#chatForm button');send.disabled=true;send.textContent='Thinking…';
+ try{
+  if(window.CORA_API_BASE_URL && role!=='participant'){
+   const response=await fetch(window.CORA_API_BASE_URL.replace(/\\/$/,'')+'/assistant/chat',{
+    method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({message:q,conversation:assistantConversation})
+   });
+   const data=await response.json();
+   if(!response.ok)throw new Error(data.detail||'The assistant is temporarily unavailable.');
+   const reply=data.reply||'I could not prepare a response.';
+   assistantConversation.push({role:'user',text:q},{role:'model',text:reply});
+   addChatBubble(reply,false);
+  }else{
+   let answer=role==='participant'?handleParticipantConsent(q):null;
+   if(answer===null){
+    const t=q.toLowerCase();
+    answer=t.includes('training')||t.includes('purpose')?'Research and AI model training are separate purposes. A grant for one purpose does not authorise the other. CORA checks the exact purpose requested.':t.includes('withdraw')?'A participant can withdraw a previously granted permission. Once withdrawn, that grant no longer satisfies the permission check; the result is DENY.':t.includes('deny')||t.includes('permission')||t.includes('check')?'The permission check requires an exact participant ID, dataset and purpose match with a current grant. If consent is missing, refused, withdrawn or mismatched, the result is DENY.':t.includes('data')?'This prototype uses synthetic records only. The data access and release service is not implemented, so no research data is delivered.':'CORA explains purposes, helps users navigate and explains system results. The participant makes the consent decision; the backend validates and records an explicit choice. I cannot approve access or override a backend denial.';
+   }
+   addChatBubble(answer,false);
+  }
+ }catch(err){addChatBubble('The AI assistant could not connect: '+err.message+' The guided demonstration remains available.',false);}
+ finally{send.disabled=false;send.textContent='Send';}
 });
 function escapeHtml(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function exportAudit(){let csv='time,actor,event,detail,state\n'+events.map(e=>[e.time,e.actor,e.event,e.detail,e.state].map(v=>'"'+String(v).replace(/"/g,'""')+'"').join(',')).join('\n');let a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv'}));a.download='cora-synthetic-audit.csv';a.click();URL.revokeObjectURL(a.href)}
