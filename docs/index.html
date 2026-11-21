@@ -36,6 +36,18 @@ body{overflow-x:hidden}
  .topbar{padding:0 14px}
 }
 
+
+/* Dataset catalogue: readable cards at every viewport width. */
+.dataset-grid{grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch;gap:18px}
+.dataset-card{display:flex;flex-direction:column;min-width:0;padding:22px;height:100%}
+.dataset-card h3{font:700 17px/1.35 Manrope;margin:8px 0 9px;overflow-wrap:anywhere}
+.dataset-card>p{font-size:13px;line-height:1.65;min-height:4.2em;margin:0 0 18px;overflow-wrap:anywhere}
+.dataset-metric{display:grid;grid-template-columns:1fr;gap:5px;padding:13px 0;border-top:1px solid var(--line);min-width:0}
+.dataset-metric strong{font:700 14px Manrope;overflow-wrap:anywhere}
+.dataset-metric span{color:var(--muted);font-size:12px;line-height:1.5;overflow-wrap:anywhere}
+.dataset-card .status{align-self:flex-start;margin-top:14px;white-space:normal}
+@media(max-width:760px){.dataset-grid{grid-template-columns:minmax(0,1fr);gap:14px}.dataset-card{padding:20px}.dataset-card>p{min-height:0}.dataset-metric{grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);align-items:start;gap:12px}.dataset-metric strong{text-align:right}}
+@media(min-width:761px) and (max-width:1050px){.dataset-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 </style>
 </head>
 <body>
@@ -90,7 +102,7 @@ body{overflow-x:hidden}
   </section>
   <section class="section" id="data">
    <div class="page-head"><div><div class="eyebrow">Data governance</div><h1>Dataset catalogue</h1><p>Understand the scope and permitted purposes associated with each synthetic dataset.</p></div></div>
-   <div class="grid" style="grid-template-columns:repeat(3,minmax(0,1fr))" id="datasetCards"></div>
+   <div class="grid dataset-grid" id="datasetCards"></div>
    <div class="banner" style="margin-top:17px"><b>No data is delivered here.</b> CORA's data access/release service is a separate controlled component and is not implemented in this prototype. Dataset cards below describe fictional metadata only.</div>
   </section>
  </div>
@@ -139,7 +151,7 @@ function decideRequest(id,yes){let r=requests.find(x=>x.id===id);if(!r)return;r.
 function reviewRequest(id,s){let r=requests.find(x=>x.id===id);if(!r)return;r.status=s;log('Researcher demo','Request status changed',id+' · '+s,s);save();renderRequests();toast('Demo request status updated.')}
 function runCheck(){let p=document.getElementById('checkParticipant').value,d=document.getElementById('checkDataset').value,u=document.getElementById('checkPurpose').value;let c=consents.find(x=>x.participant===p&&x.dataset===d&&x.purpose===u&&x.status==='granted');let ok=!!c;let box=document.getElementById('checkResult');box.className='result show '+(ok?'allow':'deny');box.innerHTML='<h3>'+(ok?'✓ ALLOW':'⊘ DENY')+'</h3><p>'+(ok?'A current consent grant matches this exact participant, dataset and purpose.':'No current matching grant was found. Missing, mismatched, refused or withdrawn consent defaults to DENY.')+'</p>';log('Permission engine','Permission check evaluated',p+' · '+dsName(d)+' · '+purposeName(u)+' · '+(ok?'ALLOW':'DENY'),ok?'approved':'denied')}
 function renderAudit(){let q=(document.getElementById('auditSearch')?.value||'').toLowerCase();let list=events.filter(e=>[e.actor,e.event,e.detail,e.time].join(' ').toLowerCase().includes(q));document.getElementById('auditList').innerHTML=list.map(e=>'<div class="audit-item"><time>'+e.time+'</time><div><b>'+e.event+'</b><br><span class="muted">'+e.actor+' · '+e.detail+'</span></div>'+badge(e.state)+'</div>').join('')||'<div class="empty">No matching events.</div>'}
-function renderDatasets(){document.getElementById('datasetCards').innerHTML=datasets.map(d=>'<div class="card purpose"><div class="eyebrow">Synthetic dataset</div><h3 style="margin-top:7px">'+d.name+'</h3><p>'+d.desc+'</p><div class="toggle-line"><div><b>Records</b></div><b>'+d.records+'</b></div><div class="toggle-line"><div><b>Scope</b></div><span class="muted">'+d.scope+'</span></div><div style="margin-top:13px"><span class="status neutral">No data release</span></div></div>').join('')}
+function renderDatasets(){document.getElementById('datasetCards').innerHTML=datasets.map(d=>'<article class="card dataset-card"><div class="eyebrow">Synthetic dataset</div><h3>'+d.name+'</h3><p>'+d.desc+'</p><div class="dataset-metric"><strong>Records</strong><span>'+d.records+'</span></div><div class="dataset-metric"><strong>Scope</strong><span>'+d.scope+'</span></div><span class="status neutral">No data release</span></article>').join('')}
 function renderAll(){renderOverview();renderRequests();renderMember();renderAudit();renderDatasets()}
 function openModal(){document.getElementById('modalBackdrop').classList.add('open')}function closeModal(){document.getElementById('modalBackdrop').classList.remove('open')}
 document.getElementById('roleSelect').addEventListener('change',e=>setRole(e.target.value));
