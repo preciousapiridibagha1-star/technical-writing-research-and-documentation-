@@ -173,7 +173,7 @@ function handleParticipantConsent(q){
   return 'You are reviewing: '+purposeName(p)+' for the Community Health Survey.\n\nThis means the dataset may be used for '+(p==='research'?'the defined research activity described by the requester':'training an AI model')+'. It does not automatically permit any other purpose. You can ask me questions before deciding.\n\nIf you understand, type “grant”, “refuse”, or “withdraw” (withdrawal applies only to a current grant). No choice has been recorded yet.';
  }
  if(consentFlow.step==='choice'){
-  let c=/withdraw/.test(t)?'withdrawn':/refus|declin|no/.test(t)?'refused':/grant|agree|allow|yes/.test(t)?'granted':null;
+  let c=/withdraw/.test(t)?'withdrawn':/refus|declin|no\b/.test(t)?'refused':/grant|agree|allow|yes\b/.test(t)?'granted':null;
   if(!c)return 'I have not recorded a choice. Please type “grant”, “refuse”, or “withdraw”. You may also ask a question instead.';
   if(c==='withdrawn'){
    const current=consents.find(x=>x.participant==='P-1042'&&x.dataset==='community-health-survey'&&x.purpose===consentFlow.purpose);
@@ -188,7 +188,7 @@ function handleParticipantConsent(q){
    setConsent(p,c);
    return 'Your explicit choice has been submitted to this browser demonstration and recorded in its local synthetic state. You can review it under My consent. This is not a live AI service or a secure shared consent record.';
   }
-  if(/cancel|stop|no/.test(t)){consentFlow={step:'idle',purpose:null,choice:null};return 'Cancelled. No consent change was recorded.'}
+  if(/cancel|stop|no\b/.test(t)){consentFlow={step:'idle',purpose:null,choice:null};return 'Cancelled. No consent change was recorded.'}
   return 'I have not changed anything. Type “confirm” to submit the exact choice shown above, or “cancel” to stop.';
  }
  return null;
@@ -202,7 +202,7 @@ document.getElementById('chatForm').addEventListener('submit',async e=>{
  const send=document.querySelector('#chatForm button');send.disabled=true;send.textContent='Thinking…';
  try{
   if(window.CORA_API_BASE_URL && role!=='participant'){
-   const response=await fetch(window.CORA_API_BASE_URL.replace(/\\/$/,'')+'/assistant/chat',{
+   const response=await fetch(window.CORA_API_BASE_URL.replace(/\/$/,'')+'/assistant/chat',{
     method:'POST',headers:{'Content-Type':'application/json'},
     body:JSON.stringify({message:q,conversation:assistantConversation})
    });
