@@ -2,6 +2,9 @@
 import os
 from pathlib import Path
 import sys
+import json
+from urllib.error import HTTPError, URLError
+from urllib.request import Request, urlopen
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
@@ -55,6 +58,11 @@ class PermissionRequest(BaseModel):
     purpose: str = Field(min_length=1, max_length=80)
 
 
+class AssistantMessage(BaseModel):
+    message: str = Field(min_length=1, max_length=4000)
+    conversation: list[dict[str, str]] = Field(default_factory=list, max_length=12)
+
+
 @app.get("/", include_in_schema=False)
 def browser_app():
     return FileResponse(UI_DIR / "index.html")
@@ -102,6 +110,59 @@ def get_consent(participant_id: str, resource_id: str, purpose: str):
     if record is None:
         raise HTTPException(status_code=404, detail="No consent record found.")
     return record
+
+
+@app.post("/assistant/chat")
+def assistant_chat(payload: AssistantMessage):
+    """Gemini-powered explanation assistant; never records consent or grants access."""
+    api_key = os.environ.get("GEMINI_API_KEY")
+    if not api_key:
+        raise HTTPException(status_code=503, detail="AI assistant is not configured on this server.")
+
+    system_instruction = (
+        "You are CORA's consent and data-rights guide. Explain dataset purposes, "
+        "consent choices, permission outcomes and audit history in clear, neutral language. "
+        "Research and AI model training are separate purposes. Never infer, request or "
+        "treat ambiguous language as consent. Never choose for a participant, record or "
+        "change consent, approve data access, or override a deterministic DENY. Explain "
+        "that only CORA's backend can validate and record an explicit participant action. "
+        "Do not provide medical advice or ask for real personal, health or sensitive data. "
+        "This is a synthetic prototype. If asked to grant/refuse/withdraw, explain how "
+        "to use the consent controls; do not claim you performed the action."
+    )
+    model = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
+    contents = []
+    for item in payload.conversation[-10:]:
+        role = item.get("role", "")
+        text = item.get("text", "")
+        if role in ("user", "model") and isinstance(text, str) and text.strip():
+            contents.append({"role": role, "parts": [{"text": text[:4000]}]})
+    contents.append({"role": "user", "parts": [{"text": payload.message}]})
+    body = json.dumps({
+        "systemInstruction": {"parts": [{"text": system_instruction}]},
+        "contents": contents,
+        "generationConfig": {"temperature": 0.25, "maxOutputTokens": 700},
+    }).encode("utf-8")
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+    request = Request(url, data=body, headers={
+        "Content-Type": "application/json",
+        "x-goog-api-key": api_key,
+    }, method="POST")
+    try:
+        with urlopen(request, timeout=20) as response:
+            result = json.loads(response.read().decode("utf-8"))
+    except HTTPError as exc:
+        if exc.code in (400, 401, 403, 404, 429):
+            raise HTTPException(status_code=502, detail="The AI provider rejected the request or the configured quota is unavailable.") from exc
+        raise HTTPException(status_code=502, detail="The AI provider is temporarily unavailable.") from exc
+    except (URLError, TimeoutError, json.JSONDecodeError) as exc:
+        raise HTTPException(status_code=502, detail="Could not reach the AI provider.") from exc
+    candidates = result.get("candidates", [])
+    parts = candidates[0].get("content", {}).get("parts", []) if candidates else []
+    answer = " ".join(part.get("text", "") for part in parts if isinstance(part.get("text"), str)).strip()
+    if not answer:
+        raise HTTPException(status_code=502, detail="The AI provider returned no text response.")
+    return {"reply": answer, "provider": "Google Gemini", "model": model}
 
 
 @app.get("/audit")

@@ -14,11 +14,12 @@ checks and an inspectable audit history.
 
 ## Useful first contributions
 
-- Improve the browser interface's accessibility and mobile usability.
-- Add tests for API edge cases without weakening default-deny behaviour.
-- Propose and review a SQLite persistence design.
+- Improve the integrated assistant's guided consent conversation and plain-language explanations.
+- Test that the assistant never assumes consent from ambiguous language and always asks for an explicit final choice.
+- Improve browser accessibility, responsive layout and mobile usability, including long-message wrapping.
+- Add API and consent-engine edge-case tests without weakening exact-purpose matching or default-deny behaviour.
+- Review privacy, data minimisation, role boundaries and audit assumptions.
 - Improve setup instructions and user-facing explanations.
-- Review the consent and audit model and document assumptions or risks.
 
 ## Development setup
 
@@ -50,7 +51,4 @@ guarantee acceptance. The maintainers may request changes or clarification.
 
 ## Current project status
 
-The browser workspace is an early synthetic demo. It currently uses
-in-memory state, has no authentication and is not connected to real datasets.
-Persistent storage, security controls, independent privacy/security review and
-community co-design remain future work.
+The browser workspace is an early synthetic demo. Its interactive browser state is local to the browser and is not connected to the Python/SQLite consent engine or real datasets. The assistant in the static browser demo is scripted/offline, not a live AI integration. Authentication, production authorisation, security controls, independent privacy/security review and community co-design remain future work.

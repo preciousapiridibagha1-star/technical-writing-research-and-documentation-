@@ -59,6 +59,11 @@ and their corresponding audit event are written in one transaction.
 - `POST /permissions/check` — returns deterministic `ALLOW` or `DENY`.
 - `GET /consents/{participant_id}/{resource_id}/{purpose}` — reads current consent.
 - `GET /audit` — returns audit events.
+- `POST /assistant/chat` — sends a question to the configured Google Gemini model for explanation only; it cannot record consent or grant access.
+
+## Optional Gemini assistant configuration
+
+The Gemini API key must be stored as the backend host's environment secret named `GEMINI_API_KEY`. Never place the key in `docs/index.html`, JavaScript, Git history, a public configuration file or a GitHub Pages site. Set `GEMINI_MODEL` to choose a supported model; the default is `gemini-2.5-flash`. The browser must call this endpoint through the CORA backend; GitHub Pages alone cannot protect a provider key. Do not send real participant, health or other sensitive data to the prototype. The model explains and guides only: consent recording and ALLOW/DENY remain backend-controlled.
 
 Example consent request:
 

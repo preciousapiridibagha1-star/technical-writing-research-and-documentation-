@@ -3,7 +3,9 @@
 
 CORA AI is a small open-source application that records purpose-specific consent, checks whether a requested data use is permitted, and keeps an audit history.
 
-**Principle:** One application. One bounded MVP. AI-assisted operation. Human-owned authority.
+**Principle:** One application. One bounded MVP. One integrated conversational assistant. Human-owned authority.
+
+**Assistant upgrade:** The existing MVP is being enhanced with a guided conversational consent journey. This is an additive interface improvement, not a replacement or expansion of the locked MVP capabilities.
 
 **Status:** Interactive browser demonstrator with SQLite-backed deterministic consent engine; free public-hosting configuration prepared, deployment not yet verified. Not production-ready.  
 **Demo data:** Synthetic records only. No real mental-health or participant data.
@@ -40,13 +42,13 @@ been created and checked.
 The public demo is a shared writable sandbox. Use fictional IDs and synthetic
 data only; visitors can change records in the shared demonstration database.
 
-## AI is the operating assistant — not the authority
+## The integrated assistant
 
-The future integrated AI assistant may explain purposes and consent status,
-guide users through forms, help prepare access requests and explain backend
-decisions. AI must never grant or withdraw consent, approve access, override a
-denial or change a participant's choice. The AI assistant is not implemented
-in the current browser demonstration.
+One assistant is the conversational operating interface across CORA. It helps participants understand each data-use purpose, navigate the platform, review consent status, prepare requests and understand permission and audit outcomes. For consent, it should explain the specific purpose and relevant consequences in plain language, check that the person has had an opportunity to ask questions, present the available choices, and request a clear final confirmation.
+
+The participant—not the model—makes the decision. Only an explicit, authenticated participant action, validated by the backend, may create or change a consent record. The assistant cannot choose for the participant, grant or withdraw consent autonomously, approve access, override DENY or rewrite policy. If the user's intention is unclear, the assistant must pause and ask rather than infer consent.
+
+The browser demonstration remains offline unless connected to a deployed CORA API. The FastAPI backend now includes an optional Gemini explanation endpoint (`POST /assistant/chat`), configured only through the server-side `GEMINI_API_KEY` environment secret. The provider key must never be embedded in the public GitHub Pages JavaScript. Any guided consent interaction in the browser demo uses synthetic records and browser-local state; it is not a secure or shared consent service. A production AI integration, authentication, role enforcement and privacy/security controls remain unimplemented.
 
 ## Current capabilities
 
@@ -61,9 +63,9 @@ in the current browser demonstration.
 
 ## Not implemented
 
-No AI assistant, authentication, authorisation, encryption, tamper-resistant
+No production authentication, authorisation, encryption, tamper-resistant
 audit log, automated backups, real participant data, real dataset integration,
-production monitoring or live SRHIN integration.
+production monitoring or live SRHIN integration. The Gemini endpoint is not yet deployed or connected to the GitHub Pages chat UI.
 
 No host approval, partnership, endorsement or production deployment is claimed.
 No mental-health chatbot, screening or diagnosis tool, clinical record system,

@@ -12,7 +12,11 @@ Help a participant record separate choices for defined data uses, help a request
 6. AI assistant: contextual conversational guide available throughout the application.
 
 ## AI experience
-The assistant is the central conversational guide. It explains, helps users navigate, checks request completeness and explains system results. It must not pressure participants toward granting consent. It cannot make consent choices, approve access or override backend decisions. Ordinary forms must remain available without AI.
+One integrated assistant is the central conversational guide across the application. It explains purposes and consent status, helps users navigate, checks request completeness and explains system results.
+
+For consent, the assistant identifies the exact dataset and purpose, explains the request in plain language, answers questions, presents grant/refuse/withdraw choices, reads back the selected choice and asks for explicit final confirmation. Only then may it submit the participant's action to the backend for authentication, validation and recording. Ambiguous language, silence or general agreement must never be treated as consent. The assistant must not pressure a participant towards granting permission.
+
+The assistant cannot decide for a participant, approve data access or override backend decisions. Core consent and permission functions must remain available if the AI service is unavailable; this preserves the locked MVP's resilience requirement.
 
 ## Experience principles
 - One application, not multiple portals.
