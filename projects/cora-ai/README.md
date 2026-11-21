@@ -48,7 +48,7 @@ One assistant is the conversational operating interface across CORA. It helps pa
 
 The participant—not the model—makes the decision. Only an explicit, authenticated participant action, validated by the backend, may create or change a consent record. The assistant cannot choose for the participant, grant or withdraw consent autonomously, approve access, override DENY or rewrite policy. If the user's intention is unclear, the assistant must pause and ask rather than infer consent.
 
-The current browser assistant is an offline scripted demonstration, not a connected AI model. Any guided consent interaction in the browser demo uses synthetic records and browser-local state; it is not a secure or shared consent service. A production AI integration, authentication, role enforcement and privacy/security controls remain unimplemented.
+The browser demonstration remains offline unless connected to a deployed CORA API. The FastAPI backend now includes an optional Gemini explanation endpoint (`POST /assistant/chat`), configured only through the server-side `GEMINI_API_KEY` environment secret. The provider key must never be embedded in the public GitHub Pages JavaScript. Any guided consent interaction in the browser demo uses synthetic records and browser-local state; it is not a secure or shared consent service. A production AI integration, authentication, role enforcement and privacy/security controls remain unimplemented.
 
 ## Current capabilities
 
@@ -63,9 +63,9 @@ The current browser assistant is an offline scripted demonstration, not a connec
 
 ## Not implemented
 
-No live AI-model integration, production authentication, authorisation, encryption, tamper-resistant
+No production authentication, authorisation, encryption, tamper-resistant
 audit log, automated backups, real participant data, real dataset integration,
-production monitoring or live SRHIN integration.
+production monitoring or live SRHIN integration. The Gemini endpoint is not yet deployed or connected to the GitHub Pages chat UI.
 
 No host approval, partnership, endorsement or production deployment is claimed.
 No mental-health chatbot, screening or diagnosis tool, clinical record system,
