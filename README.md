@@ -48,6 +48,7 @@ The [CORA AI MVP](projects/cora-ai/README.md) is the defined project: a small AI
 
 These are self-directed, public-source research and analytical outputs; they are not presented as peer-reviewed publications or original field research.
 
+- [AI Documentation Accountability Research Collection](research/README.md#ai-documentation-accountability-research-collection) — four connected reports, a reusable seven-layer review tool and a second-provider case study.
 - [The Talent Paradox: Skilled Migration, Remittances and Digital Work in Nigeria](research/talent-paradox-skilled-migration-digital-work-nigeria.md)
 - [AI Job-Search Platforms: Updated Comparison, November 2026](research/ai-job-search-platforms/updated-comparison-november-2026.md)
 - [Audit of the June 2026 AI Job-Search Platforms Report](research/ai-job-search-platforms/2026-report-audit-and-corrections.md)
