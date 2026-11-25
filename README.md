@@ -84,6 +84,7 @@ The contribution index distinguishes submitted work from candidate screening and
 - [Open-source contribution record](contributions/open-source/README.md)
 - [uniunihan-db PR #10](https://github.com/garfieldnate/uniunihan-db/pull/10) — documentation correction; submitted and open, not merged.
 - [FINOS AI Governance Framework issue #424](https://github.com/finos/ai-governance-framework/issues/424) — source-based governance analysis submitted as an issue comment; awaiting maintainer/community response.
+- [MLCommons Croissant issue #1012 — candidate review](contributions/open-source/croissant-1012-dataset-bias-documentation-review.md) — documentation opportunity screened and draft prepared; not submitted upstream.
 
 ## Opportunity alignment
 
